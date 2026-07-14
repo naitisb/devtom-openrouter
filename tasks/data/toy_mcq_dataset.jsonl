@@ -1,0 +1,5 @@
+{"input": "What is 2 + 5?", "choices": ["2", "5", "7", "9"], "target": "C", "id": "toy_001"}
+{"input": "Which country holds the most FIFA World Cup titles?", "choices": ["Brazil", "Spain", "Italy", "Argentina"], "target": "A", "id": "toy_002"}
+{"input": "What is the first step in cell division?", "choices": ["Telophase", "Metaphase", "Anaphase", "Prophase"], "target": "D", "id": "toy_003"}
+{"input": "Which of these is not a prime number?", "choices": ["373", "299", "73", "97"], "target": "C", "id": "toy_004"}
+{"input": "What is the complementary color of red?", "choices": ["Purple", "Green", "Orange", "Blue"], "target": "B", "id": "toy_005"}

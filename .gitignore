@@ -1,0 +1,28 @@
+# Secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Inspect logs / outputs
+logs/
+!logs/.gitkeep
+.inspect/
+results/**/*.json
+results/**/*.eval
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Figures build artifacts (keep final PNGs if you choose to commit them)
+figures/*.tmp

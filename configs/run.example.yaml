@@ -1,0 +1,22 @@
+# Copy to configs/run.yaml and tune. Caps keep cost + rate-limits in check.
+# Not currently read by any script (config-file support isn't wired up yet) — kept
+# as a reference sketch. The authoritative model list lives in src/roster.py; the
+# runner scripts read it from there. This file just documents the run knobs.
+#
+# All models route through OpenRouter with the no-training/ZDR provider prefs from
+# src/openrouter.py (see docs/METHODS_non_training_openrouter.md).
+models:
+  # Illustrative subset — see `python -m src.roster` for the full oldest->newest list.
+  - openrouter/meta-llama/llama-2-70b-chat        # Llama family, oldest
+  - openrouter/meta-llama/llama-3.3-70b-instruct  # Llama family, recent
+  - openrouter/qwen/qwen-1.5-72b-chat             # Qwen family, oldest
+  - openrouter/qwen/qwen3-235b-a22b               # Qwen family, recent
+  - openrouter/mistralai/mistral-7b-instruct      # Mistral family, oldest
+limit: 50            # samples per task while iterating (raise for final run)
+temperature: 0.0
+epochs: 1            # bump to 3+ for seed-averaged reliability
+max_connections: 4   # lower to avoid 429s on rate-limited upstreams
+retries: 5
+cache: true          # cache model outputs to avoid re-paying on reruns
+log_dir: logs
+# grader_model: openrouter/qwen/qwen-2.5-72b-instruct  # pins the free-response judge

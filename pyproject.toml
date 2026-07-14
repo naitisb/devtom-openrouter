@@ -1,0 +1,15 @@
+[project]
+name = "devtom-openrouter"
+version = "0.1.0"
+description = "Developmental theory-of-mind trajectories for open-weight LLMs, via OpenRouter (Inspect)."
+authors = [{ name = "Naiti S. Bhatt" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
