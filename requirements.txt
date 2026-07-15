@@ -13,4 +13,4 @@ python-dotenv>=1.0
 jsonschema>=4.0
 # Dev
 pytest>=8.0
-click==8.6
+# click==8.4.2
