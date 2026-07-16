@@ -56,7 +56,7 @@ from __future__ import annotations
 import os
 import re
 
-from inspect_ai.model import GenerateConfig, get_model
+from inspect_ai.model import get_model
 from inspect_ai.scorer import (
     CORRECT,
     INCORRECT,
@@ -69,6 +69,7 @@ from inspect_ai.scorer import (
 )
 from inspect_ai.solver import TaskState
 
+from src.decoding import generate_config
 from src.openrouter import openrouter_model_args
 from src.roster import AUTHOR_TO_FAMILY, _BY_MODEL
 
@@ -241,8 +242,13 @@ def tom_free_response_scorer(grader_model: str | None = None) -> Scorer:
                 prompt,
                 # temperature=0: verdicts are judgments, not samples — deterministic
                 # grading makes reruns reproducible and removes sampling noise from
-                # the C/I decision.
-                config=GenerateConfig(max_tokens=_grader_max_tokens(), temperature=0.0),
+                # the C/I decision. generate_config() drops the override for models
+                # that 400 on non-default sampling params (Claude Opus 4.7+/Sonnet 5/
+                # Fable 5 — see src/decoding.py); such a grader is provider-default
+                # decoded, a recorded caveat.
+                config=generate_config(
+                    grader_name, temperature=0.0, max_tokens=_grader_max_tokens()
+                ),
             )
             verdict = result.completion.strip()
             match = _GRADE_RE.search(verdict)

@@ -11,12 +11,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.roster import (
+    AUTHOR_TO_FAMILY,
     FAMILY_ORDER,
     ROSTER,
     TYPE_COLORS,
     TYPE_ORDER,
     all_models,
-    family_of,
     models_for_family,
 )
 
@@ -34,7 +34,13 @@ def test_model_strings_route_via_known_prefix_and_end_in_slug():
         assert e.model.endswith(e.slug), f"{e.model} does not end with slug {e.slug}"
         assert e.model.startswith(("openrouter/", "openai-api/local/")), \
             f"{e.model} uses an unknown router prefix"
-        assert family_of(e.model) in FAMILY_ORDER, f"{e.model} not classified into a family"
+        # The family must be recoverable from the raw model string: strip the
+        # router prefix and map the author segment via AUTHOR_TO_FAMILY (the
+        # same scheme src/scorer.py and the analysis script rely on).
+        tail = e.model.removeprefix("openai-api/local/").removeprefix("openrouter/")
+        author = tail.split("/", 1)[0]
+        assert AUTHOR_TO_FAMILY.get(author) == e.family, \
+            f"{e.model} author {author!r} does not map to family {e.family}"
 
 
 def test_every_family_is_known_and_nonempty():

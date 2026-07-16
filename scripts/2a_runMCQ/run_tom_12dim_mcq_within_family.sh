@@ -10,6 +10,7 @@
 # Model list comes from src/roster.py; routing prefs from src/openrouter.py.
 # ONLY_FAMILY=<Llama|Qwen|DeepSeek|Mistral|Gemma> restricts to one family.
 # MAX_TOKENS=<n> overrides the per-call output cap (default 16000).
+# TEMPERATURE=<t> standardizes decoding (skipped for models that reject it).
 #
 # Run from root: bash scripts/2a_runMCQ/run_tom_12dim_mcq_within_family.sh
 
@@ -42,6 +43,16 @@ echo "Routing prefs: $PROVIDER_PREFS_JSON"
 # models (deepseek-r1*, qwen3*) room to think. If a reasoning model truncates,
 # raise this (MAX_TOKENS=32000 bash ...) or raise the key's budget instead.
 MAX_TOKENS="${MAX_TOKENS:-16000}"
+
+# Optional standardized decoding: TEMPERATURE=<t> (e.g. TEMPERATURE=0.0) adds
+# `--temperature <t>` to every eval call EXCEPT for models that reject sampling
+# params (Claude Opus 4.7+/Sonnet 5/Fable 5 return HTTP 400 on any non-default
+# value — see src/decoding.py). Flagged models run at provider-default decoding
+# and must be analyzed as a separate uncontrolled-decoding stratum.
+TEMPERATURE="${TEMPERATURE:-}"
+if [[ -n "$TEMPERATURE" ]]; then
+  echo "Standardized temperature: $TEMPERATURE (auto-omitted for models that reject sampling params)"
+fi
 echo "Per-call max_tokens: $MAX_TOKENS"
 
 # Archive prior logs so the analysis script only sees this run.
@@ -63,7 +74,11 @@ echo "Running MCQ task on ${#MODELS[@]} models"
 TASK="scripts/3_runAll/tom_12dim_mcq.py"
 for m in "${MODELS[@]}"; do
   echo "=== Running $TASK on $m ==="
-  "$INSPECT_BIN" eval "$TASK" --model "$m" -M provider="$PROVIDER_PREFS_JSON" --max-tokens "$MAX_TOKENS" || {
+  temp_args=()
+  if [[ -n "$TEMPERATURE" ]] && ! python -m src.decoding --omits "$m"; then
+    temp_args=(--temperature "$TEMPERATURE")
+  fi
+  "$INSPECT_BIN" eval "$TASK" --model "$m" -M provider="$PROVIDER_PREFS_JSON" --max-tokens "$MAX_TOKENS" ${temp_args[@]+"${temp_args[@]}"} || {
     echo "WARNING: eval failed for $m — continuing" >&2
   }
 done

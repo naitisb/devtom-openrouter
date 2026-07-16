@@ -17,6 +17,7 @@
 # cost/time commitment — set ONLY_FAMILY=Llama (etc.) to trim to one family, or
 # use scripts/3_runAll/run_tom_12dim_selective.sh for an arbitrary subset.
 # MAX_TOKENS=<n> overrides the per-call output cap (default 16000).
+# TEMPERATURE=<t> standardizes decoding (skipped for models that reject it).
 #
 # Privacy: every call passes the no-training/ZDR provider-routing prefs from
 # src/openrouter.py (via scripts/_provider_prefs.sh). This is the request-level
@@ -69,6 +70,16 @@ echo "Routing prefs: $PROVIDER_PREFS_JSON"
 # models (deepseek-r1*, qwen3*) room to think. If a reasoning model truncates,
 # raise this (MAX_TOKENS=32000 bash ...) or raise the key's budget instead.
 MAX_TOKENS="${MAX_TOKENS:-16000}"
+
+# Optional standardized decoding: TEMPERATURE=<t> (e.g. TEMPERATURE=0.0) adds
+# `--temperature <t>` to every eval call EXCEPT for models that reject sampling
+# params (Claude Opus 4.7+/Sonnet 5/Fable 5 return HTTP 400 on any non-default
+# value — see src/decoding.py). Flagged models run at provider-default decoding
+# and must be analyzed as a separate uncontrolled-decoding stratum.
+TEMPERATURE="${TEMPERATURE:-}"
+if [[ -n "$TEMPERATURE" ]]; then
+  echo "Standardized temperature: $TEMPERATURE (auto-omitted for models that reject sampling params)"
+fi
 echo "Per-call max_tokens: $MAX_TOKENS"
 if [[ -n "${DEVTOM_GRADER_MODEL:-}" ]]; then
   echo "Free-response grader (primary): $DEVTOM_GRADER_MODEL"
@@ -117,7 +128,11 @@ for m in "${MODELS[@]}"; do
     # `|| true`: one unavailable/delisted model (or one with no ZDR upstream, which
     # fails closed) shouldn't abort the whole multi-hour sweep. Its log just won't
     # be written, and it'll be absent from the plots.
-    "$INSPECT_BIN" eval "$t" --model "$m" -M provider="$PROVIDER_PREFS_JSON" --max-tokens "$MAX_TOKENS" || {
+    temp_args=()
+    if [[ -n "$TEMPERATURE" ]] && ! python -m src.decoding --omits "$m"; then
+      temp_args=(--temperature "$TEMPERATURE")
+    fi
+    "$INSPECT_BIN" eval "$t" --model "$m" -M provider="$PROVIDER_PREFS_JSON" --max-tokens "$MAX_TOKENS" ${temp_args[@]+"${temp_args[@]}"} || {
       echo "WARNING: eval failed for $m on $t (delisted model, no compliant route, or transient error) — continuing" >&2
     }
   done

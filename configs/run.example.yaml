@@ -13,7 +13,9 @@ models:
   - openrouter/qwen/qwen3-235b-a22b               # Qwen family, recent
   - openrouter/mistralai/mistral-7b-instruct      # Mistral family, oldest
 limit: 50            # samples per task while iterating (raise for final run)
-temperature: 0.0
+temperature: 0.0     # NOTE: Claude Opus 4.7+/Sonnet 5/Fable 5 reject sampling params
+                     # (HTTP 400); the runners auto-omit --temperature for them via
+                     # src/decoding.py — an uncontrolled-decoding stratum, recorded caveat.
 epochs: 1            # bump to 3+ for seed-averaged reliability
 max_connections: 4   # lower to avoid 429s on rate-limited upstreams
 retries: 5
