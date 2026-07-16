@@ -146,7 +146,15 @@ def _family_of(model_str: str | None) -> str | None:
     entry = _BY_MODEL.get(model_str)
     if entry is not None:
         return entry.family
-    tail = model_str.split("openrouter/", 1)[-1]
+    # Strip whichever router prefix is present so the author segment is recoverable:
+    # 'openrouter/' for the remote roster, 'openai-api/local/' for the self-hosted
+    # (devtom-selfhost) models. Without the local prefix here, local subjects would
+    # resolve to family None and defeat the cross-family grading scheme.
+    tail = model_str
+    for prefix in ("openai-api/local/", "openrouter/"):
+        if tail.startswith(prefix):
+            tail = tail[len(prefix):]
+            break
     author = tail.split("/", 1)[0] if "/" in tail else ""
     return AUTHOR_TO_FAMILY.get(author)
 
