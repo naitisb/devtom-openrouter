@@ -238,7 +238,11 @@ def tom_free_response_scorer(grader_model: str | None = None) -> Scorer:
         match = None
         for _ in range(GRADE_PARSE_ATTEMPTS):
             result = await grader.generate(
-                prompt, config=GenerateConfig(max_tokens=_grader_max_tokens())
+                prompt,
+                # temperature=0: verdicts are judgments, not samples — deterministic
+                # grading makes reruns reproducible and removes sampling noise from
+                # the C/I decision.
+                config=GenerateConfig(max_tokens=_grader_max_tokens(), temperature=0.0),
             )
             verdict = result.completion.strip()
             match = _GRADE_RE.search(verdict)
