@@ -3,9 +3,9 @@
 Single source of truth for the *construct* grouping — a practical, interpretive
 layer above `tom_dimension` that collapses the 12 fine-grained dimensions into
 six developmental constructs. Both the data-tagging step
-(scripts/0_prep/add_construct_to_datasets.py, which writes `tom_construct` into
+(scripts/0_misc/add_construct_to_datasets.py, which writes `tom_construct` into
 each item's metadata), the analysis/visualization scripts
-(scripts/4_analyze/, scripts/4_statistics/), and the R modeling pipeline
+(scripts/0_misc/, scripts/4_statistics/), and the R modeling pipeline
 (scripts/5_model/, scripts/6_visualize/) read from here, so the grouping can't
 drift between the datasets and the plots.
 

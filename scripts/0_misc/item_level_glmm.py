@@ -38,7 +38,7 @@ as somewhat optimistic; the point estimates and directions are reliable. Predict
 `years` and `logp` are mean-centered; slopes are in original units (log-odds per
 year / per log10-param).
 
-    python scripts/4_analyze/item_level_glmm.py --log-dir logs/Archive
+    python scripts/0_misc/item_level_glmm.py --log-dir logs/Archive
 """
 from __future__ import annotations
 

@@ -4,7 +4,7 @@ This is the one place that defines *which* models are in the study panel,
 what family and size-tier each belongs to, its verified public-release date,
 and its trend-line color. Both the shell runners (scripts/2a_runMCQ,
 scripts/2b_runFR, scripts/3_runAll — via `python -m src.roster --models <family>`),
-the analysis scripts (scripts/4_analyze/, scripts/4_statistics/), and the R
+the analysis scripts (scripts/0_misc/, scripts/4_statistics/), and the R
 modeling pipeline (scripts/5_model/, scripts/6_visualize/) read from here, so
 the roster can't drift between "what we ran" and "what we plotted."
 

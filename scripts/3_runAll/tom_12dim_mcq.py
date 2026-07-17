@@ -9,7 +9,7 @@ task reports accuracy/stderr per dimension via src/metrics.py's
 dimension_breakdown_metrics(). This project runs it across OPEN-WEIGHT model
 families served through OpenRouter (Llama, Qwen, DeepSeek, Mistral, Gemma),
 oldest release to newest, to trace developmental ToM trajectories within each
-family — see docs/models.md and scripts/4_analyze/.
+family — see docs/models.md and scripts/0_misc/.
 
 Routing note: pass the no-training/ZDR provider preferences on the model with
 `-M provider='{...}'` (see src/openrouter.py and the runAll shell scripts).

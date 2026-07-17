@@ -36,8 +36,8 @@ family/date mapping can't drift from the rest of the pipeline. Model *size* is t
 one identity attribute the roster doesn't carry yet, so it lives in PARAMS_B below;
 if this proves durable it should migrate to a field on src.roster.ModelEntry.
 
-    python scripts/4_analyze/size_covariate_regression.py
-    python scripts/4_analyze/size_covariate_regression.py --log-dir logs/Archive
+    python scripts/0_misc/size_covariate_regression.py
+    python scripts/0_misc/size_covariate_regression.py --log-dir logs/Archive
 """
 from __future__ import annotations
 

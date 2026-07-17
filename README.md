@@ -68,14 +68,14 @@ bash scripts/2b_runFR/run_tom_12dim_fr_within_family.sh
 bash scripts/3_runAll/run_tom_12dim_selective.sh meta-llama/llama-3.1-8b-instruct qwen/qwen3-32b
 
 # 4. build the trajectory figures + CSV into results/<timestamp>/
-python scripts/4_analyze/summarize_visualize_results.py
+python scripts/0_misc/summarize_visualize_results.py
 ```
 
 `make setup | check | smoke | run | run-mcq | run-fr | analyze` wrap the same steps.
 
 ## What you get
 
-`scripts/4_analyze/summarize_visualize_results.py` writes a tidy CSV and up to
+`scripts/0_misc/summarize_visualize_results.py` writes a tidy CSV and up to
 ~21 figures into a fresh `results/<timestamp>/`:
 
 - **Trajectory trend charts** — overall accuracy vs. release date, one line per
@@ -94,7 +94,7 @@ python scripts/4_analyze/summarize_visualize_results.py
 src/        roster (model registry), openrouter (routing policy), scorer, solver, metrics
 tasks/      hello_world_mcq.py + _smoke.py (pipeline smoke tests) + toy data
 data/       the shared 12-dimension MCQ + free-response datasets, SOURCES.md
-scripts/    1_check → 2a_runMCQ / 2b_runFR → 3_runAll → 4_analyze (+ _provider_prefs.sh helper)
+scripts/    1_check → 2a_runMCQ / 2b_runFR → 3_runAll → 4_statistics → 5_model → 6_visualize (+ _provider_prefs.sh helper)
 docs/       models roster, non-training methods note, privacy checklist, taxonomy, dev norms
 logs/       eval logs (gitignored; runners archive prior runs to logs/Archive/)
 results/    per-run CSV + trajectory figures (gitignored bulk)

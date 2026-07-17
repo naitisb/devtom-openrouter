@@ -12,8 +12,8 @@ safe to run after editing the map. Writes a timestamped backup of each file
 before modifying it. Preserves key order (tom_construct is inserted right after
 tom_dimension) and does not touch any other field.
 
-    python scripts/0_prep/add_construct_to_datasets.py            # tag in place (+ backup)
-    python scripts/0_prep/add_construct_to_datasets.py --check    # verify only, no writes
+    python scripts/0_misc/add_construct_to_datasets.py            # tag in place (+ backup)
+    python scripts/0_misc/add_construct_to_datasets.py --check    # verify only, no writes
 """
 from __future__ import annotations
 

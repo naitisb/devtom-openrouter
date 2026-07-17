@@ -84,4 +84,4 @@ for m in "${MODELS[@]}"; do
 done
 
 echo
-echo "Done. Analyze with: python scripts/4_analyze/summarize_visualize_results.py"
+echo "Done. Analyze with: python scripts/0_misc/summarize_visualize_results.py"

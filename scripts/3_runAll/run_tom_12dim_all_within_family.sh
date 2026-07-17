@@ -140,4 +140,4 @@ done
 
 echo
 echo "Done. To compare accuracy by ToM dimension across the models just run, use:"
-echo "  python scripts/4_analyze/summarize_visualize_results.py"
+echo "  python scripts/0_misc/summarize_visualize_results.py"

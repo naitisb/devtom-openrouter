@@ -15,12 +15,12 @@ The benchmark labels each item with a single **`tom_dimension`** (one of 12), pl
 `data/12dimToM_mcq_dataset.jsonl` and `data/12dimToM_freeresponse_dataset.jsonl` (free-response items
 add a `rubric`). There is still **no** separate `order` or `tier` field — the developmental *ordering*
 is carried by the 12 dimensions themselves (see `DIMENSION_DEVELOPMENTAL_ORDER`,
-`scripts/4_analyze/summarize_visualize_results.py`), while the coarser construct *grouping* is now a
+`scripts/0_misc/summarize_visualize_results.py`), while the coarser construct *grouping* is now a
 first-class field.
 
 `tom_construct` is derived from `tom_dimension` by the canonical map in **`src/constructs.py`** (the
 single source of truth, shared verbatim with the sibling devtom-eval project) and written into the
-datasets by `scripts/0_prep/add_construct_to_datasets.py` (idempotent; `--check` to verify). The
+datasets by `scripts/0_misc/add_construct_to_datasets.py` (idempotent; `--check` to verify). The
 analysis script reads the same module, so the grouping in the datasets and in the plots can never
 drift. Construct-level outputs: `construct_heatmap*.png`, `construct_difficulty_ranking*.png`, and
 `dimension_heatmap_by_construct.png`, plus a `construct` column in `dimension_summary.csv`. Note the

@@ -55,9 +55,9 @@ Only scans --log-dir itself (not subfolders, so a logs/Archive/ of old runs is
 ignored), and only rows for models in a recognized family (see roster.FAMILY_ORDER)
 are kept. Each run writes its CSV + PNGs into a fresh --results-dir/<timestamp>/.
 
-    python scripts/4_analyze/summarize_visualize_results.py
-    python scripts/4_analyze/summarize_visualize_results.py --all-runs
-    python scripts/4_analyze/summarize_visualize_results.py --no-plot
+    python scripts/0_misc/summarize_visualize_results.py
+    python scripts/0_misc/summarize_visualize_results.py --all-runs
+    python scripts/0_misc/summarize_visualize_results.py --no-plot
 """
 from __future__ import annotations
 
@@ -77,7 +77,7 @@ from scipy import stats
 
 from inspect_ai.log import list_eval_logs, read_eval_log
 
-# Running as `python scripts/4_analyze/summarize_visualize_results.py` puts the
+# Running as `python scripts/0_misc/summarize_visualize_results.py` puts the
 # script's own dir on sys.path, not the project root, so `import src.roster`
 # needs an explicit assist (same shim the task files use).
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -101,7 +101,7 @@ from src.roster import (
 
 # The developmental-construct grouping over the 12 dimensions — single source of
 # truth in src/constructs.py, also written into the datasets by
-# scripts/0_prep/add_construct_to_datasets.py.
+# scripts/0_misc/add_construct_to_datasets.py.
 from src.constructs import (
     CONSTRUCT_COLORS,
     CONSTRUCT_DEVELOPMENTAL_ORDER,

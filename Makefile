@@ -1,5 +1,5 @@
 # DevToM-OpenRouter
-.PHONY: setup check smoke run run-mcq run-fr analyze extract profile-dataset profile-results glmm irt viz-descriptives viz-inference viz-mapping pipeline clean freeze
+.PHONY: setup check smoke run run-mcq run-fr analyze visualize extract profile-dataset profile-results glmm irt viz-descriptives viz-inference viz-mapping pipeline clean freeze
 
 setup:        ## install deps into a venv
 	python3.10 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
@@ -22,10 +22,9 @@ run-mcq:      ## cheaper: MCQ task only, whole roster
 run-fr:       ## free-response task only, whole roster (model-graded)
 	bash scripts/2b_runFR/run_tom_12dim_fr_within_family.sh
 
-analyze:      ## (legacy) logs -> results/<timestamp>/ CSV + trajectory figures
-	python scripts/4_analyze/summarize_visualize_results.py
+analyze: extract profile-dataset profile-results glmm irt ## run all analyses: extract -> profile -> model
 
-# --------------- new pipeline: 4_statistics -> 5_model -> 6_visualize ------
+# --------------- pipeline stages: 4_statistics -> 5_model -> 6_visualize ---
 
 extract:      ## extract item-level data from .eval logs -> results/item_level.csv
 	python scripts/4_statistics/extract_item_level.py
@@ -42,6 +41,8 @@ glmm: extract ## fit binomial GLMM trajectory -> modeling_inference/ CSVs
 irt: extract  ## fit developmental scaling + IRT -> modeling_mapping/ CSVs
 	Rscript scripts/5_model/developmental_scaling_irt.R
 
+visualize: viz-descriptives viz-inference viz-mapping ## run all visualization scripts
+
 viz-descriptives: profile-dataset profile-results ## descriptive figures
 	Rscript scripts/6_visualize/visualize_descriptives.R
 
@@ -51,7 +52,7 @@ viz-inference: glmm ## GLMM trajectory figures
 viz-mapping: irt ## developmental mapping figures
 	Rscript scripts/6_visualize/visualize_developmental_mapping.R
 
-pipeline: viz-descriptives viz-inference viz-mapping ## full analysis pipeline
+pipeline: analyze visualize ## full pipeline: analyze then visualize
 
 all: setup check smoke run analyze
 

@@ -13,7 +13,7 @@
 These are the 12 `tom_dimension` values, their `validated_age_band`, and `literature_basis` **exactly as
 tagged in `data/12dimToM_mcq_dataset.jsonl` / `data/12dimToM_freeresponse_dataset.jsonl`**, in
 developmental-acquisition order (the order encoded in `DIMENSION_DEVELOPMENTAL_ORDER` in
-`scripts/4_analyze/summarize_visualize_results.py`). This table is the single source of truth; the
+`scripts/0_misc/summarize_visualize_results.py`). This table is the single source of truth; the
 milestone detail in §3–§4 is supporting reference behind it.
 
 | # | Dimension (`tom_dimension`) | Age band | Construct grouping (§2) | Literature basis (as tagged on items) |
