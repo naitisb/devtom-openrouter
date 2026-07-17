@@ -75,7 +75,7 @@ from src.roster import AUTHOR_TO_FAMILY, _BY_MODEL
 
 GRADER_ENV_VAR = "DEVTOM_GRADER_MODEL"
 SAMEFAMILY_GRADER_ENV_VAR = "DEVTOM_GRADER_MODEL_SAMEFAMILY"
-GRADER_MAX_TOKENS_ENV = "DEVTOM_GRADER_MAX_TOKENS"
+GRADER_MAX_TOKENS_ENV = "GRADER_MAX_TOKENS"
 
 # Cap the grader's own output. Without this the grader.generate() call below uses
 # the model's default max_tokens (32k-65k); OpenRouter reserves credits for that
@@ -84,7 +84,7 @@ GRADER_MAX_TOKENS_ENV = "DEVTOM_GRADER_MAX_TOKENS"
 # generation config for the model UNDER TEST, not this independently-fetched
 # grader, so the cap has to live here. 8192 leaves ample room for a reasoning
 # judge's chain-of-thought plus the final "GRADE:" line while staying well under
-# a small key's per-request budget. Override with DEVTOM_GRADER_MAX_TOKENS.
+# a small key's per-request budget. Override with GRADER_MAX_TOKENS.
 DEFAULT_GRADER_MAX_TOKENS = 8192
 
 

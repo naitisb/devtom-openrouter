@@ -1,32 +1,28 @@
-"""Single source of truth for the DevToM-OpenRouter open-weight model roster.
+"""Single source of truth for the DevToM model roster.
 
-This is the one place that defines *which* open models are in the study panel,
+This is the one place that defines *which* models are in the study panel,
 what family and size-tier each belongs to, its verified public-release date,
 and its trend-line color. Both the shell runners (scripts/2a_runMCQ,
-scripts/2b_runFR, scripts/3_runAll — via `python -m src.roster --models <family>`) and the
-analysis script (scripts/4_analyze/summarize_visualize_results.py — via direct
-import) read from here, so the roster can't drift between "what we ran" and
-"what we plotted." This differs deliberately from the sibling devtom-eval
-project, which hard-codes the roster separately in its shells and its analysis
-script.
+scripts/2b_runFR, scripts/3_runAll — via `python -m src.roster --models <family>`),
+the analysis scripts (scripts/4_analyze/, scripts/4_statistics/), and the R
+modeling pipeline (scripts/5_model/, scripts/6_visualize/) read from here, so
+the roster can't drift between "what we ran" and "what we plotted."
 
 ## The research design this encodes
 
-The parent devtom-eval project compares *closed* frontier families (Anthropic,
-OpenAI) within themselves, oldest to newest. This project does the same
-"developmental trajectory" analysis for **open-weight** families served through
-OpenRouter — deliberately reaching **back in time to older releases** (Llama 2,
-Mistral 7B, the original DeepSeek LLM, Gemma 1) so each family has a real
-multi-year history to trend, not just its two latest checkpoints.
+The study compares model families across releases, oldest to newest. The roster
+covers both **closed frontier families** (Claude, GPT) evaluated via direct API
+and **open-weight families** (Llama, Qwen, DeepSeek, Mistral, Gemma) evaluated
+via OpenRouter — deliberately reaching **back in time to older releases** so
+each family has a real multi-release history to trend.
 
-- **family**  = the open-weight lineage (Llama, Qwen, DeepSeek, Mistral, Gemma).
-  Analogous to "provider family" in devtom-eval. Derived from the OpenRouter
-  author segment (`meta-llama` -> Llama, etc.).
+- **family**  = the model lineage (Claude, GPT, Llama, Qwen, DeepSeek, Mistral,
+  Gemma). Derived from the provider prefix (`anthropic` -> Claude,
+  `openai` -> GPT, `meta-llama` -> Llama, etc.).
 - **type**    = size/architecture tier *within* a family (e.g. "Llama small",
-  "Llama large", "Mistral MoE"). Orthogonal to family; each tier has its own
-  release history worth trending on its own line, exactly like "Claude Opus"
-  vs "Claude Sonnet" in devtom-eval. Collapsing tiers would hide whether a
-  given tier improved release over release.
+  "Llama large", "Claude Opus", "GPT reasoning"). Orthogonal to family; each
+  tier has its own release history worth trending on its own line. Collapsing
+  tiers would hide whether a given tier improved release over release.
 
 ## Slugs + dates: verified and frozen (2026-07-14)
 
@@ -66,21 +62,24 @@ removing models mid-study — that would make "what we ran" a moving target.
 from __future__ import annotations
 
 import argparse
+import datetime
 import sys
 from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
 class ModelEntry:
-    slug: str          # OpenRouter model id WITHOUT the leading "openrouter/"
-    family: str        # lineage label (Llama, Qwen, DeepSeek, Mistral, Gemma)
+    slug: str          # Model id WITHOUT the leading prefix (e.g. "meta-llama/llama-3.1-8b-instruct")
+    family: str        # lineage label (Claude, GPT, Llama, Qwen, DeepSeek, Mistral, Gemma)
     type: str          # size/arch tier within the family (own trend line)
     date: tuple[int, int, int]  # (year, month, day) public release
+    prefix: str = "openrouter"  # provider prefix: "openrouter", "anthropic", etc.
 
     @property
     def model(self) -> str:
-        """Full Inspect model string, e.g. 'openrouter/meta-llama/llama-3.1-8b-instruct'."""
-        return f"openrouter/{self.slug}"
+        """Full Inspect model string, e.g. 'openrouter/meta-llama/llama-3.1-8b-instruct'
+        or 'anthropic/claude-opus-4-6'."""
+        return f"{self.prefix}/{self.slug}"
 
 
 # Ordered oldest -> newest overall; grouped by family in the docs. Dates are the
@@ -88,6 +87,25 @@ class ModelEntry:
 # Contains ONLY models verified live + policy-routable (see EXCLUDED below for
 # those dropped, with reasons). Last verified 2026-07-14.
 ROSTER: list[ModelEntry] = [
+    # ---------------- Anthropic Claude (closed, direct API) ----------------
+    ModelEntry("claude-haiku-4-5-20251001",  "Claude", "Claude Haiku",  (2025, 10, 1),  prefix="anthropic"),
+    ModelEntry("claude-sonnet-4-5-20250929", "Claude", "Claude Sonnet", (2025, 9, 29),  prefix="anthropic"),
+    ModelEntry("claude-sonnet-4-6",          "Claude", "Claude Sonnet", (2026, 1, 14),  prefix="anthropic"),
+    ModelEntry("claude-opus-4-5-20251101",   "Claude", "Claude Opus",   (2025, 11, 1),  prefix="anthropic"),
+    ModelEntry("claude-opus-4-6",            "Claude", "Claude Opus",   (2026, 3, 4),   prefix="anthropic"),
+    ModelEntry("claude-opus-4-7",            "Claude", "Claude Opus",   (2026, 5, 22),  prefix="anthropic"),
+    ModelEntry("claude-opus-4-8",            "Claude", "Claude Opus",   (2026, 7, 10),  prefix="anthropic"),
+    ModelEntry("claude-fable-5",             "Claude", "Claude Fable",  (2026, 6, 24),  prefix="anthropic"),
+
+    # ---------------- OpenAI GPT (closed, via OpenRouter) ----------------
+    ModelEntry("openai/gpt-4o-2024-08-06",  "GPT", "GPT standard",       (2024, 8, 6)),
+    ModelEntry("openai/gpt-4o-mini",        "GPT", "GPT mini",           (2024, 7, 18)),
+    ModelEntry("openai/o1",                 "GPT", "GPT reasoning",      (2024, 12, 17)),
+    ModelEntry("openai/o1-mini",            "GPT", "GPT reasoning mini", (2024, 9, 12)),
+    ModelEntry("openai/o3-mini",            "GPT", "GPT reasoning mini", (2025, 1, 31)),
+    ModelEntry("openai/o3",                 "GPT", "GPT reasoning",      (2025, 4, 16)),
+    ModelEntry("openai/o4-mini",            "GPT", "GPT reasoning mini", (2025, 4, 16)),
+
     # ---------------- Meta Llama ----------------
     ModelEntry("meta-llama/llama-3.1-8b-instruct",   "Llama", "Llama small",    (2024, 7, 23)),
     ModelEntry("meta-llama/llama-3.1-70b-instruct",  "Llama", "Llama large",    (2024, 7, 23)),
@@ -154,12 +172,15 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("google/gemma-2-9b-it",   "Gemma", "Gemma small", (2024, 6, 27)),  "delisted"),
 ]
 
-# Family display order (oldest-founded lineage first-ish; mostly stable grouping).
-FAMILY_ORDER: list[str] = ["Llama", "Qwen", "DeepSeek", "Mistral", "Gemma"]
+# Family display order: closed frontier families first, then open-weight.
+FAMILY_ORDER: list[str] = ["Claude", "GPT", "Llama", "Qwen", "DeepSeek", "Mistral", "Gemma"]
 
-# OpenRouter author segment -> family label. Used to recover the family from a
-# raw model string like 'openrouter/meta-llama/llama-3-8b-instruct'.
+# Provider/author segment -> family label. Used to recover the family from a
+# raw model string like 'anthropic/claude-opus-4-6' or
+# 'openrouter/meta-llama/llama-3-8b-instruct'.
 AUTHOR_TO_FAMILY: dict[str, str] = {
+    "anthropic": "Claude",
+    "openai": "GPT",
     "meta-llama": "Llama",
     "qwen": "Qwen",
     "deepseek": "DeepSeek",
@@ -168,39 +189,49 @@ AUTHOR_TO_FAMILY: dict[str, str] = {
 }
 
 # Trend-line colors per size tier, hue-grouped by family so a chart reads as
-# "blues = Llama, purples = Qwen, ..." at a glance.
+# "reds = Claude, teals = GPT, blues = Llama, purples = Qwen, ..." at a glance.
 TYPE_COLORS: dict[str, str] = {
-    "Llama small":    "#9ecae1",
-    "Llama mid":      "#4292c6",
-    "Llama large":    "#08519c",
-    "Llama frontier": "#08306b",
-    "Qwen small":     "#bcbddc",
-    "Qwen mid":       "#807dba",
-    "Qwen large":     "#54278f",
-    "DeepSeek V":     "#66c2a4",
-    "DeepSeek R":     "#238b45",
-    "Mistral small":  "#fdae6b",
-    "Mistral MoE":    "#f16913",
-    "Mistral large":  "#a63603",
-    "Gemma small":    "#fa9fb5",
-    "Gemma mid":      "#dd3497",
-    "Gemma large":    "#7a0177",
+    "Claude Haiku":        "#fc9272",
+    "Claude Sonnet":       "#ef3b2c",
+    "Claude Opus":         "#a50f15",
+    "Claude Fable":        "#67000d",
+    "GPT mini":            "#99d8c9",
+    "GPT standard":        "#41ae76",
+    "GPT reasoning mini":  "#238b45",
+    "GPT reasoning":       "#00441b",
+    "Llama small":         "#9ecae1",
+    "Llama mid":           "#4292c6",
+    "Llama large":         "#08519c",
+    "Llama frontier":      "#08306b",
+    "Qwen small":          "#bcbddc",
+    "Qwen mid":            "#807dba",
+    "Qwen large":          "#54278f",
+    "DeepSeek V":          "#66c2a4",
+    "DeepSeek R":          "#006d2c",
+    "Mistral small":       "#fdae6b",
+    "Mistral MoE":         "#f16913",
+    "Mistral large":       "#a63603",
+    "Gemma small":         "#fa9fb5",
+    "Gemma mid":           "#dd3497",
+    "Gemma large":         "#7a0177",
 }
 
 # One representative color per family, for charts that collapse the size tiers
-# into a single line per family. Each is the strong/large-tier shade of that
-# family's TYPE_COLORS hue, so a family-collapsed chart reads with the same
-# "blues = Llama, purples = Qwen, ..." mapping as the per-tier charts.
+# into a single line per family.
 FAMILY_COLORS: dict[str, str] = {
+    "Claude":   "#a50f15",
+    "GPT":      "#238b45",
     "Llama":    "#08519c",
     "Qwen":     "#54278f",
-    "DeepSeek": "#238b45",
+    "DeepSeek": "#006d2c",
     "Mistral":  "#a63603",
     "Gemma":    "#7a0177",
 }
 
 # Size-tier display order within each family (small -> large), for stable legends.
 TYPE_ORDER: list[str] = [
+    "Claude Haiku", "Claude Sonnet", "Claude Opus", "Claude Fable",
+    "GPT mini", "GPT standard", "GPT reasoning mini", "GPT reasoning",
     "Llama small", "Llama mid", "Llama large", "Llama frontier",
     "Qwen small", "Qwen mid", "Qwen large",
     "DeepSeek V", "DeepSeek R",
@@ -220,6 +251,83 @@ FAMILY_CHRONOLOGICAL_ORDER: dict[str, list[str]] = {
     fam: [e.model for e in sorted((x for x in ROSTER if x.family == fam), key=lambda x: x.date)]
     for fam in FAMILY_ORDER
 }
+
+
+# Total parameter count (billions) per roster model, keyed by the slug's last
+# segment. Total (not active) params — see size_covariate_regression.py for the
+# MoE caveat (DeepSeek 671B total / ~37B active, Llama-4 MoE).
+PARAMS_B: dict[str, float] = {
+    "llama-3.1-8b-instruct": 8, "llama-3.1-70b-instruct": 70,
+    "llama-3.2-3b-instruct": 3, "llama-3.3-70b-instruct": 70,
+    "llama-4-scout": 109, "llama-4-maverick": 400,
+    "qwen-2.5-7b-instruct": 7, "qwen-2.5-72b-instruct": 72, "qwen3-32b": 32,
+    "deepseek-chat": 671, "deepseek-r1": 671,
+    "deepseek-chat-v3-0324": 671, "deepseek-r1-0528": 671,
+    "mistral-small-24b-instruct-2501": 24, "mistral-small-3.2-24b-instruct": 24,
+    "gemma-2-27b-it": 27, "gemma-3-4b-it": 4,
+    "gemma-3-12b-it": 12, "gemma-3-27b-it": 27,
+}
+
+
+def model_family(model: str) -> str:
+    """Family for a model string.
+
+    'openrouter/meta-llama/llama-3.1-8b-instruct' -> 'Llama',
+    'anthropic/claude-opus-4-6' -> 'Claude'. Strips leading router segments
+    ('openrouter/' or 'openai-api/local/'), then maps the first segment via
+    AUTHOR_TO_FAMILY. Unknown authors return the raw author string."""
+    parts = model.split("/")
+    if parts and parts[0] == "openrouter":
+        parts = parts[1:]
+    elif len(parts) >= 2 and parts[0] == "openai-api" and parts[1] == "local":
+        parts = parts[2:]
+    author = parts[0] if parts else model
+    return AUTHOR_TO_FAMILY.get(author, author)
+
+
+def _canonical_model(model: str) -> str:
+    """Normalize a model string to the canonical form used as keys in _BY_MODEL.
+    Handles 'openai-api/local/' prefix from selfhost GPU eval logs."""
+    if model in _BY_MODEL:
+        return model
+    parts = model.split("/")
+    if len(parts) >= 3 and parts[0] == "openai-api" and parts[1] == "local":
+        candidate = "openrouter/" + "/".join(parts[2:])
+        if candidate in _BY_MODEL:
+            return candidate
+    return model
+
+
+def model_type(model: str) -> str:
+    """Size/architecture tier label (e.g. 'Llama large', 'Qwen small'). Falls
+    back to '<Family> other' for anything not in the roster."""
+    canonical = _canonical_model(model)
+    if canonical in MODEL_TYPE:
+        return MODEL_TYPE[canonical]
+    return f"{model_family(model)} other"
+
+
+def model_release_date(model: str) -> datetime.date | None:
+    """Real release date, or None if unmapped."""
+    canonical = _canonical_model(model)
+    ymd = MODEL_RELEASE_DATE.get(canonical)
+    return datetime.date(*ymd) if ymd else None
+
+
+def model_sort_key(model: str) -> tuple[int, int, str]:
+    """(family rank, chronological rank within family, model) — unknown models
+    sort last within their family."""
+    family = model_family(model)
+    family_rank = FAMILY_ORDER.index(family) if family in FAMILY_ORDER else len(FAMILY_ORDER)
+    order = FAMILY_CHRONOLOGICAL_ORDER.get(family, [])
+    canonical = _canonical_model(model)
+    chrono_rank = order.index(canonical) if canonical in order else len(order)
+    return (family_rank, chrono_rank, model)
+
+
+def model_params_b(model: str) -> float | None:
+    """Total parameters (billions) for a model string, or None if unmapped."""
+    return PARAMS_B.get(model.split("/")[-1])
 
 
 def models_for_family(family: str) -> list[str]:

@@ -54,48 +54,22 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-# Reuse the sibling analysis module so "which logs / which family / which date"
-# stays identical across the pipeline (single source of truth for that logic).
+# Analysis-specific functions from the sibling script; model identity from roster.
 from summarize_visualize_results import (  # type: ignore[import-not-found]  # noqa: E402
     OVERALL_LABEL,
     build_model_pivot,
     collect_rows,
+)
+
+from src.roster import (  # noqa: E402
+    FAMILY_ORDER,
+    PARAMS_B,
     model_family,
+    model_params_b,
     model_release_date,
 )
 
-from src.roster import FAMILY_ORDER  # noqa: E402
-
-# Total parameter count (billions) per roster model, keyed by the slug's last
-# segment. Total (not active) params is the capacity proxy; note the MoE models —
-# DeepSeek V3/R1 are 671B total but ~37B active, and Llama-4 scout/maverick are
-# MoE (17B active, 109B/400B total) — so log10(total params) slightly overstates
-# the *compute* of these relative to dense models. Good enough as a size control;
-# swap to active params here if you want the compute-matched version. If this
-# becomes a permanent part of the pipeline, move it onto src.roster.ModelEntry.
-PARAMS_B: dict[str, float] = {
-    # Llama
-    "llama-3.1-8b-instruct": 8, "llama-3.1-70b-instruct": 70,
-    "llama-3.2-3b-instruct": 3, "llama-3.3-70b-instruct": 70,
-    "llama-4-scout": 109, "llama-4-maverick": 400,
-    # Qwen
-    "qwen-2.5-7b-instruct": 7, "qwen-2.5-72b-instruct": 72, "qwen3-32b": 32,
-    # DeepSeek (MoE, 671B total / ~37B active)
-    "deepseek-chat": 671, "deepseek-r1": 671,
-    "deepseek-chat-v3-0324": 671, "deepseek-r1-0528": 671,
-    # Mistral
-    "mistral-small-24b-instruct-2501": 24, "mistral-small-3.2-24b-instruct": 24,
-    # Gemma
-    "gemma-2-27b-it": 27, "gemma-3-4b-it": 4,
-    "gemma-3-12b-it": 12, "gemma-3-27b-it": 27,
-}
-
 _EPOCH = datetime.date(2024, 1, 1)  # x=0 for the year axis, so slopes read as acc/yr
-
-
-def model_params_b(model: str) -> float | None:
-    """Total parameters (billions) for a model string, or None if unmapped."""
-    return PARAMS_B.get(model.split("/")[-1])
 
 
 def _significance(p: float) -> str:

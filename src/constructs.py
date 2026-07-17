@@ -4,9 +4,10 @@ Single source of truth for the *construct* grouping — a practical, interpretiv
 layer above `tom_dimension` that collapses the 12 fine-grained dimensions into
 six developmental constructs. Both the data-tagging step
 (scripts/0_prep/add_construct_to_datasets.py, which writes `tom_construct` into
-each item's metadata) and the analysis/visualization
-(scripts/4_analyze/summarize_visualize_results.py) read from here, so the
-grouping can't drift between the datasets and the plots.
+each item's metadata), the analysis/visualization scripts
+(scripts/4_analyze/, scripts/4_statistics/), and the R modeling pipeline
+(scripts/5_model/, scripts/6_visualize/) read from here, so the grouping can't
+drift between the datasets and the plots.
 
 The six constructs and their member dimensions (see docs/taxonomy.md,
 docs/dev_norms.md §1 for age bands + citations):
@@ -85,6 +86,34 @@ CONSTRUCT_COLORS: dict[str, str] = {
     DECEPTION: "#8172B3",
     PRAGMATIC: "#937860",
 }
+
+
+# Dimension display order by typical age of acquisition in children (earliest
+# first). The first five are the canonical Wellman & Liu (2004) ToM Scale order;
+# the remaining seven advanced-ToM dimensions follow a best-effort synthesis of
+# the advanced-ToM literature.
+DIMENSION_DEVELOPMENTAL_ORDER: list[str] = [
+    "Diverse Desires",
+    "Diverse Beliefs",
+    "Knowledge Access / Ignorance",
+    "Emotion Recognition",
+    "First-Order False Belief",
+    "Intention vs. Accident",
+    "Hidden Emotion (Appearance vs. Reality)",
+    "Second-Order False Belief",
+    "White Lies / Prosocial Deception",
+    "Sarcasm",
+    "Faux Pas Detection",
+    "Irony",
+]
+
+
+def dimension_sort_key(dim: str) -> tuple[int, str]:
+    """(developmental rank, dimension) — a dimension not in
+    DIMENSION_DEVELOPMENTAL_ORDER sorts after all listed ones, alphabetically."""
+    rank = (DIMENSION_DEVELOPMENTAL_ORDER.index(dim) if dim in DIMENSION_DEVELOPMENTAL_ORDER
+            else len(DIMENSION_DEVELOPMENTAL_ORDER))
+    return (rank, dim)
 
 
 def construct_for_dimension(dimension: str) -> str | None:

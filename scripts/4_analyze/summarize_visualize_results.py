@@ -86,7 +86,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 # Model identity constants come from the shared roster — see src/roster.py.
 from src.roster import (
-    AUTHOR_TO_FAMILY,
     FAMILY_CHRONOLOGICAL_ORDER,
     FAMILY_COLORS,
     FAMILY_ORDER,
@@ -94,6 +93,10 @@ from src.roster import (
     MODEL_TYPE,
     TYPE_COLORS,
     TYPE_ORDER,
+    model_family,
+    model_release_date,
+    model_sort_key,
+    model_type,
 )
 
 # The developmental-construct grouping over the 12 dimensions — single source of
@@ -102,35 +105,14 @@ from src.roster import (
 from src.constructs import (
     CONSTRUCT_COLORS,
     CONSTRUCT_DEVELOPMENTAL_ORDER,
+    DIMENSION_DEVELOPMENTAL_ORDER,
     construct_for_dimension,
     construct_sort_key,
+    dimension_sort_key,
 )
 
 TASK_NAMES = {"tom_12dim_mcq", "tom_12dim_freeresponse"}
 OVERALL_LABEL = "ALL (overall)"
-
-# Heatmap columns are ordered by typical age of acquisition in children (earliest
-# first), not alphabetically, so the reader can see whether models track the same
-# developmental sequence humans do. The first five — Diverse Desires through Hidden
-# Emotion — are the canonical Wellman & Liu (2004) ToM Scale order; this project
-# reuses devtom-eval's item bank, built against that framework. The remaining seven
-# "advanced ToM" dimensions have no single settled canonical order — their
-# sequencing here is a best-effort synthesis of the advanced-ToM literature.
-DIMENSION_DEVELOPMENTAL_ORDER: list[str] = [
-    "Diverse Desires",
-    "Diverse Beliefs",
-    "Knowledge Access / Ignorance",
-    "Emotion Recognition",
-    "First-Order False Belief",
-    "Intention vs. Accident",
-    "Hidden Emotion (Appearance vs. Reality)",
-    "Second-Order False Belief",
-    "White Lies / Prosocial Deception",
-    "Sarcasm",
-    "Faux Pas Detection",
-    "Irony",
-]
-
 
 def collect_rows(log_dir: str) -> list[dict]:
     rows: list[dict] = []
@@ -181,57 +163,6 @@ def collect_rows(log_dir: str) -> list[dict]:
                              "accuracy": overall.get("accuracy"),
                              "stderr": overall.get("stderr")})
     return rows
-
-
-def model_family(model: str) -> str:
-    """Open-weight family for an OpenRouter model string.
-
-    'openrouter/meta-llama/llama-3.1-8b-instruct' -> 'Llama',
-    'openrouter/qwen/qwen3-8b' -> 'Qwen'. Strips the leading 'openrouter/'
-    router segment (unlike devtom-eval, where the first segment WAS the
-    provider), then maps the author segment via roster.AUTHOR_TO_FAMILY.
-    Unknown authors return the raw author string, which won't match
-    FAMILY_ORDER and so gets filtered out by collect_rows().
-    """
-    parts = model.split("/")
-    if parts and parts[0] == "openrouter":
-        parts = parts[1:]
-    author = parts[0] if parts else model
-    return AUTHOR_TO_FAMILY.get(author, author)
-
-
-def model_type(model: str) -> str:
-    """Size/architecture tier label for the model-type trend line (e.g. 'Llama
-    large', 'Qwen small'). Falls back to '<Family> other' for anything not in the
-    roster (e.g. a one-off run of a model added after roster.py was last updated)."""
-    if model in MODEL_TYPE:
-        return MODEL_TYPE[model]
-    return f"{model_family(model)} other"
-
-
-def model_release_date(model: str) -> datetime.date | None:
-    """Real release date for the trend-plot x-axis, or None if unmapped — callers
-    skip points with no known date rather than guessing a placement."""
-    ymd = MODEL_RELEASE_DATE.get(model)
-    return datetime.date(*ymd) if ymd else None
-
-
-def model_sort_key(model: str) -> tuple[int, int, str]:
-    """(family rank, chronological rank within family, model) — unknown models sort
-    last within their family (or last overall if the family itself is unrecognized)."""
-    family = model_family(model)
-    family_rank = FAMILY_ORDER.index(family) if family in FAMILY_ORDER else len(FAMILY_ORDER)
-    order = FAMILY_CHRONOLOGICAL_ORDER.get(family, [])
-    chrono_rank = order.index(model) if model in order else len(order)
-    return (family_rank, chrono_rank, model)
-
-
-def dimension_sort_key(dim: str) -> tuple[int, str]:
-    """(developmental rank, dimension) — a dimension not in
-    DIMENSION_DEVELOPMENTAL_ORDER sorts after all listed ones, alphabetically."""
-    rank = (DIMENSION_DEVELOPMENTAL_ORDER.index(dim) if dim in DIMENSION_DEVELOPMENTAL_ORDER
-            else len(DIMENSION_DEVELOPMENTAL_ORDER))
-    return (rank, dim)
 
 
 def build_model_pivot(df: pd.DataFrame, task: str | None = None) -> pd.DataFrame:

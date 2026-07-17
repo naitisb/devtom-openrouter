@@ -58,11 +58,13 @@ if str(PROJECT_ROOT) not in sys.path:
 from inspect_ai.log import list_eval_logs, read_eval_log  # noqa: E402
 from inspect_ai.scorer import CORRECT  # noqa: E402
 
-# Reuse identity logic from the sibling analysis scripts so nothing drifts.
-from summarize_visualize_results import model_family, model_release_date  # type: ignore  # noqa: E402
-from size_covariate_regression import PARAMS_B, model_params_b  # type: ignore  # noqa: E402
-
-from src.roster import FAMILY_ORDER  # noqa: E402
+from src.roster import (  # noqa: E402
+    FAMILY_ORDER,
+    PARAMS_B,
+    model_family,
+    model_params_b,
+    model_release_date,
+)
 
 TASK_NAMES = {"tom_12dim_mcq", "tom_12dim_freeresponse"}
 _EPOCH = datetime.date(2024, 1, 1)
