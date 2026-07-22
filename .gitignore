@@ -12,6 +12,10 @@ venv/
 .pytest_cache/
 .ipynb_checkpoints/
 
+# Result powerpoints and posters
+results/ppts/*
+results/posters/*
+
 # Inspect logs / outputs
 logs/
 !logs/.gitkeep
