@@ -1,0 +1,25 @@
+task_type,tom_dimension,count
+freeresponse,Diverse Beliefs,5
+freeresponse,Diverse Desires,5
+freeresponse,Emotion Recognition,5
+freeresponse,Faux Pas Detection,5
+freeresponse,First-Order False Belief,5
+freeresponse,Hidden Emotion (Appearance vs. Reality),5
+freeresponse,Intention vs. Accident,5
+freeresponse,Irony,5
+freeresponse,Knowledge Access / Ignorance,5
+freeresponse,Sarcasm,5
+freeresponse,Second-Order False Belief,5
+freeresponse,White Lies / Prosocial Deception,5
+mcq,Diverse Beliefs,10
+mcq,Diverse Desires,10
+mcq,Emotion Recognition,12
+mcq,Faux Pas Detection,10
+mcq,First-Order False Belief,12
+mcq,Hidden Emotion (Appearance vs. Reality),10
+mcq,Intention vs. Accident,10
+mcq,Irony,10
+mcq,Knowledge Access / Ignorance,10
+mcq,Sarcasm,10
+mcq,Second-Order False Belief,10
+mcq,White Lies / Prosocial Deception,10

@@ -1,0 +1,21 @@
+model,family,tier,task,frontier_band,guttman_cr,scalability,date_years,release_date
+anthropic/claude-fable-5,Claude,Claude Fable,tom_12dim_freeresponse,10-12 yrs,1,1,2.4777549623545516,2026-06-24
+anthropic/claude-fable-5,Claude,Claude Fable,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,2.4777549623545516,2026-06-24
+anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,tom_12dim_freeresponse,10-12 yrs,0.978,0.9559,1.749486652977413,2025-10-01
+anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,1.749486652977413,2025-10-01
+anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,tom_12dim_freeresponse,10-12 yrs,0.9825,0.9651,1.834360027378508,2025-11-01
+anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,tom_12dim_mcq,4-5 yrs,0.7995,0.599,1.834360027378508,2025-11-01
+anthropic/claude-opus-4-6,Claude,Claude Opus,tom_12dim_freeresponse,10-12 yrs,0.9825,0.9651,2.1711156741957565,2026-03-04
+anthropic/claude-opus-4-6,Claude,Claude Opus,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,2.1711156741957565,2026-03-04
+anthropic/claude-opus-4-7,Claude,Claude Opus,tom_12dim_freeresponse,10-12 yrs,1,1,2.3874058863791925,2026-05-22
+anthropic/claude-opus-4-7,Claude,Claude Opus,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,2.3874058863791925,2026-05-22
+anthropic/claude-opus-4-8,Claude,Claude Opus,tom_12dim_freeresponse,10-12 yrs,1,1,2.521560574948665,2026-07-10
+anthropic/claude-opus-4-8,Claude,Claude Opus,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,2.521560574948665,2026-07-10
+anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,tom_12dim_freeresponse,10-12 yrs,1,1,1.7440109514031483,2025-09-29
+anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,1.7440109514031483,2025-09-29
+anthropic/claude-sonnet-4-6,Claude,Claude Sonnet,tom_12dim_freeresponse,10-12 yrs,1,1,2.0369609856262834,2026-01-14
+anthropic/claude-sonnet-4-6,Claude,Claude Sonnet,tom_12dim_mcq,NA,0.9182,0.8363,2.0369609856262834,2026-01-14
+openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,10-12 yrs,0.99,0.98,0.5585215605749486,2024-07-23
+openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,3-5 yrs,0.8142,0.6284,0.5585215605749486,2024-07-23
+openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,10-12 yrs,0.9534,0.9069,0.9308692676249144,2024-12-06
+openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,0.9308692676249144,2024-12-06

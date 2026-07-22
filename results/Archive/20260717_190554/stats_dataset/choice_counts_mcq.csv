@@ -1,0 +1,13 @@
+tom_dimension,count,mean,std,min,25%,50%,75%,max
+Diverse Beliefs,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Diverse Desires,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Emotion Recognition,12.0,4.0,0.0,4.0,4.0,4.0,4.0,4.0
+Faux Pas Detection,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+First-Order False Belief,12.0,2.0833333333333335,0.2886751345948128,2.0,2.0,2.0,2.0,3.0
+Hidden Emotion (Appearance vs. Reality),10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Intention vs. Accident,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Irony,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Knowledge Access / Ignorance,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Sarcasm,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+Second-Order False Belief,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0
+White Lies / Prosocial Deception,10.0,2.0,0.0,2.0,2.0,2.0,2.0,2.0

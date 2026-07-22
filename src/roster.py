@@ -91,20 +91,20 @@ ROSTER: list[ModelEntry] = [
     ModelEntry("claude-haiku-4-5-20251001",  "Claude", "Claude Haiku",  (2025, 10, 1),  prefix="anthropic"),
     ModelEntry("claude-sonnet-4-5-20250929", "Claude", "Claude Sonnet", (2025, 9, 29),  prefix="anthropic"),
     ModelEntry("claude-sonnet-4-6",          "Claude", "Claude Sonnet", (2026, 1, 14),  prefix="anthropic"),
+    ModelEntry("claude-sonnet-5",            "Claude", "Claude Sonnet", (2026, 6, 24),  prefix="anthropic"),
     ModelEntry("claude-opus-4-5-20251101",   "Claude", "Claude Opus",   (2025, 11, 1),  prefix="anthropic"),
     ModelEntry("claude-opus-4-6",            "Claude", "Claude Opus",   (2026, 3, 4),   prefix="anthropic"),
     ModelEntry("claude-opus-4-7",            "Claude", "Claude Opus",   (2026, 5, 22),  prefix="anthropic"),
     ModelEntry("claude-opus-4-8",            "Claude", "Claude Opus",   (2026, 7, 10),  prefix="anthropic"),
     ModelEntry("claude-fable-5",             "Claude", "Claude Fable",  (2026, 6, 24),  prefix="anthropic"),
 
-    # ---------------- OpenAI GPT (closed, via OpenRouter) ----------------
-    ModelEntry("openai/gpt-4o-2024-08-06",  "GPT", "GPT standard",       (2024, 8, 6)),
-    ModelEntry("openai/gpt-4o-mini",        "GPT", "GPT mini",           (2024, 7, 18)),
-    ModelEntry("openai/o1",                 "GPT", "GPT reasoning",      (2024, 12, 17)),
-    ModelEntry("openai/o1-mini",            "GPT", "GPT reasoning mini", (2024, 9, 12)),
-    ModelEntry("openai/o3-mini",            "GPT", "GPT reasoning mini", (2025, 1, 31)),
-    ModelEntry("openai/o3",                 "GPT", "GPT reasoning",      (2025, 4, 16)),
-    ModelEntry("openai/o4-mini",            "GPT", "GPT reasoning mini", (2025, 4, 16)),
+    # ---------------- OpenAI GPT (closed, direct API) ----------------
+    ModelEntry("gpt-4o-2024-08-06",  "GPT", "GPT standard",       (2024, 8, 6),  prefix="openai"),
+    ModelEntry("gpt-4o-mini",        "GPT", "GPT mini",           (2024, 7, 18), prefix="openai"),
+    ModelEntry("o1",                 "GPT", "GPT reasoning",      (2024, 12, 17), prefix="openai"),
+    ModelEntry("o3-mini",            "GPT", "GPT reasoning mini", (2025, 1, 31), prefix="openai"),
+    ModelEntry("o3",                 "GPT", "GPT reasoning",      (2025, 4, 16), prefix="openai"),
+    ModelEntry("o4-mini",            "GPT", "GPT reasoning mini", (2025, 4, 16), prefix="openai"),
 
     # ---------------- Meta Llama ----------------
     ModelEntry("meta-llama/llama-3.1-8b-instruct",   "Llama", "Llama small",    (2024, 7, 23)),
@@ -119,21 +119,10 @@ ROSTER: list[ModelEntry] = [
     ModelEntry("qwen/qwen-2.5-72b-instruct",         "Qwen", "Qwen large", (2024, 9, 19)),
     ModelEntry("qwen/qwen3-32b",                     "Qwen", "Qwen mid",   (2025, 4, 29)),
 
-    # ---------------- DeepSeek ----------------
-    ModelEntry("deepseek/deepseek-chat",             "DeepSeek", "DeepSeek V", (2024, 12, 26)),  # V3
-    ModelEntry("deepseek/deepseek-r1",               "DeepSeek", "DeepSeek R", (2025, 1, 20)),
-    ModelEntry("deepseek/deepseek-chat-v3-0324",     "DeepSeek", "DeepSeek V", (2025, 3, 24)),
-    ModelEntry("deepseek/deepseek-r1-0528",          "DeepSeek", "DeepSeek R", (2025, 5, 28)),
-
     # ---------------- Mistral ----------------
     ModelEntry("mistralai/mistral-small-24b-instruct-2501", "Mistral", "Mistral small", (2025, 1, 30)),
     ModelEntry("mistralai/mistral-small-3.2-24b-instruct",  "Mistral", "Mistral small", (2025, 6, 20)),
 
-    # ---------------- Google Gemma (open weights) ----------------
-    ModelEntry("google/gemma-2-27b-it",  "Gemma", "Gemma large", (2024, 6, 27)),
-    ModelEntry("google/gemma-3-4b-it",   "Gemma", "Gemma small", (2025, 3, 12)),
-    ModelEntry("google/gemma-3-12b-it",  "Gemma", "Gemma mid",   (2025, 3, 12)),
-    ModelEntry("google/gemma-3-27b-it",  "Gemma", "Gemma large", (2025, 3, 12)),
 ]
 
 # Models the study intended to include but that were NOT routable at last check
@@ -143,6 +132,9 @@ ROSTER: list[ModelEntry] = [
 # or the analysis script. The panel is frozen (see module docstring): these stay
 # excluded for the duration of the study even if a slug later becomes routable.
 EXCLUDED: list[tuple[ModelEntry, str]] = [
+    # ---------------- OpenAI GPT ----------------
+    (ModelEntry("o1-mini", "GPT", "GPT reasoning mini", (2024, 9, 12), prefix="openai"), "retired"),
+
     # ---------------- Meta Llama ----------------
     (ModelEntry("meta-llama/llama-2-70b-chat",        "Llama", "Llama large",    (2023, 7, 18)),  "delisted"),
     (ModelEntry("meta-llama/llama-3-8b-instruct",     "Llama", "Llama small",    (2024, 4, 18)),  "delisted"),
@@ -150,6 +142,8 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("meta-llama/llama-3.1-405b-instruct", "Llama", "Llama frontier", (2024, 7, 23)),  "delisted"),
 
     # ---------------- Alibaba Qwen ----------------
+    (ModelEntry("qwen/qwen-1.5-7b-chat",              "Qwen", "Qwen small", (2024, 2, 4)),  "delisted"),
+    (ModelEntry("qwen/qwen-1.5-14b-chat",             "Qwen", "Qwen mid",   (2024, 2, 4)),  "delisted"),
     (ModelEntry("qwen/qwen-1.5-72b-chat",             "Qwen", "Qwen large", (2024, 2, 4)),  "delisted"),
     (ModelEntry("qwen/qwen-2-7b-instruct",            "Qwen", "Qwen small", (2024, 6, 6)),  "delisted"),
     (ModelEntry("qwen/qwen-2-72b-instruct",           "Qwen", "Qwen large", (2024, 6, 6)),  "delisted"),
@@ -157,10 +151,17 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("qwen/qwen3-235b-a22b",               "Qwen", "Qwen large", (2025, 4, 29)), "no-zdr"),
 
     # ---------------- DeepSeek ----------------
+    (ModelEntry("deepseek/deepseek-chat",             "DeepSeek", "DeepSeek V", (2024, 12, 26)),  "insufficient-variability"),
+    (ModelEntry("deepseek/deepseek-r1",               "DeepSeek", "DeepSeek R", (2025, 1, 20)),   "insufficient-variability"),
+    (ModelEntry("deepseek/deepseek-chat-v3-0324",     "DeepSeek", "DeepSeek V", (2025, 3, 24)),   "insufficient-variability"),
+    (ModelEntry("deepseek/deepseek-r1-0528",          "DeepSeek", "DeepSeek R", (2025, 5, 28)),   "insufficient-variability"),
+    (ModelEntry("deepseek/deepseek-llm-7b-chat",      "DeepSeek", "DeepSeek V", (2023, 11, 29)),  "delisted"),
     (ModelEntry("deepseek/deepseek-llm-67b-chat",     "DeepSeek", "DeepSeek V", (2023, 11, 29)),  "delisted"),
 
     # ---------------- Mistral ----------------
     (ModelEntry("mistralai/mistral-7b-instruct",      "Mistral", "Mistral small", (2023, 9, 27)),  "delisted"),
+    (ModelEntry("mistralai/mistral-7b-instruct-v0.2", "Mistral", "Mistral small", (2024, 1, 15)),  "delisted"),
+    (ModelEntry("mistralai/mistral-7b-instruct-v0.3", "Mistral", "Mistral small", (2024, 5, 22)),  "delisted"),
     (ModelEntry("mistralai/mixtral-8x7b-instruct",    "Mistral", "Mistral MoE",   (2023, 12, 11)), "delisted"),
     (ModelEntry("mistralai/mistral-large",            "Mistral", "Mistral large", (2024, 2, 26)),  "no-zdr"),
     (ModelEntry("mistralai/mixtral-8x22b-instruct",   "Mistral", "Mistral MoE",   (2024, 4, 17)),  "no-zdr"),
@@ -168,12 +169,16 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("mistralai/mistral-large-2411",       "Mistral", "Mistral large", (2024, 11, 18)), "delisted"),
 
     # ---------------- Google Gemma (open weights) ----------------
+    (ModelEntry("google/gemma-2-27b-it",  "Gemma", "Gemma large", (2024, 6, 27)),  "insufficient-variability"),
+    (ModelEntry("google/gemma-3-4b-it",   "Gemma", "Gemma small", (2025, 3, 12)),  "insufficient-variability"),
+    (ModelEntry("google/gemma-3-12b-it",  "Gemma", "Gemma mid",   (2025, 3, 12)),  "insufficient-variability"),
+    (ModelEntry("google/gemma-3-27b-it",  "Gemma", "Gemma large", (2025, 3, 12)),  "insufficient-variability"),
     (ModelEntry("google/gemma-7b-it",     "Gemma", "Gemma large", (2024, 2, 21)),  "delisted"),
     (ModelEntry("google/gemma-2-9b-it",   "Gemma", "Gemma small", (2024, 6, 27)),  "delisted"),
 ]
 
 # Family display order: closed frontier families first, then open-weight.
-FAMILY_ORDER: list[str] = ["Claude", "GPT", "Llama", "Qwen", "DeepSeek", "Mistral", "Gemma"]
+FAMILY_ORDER: list[str] = ["Claude", "GPT", "Llama", "Qwen", "Mistral"]
 
 # Provider/author segment -> family label. Used to recover the family from a
 # raw model string like 'anthropic/claude-opus-4-6' or
@@ -240,10 +245,23 @@ TYPE_ORDER: list[str] = [
 ]
 
 
-# ----- derived lookups (built once from ROSTER) -----
+# ----- derived lookups (built once from ROSTER + EXCLUDED) -----
 _BY_MODEL = {e.model: e for e in ROSTER}
-MODEL_TYPE: dict[str, str] = {e.model: e.type for e in ROSTER}
-MODEL_RELEASE_DATE: dict[str, tuple[int, int, int]] = {e.model: e.date for e in ROSTER}
+_BY_MODEL.update({e.model: e for e, _ in EXCLUDED})
+MODEL_TYPE: dict[str, str] = {m: e.type for m, e in _BY_MODEL.items()}
+MODEL_RELEASE_DATE: dict[str, tuple[int, int, int]] = {m: e.date for m, e in _BY_MODEL.items()}
+
+# HuggingFace model ids sometimes differ from OpenRouter slugs (especially Qwen
+# dropping the dash: "qwen2.5-72b" vs "qwen-2.5-72b"). Map variant slugs to
+# the canonical slug used in ROSTER/EXCLUDED so local-run logs resolve correctly.
+_SLUG_ALIASES: dict[str, str] = {
+    "qwen/qwen2.5-7b-instruct":  "qwen/qwen-2.5-7b-instruct",
+    "qwen/qwen2.5-72b-instruct": "qwen/qwen-2.5-72b-instruct",
+    "qwen/qwen2-7b-instruct":    "qwen/qwen-2-7b-instruct",
+    "qwen/qwen2-72b-instruct":   "qwen/qwen-2-72b-instruct",
+    "qwen/qwen1.5-7b-chat":      "qwen/qwen-1.5-7b-chat",
+    "qwen/qwen1.5-14b-chat":     "qwen/qwen-1.5-14b-chat",
+}
 
 # Chronological (oldest->newest) model list per family, matching the plotting
 # order used by the analysis script.
@@ -287,14 +305,21 @@ def model_family(model: str) -> str:
 
 def _canonical_model(model: str) -> str:
     """Normalize a model string to the canonical form used as keys in _BY_MODEL.
-    Handles 'openai-api/local/' prefix from selfhost GPU eval logs."""
+    Handles 'openai-api/local/' prefix from selfhost GPU eval logs and slug
+    aliases (e.g. HuggingFace 'qwen2.5' vs OpenRouter 'qwen-2.5')."""
     if model in _BY_MODEL:
         return model
     parts = model.split("/")
     if len(parts) >= 3 and parts[0] == "openai-api" and parts[1] == "local":
-        candidate = "openrouter/" + "/".join(parts[2:])
+        slug = "/".join(parts[2:])
+        candidate = "openrouter/" + slug
         if candidate in _BY_MODEL:
             return candidate
+        aliased = _SLUG_ALIASES.get(slug)
+        if aliased:
+            candidate = "openrouter/" + aliased
+            if candidate in _BY_MODEL:
+                return candidate
     return model
 
 

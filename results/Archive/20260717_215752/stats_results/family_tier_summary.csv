@@ -1,0 +1,18 @@
+family,tier,n_models,mean_accuracy,sd_accuracy,n
+Claude,Claude Fable,1,1.0,0.0,184
+Claude,Claude Haiku,1,0.962,0.1918,184
+Claude,Claude Opus,4,0.9891,0.1038,736
+Claude,Claude Sonnet,3,0.8478,0.3595,552
+DeepSeek,DeepSeek V,2,0.4674,0.4996,368
+GPT,GPT mini,1,0.8967,0.3051,184
+GPT,GPT reasoning,1,0.9457,0.2273,184
+GPT,GPT reasoning mini,2,0.913,0.2822,368
+GPT,GPT standard,1,0.9402,0.2377,184
+Gemma,Gemma large,1,0.6902,0.4637,184
+Llama,Llama large,2,0.9701,0.1705,368
+Llama,Llama small,2,0.875,0.3312,368
+Mistral,Mistral MoE,1,0.0,0.0,184
+Mistral,Mistral small,3,0.567,0.4959,552
+Qwen,Qwen large,3,0.9547,0.2081,552
+Qwen,Qwen mid,1,0.4837,0.5011,184
+Qwen,Qwen small,4,0.8247,0.3805,736

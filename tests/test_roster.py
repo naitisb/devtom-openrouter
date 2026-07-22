@@ -29,7 +29,7 @@ def test_slugs_unique():
 def test_model_strings_route_via_known_prefix_and_end_in_slug():
     # Models route through OpenRouter, direct API (anthropic/), or locally.
     # Either way the model string ends in its slug and must be classifiable.
-    KNOWN_PREFIXES = ("openrouter/", "openai-api/local/", "anthropic/")
+    KNOWN_PREFIXES = ("openrouter/", "openai-api/local/", "anthropic/", "openai/")
     for e in ROSTER:
         assert e.model.endswith(e.slug), f"{e.model} does not end with slug {e.slug}"
         assert e.model.startswith(KNOWN_PREFIXES), \
@@ -37,12 +37,16 @@ def test_model_strings_route_via_known_prefix_and_end_in_slug():
         # The family must be recoverable from the raw model string: strip the
         # router prefix and map the author segment via AUTHOR_TO_FAMILY (the
         # same scheme src/scorer.py and the analysis script rely on).
-        tail = e.model.removeprefix("openai-api/local/").removeprefix("openrouter/").removeprefix("anthropic/")
+        tail = e.model.removeprefix("openai-api/local/").removeprefix("openrouter/").removeprefix("anthropic/").removeprefix("openai/")
         author = tail.split("/", 1)[0]
-        # For anthropic/ models, the author IS the prefix itself
+        # For anthropic/ and openai/ models, the author IS the prefix itself
         if e.model.startswith("anthropic/"):
             assert AUTHOR_TO_FAMILY.get("anthropic") == e.family, \
                 f"anthropic prefix should map to {e.family}"
+            continue
+        if e.model.startswith("openai/"):
+            assert AUTHOR_TO_FAMILY.get("openai") == e.family, \
+                f"openai prefix should map to {e.family}"
             continue
         assert AUTHOR_TO_FAMILY.get(author) == e.family, \
             f"{e.model} author {author!r} does not map to family {e.family}"

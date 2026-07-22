@@ -1,0 +1,12 @@
+family,tier,n_models,mean_accuracy,sd_accuracy,n
+Claude,Claude Fable,1,1.0,0.0,184
+Claude,Claude Haiku,1,0.962,0.1918,184
+Claude,Claude Opus,4,0.9891,0.1038,736
+Claude,Claude Sonnet,3,0.8478,0.3595,552
+DeepSeek,DeepSeek other,2,0.4674,0.4996,368
+Gemma,Gemma other,1,0.6902,0.4637,184
+Llama,Llama large,1,0.9674,0.1781,184
+Llama,Llama other,2,0.9321,0.252,368
+Llama,Llama small,1,0.8587,0.3493,184
+Mistral,Mistral other,4,0.4253,0.4947,736
+Qwen,Qwen other,8,0.8308,0.375,1472

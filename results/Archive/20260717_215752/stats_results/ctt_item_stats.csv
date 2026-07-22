@@ -1,0 +1,185 @@
+task,item_id,tom_dimension,facility,discrimination,flag,n_models
+tom_12dim_freeresponse,DBEL_FR_01,Diverse Beliefs,0.7273,0.4738,,33
+tom_12dim_freeresponse,DBEL_FR_02,Diverse Beliefs,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,DBEL_FR_03,Diverse Beliefs,0.9091,0.6111,too-easy,33
+tom_12dim_freeresponse,DBEL_FR_04,Diverse Beliefs,0.9394,0.7261,too-easy,33
+tom_12dim_freeresponse,DBEL_FR_05,Diverse Beliefs,0.6364,0.2869,low-disc,33
+tom_12dim_freeresponse,DD_FR_01,Diverse Desires,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,DD_FR_02,Diverse Desires,0.5758,0.2996,low-disc,33
+tom_12dim_freeresponse,DD_FR_03,Diverse Desires,0.9091,0.6652,too-easy,33
+tom_12dim_freeresponse,DD_FR_04,Diverse Desires,0.9394,0.5089,too-easy,33
+tom_12dim_freeresponse,DD_FR_05,Diverse Desires,0.9394,0.5307,too-easy,33
+tom_12dim_freeresponse,ER_FR_01,Emotion Recognition,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,ER_FR_02,Emotion Recognition,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,ER_FR_03,Emotion Recognition,0.9394,0.7044,too-easy,33
+tom_12dim_freeresponse,ER_FR_04,Emotion Recognition,0.6061,0.579,,33
+tom_12dim_freeresponse,ER_FR_05,Emotion Recognition,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,FOFB_FR_01,First-Order False Belief,0.7273,0.6366,,33
+tom_12dim_freeresponse,FOFB_FR_02,First-Order False Belief,0.9091,0.6291,too-easy,33
+tom_12dim_freeresponse,FOFB_FR_03,First-Order False Belief,0.7879,0.7197,,33
+tom_12dim_freeresponse,FOFB_FR_04,First-Order False Belief,0.8182,0.5281,,33
+tom_12dim_freeresponse,FOFB_FR_05,First-Order False Belief,0.6364,0.6423,,33
+tom_12dim_freeresponse,FP_FR_01,Faux Pas Detection,0.2121,0.1738,low-disc,33
+tom_12dim_freeresponse,FP_FR_02,Faux Pas Detection,0.3333,0.5587,,33
+tom_12dim_freeresponse,FP_FR_03,Faux Pas Detection,0.5152,0.4666,,33
+tom_12dim_freeresponse,FP_FR_04,Faux Pas Detection,0.7879,0.4345,,33
+tom_12dim_freeresponse,FP_FR_05,Faux Pas Detection,0.6061,0.579,,33
+tom_12dim_freeresponse,HE_FR_01,Hidden Emotion (Appearance vs. Reality),0.7576,0.6257,,33
+tom_12dim_freeresponse,HE_FR_02,Hidden Emotion (Appearance vs. Reality),0.9091,0.557,too-easy,33
+tom_12dim_freeresponse,HE_FR_03,Hidden Emotion (Appearance vs. Reality),0.8788,0.6251,,33
+tom_12dim_freeresponse,HE_FR_04,Hidden Emotion (Appearance vs. Reality),0.9091,0.6111,too-easy,33
+tom_12dim_freeresponse,HE_FR_05,Hidden Emotion (Appearance vs. Reality),0.6364,0.583,,33
+tom_12dim_freeresponse,IA_FR_01,Intention vs. Accident,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,IA_FR_02,Intention vs. Accident,0.7879,0.6563,,33
+tom_12dim_freeresponse,IA_FR_03,Intention vs. Accident,0.7576,0.3356,,33
+tom_12dim_freeresponse,IA_FR_04,Intention vs. Accident,0.8485,0.648,,33
+tom_12dim_freeresponse,IA_FR_05,Intention vs. Accident,0.8485,0.6191,,33
+tom_12dim_freeresponse,IRO_FR_01,Irony,0.9394,0.7261,too-easy,33
+tom_12dim_freeresponse,IRO_FR_02,Irony,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,IRO_FR_03,Irony,0.8485,0.6769,,33
+tom_12dim_freeresponse,IRO_FR_04,Irony,0.7879,0.6626,,33
+tom_12dim_freeresponse,IRO_FR_05,Irony,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,KA_FR_01,Knowledge Access / Ignorance,0.9394,0.7261,too-easy,33
+tom_12dim_freeresponse,KA_FR_02,Knowledge Access / Ignorance,0.9697,0.7244,too-easy,33
+tom_12dim_freeresponse,KA_FR_03,Knowledge Access / Ignorance,0.3333,0.5532,,33
+tom_12dim_freeresponse,KA_FR_04,Knowledge Access / Ignorance,0.9091,0.7372,too-easy,33
+tom_12dim_freeresponse,KA_FR_05,Knowledge Access / Ignorance,0.8485,0.6336,,33
+tom_12dim_freeresponse,SAR_FR_01,Sarcasm,0.8485,0.5613,,33
+tom_12dim_freeresponse,SAR_FR_02,Sarcasm,0.9091,0.6381,too-easy,33
+tom_12dim_freeresponse,SAR_FR_03,Sarcasm,0.9091,0.4129,too-easy,33
+tom_12dim_freeresponse,SAR_FR_04,Sarcasm,0.7273,0.5552,,33
+tom_12dim_freeresponse,SAR_FR_05,Sarcasm,0.7879,0.6056,,33
+tom_12dim_freeresponse,SOFB_FR_01,Second-Order False Belief,0.7879,0.5929,,33
+tom_12dim_freeresponse,SOFB_FR_02,Second-Order False Belief,0.7273,0.4447,,33
+tom_12dim_freeresponse,SOFB_FR_03,Second-Order False Belief,0.8182,0.6155,,33
+tom_12dim_freeresponse,SOFB_FR_04,Second-Order False Belief,0.7273,0.4738,,33
+tom_12dim_freeresponse,SOFB_FR_05,Second-Order False Belief,0.6667,0.3645,,33
+tom_12dim_freeresponse,WL_FR_01,White Lies / Prosocial Deception,0.5758,0.5931,,33
+tom_12dim_freeresponse,WL_FR_02,White Lies / Prosocial Deception,0.6364,0.3838,,33
+tom_12dim_freeresponse,WL_FR_03,White Lies / Prosocial Deception,0.8788,0.506,,33
+tom_12dim_freeresponse,WL_FR_04,White Lies / Prosocial Deception,0.9091,0.539,too-easy,33
+tom_12dim_freeresponse,WL_FR_05,White Lies / Prosocial Deception,0.9091,0.6021,too-easy,33
+tom_12dim_mcq,DBEL_01,Diverse Beliefs,0.8788,0.864,,33
+tom_12dim_mcq,DBEL_02,Diverse Beliefs,0.8485,0.798,,33
+tom_12dim_mcq,DBEL_03,Diverse Beliefs,0.8485,0.924,,33
+tom_12dim_mcq,DBEL_04,Diverse Beliefs,0.8788,0.864,,33
+tom_12dim_mcq,DBEL_05,Diverse Beliefs,0.8182,0.8948,,33
+tom_12dim_mcq,DBEL_06,Diverse Beliefs,0.8788,0.864,,33
+tom_12dim_mcq,DBEL_07,Diverse Beliefs,0.9091,0.8178,too-easy,33
+tom_12dim_mcq,DBEL_08,Diverse Beliefs,0.9091,0.7308,too-easy,33
+tom_12dim_mcq,DBEL_09,Diverse Beliefs,0.8485,0.924,,33
+tom_12dim_mcq,DBEL_10,Diverse Beliefs,0.9091,0.7308,too-easy,33
+tom_12dim_mcq,DD_01,Diverse Desires,0.8182,0.8948,,33
+tom_12dim_mcq,DD_02,Diverse Desires,0.8485,0.924,,33
+tom_12dim_mcq,DD_03,Diverse Desires,0.8788,0.864,,33
+tom_12dim_mcq,DD_04,Diverse Desires,0.9091,0.8178,too-easy,33
+tom_12dim_mcq,DD_05,Diverse Desires,0.8182,0.876,,33
+tom_12dim_mcq,DD_06,Diverse Desires,0.7879,0.8227,,33
+tom_12dim_mcq,DD_07,Diverse Desires,0.8485,0.798,,33
+tom_12dim_mcq,DD_08,Diverse Desires,0.8485,0.924,,33
+tom_12dim_mcq,DD_09,Diverse Desires,0.8182,0.7505,,33
+tom_12dim_mcq,DD_10,Diverse Desires,0.8182,0.8697,,33
+tom_12dim_mcq,ER_01,Emotion Recognition,0.9394,0.6839,too-easy,33
+tom_12dim_mcq,ER_02,Emotion Recognition,0.8485,0.924,,33
+tom_12dim_mcq,ER_03,Emotion Recognition,0.8788,0.7948,,33
+tom_12dim_mcq,ER_04,Emotion Recognition,0.8788,0.8714,,33
+tom_12dim_mcq,ER_05,Emotion Recognition,0.8485,0.924,,33
+tom_12dim_mcq,ER_06,Emotion Recognition,0.8485,0.771,,33
+tom_12dim_mcq,ER_07,Emotion Recognition,0.8788,0.7948,,33
+tom_12dim_mcq,ER_08,Emotion Recognition,0.8788,0.7948,,33
+tom_12dim_mcq,ER_09,Emotion Recognition,0.8485,0.924,,33
+tom_12dim_mcq,ER_10,Emotion Recognition,0.8485,0.798,,33
+tom_12dim_mcq,ER_11,Emotion Recognition,0.8485,0.924,,33
+tom_12dim_mcq,ER_12,Emotion Recognition,0.8788,0.7948,,33
+tom_12dim_mcq,FOFB_01,First-Order False Belief,0.7576,0.5817,,33
+tom_12dim_mcq,FOFB_02,First-Order False Belief,0.8182,0.6772,,33
+tom_12dim_mcq,FOFB_03,First-Order False Belief,0.7879,0.6767,,33
+tom_12dim_mcq,FOFB_04,First-Order False Belief,0.8182,0.7421,,33
+tom_12dim_mcq,FOFB_05,First-Order False Belief,0.697,0.585,,33
+tom_12dim_mcq,FOFB_06,First-Order False Belief,0.7879,0.5681,,33
+tom_12dim_mcq,FOFB_07,First-Order False Belief,0.697,0.6588,,33
+tom_12dim_mcq,FOFB_08,First-Order False Belief,0.6061,0.5707,,33
+tom_12dim_mcq,FOFB_09,First-Order False Belief,0.6667,0.6441,,33
+tom_12dim_mcq,FOFB_10,First-Order False Belief,0.8788,0.733,,33
+tom_12dim_mcq,FOFB_11,First-Order False Belief,0.8182,0.7002,,33
+tom_12dim_mcq,FOFB_12,First-Order False Belief,0.8485,0.834,,33
+tom_12dim_mcq,FP_01,Faux Pas Detection,0.7879,0.8543,,33
+tom_12dim_mcq,FP_02,Faux Pas Detection,0.7879,0.7813,,33
+tom_12dim_mcq,FP_03,Faux Pas Detection,0.7879,0.8543,,33
+tom_12dim_mcq,FP_04,Faux Pas Detection,0.8788,0.555,,33
+tom_12dim_mcq,FP_05,Faux Pas Detection,0.7879,0.8543,,33
+tom_12dim_mcq,FP_06,Faux Pas Detection,0.7879,0.7418,,33
+tom_12dim_mcq,FP_07,Faux Pas Detection,0.8485,0.8318,,33
+tom_12dim_mcq,FP_08,Faux Pas Detection,0.7273,0.7557,,33
+tom_12dim_mcq,FP_09,Faux Pas Detection,0.7576,0.7173,,33
+tom_12dim_mcq,FP_10,Faux Pas Detection,0.8485,0.7957,,33
+tom_12dim_mcq,HE_01,Hidden Emotion (Appearance vs. Reality),0.7879,0.7556,,33
+tom_12dim_mcq,HE_02,Hidden Emotion (Appearance vs. Reality),0.8182,0.876,,33
+tom_12dim_mcq,HE_03,Hidden Emotion (Appearance vs. Reality),0.7273,0.8009,,33
+tom_12dim_mcq,HE_04,Hidden Emotion (Appearance vs. Reality),0.8182,0.8948,,33
+tom_12dim_mcq,HE_05,Hidden Emotion (Appearance vs. Reality),0.7576,0.8303,,33
+tom_12dim_mcq,HE_06,Hidden Emotion (Appearance vs. Reality),0.8485,0.924,,33
+tom_12dim_mcq,HE_07,Hidden Emotion (Appearance vs. Reality),0.8788,0.733,,33
+tom_12dim_mcq,HE_08,Hidden Emotion (Appearance vs. Reality),0.8485,0.924,,33
+tom_12dim_mcq,HE_09,Hidden Emotion (Appearance vs. Reality),0.8485,0.8318,,33
+tom_12dim_mcq,HE_10,Hidden Emotion (Appearance vs. Reality),0.7273,0.7937,,33
+tom_12dim_mcq,IA_01,Intention vs. Accident,0.7273,0.7701,,33
+tom_12dim_mcq,IA_02,Intention vs. Accident,0.8182,0.876,,33
+tom_12dim_mcq,IA_03,Intention vs. Accident,0.7879,0.8859,,33
+tom_12dim_mcq,IA_04,Intention vs. Accident,0.7879,0.8602,,33
+tom_12dim_mcq,IA_05,Intention vs. Accident,0.8182,0.8948,,33
+tom_12dim_mcq,IA_06,Intention vs. Accident,0.8182,0.7923,,33
+tom_12dim_mcq,IA_07,Intention vs. Accident,0.8485,0.924,,33
+tom_12dim_mcq,IA_08,Intention vs. Accident,0.8485,0.771,,33
+tom_12dim_mcq,IA_09,Intention vs. Accident,0.8485,0.924,,33
+tom_12dim_mcq,IA_10,Intention vs. Accident,0.8182,0.9032,,33
+tom_12dim_mcq,IRO_01,Irony,0.8485,0.8115,,33
+tom_12dim_mcq,IRO_02,Irony,0.9091,0.7308,too-easy,33
+tom_12dim_mcq,IRO_03,Irony,0.8485,0.798,,33
+tom_12dim_mcq,IRO_04,Irony,0.8485,0.924,,33
+tom_12dim_mcq,IRO_05,Irony,0.7273,0.8299,,33
+tom_12dim_mcq,IRO_06,Irony,0.8788,0.8714,,33
+tom_12dim_mcq,IRO_07,Irony,0.8182,0.7986,,33
+tom_12dim_mcq,IRO_08,Irony,0.9091,0.7308,too-easy,33
+tom_12dim_mcq,IRO_09,Irony,0.8182,0.8697,,33
+tom_12dim_mcq,IRO_10,Irony,0.7576,0.7436,,33
+tom_12dim_mcq,KA_01,Knowledge Access / Ignorance,0.7879,0.803,,33
+tom_12dim_mcq,KA_02,Knowledge Access / Ignorance,0.7879,0.8602,,33
+tom_12dim_mcq,KA_03,Knowledge Access / Ignorance,0.8182,0.9032,,33
+tom_12dim_mcq,KA_04,Knowledge Access / Ignorance,0.7273,0.7212,,33
+tom_12dim_mcq,KA_05,Knowledge Access / Ignorance,0.8182,0.876,,33
+tom_12dim_mcq,KA_06,Knowledge Access / Ignorance,0.7879,0.8366,,33
+tom_12dim_mcq,KA_07,Knowledge Access / Ignorance,0.8182,0.876,,33
+tom_12dim_mcq,KA_08,Knowledge Access / Ignorance,0.8788,0.864,,33
+tom_12dim_mcq,KA_09,Knowledge Access / Ignorance,0.697,0.7588,,33
+tom_12dim_mcq,KA_10,Knowledge Access / Ignorance,0.697,0.7237,,33
+tom_12dim_mcq,SAR_01,Sarcasm,0.7576,0.8604,,33
+tom_12dim_mcq,SAR_02,Sarcasm,0.8485,0.8115,,33
+tom_12dim_mcq,SAR_03,Sarcasm,0.7879,0.8602,,33
+tom_12dim_mcq,SAR_04,Sarcasm,0.7576,0.8378,,33
+tom_12dim_mcq,SAR_05,Sarcasm,0.7576,0.7945,,33
+tom_12dim_mcq,SAR_06,Sarcasm,0.8485,0.7597,,33
+tom_12dim_mcq,SAR_07,Sarcasm,0.7576,0.8303,,33
+tom_12dim_mcq,SAR_08,Sarcasm,0.8182,0.7986,,33
+tom_12dim_mcq,SAR_09,Sarcasm,0.697,0.6623,,33
+tom_12dim_mcq,SAR_10,Sarcasm,0.7576,0.7229,,33
+tom_12dim_mcq,SOFB_01,Second-Order False Belief,0.7576,0.61,,33
+tom_12dim_mcq,SOFB_02,Second-Order False Belief,0.7879,0.6096,,33
+tom_12dim_mcq,SOFB_03,Second-Order False Belief,0.8788,0.7725,,33
+tom_12dim_mcq,SOFB_04,Second-Order False Belief,0.8182,0.7002,,33
+tom_12dim_mcq,SOFB_05,Second-Order False Belief,0.7576,0.7549,,33
+tom_12dim_mcq,SOFB_06,Second-Order False Belief,0.7879,0.6708,,33
+tom_12dim_mcq,SOFB_07,Second-Order False Belief,0.8485,0.7417,,33
+tom_12dim_mcq,SOFB_08,Second-Order False Belief,0.8182,0.7002,,33
+tom_12dim_mcq,SOFB_09,Second-Order False Belief,0.7576,0.61,,33
+tom_12dim_mcq,SOFB_10,Second-Order False Belief,0.8182,0.7777,,33
+tom_12dim_mcq,WL_01,White Lies / Prosocial Deception,0.8485,0.8408,,33
+tom_12dim_mcq,WL_02,White Lies / Prosocial Deception,0.7879,0.8602,,33
+tom_12dim_mcq,WL_03,White Lies / Prosocial Deception,0.8485,0.8408,,33
+tom_12dim_mcq,WL_04,White Lies / Prosocial Deception,0.7879,0.8543,,33
+tom_12dim_mcq,WL_05,White Lies / Prosocial Deception,0.8485,0.6697,,33
+tom_12dim_mcq,WL_06,White Lies / Prosocial Deception,0.8788,0.7231,,33
+tom_12dim_mcq,WL_07,White Lies / Prosocial Deception,0.7576,0.8378,,33
+tom_12dim_mcq,WL_08,White Lies / Prosocial Deception,0.8485,0.789,,33
+tom_12dim_mcq,WL_09,White Lies / Prosocial Deception,0.7576,0.7531,,33
+tom_12dim_mcq,WL_10,White Lies / Prosocial Deception,0.8485,0.924,,33

@@ -1,5 +1,5 @@
 # DevToM-OpenRouter
-.PHONY: setup check smoke run run-mcq run-fr analyze visualize extract profile-dataset profile-results glmm irt viz-descriptives viz-inference viz-mapping pipeline clean freeze
+.PHONY: setup check smoke run run-mcq run-fr analyze visualize extract profile-dataset profile-results glmm irt viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles pipeline archive clean freeze
 
 setup:        ## install deps into a venv
 	python3.10 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
@@ -29,19 +29,19 @@ analyze: extract profile-dataset profile-results glmm irt ## run all analyses: e
 extract:      ## extract item-level data from .eval logs -> results/item_level.csv
 	python scripts/4_statistics/extract_item_level.py
 
-profile-dataset: ## profile the JSONL item banks -> stats_dataset/ CSVs
+profile-dataset: ## profile the JSONL item banks -> results/stats/dataset/
 	python scripts/4_statistics/profile_dataset.py
 
-profile-results: extract ## profile eval outcomes + CTT -> stats_results/ CSVs
+profile-results: extract ## profile eval outcomes + CTT -> results/stats/results/
 	python scripts/4_statistics/profile_results.py
 
-glmm: extract ## fit binomial GLMM trajectory -> modeling_inference/ CSVs
+glmm: extract ## fit binomial GLMM trajectory -> results/modeling/inference/
 	Rscript scripts/5_model/glmm_trajectory.R
 
-irt: extract  ## fit developmental scaling + IRT -> modeling_mapping/ CSVs
+irt: extract  ## fit developmental scaling + IRT -> results/modeling/mapping/
 	Rscript scripts/5_model/developmental_scaling_irt.R
 
-visualize: viz-descriptives viz-inference viz-mapping ## run all visualization scripts
+visualize: viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles ## run all visualization scripts
 
 viz-descriptives: profile-dataset profile-results ## descriptive figures
 	Rscript scripts/6_visualize/visualize_descriptives.R
@@ -52,7 +52,19 @@ viz-inference: glmm ## GLMM trajectory figures
 viz-mapping: irt ## developmental mapping figures
 	Rscript scripts/6_visualize/visualize_developmental_mapping.R
 
+viz-accuracy: extract ## accuracy vs release date figures
+	Rscript scripts/6_visualize/visualize_accuracy_trajectory.R
+
+viz-profiles: extract ## dimension profile heatmaps, rankings, regression grids
+	Rscript scripts/6_visualize/visualize_dimension_profiles.R
+
 pipeline: analyze visualize ## full pipeline: analyze then visualize
+
+archive:      ## move old timestamped result folders to results/Archive/
+	@mkdir -p results/Archive
+	@for d in results/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*/; do \
+		[ -d "$$d" ] && mv "$$d" results/Archive/ && echo "Archived $$d"; \
+	done; true
 
 all: setup check smoke run analyze
 

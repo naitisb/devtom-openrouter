@@ -1,0 +1,86 @@
+
+=== Model 1: date × tier (per family) ===
+Fitting: M1:Claude (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 1656
+  AIC = 452.6
+  Prediction failed for Claude: non-numeric argument to binary operator
+Fitting: M1:GPT (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 920
+  WARNING: singular fit for M1:GPT
+  CONVERGENCE: boundary (singular) fit: see help('isSingular')
+  AIC = 310.7
+  Prediction failed for GPT: non-numeric argument to binary operator
+  Ceiling (100% correct): Emotion Recognition
+Fitting: M1:Llama (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 736
+  WARNING: singular fit for M1:Llama
+  CONVERGENCE: boundary (singular) fit: see help('isSingular')
+  AIC = 256.8
+  Prediction failed for Llama: non-numeric argument to binary operator
+Fitting: M1:Mistral (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 736
+  AIC = 665.1
+  Prediction failed for Mistral: non-numeric argument to binary operator
+Fitting: M1:Qwen (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 1472
+  AIC = 1039.2
+  Prediction failed for Qwen: non-numeric argument to binary operator
+
+=== Model 2: date × dim_rank (per family) ===
+Fitting: M2:Claude (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 1656
+  AIC = 449.3
+Fitting: M2:GPT (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 920
+  AIC = 317.9
+Fitting: M2:Llama (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 736
+  AIC = 276.7
+Fitting: M2:Mistral (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 736
+  AIC = 666.2
+Fitting: M2:Qwen (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 1472
+  AIC = 1043.7
+
+=== Model 3: date × task (per family) ===
+Fitting: M3:Claude (correct ~ date_c * task + (1 | item_id))
+  n = 1656
+  WARNING: singular fit for M3:Claude
+  CONVERGENCE: boundary (singular) fit: see help('isSingular')
+  AIC = 722.4
+Fitting: M3:GPT (correct ~ date_c * task + (1 | item_id))
+  n = 920
+  AIC = 291.1
+Fitting: M3:Llama (correct ~ date_c * task + (1 | item_id))
+  n = 736
+  AIC = 313.2
+Fitting: M3:Mistral (correct ~ date_c * task + (1 | item_id))
+  n = 736
+  WARNING: singular fit for M3:Mistral
+  CONVERGENCE: boundary (singular) fit: see help('isSingular')
+  AIC = 941.9
+Fitting: M3:Qwen (correct ~ date_c * task + (1 | item_id))
+  n = 1472
+  AIC = 1200.2
+
+=== Model 4: date × family (joint, cross-family) ===
+Fitting: M4:joint (correct ~ date_c * family + (1 | item_id) + (1 | model))
+  n = 5520
+  CONVERGENCE: Model failed to converge with max|grad| = 0.0934977 (tol = 0.002, component 1)
+  CONVERGENCE: Model is nearly unidentifiable: very large eigenvalue
+ - Rescale variables?
+  AIC = 2884.8
+Fitting: M4:null (correct ~ date_c + (1 | item_id))
+  n = 5520
+  AIC = 4234.5
+LRT (date vs date×family): chi2=1367.66 df=NA p=< 2.22e-16
+
+Wrote glmm_or_table.csv: 73 rows
+Wrote glmm_observed_points.csv: 30 rows
+Wrote glmm_dim_time_slopes.csv: 60 rows
+Wrote glmm_pred_by_task.csv: 500 rows
+
+CAVEAT: These trajectory estimates do not model potential contamination.
+The item bank is unpublished, mitigating training-set leakage (see ANALYSIS_PLAN.md
+Threat 7), but the caveat should accompany any interpretation of time slopes.

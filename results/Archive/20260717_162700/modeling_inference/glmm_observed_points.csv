@@ -1,0 +1,3 @@
+family,tier,model,date_years,release_date,accuracy,n
+Llama,Llama large,openai-api/local/meta-llama/llama-3.3-70b-instruct,0.9308692676249144,2024-12-06,1,124
+Llama,Llama small,openai-api/local/meta-llama/llama-3.1-8b-instruct,0.5585215605749486,2024-07-23,0.9112903225806451,124

@@ -29,13 +29,13 @@ INSPECT_BIN="$(command -v inspect)"
 if [[ -f "$PROJECT_ROOT/.env" ]]; then
   set -a; source "$PROJECT_ROOT/.env"; set +a
 fi
-if [[ -z "${OPENROUTER_API_KEY:-}" ]]; then
-  echo "OPENROUTER_API_KEY not set (add it to .env)." >&2
+if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" ]]; then
+  echo "No API keys set (OPENROUTER_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
   exit 1
 fi
 
 source "$PROJECT_ROOT/scripts/_provider_prefs.sh"
-echo "Routing prefs: $PROVIDER_PREFS_JSON"
+echo "Routing prefs (OpenRouter models only): $PROVIDER_PREFS_JSON"
 
 # Per-call output cap. OpenRouter reserves credits for the full max_tokens up
 # front, so an uncapped request (model default 32k-65k) 402s on a limited key.
@@ -78,7 +78,11 @@ for m in "${MODELS[@]}"; do
   if [[ -n "$TEMPERATURE" ]] && ! python -m src.decoding --omits "$m"; then
     temp_args=(--temperature "$TEMPERATURE")
   fi
-  "$INSPECT_BIN" eval "$TASK" --model "$m" -M provider="$PROVIDER_PREFS_JSON" --max-tokens "$MAX_TOKENS" ${temp_args[@]+"${temp_args[@]}"} || {
+  provider_args=()
+  if [[ "$m" == openrouter/* ]]; then
+    provider_args=(-M provider="$PROVIDER_PREFS_JSON")
+  fi
+  "$INSPECT_BIN" eval "$TASK" --model "$m" --display plain ${provider_args[@]+"${provider_args[@]}"} --max-tokens "$MAX_TOKENS" ${temp_args[@]+"${temp_args[@]}"} || {
     echo "WARNING: eval failed for $m — continuing" >&2
   }
 done

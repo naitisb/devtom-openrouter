@@ -2,19 +2,22 @@
 
 Anthropic DEPRECATED temperature/top_p/top_k on Claude Opus 4.7 and later
 (including 4.8), Sonnet 5, and Fable 5: any non-default value returns HTTP 400
-("`temperature` is deprecated for this model"). A sweep that standardizes
-decoding via temperature therefore hard-fails on those models unless the
-override is omitted — they run at provider-default decoding and must be
-analyzed as a separate uncontrolled-decoding stratum.
+("`temperature` is deprecated for this model"). OpenAI's reasoning models
+(o1, o1-mini, o3-mini, o3, o4-mini) likewise reject the temperature parameter
+and use reasoning_effort instead. A sweep that standardizes decoding via
+temperature therefore hard-fails on these models unless the override is
+omitted — they run at provider-default decoding and must be analyzed as a
+separate uncontrolled-decoding stratum.
 
 This module is the harness-side mirror of the `omit_sampling_params: true`
 entries in devtom-selfhost/models/manifest-expanded.yaml, smoke-verified
 2026-07-16 at the sweep's temperature=0.0 (see that repo's
 scripts/0_misc/verify_expanded_manifest.py --smoke). Patterns are matched on a
 normalized model string, so `anthropic/claude-opus-4-8` (Inspect direct),
-`openrouter/anthropic/claude-opus-4.8` (OpenRouter route), and dated snapshot
-ids all match. EXTEND the tuple when Anthropic ships new models — assume new
-Claude models also reject sampling params until verified otherwise.
+`openrouter/anthropic/claude-opus-4.8` (OpenRouter route), `openai/o3-mini`
+(direct OpenAI), and dated snapshot ids all match. EXTEND the tuple when
+providers ship new models — assume new Claude and OpenAI reasoning models also
+reject sampling params until verified otherwise.
 
 Used by:
   - src/scorer.py — the FR grader pins temperature=0 for deterministic verdicts;
@@ -34,11 +37,18 @@ from typing import Any
 
 # Normalized (lowercase, "." -> "-") substrings of model ids that reject
 # sampling params. claude-sonnet-5 does NOT match claude-sonnet-4-5 etc.
+# OpenAI reasoning models (o1/o3/o4) use reasoning_effort instead of temperature.
+# Anchored with "/" prefix to avoid false positives (e.g. "o1" in "gpt-4o-mini").
 NO_SAMPLING_PATTERNS: tuple[str, ...] = (
     "claude-opus-4-7",
     "claude-opus-4-8",
     "claude-sonnet-5",
     "claude-fable-5",
+    "/o1",
+    "/o1-mini",
+    "/o3-mini",
+    "/o3",
+    "/o4-mini",
 )
 
 

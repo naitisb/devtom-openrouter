@@ -1,0 +1,27 @@
+
+=== Model 1: date × tier (per family) ===
+  Ceiling (100% correct): Diverse Beliefs, Diverse Desires, Emotion Recognition, Faux Pas Detection, Intention vs. Accident, Irony, Second-Order False Belief, White Lies / Prosocial Deception
+Fitting: M1:Llama (correct ~ date_c * tier + (1 | item_id))
+  n = 248
+  AIC = 80.3
+  Prediction failed for Llama: non-numeric argument to binary operator
+
+=== Model 2: date × dim_rank (per family) ===
+Fitting: M2:Llama (correct ~ date_c * dim_rank + (1 | item_id))
+  n = 248
+  CONVERGENCE: unable to evaluate scaled gradient
+  CONVERGENCE: Model failed to converge: degenerate  Hessian with 1 negative eigenvalues
+  AIC = 44.4
+
+=== Model 3: date × task (per family) ===
+Skipping M3:Llama — only one task
+
+=== Model 4: date × family (joint, cross-family) ===
+
+Wrote glmm_or_table.csv: 6 rows
+Wrote glmm_observed_points.csv: 2 rows
+Wrote glmm_dim_time_slopes.csv: 12 rows
+
+CAVEAT: These trajectory estimates do not model potential contamination.
+The item bank is unpublished, mitigating training-set leakage (see ANALYSIS_PLAN.md
+Threat 7), but the caveat should accompany any interpretation of time slopes.
