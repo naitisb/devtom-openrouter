@@ -1,0 +1,612 @@
+<title>DevToM: Can LLMs Pass a Theory of Mind Test?</title>
+<style>
+  :root {
+    --ink: #0B1A12;
+    --ink-secondary: #3A4A3E;
+    --muted: #6E7269;
+    --surface: #F7F6F2;
+    --surface-card: #ECEBE5;
+    --jade: #1B7A5A;
+    --jade-light: #D0E8DD;
+    --jade-dark: #145C44;
+    --amber: #C76D2A;
+    --amber-light: #F3DCC8;
+    --rule: #D5D4CE;
+    --white: #FFFFFF;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      --ink: #E8E5DE;
+      --ink-secondary: #B8B5AC;
+      --muted: #8A877F;
+      --surface: #111810;
+      --surface-card: #1A2218;
+      --jade: #3BAA7E;
+      --jade-light: #1A3028;
+      --jade-dark: #5CC89A;
+      --amber: #E08A44;
+      --amber-light: #2E2015;
+      --rule: #2A322A;
+      --white: #E8E5DE;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #E8E5DE;
+    --ink-secondary: #B8B5AC;
+    --muted: #8A877F;
+    --surface: #111810;
+    --surface-card: #1A2218;
+    --jade: #3BAA7E;
+    --jade-light: #1A3028;
+    --jade-dark: #5CC89A;
+    --amber: #E08A44;
+    --amber-light: #2E2015;
+    --rule: #2A322A;
+    --white: #E8E5DE;
+  }
+  :root[data-theme="light"] {
+    --ink: #0B1A12;
+    --ink-secondary: #3A4A3E;
+    --muted: #6E7269;
+    --surface: #F7F6F2;
+    --surface-card: #ECEBE5;
+    --jade: #1B7A5A;
+    --jade-light: #D0E8DD;
+    --jade-dark: #145C44;
+    --amber: #C76D2A;
+    --amber-light: #F3DCC8;
+    --rule: #D5D4CE;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--surface);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .poster {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 48px 48px;
+  }
+
+  /* === HEADER === */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--jade);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.08;
+    color: var(--ink);
+    margin-bottom: 10px;
+    text-wrap: balance;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--jade-dark);
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: var(--ink-secondary);
+    line-height: 1.45;
+    max-width: 600px;
+    margin-bottom: 8px;
+  }
+
+  .meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+  .meta span + span::before {
+    content: "·";
+    margin: 0 8px;
+  }
+
+  /* === STAT ROW === */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    margin: 36px 0;
+    border: 1px solid var(--rule);
+  }
+
+  .stat-cell {
+    background: var(--surface);
+    padding: 20px 18px;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stat-num .unit {
+    font-size: 20px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* === ACCURACY STRIP === */
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  .strip-wrap {
+    margin: 32px 0 36px;
+  }
+
+  .strip-chart {
+    position: relative;
+    height: 240px;
+    margin-bottom: 6px;
+  }
+
+  .strip-axis {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .strip-model {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .strip-bar {
+    width: 14px;
+    border-radius: 3px 3px 0 0;
+    transition: opacity 0.15s;
+  }
+
+  .strip-model-label {
+    position: absolute;
+    bottom: -4px;
+    font-size: 7.5px;
+    color: var(--muted);
+    white-space: nowrap;
+    transform-origin: bottom left;
+    transform: rotate(-55deg) translateX(-2px);
+    letter-spacing: -0.01em;
+  }
+
+  .strip-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    margin-top: 4px;
+  }
+
+  .strip-legend {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .strip-legend .swatch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 5px;
+    vertical-align: -1px;
+  }
+
+  /* === FINDINGS === */
+  .findings {
+    margin: 36px 0;
+  }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 14px;
+    padding: 22px 0;
+    border-top: 1px solid var(--rule);
+    align-items: start;
+  }
+
+  .finding-num {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--jade);
+    line-height: 1.1;
+    padding-top: 2px;
+  }
+
+  .finding h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
+
+  .finding p {
+    font-size: 14px;
+    color: var(--ink-secondary);
+    line-height: 1.55;
+  }
+
+  .finding .highlight {
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  .finding .jade-hl {
+    color: var(--jade);
+    font-weight: 600;
+  }
+
+  /* === DIMENSION MAP === */
+  .dim-section {
+    margin: 36px 0 28px;
+    padding: 28px 24px;
+    background: var(--surface-card);
+    border-radius: 6px;
+  }
+
+  .dim-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .dim-section .dim-sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  .dim-grid {
+    display: grid;
+    grid-template-columns: 1fr 60px 60px;
+    gap: 0;
+    font-size: 13px;
+  }
+
+  .dim-grid .dg-header {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .dim-grid .dg-header:last-child,
+  .dim-grid .dg-header:nth-child(2) {
+    text-align: right;
+  }
+
+  .dim-row {
+    display: contents;
+  }
+
+  .dim-row > * {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .dim-name {
+    color: var(--ink);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dim-age {
+    font-size: 10px;
+    color: var(--muted);
+    background: var(--surface);
+    padding: 1px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .dim-acc {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-secondary);
+    font-size: 13px;
+  }
+
+  .dim-bar-cell {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+  }
+
+  /* === FOOTER === */
+  .poster-footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .family-colors {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .family-colors .fc {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .family-colors .fc-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+</style>
+
+<div class="poster">
+  <!-- HEADER -->
+  <div class="eyebrow">Benchmark Results — Part 1</div>
+  <h1>Can LLMs Pass a<br>Theory of Mind <em>Test?</em></h1>
+  <p class="subtitle">DevToM evaluates 30 large language models across 12 developmental Theory of Mind dimensions — from understanding desires at age 3 to detecting irony at age 10 — using items validated in human children.</p>
+  <div class="meta">
+    <span>30 models</span>
+    <span>5 families</span>
+    <span>12 ToM dimensions</span>
+    <span>~180 items</span>
+    <span>MCQ + free-response</span>
+  </div>
+
+  <!-- STAT ROW -->
+  <div class="stat-row">
+    <div class="stat-cell">
+      <div class="stat-num">99<span class="unit">%</span></div>
+      <div class="stat-label">Best accuracy</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num" style="color: var(--amber);">0<span class="unit">%</span></div>
+      <div class="stat-label">Worst accuracy</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">.93</div>
+      <div class="stat-label">KR-20 (MCQ)</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">8.1<span class="unit">yr</span></div>
+      <div class="stat-label">Top age-equiv.</div>
+    </div>
+  </div>
+
+  <!-- ACCURACY STRIP -->
+  <div class="strip-wrap">
+    <div class="section-label">Overall accuracy by model</div>
+    <div class="strip-chart" id="strip"></div>
+    <div class="strip-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+    <div class="strip-legend" id="legend"></div>
+  </div>
+
+  <!-- KEY FINDINGS -->
+  <div class="findings">
+    <div class="section-label">Key findings</div>
+
+    <div class="finding">
+      <div class="finding-num">1</div>
+      <div>
+        <h3>Format matters more than you'd think</h3>
+        <p>MCQ and free-response tasks reveal <span class="highlight">different capability profiles</span>. Claude Sonnet 4-6 scores 96% on free-response but collapses to 33% on MCQ — a format-specific failure invisible in aggregate scores. Across families, MCQ is generally easier but exposes more catastrophic failures.</p>
+      </div>
+    </div>
+
+    <div class="finding">
+      <div class="finding-num">2</div>
+      <div>
+        <h3>Developmental order doesn't predict LLM difficulty</h3>
+        <p>Items validated at older developmental ages are <span class="jade-hl">not harder for LLMs</span> (rho = 0.049, p = 0.59). Emotion Recognition (age 3–4) is easiest, but Faux Pas Detection (age 9–11) is hardest while Irony (age 8–10) is among the easiest. LLMs acquire ToM-like abilities through a different pathway than children.</p>
+      </div>
+    </div>
+
+    <div class="finding">
+      <div class="finding-num">3</div>
+      <div>
+        <h3>Scale helps, but isn't everything</h3>
+        <p>Llama 70B outperforms 8B by ~10 percentage points. Qwen improves dramatically from 1.5 to 3 series (<span class="highlight">48% → 95%</span>). But the top 8B models (Qwen3-8B at 95%) rival or exceed some 70B models. Architecture and training data matter as much as parameter count.</p>
+      </div>
+    </div>
+
+    <div class="finding">
+      <div class="finding-num">4</div>
+      <div>
+        <h3>The ceiling is real — and it's low</h3>
+        <p>The best models function at a <span class="jade-hl">~8-year-old equivalent</span> on free-response (IRT mapping). On MCQ, age-equivalents drop to ~6–7 years. The benchmark's hardest items (Faux Pas Detection, First-Order False Belief) still differentiate top models, but the gap between hardest item and best model indicates we need harder items.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIMENSION DIFFICULTY -->
+  <div class="dim-section">
+    <h2>Dimension difficulty ranking</h2>
+    <div class="dim-sub">Mean accuracy across 30 models, ordered hardest → easiest. Age band = typical human acquisition.</div>
+    <div class="dim-grid">
+      <div class="dg-header">Dimension</div>
+      <div class="dg-header">Accuracy</div>
+      <div class="dg-header">SD</div>
+      <div class="dim-row"><div class="dim-name">Faux Pas Detection <span class="dim-age">9–11 yr</span></div><div class="dim-acc" style="color:var(--amber);font-weight:600;">70%</div><div class="dim-bar-cell" style="color:var(--amber);">±30%</div></div>
+      <div class="dim-row"><div class="dim-name">Knowledge Access <span class="dim-age">4–5 yr</span></div><div class="dim-acc">78%</div><div class="dim-bar-cell">±25%</div></div>
+      <div class="dim-row"><div class="dim-name">First-Order False Belief <span class="dim-age">4–5 yr</span></div><div class="dim-acc">78%</div><div class="dim-bar-cell">±24%</div></div>
+      <div class="dim-row"><div class="dim-name">White Lies <span class="dim-age">7–8 yr</span></div><div class="dim-acc">80%</div><div class="dim-bar-cell">±20%</div></div>
+      <div class="dim-row"><div class="dim-name">Sarcasm <span class="dim-age">8–9 yr</span></div><div class="dim-acc">80%</div><div class="dim-bar-cell">±22%</div></div>
+      <div class="dim-row"><div class="dim-name">2nd-Order False Belief <span class="dim-age">6–7 yr</span></div><div class="dim-acc">80%</div><div class="dim-bar-cell">±21%</div></div>
+      <div class="dim-row"><div class="dim-name">Hidden Emotion <span class="dim-age">6–7 yr</span></div><div class="dim-acc">82%</div><div class="dim-bar-cell">±18%</div></div>
+      <div class="dim-row"><div class="dim-name">Intention vs. Accident <span class="dim-age">5–6 yr</span></div><div class="dim-acc">83%</div><div class="dim-bar-cell">±16%</div></div>
+      <div class="dim-row"><div class="dim-name">Diverse Desires <span class="dim-age">2–3 yr</span></div><div class="dim-acc">83%</div><div class="dim-bar-cell">±18%</div></div>
+      <div class="dim-row"><div class="dim-name">Diverse Beliefs <span class="dim-age">3–4 yr</span></div><div class="dim-acc">85%</div><div class="dim-bar-cell">±17%</div></div>
+      <div class="dim-row"><div class="dim-name">Irony <span class="dim-age">8–10 yr</span></div><div class="dim-acc">85%</div><div class="dim-bar-cell">±16%</div></div>
+      <div class="dim-row"><div class="dim-name">Emotion Recognition <span class="dim-age">3–4 yr</span></div><div class="dim-acc" style="color:var(--jade);font-weight:600;">90%</div><div class="dim-bar-cell" style="color:var(--jade);">±12%</div></div>
+    </div>
+  </div>
+
+  <div class="poster-footer">
+    DevToM benchmark, July 2026. Items drawn from validated developmental psychology paradigms.
+    IRT (2PL), CTT, and GLMM analyses. Full results including per-family profiles,
+    construct-level analyses, and Wright maps in Part 2.
+  </div>
+</div>
+
+<script>
+const models = [
+  { name: "mixtral-8x7b", family: "Mistral", acc: 0.01 },
+  { name: "mistral-7b-v0.3", family: "Mistral", acc: 0.28 },
+  { name: "qwen1.5-14b-chat", family: "Qwen", acc: 0.48 },
+  { name: "claude-sonnet-4-6", family: "Claude", acc: 0.57 },
+  { name: "qwen1.5-7b-chat", family: "Qwen", acc: 0.68 },
+  { name: "mistral-7b-v0.2", family: "Mistral", acc: 0.80 },
+  { name: "mistral-nemo", family: "Mistral", acc: 0.82 },
+  { name: "llama-3.1-8b", family: "Llama", acc: 0.85 },
+  { name: "llama-3.2-8b", family: "Llama", acc: 0.88 },
+  { name: "gpt-4o-mini", family: "GPT", acc: 0.87 },
+  { name: "qwen2.5-7b", family: "Qwen", acc: 0.85 },
+  { name: "o3-mini", family: "GPT", acc: 0.89 },
+  { name: "gpt-4o", family: "GPT", acc: 0.90 },
+  { name: "qwen2-72b", family: "Qwen", acc: 0.90 },
+  { name: "qwen2.5-72b", family: "Qwen", acc: 0.93 },
+  { name: "claude-haiku-4-5", family: "Claude", acc: 0.93 },
+  { name: "o4-mini", family: "GPT", acc: 0.93 },
+  { name: "o1", family: "GPT", acc: 0.93 },
+  { name: "qwen3-8b", family: "Qwen", acc: 0.95 },
+  { name: "qwen3-32b", family: "Qwen", acc: 0.94 },
+  { name: "qwen2.5-32b", family: "Qwen", acc: 0.92 },
+  { name: "llama-3.1-70b", family: "Llama", acc: 0.95 },
+  { name: "llama-3.3-70b", family: "Llama", acc: 0.97 },
+  { name: "claude-opus-4-5", family: "Claude", acc: 0.95 },
+  { name: "claude-opus-4-6", family: "Claude", acc: 0.96 },
+  { name: "claude-sonnet-4-5", family: "Claude", acc: 0.98 },
+  { name: "claude-opus-4-7", family: "Claude", acc: 0.97 },
+  { name: "claude-opus-4-8", family: "Claude", acc: 0.99 },
+  { name: "claude-sonnet-5", family: "Claude", acc: 0.98 },
+  { name: "claude-fable-5", family: "Claude", acc: 0.99 },
+];
+
+models.sort((a, b) => a.acc - b.acc);
+
+const familyColors = {
+  Claude: { light: "#1B7A5A", dark: "#3BAA7E" },
+  GPT:    { light: "#2a78d6", dark: "#3987e5" },
+  Llama:  { light: "#7B5EA7", dark: "#9085e9" },
+  Qwen:   { light: "#C76D2A", dark: "#E08A44" },
+  Mistral:{ light: "#B04040", dark: "#E66767" },
+};
+
+function isDark() {
+  const dt = document.documentElement.getAttribute("data-theme");
+  if (dt === "dark") return true;
+  if (dt === "light") return false;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
+function renderStrip() {
+  const strip = document.getElementById("strip");
+  const legend = document.getElementById("legend");
+  strip.innerHTML = "";
+  legend.innerHTML = "";
+  const dark = isDark();
+  const n = models.length;
+  const barW = 14;
+  const gap = (strip.offsetWidth - n * barW) / (n - 1);
+  const maxH = 220;
+
+  models.forEach((m, i) => {
+    const col = dark ? familyColors[m.family].dark : familyColors[m.family].light;
+    const h = Math.max(2, m.acc * maxH);
+    const el = document.createElement("div");
+    el.className = "strip-model";
+    el.style.left = i * (barW + gap) + "px";
+    el.style.width = barW + "px";
+
+    const bar = document.createElement("div");
+    bar.className = "strip-bar";
+    bar.style.height = h + "px";
+    bar.style.background = col;
+
+    const label = document.createElement("div");
+    label.className = "strip-model-label";
+    let shortName = m.name
+      .replace("claude-", "").replace("mistral-", "").replace("llama-", "")
+      .replace("qwen", "Q").replace("-instruct", "").replace("-chat", "");
+    label.textContent = shortName;
+
+    el.appendChild(bar);
+    el.appendChild(label);
+    strip.appendChild(el);
+  });
+
+  const seen = new Set();
+  for (const m of models) {
+    if (seen.has(m.family)) continue;
+    seen.add(m.family);
+    const col = dark ? familyColors[m.family].dark : familyColors[m.family].light;
+    const item = document.createElement("span");
+    item.innerHTML = `<span class="swatch" style="background:${col}"></span>${m.family}`;
+    legend.appendChild(item);
+  }
+}
+
+renderStrip();
+window.addEventListener("resize", renderStrip);
+
+const obs = new MutationObserver(renderStrip);
+obs.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", renderStrip);
+</script>
