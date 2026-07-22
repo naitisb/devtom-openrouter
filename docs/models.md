@@ -183,4 +183,8 @@ print('\n'.join(f'{t}: {n} {\"regression\" if n>=3 else \"dots\"}' for t,n in so
 - [ ] `check_providers.py --live` green for one model per family.
 - [x] Slugs + dates verified against OpenRouter's live model list (2026-07-14;
       panel frozen — see "Panel verified + frozen" above).
-- [ ] `DEVTOM_GRADER_MODEL` chosen (recommended) for the free-response task.
+- [x] `DEVTOM_GRADER_MODEL` set to `openai/gpt-4o-2024-08-06` (primary judge, all
+      non-GPT subject families). `DEVTOM_GRADER_MODEL_SAMEFAMILY` set to
+      `anthropic/claude-sonnet-4-5-20250929` (alternate judge for GPT subjects — cross-family
+      scheme ensures no subject is graded by a same-lab judge). Both pinned to
+      snapshot ids for reproducibility. Decided 2026-07-22.

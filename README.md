@@ -111,8 +111,13 @@ open families via `src/roster.py`. Differences worth knowing:
 - `model_family()` parses `openrouter/<author>/<slug>` (the router prefix is
   stripped; the *author* segment is the family), not the first path segment.
 - The model roster is a single importable source of truth, not duplicated arrays.
-- The free-response grader can be pinned via `DEVTOM_GRADER_MODEL` (recommended,
-  since small open models self-grading ToM reasoning is unreliable).
+- The free-response grader is pinned via `DEVTOM_GRADER_MODEL`. The study uses
+  `openai/gpt-4o-2024-08-06` as the primary judge for all non-GPT subject families,
+  and `anthropic/claude-sonnet-4-5-20250929` as the alternate judge for GPT subjects
+  (cross-family grading via `DEVTOM_GRADER_MODEL_SAMEFAMILY` — no subject is graded
+  by a same-lab judge). Both judges are pinned to snapshot ids for reproducibility.
+  Limitation: GPT-4o may favor non-GPT outputs; Claude may disfavor GPT outputs —
+  both directions are noted in the methods.
 
 ## Datasets & licenses
 
