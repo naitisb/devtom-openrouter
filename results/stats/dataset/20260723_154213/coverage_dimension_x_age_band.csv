@@ -1,0 +1,13 @@
+tom_dimension,10-12 yrs,2-3 yrs,3-4 yrs,3-5 yrs,4-5 yrs,4-6 yrs,5-6 yrs,5-7 yrs,6-7 yrs,6-8 yrs,6-9 yrs,7-8 yrs,7-9 yrs,8-10 yrs,9-11 yrs
+Diverse Beliefs,0,0,9,0,9,0,0,0,0,0,0,0,0,0,0
+Diverse Desires,0,7,8,0,0,0,0,0,0,0,0,0,0,0,0
+Emotion Recognition,0,0,4,1,0,2,0,0,0,8,2,0,0,0,0
+Faux Pas Detection,4,0,0,0,0,0,0,0,0,0,0,0,0,0,14
+First-Order False Belief,0,0,0,0,16,0,5,0,0,0,0,0,0,0,0
+Hidden Emotion (Appearance vs. Reality),0,0,0,0,0,3,0,0,0,11,0,0,1,3,0
+Intention vs. Accident,0,0,0,0,5,0,6,0,2,0,0,2,0,0,0
+Irony,0,0,0,0,0,0,0,0,0,3,0,0,8,4,0
+Knowledge Access / Ignorance,0,0,4,0,11,0,0,0,0,0,0,0,0,0,0
+Sarcasm,0,0,0,0,0,0,0,0,0,6,0,0,2,5,2
+Second-Order False Belief,0,0,0,0,0,0,0,0,6,8,0,1,4,0,0
+White Lies / Prosocial Deception,0,0,0,0,0,0,0,5,0,2,0,0,6,2,0

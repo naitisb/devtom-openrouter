@@ -1,0 +1,9 @@
+family,tier,n_models,mean_accuracy,sd_accuracy,n
+Llama,Llama large,1,0.9701,0.1706,201
+Llama,Llama other,2,0.4652,0.4994,402
+Llama,Llama small,2,0.8483,0.3592,402
+Mistral,Mistral MoE,1,0.0,0.0,201
+Mistral,Mistral small,3,0.4826,0.5001,603
+Qwen,Qwen large,3,0.6103,0.4881,603
+Qwen,Qwen other,1,0.9005,0.3001,201
+Qwen,Qwen small,3,0.796,0.4033,603

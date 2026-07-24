@@ -1,0 +1,14 @@
+family,tier,model,date_years,release_date,accuracy,n
+Llama,Llama large,openai-api/local/meta-llama/llama-3-70b-instruct,0.29568788501026694,2024-04-18,0.9701492537313433,201
+Llama,Llama small,openai-api/local/meta-llama/llama-3-8b-instruct,0.29568788501026694,2024-04-18,0.845771144278607,201
+Llama,Llama small,openai-api/local/meta-llama/llama-3.1-8b-instruct,0.5585215605749486,2024-07-23,0.8507462686567164,201
+Mistral,Mistral MoE,openai-api/local/mistralai/mixtral-8x7b-instruct,-0.05749486652977412,2023-12-11,0,201
+Mistral,Mistral small,openai-api/local/mistralai/mistral-7b-instruct,-0.26283367556468173,2023-09-27,0.582089552238806,201
+Mistral,Mistral small,openai-api/local/mistralai/mistral-7b-instruct-v0.2,0.03832991101984941,2024-01-15,0.5771144278606966,201
+Mistral,Mistral small,openai-api/local/mistralai/mistral-7b-instruct-v0.3,0.3887748117727584,2024-05-22,0.2885572139303483,201
+Qwen,Qwen large,openai-api/local/qwen/qwen-1.5-72b-chat,0.09308692676249145,2024-02-04,0.8606965174129353,201
+Qwen,Qwen large,openai-api/local/qwen/qwen2-72b-instruct,0.42984257357973993,2024-06-06,0.9701492537313433,201
+Qwen,Qwen large,openai-api/local/qwen/qwen2.5-72b-instruct,0.7173169062286106,2024-09-19,0,201
+Qwen,Qwen small,openai-api/local/qwen/qwen1.5-7b-chat,0.09308692676249145,2024-02-04,0.6567164179104478,201
+Qwen,Qwen small,openai-api/local/qwen/qwen2-7b-instruct,0.42984257357973993,2024-06-06,0.8557213930348259,201
+Qwen,Qwen small,openai-api/local/qwen/qwen2.5-7b-instruct,0.7173169062286106,2024-09-19,0.8756218905472637,201

@@ -1,0 +1,27 @@
+task,scope,kr20,n_items,n_models
+tom_12dim_freeresponse,overall,0.9824,60,22
+tom_12dim_freeresponse,Diverse Beliefs,0.8517,5,22
+tom_12dim_freeresponse,Diverse Desires,0.92,5,22
+tom_12dim_freeresponse,Emotion Recognition,0.9131,5,22
+tom_12dim_freeresponse,Faux Pas Detection,0.6617,5,22
+tom_12dim_freeresponse,First-Order False Belief,0.8085,5,22
+tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),0.8783,5,22
+tom_12dim_freeresponse,Intention vs. Accident,0.8336,5,22
+tom_12dim_freeresponse,Irony,0.98,5,22
+tom_12dim_freeresponse,Knowledge Access / Ignorance,0.8224,5,22
+tom_12dim_freeresponse,Sarcasm,0.8068,5,22
+tom_12dim_freeresponse,Second-Order False Belief,0.8292,5,22
+tom_12dim_freeresponse,White Lies / Prosocial Deception,0.8245,5,22
+tom_12dim_mcq,overall,0.9959,141,22
+tom_12dim_mcq,Diverse Beliefs,0.982,13,22
+tom_12dim_mcq,Diverse Desires,0.9747,10,22
+tom_12dim_mcq,Emotion Recognition,0.9849,12,22
+tom_12dim_mcq,Faux Pas Detection,0.9664,13,22
+tom_12dim_mcq,First-Order False Belief,0.9668,16,22
+tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),0.9608,13,22
+tom_12dim_mcq,Intention vs. Accident,0.953,10,22
+tom_12dim_mcq,Irony,0.9568,10,22
+tom_12dim_mcq,Knowledge Access / Ignorance,0.9306,10,22
+tom_12dim_mcq,Sarcasm,0.9296,10,22
+tom_12dim_mcq,Second-Order False Belief,0.9617,14,22
+tom_12dim_mcq,White Lies / Prosocial Deception,0.9498,10,22

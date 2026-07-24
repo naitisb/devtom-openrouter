@@ -177,8 +177,9 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("google/gemma-2-9b-it",   "Gemma", "Gemma small", (2024, 6, 27)),  "delisted"),
 ]
 
-# Family display order: closed frontier families first, then open-weight.
-FAMILY_ORDER: list[str] = ["Claude", "GPT", "Llama", "Qwen", "Mistral"]
+# Trajectory-eligible families only. Claude and GPT are excluded (reason:
+# no-trajectory — see devtom-selfhost/models/manifest_excluded.yaml).
+FAMILY_ORDER: list[str] = ["Llama", "Qwen", "Mistral"]
 
 # Provider/author segment -> family label. Used to recover the family from a
 # raw model string like 'anthropic/claude-opus-4-6' or
