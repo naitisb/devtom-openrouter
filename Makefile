@@ -27,7 +27,7 @@ analyze: extract profile-dataset profile-results glmm irt ## run all analyses: e
 # --------------- pipeline stages: 4_statistics -> 5_model -> 6_visualize ---
 
 extract:      ## extract item-level data from .eval logs -> results/item_level.csv
-	python scripts/4_statistics/extract_item_level.py
+	python scripts/4_statistics/extract_item_level.py --log-dir logs ../devtom-selfhost/logs
 
 profile-dataset: ## profile the JSONL item banks -> results/stats/dataset/
 	python scripts/4_statistics/profile_dataset.py

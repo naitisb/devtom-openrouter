@@ -9,6 +9,7 @@ not header-only) and emits one row per (model, task, item) with the binary
 correct/incorrect outcome plus item and model metadata.
 
     python scripts/4_statistics/extract_item_level.py
+    python scripts/4_statistics/extract_item_level.py --log-dir logs ../devtom-selfhost/logs
     python scripts/4_statistics/extract_item_level.py --log-dir logs/Archive --all-runs
 """
 from __future__ import annotations
@@ -31,6 +32,7 @@ from inspect_ai.scorer import CORRECT  # noqa: E402
 from src.roster import (  # noqa: E402
     FAMILY_ORDER,
     MODEL_RELEASE_DATE,
+    _canonical_model,
     model_family,
     model_release_date,
     model_type,
@@ -63,34 +65,36 @@ def _parse_age_band(band: str | None) -> tuple[float | None, float | None, float
     return None, None, None
 
 
-def extract(log_dir: str, all_runs: bool = False) -> pd.DataFrame:
-    """Read all .eval logs and return item-level DataFrame."""
+def extract(log_dirs: list[str], all_runs: bool = False) -> pd.DataFrame:
+    """Read all .eval logs from one or more directories and return item-level DataFrame."""
     records: list[dict] = []
     log_meta: list[dict] = []
 
-    for info in list_eval_logs(log_dir, formats=["eval"], recursive=False):
-        log = read_eval_log(info)
-        task_name = _TASK_NORMALIZE.get(log.eval.task, log.eval.task)
-        if task_name not in TASK_NAMES:
-            continue
-        if log.status != "success":
-            print(f"skipping {info.name}: status={log.status}", file=sys.stderr)
-            continue
-        model = log.eval.model
-        family = model_family(model)
-        if family not in FAMILY_ORDER:
-            print(f"skipping {info.name}: model '{model}' not in a recognized family",
-                  file=sys.stderr)
-            continue
+    for log_dir in log_dirs:
+        for info in list_eval_logs(log_dir, formats=["eval"], recursive=False):
+            log = read_eval_log(info)
+            task_name = _TASK_NORMALIZE.get(log.eval.task, log.eval.task)
+            if task_name not in TASK_NAMES:
+                continue
+            if log.status != "success":
+                print(f"skipping {info.name}: status={log.status}", file=sys.stderr)
+                continue
+            model = log.eval.model
+            canonical = _canonical_model(model)
+            family = model_family(canonical)
+            if family not in FAMILY_ORDER:
+                print(f"skipping {info.name}: model '{model}' not in a recognized family",
+                      file=sys.stderr)
+                continue
 
-        log_meta.append({
-            "model": model, "task": task_name,
-            "created": log.eval.created, "log_file": info.name,
-        })
+            log_meta.append({
+                "model": model, "task": task_name,
+                "created": log.eval.created, "log_file": info.name,
+            })
 
-        date = model_release_date(model)
-        date_years = (date - _EPOCH).days / 365.25 if date else None
-        tier = model_type(model)
+            date = model_release_date(canonical)
+            date_years = (date - _EPOCH).days / 365.25 if date else None
+            tier = model_type(canonical)
 
         for s in log.samples or []:
             if not s.scores:
@@ -141,8 +145,8 @@ def extract(log_dir: str, all_runs: bool = False) -> pd.DataFrame:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--log-dir", default="logs",
-                    help="directory to scan for .eval logs (default: logs)")
+    ap.add_argument("--log-dir", nargs="+", default=["logs"],
+                    help="directories to scan for .eval logs (default: logs)")
     ap.add_argument("--out", default="results/item_level.csv",
                     help="output CSV path (default: results/item_level.csv)")
     ap.add_argument("--all-runs", action="store_true",
@@ -151,7 +155,7 @@ def main() -> int:
 
     df = extract(args.log_dir, all_runs=args.all_runs)
     if df.empty:
-        print(f"No usable .eval logs found under {args.log_dir}/", file=sys.stderr)
+        print(f"No usable .eval logs found under {args.log_dir}", file=sys.stderr)
         return 1
 
     out_path = Path(args.out)

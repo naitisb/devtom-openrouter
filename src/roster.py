@@ -107,6 +107,13 @@ ROSTER: list[ModelEntry] = [
     ModelEntry("o4-mini",            "GPT", "GPT reasoning mini", (2025, 4, 16), prefix="openai"),
 
     # ---------------- Meta Llama ----------------
+    # selfhost (local GPU via vLLM — delisted from OpenRouter)
+    ModelEntry("meta-llama/llama-2-7b-chat",         "Llama", "Llama small",    (2023, 7, 18)),
+    ModelEntry("meta-llama/llama-2-13b-chat",        "Llama", "Llama mid",      (2023, 7, 18)),
+    ModelEntry("meta-llama/llama-2-70b-chat",        "Llama", "Llama large",    (2023, 7, 18)),
+    ModelEntry("meta-llama/llama-3-8b-instruct",     "Llama", "Llama small",    (2024, 4, 18)),
+    ModelEntry("meta-llama/llama-3-70b-instruct",    "Llama", "Llama large",    (2024, 4, 18)),
+    # openrouter / API
     ModelEntry("meta-llama/llama-3.1-8b-instruct",   "Llama", "Llama small",    (2024, 7, 23)),
     ModelEntry("meta-llama/llama-3.1-70b-instruct",  "Llama", "Llama large",    (2024, 7, 23)),
     ModelEntry("meta-llama/llama-3.2-3b-instruct",   "Llama", "Llama small",    (2024, 9, 25)),
@@ -115,7 +122,15 @@ ROSTER: list[ModelEntry] = [
     ModelEntry("meta-llama/llama-4-maverick",        "Llama", "Llama frontier", (2025, 4, 5)),
 
     # ---------------- Alibaba Qwen ----------------
+    # selfhost (local GPU via vLLM — delisted from OpenRouter)
+    ModelEntry("qwen/qwen-1.5-7b-chat",              "Qwen", "Qwen small", (2024, 2, 4)),
+    ModelEntry("qwen/qwen-1.5-14b-chat",             "Qwen", "Qwen mid",   (2024, 2, 4)),
+    ModelEntry("qwen/qwen-1.5-72b-chat",             "Qwen", "Qwen large", (2024, 2, 4)),
+    ModelEntry("qwen/qwen-2-7b-instruct",            "Qwen", "Qwen small", (2024, 6, 6)),
+    ModelEntry("qwen/qwen-2-72b-instruct",           "Qwen", "Qwen large", (2024, 6, 6)),
+    # openrouter / API
     ModelEntry("qwen/qwen-2.5-7b-instruct",          "Qwen", "Qwen small", (2024, 9, 19)),
+    ModelEntry("qwen/qwen-2.5-32b-instruct",         "Qwen", "Qwen mid",   (2024, 9, 19)),
     ModelEntry("qwen/qwen-2.5-72b-instruct",         "Qwen", "Qwen large", (2024, 9, 19)),
     ModelEntry("qwen/qwen3-8b",                      "Qwen", "Qwen small", (2025, 4, 29)),
     ModelEntry("qwen/qwen3-32b",                     "Qwen", "Qwen mid",   (2025, 4, 29)),
@@ -134,6 +149,11 @@ ROSTER: list[ModelEntry] = [
     ModelEntry("ministral-3-8b-2512",         "Mistral", "Ministral",       (2025, 12, 2),  prefix="mistral"),
     ModelEntry("mistral-small-2603",          "Mistral", "Mistral Small",   (2026, 3, 16),  prefix="mistral"),
     ModelEntry("mistral-medium-3-5-26-04",    "Mistral", "Mistral Medium",  (2026, 4, 28),  prefix="mistral"),
+    # selfhost (local GPU via vLLM — delisted from OpenRouter)
+    ModelEntry("mistralai/mistral-7b-instruct",      "Mistral", "Mistral small", (2023, 9, 27)),
+    ModelEntry("mistralai/mistral-7b-instruct-v0.2", "Mistral", "Mistral small", (2024, 1, 15)),
+    ModelEntry("mistralai/mistral-7b-instruct-v0.3", "Mistral", "Mistral small", (2024, 5, 22)),
+    ModelEntry("mistralai/mixtral-8x7b-instruct",    "Mistral", "Mistral MoE",   (2023, 12, 11)),
 
 ]
 
@@ -147,18 +167,20 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     # ---------------- OpenAI GPT ----------------
     (ModelEntry("o1-mini", "GPT", "GPT reasoning mini", (2024, 9, 12), prefix="openai"), "retired"),
 
-    # ---------------- Meta Llama ----------------
-    (ModelEntry("meta-llama/llama-2-70b-chat",        "Llama", "Llama large",    (2023, 7, 18)),  "delisted"),
-    (ModelEntry("meta-llama/llama-3-8b-instruct",     "Llama", "Llama small",    (2024, 4, 18)),  "delisted"),
-    (ModelEntry("meta-llama/llama-3-70b-instruct",    "Llama", "Llama large",    (2024, 4, 18)),  "delisted"),
+    # ---------------- Meta Llama (moved to ROSTER via selfhost) ----------------
+    (ModelEntry("meta-llama/llama-2-7b-chat",         "Llama", "Llama small",    (2023, 7, 18)),  "selfhost"),
+    (ModelEntry("meta-llama/llama-2-13b-chat",        "Llama", "Llama mid",      (2023, 7, 18)),  "selfhost"),
+    (ModelEntry("meta-llama/llama-2-70b-chat",        "Llama", "Llama large",    (2023, 7, 18)),  "selfhost"),
+    (ModelEntry("meta-llama/llama-3-8b-instruct",     "Llama", "Llama small",    (2024, 4, 18)),  "selfhost"),
+    (ModelEntry("meta-llama/llama-3-70b-instruct",    "Llama", "Llama large",    (2024, 4, 18)),  "selfhost"),
     (ModelEntry("meta-llama/llama-3.1-405b-instruct", "Llama", "Llama frontier", (2024, 7, 23)),  "delisted"),
 
-    # ---------------- Alibaba Qwen ----------------
-    (ModelEntry("qwen/qwen-1.5-7b-chat",              "Qwen", "Qwen small", (2024, 2, 4)),  "delisted"),
-    (ModelEntry("qwen/qwen-1.5-14b-chat",             "Qwen", "Qwen mid",   (2024, 2, 4)),  "delisted"),
-    (ModelEntry("qwen/qwen-1.5-72b-chat",             "Qwen", "Qwen large", (2024, 2, 4)),  "delisted"),
-    (ModelEntry("qwen/qwen-2-7b-instruct",            "Qwen", "Qwen small", (2024, 6, 6)),  "delisted"),
-    (ModelEntry("qwen/qwen-2-72b-instruct",           "Qwen", "Qwen large", (2024, 6, 6)),  "delisted"),
+    # ---------------- Alibaba Qwen (moved to ROSTER via selfhost) ----------------
+    (ModelEntry("qwen/qwen-1.5-7b-chat",              "Qwen", "Qwen small", (2024, 2, 4)),  "selfhost"),
+    (ModelEntry("qwen/qwen-1.5-14b-chat",             "Qwen", "Qwen mid",   (2024, 2, 4)),  "selfhost"),
+    (ModelEntry("qwen/qwen-1.5-72b-chat",             "Qwen", "Qwen large", (2024, 2, 4)),  "selfhost"),
+    (ModelEntry("qwen/qwen-2-7b-instruct",            "Qwen", "Qwen small", (2024, 6, 6)),  "selfhost"),
+    (ModelEntry("qwen/qwen-2-72b-instruct",           "Qwen", "Qwen large", (2024, 6, 6)),  "selfhost"),
     # ---------------- DeepSeek ----------------
     (ModelEntry("deepseek/deepseek-chat",             "DeepSeek", "DeepSeek V", (2024, 12, 26)),  "insufficient-variability"),
     (ModelEntry("deepseek/deepseek-r1",               "DeepSeek", "DeepSeek R", (2025, 1, 20)),   "insufficient-variability"),
@@ -170,11 +192,11 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     # ---------------- Mistral (OpenRouter — superseded by Mistral la Plateforme API) ----------------
     (ModelEntry("mistralai/mistral-small-24b-instruct-2501", "Mistral", "Mistral Small", (2025, 1, 30)), "superseded"),
     (ModelEntry("mistralai/mistral-small-3.2-24b-instruct",  "Mistral", "Mistral Small", (2025, 6, 20)), "superseded"),
-    # ---------------- Mistral (historical, delisted/no-zdr) ----------------
-    (ModelEntry("mistralai/mistral-7b-instruct",      "Mistral", "Mistral small", (2023, 9, 27)),  "delisted"),
-    (ModelEntry("mistralai/mistral-7b-instruct-v0.2", "Mistral", "Mistral small", (2024, 1, 15)),  "delisted"),
-    (ModelEntry("mistralai/mistral-7b-instruct-v0.3", "Mistral", "Mistral small", (2024, 5, 22)),  "delisted"),
-    (ModelEntry("mistralai/mixtral-8x7b-instruct",    "Mistral", "Mistral MoE",   (2023, 12, 11)), "delisted"),
+    # ---------------- Mistral (historical — moved to ROSTER via selfhost) --------
+    (ModelEntry("mistralai/mistral-7b-instruct",      "Mistral", "Mistral small", (2023, 9, 27)),  "selfhost"),
+    (ModelEntry("mistralai/mistral-7b-instruct-v0.2", "Mistral", "Mistral small", (2024, 1, 15)),  "selfhost"),
+    (ModelEntry("mistralai/mistral-7b-instruct-v0.3", "Mistral", "Mistral small", (2024, 5, 22)),  "selfhost"),
+    (ModelEntry("mistralai/mixtral-8x7b-instruct",    "Mistral", "Mistral MoE",   (2023, 12, 11)), "selfhost"),
     (ModelEntry("mistralai/mistral-large",            "Mistral", "Mistral large", (2024, 2, 26)),  "no-zdr"),
     (ModelEntry("mistralai/mixtral-8x22b-instruct",   "Mistral", "Mistral MoE",   (2024, 4, 17)),  "no-zdr"),
     (ModelEntry("mistralai/mistral-large-2407",       "Mistral", "Mistral large", (2024, 7, 24)),  "no-zdr"),
@@ -273,11 +295,13 @@ MODEL_RELEASE_DATE: dict[str, tuple[int, int, int]] = {m: e.date for m, e in _BY
 # the canonical slug used in ROSTER/EXCLUDED so local-run logs resolve correctly.
 _SLUG_ALIASES: dict[str, str] = {
     "qwen/qwen2.5-7b-instruct":  "qwen/qwen-2.5-7b-instruct",
+    "qwen/qwen2.5-32b-instruct": "qwen/qwen-2.5-32b-instruct",
     "qwen/qwen2.5-72b-instruct": "qwen/qwen-2.5-72b-instruct",
     "qwen/qwen2-7b-instruct":    "qwen/qwen-2-7b-instruct",
     "qwen/qwen2-72b-instruct":   "qwen/qwen-2-72b-instruct",
     "qwen/qwen1.5-7b-chat":      "qwen/qwen-1.5-7b-chat",
     "qwen/qwen1.5-14b-chat":     "qwen/qwen-1.5-14b-chat",
+    "qwen/qwen1.5-72b-chat":     "qwen/qwen-1.5-72b-chat",
 }
 
 # Chronological (oldest->newest) model list per family, matching the plotting
@@ -292,14 +316,20 @@ FAMILY_CHRONOLOGICAL_ORDER: dict[str, list[str]] = {
 # segment. Total (not active) params — see size_covariate_regression.py for the
 # MoE caveat (DeepSeek 671B total / ~37B active, Llama-4 MoE).
 PARAMS_B: dict[str, float] = {
+    "llama-2-7b-chat": 7, "llama-2-13b-chat": 13, "llama-2-70b-chat": 70,
+    "llama-3-8b-instruct": 8, "llama-3-70b-instruct": 70,
     "llama-3.1-8b-instruct": 8, "llama-3.1-70b-instruct": 70,
     "llama-3.2-3b-instruct": 3, "llama-3.3-70b-instruct": 70,
     "llama-4-scout": 109, "llama-4-maverick": 400,
-    "qwen-2.5-7b-instruct": 7, "qwen-2.5-72b-instruct": 72,
+    "qwen-1.5-7b-chat": 7, "qwen-1.5-14b-chat": 14, "qwen-1.5-72b-chat": 72,
+    "qwen-2-7b-instruct": 7, "qwen-2-72b-instruct": 72,
+    "qwen-2.5-7b-instruct": 7, "qwen-2.5-32b-instruct": 32, "qwen-2.5-72b-instruct": 72,
     "qwen3-8b": 8, "qwen3-32b": 32, "qwen3-235b-a22b": 235,
     "qwen3.5-9b": 9, "qwen3.5-27b": 27, "qwen3.5-397b-a17b": 397, "qwen3.6-27b": 27,
     "deepseek-chat": 671, "deepseek-r1": 671,
     "deepseek-chat-v3-0324": 671, "deepseek-r1-0528": 671,
+    "mistral-7b-instruct": 7, "mistral-7b-instruct-v0.2": 7, "mistral-7b-instruct-v0.3": 7,
+    "mixtral-8x7b-instruct": 47,
     "mistral-small-24b-instruct-2501": 24, "mistral-small-3.2-24b-instruct": 24,
     "ministral-8b-2410": 8, "mistral-small-2503": 24, "mistral-medium-2505": 73,
     "mistral-medium-2508": 73, "mistral-large-2512": 123,
