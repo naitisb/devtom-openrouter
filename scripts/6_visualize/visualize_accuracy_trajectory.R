@@ -158,49 +158,6 @@ p_tier_task <- ggplot(acc_by_task, aes(x = date, y = accuracy,
 save_plot(p_tier_task, "accuracy_by_tier_mcq_vs_fr.png", width = 16, height = 7)
 
 # ---------------------------------------------------------------------------
-# c. Collapsed by model family — all tasks combined
-# ---------------------------------------------------------------------------
-p_family_overall <- ggplot(acc_overall, aes(x = date, y = accuracy,
-                                              color = family)) +
-  geom_point(size = 3) +
-  geom_errorbar(aes(ymin = ci_lo, ymax = ci_hi), width = 10, linewidth = 0.4) +
-  geom_line(aes(group = family), linewidth = 0.5, alpha = 0.4) +
-  geom_text(aes(label = short_model), size = 2.2, hjust = -0.1, vjust = -0.6,
-            check_overlap = TRUE, show.legend = FALSE) +
-  scale_color_manual(values = FAMILY_COLORS) +
-  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
-  scale_x_date(date_labels = "%b %Y") +
-  labs(title = "Model accuracy vs release date (by family)",
-       subtitle = "MCQ + FR combined; lines connect models within a family",
-       x = "Release date", y = "Overall accuracy",
-       color = "Family") +
-  theme_devtom() +
-  theme(legend.position = "bottom")
-save_plot(p_family_overall, "accuracy_by_family_overall.png")
-
-# ---------------------------------------------------------------------------
-# d. Collapsed by model family — faceted MCQ vs FR
-# ---------------------------------------------------------------------------
-p_family_task <- ggplot(acc_by_task, aes(x = date, y = accuracy,
-                                           color = family)) +
-  geom_point(size = 3) +
-  geom_errorbar(aes(ymin = ci_lo, ymax = ci_hi), width = 10, linewidth = 0.4) +
-  geom_line(aes(group = family), linewidth = 0.5, alpha = 0.4) +
-  geom_text(aes(label = short_model), size = 2.2, hjust = -0.1, vjust = -0.6,
-            check_overlap = TRUE, show.legend = FALSE) +
-  scale_color_manual(values = FAMILY_COLORS) +
-  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
-  scale_x_date(date_labels = "%b %Y") +
-  facet_wrap(~task_label) +
-  labs(title = "Model accuracy vs release date (by family, MCQ vs FR)",
-       subtitle = "Lines connect models within a family",
-       x = "Release date", y = "Accuracy",
-       color = "Family") +
-  theme_devtom() +
-  theme(legend.position = "bottom")
-save_plot(p_family_task, "accuracy_by_family_mcq_vs_fr.png", width = 16, height = 7)
-
-# ---------------------------------------------------------------------------
 # e. By tier, faceted by family — MCQ vs FR as shape/color
 # ---------------------------------------------------------------------------
 p_family_facet <- ggplot(acc_by_task, aes(x = date, y = accuracy,

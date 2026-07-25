@@ -1,0 +1,59 @@
+
+=== Model 1: date × tier (per family) ===
+  Ceiling (100% correct): Emotion Recognition, Irony
+Fitting: M1:Llama (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 603
+  WARNING: singular fit for M1:Llama
+  CONVERGENCE: boundary (singular) fit: see help('isSingular')
+  AIC = 371.8
+  Prediction failed for Llama: non-numeric argument to binary operator
+Fitting: M1:Mistral (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 804
+  AIC = 769
+  Prediction failed for Mistral: non-numeric argument to binary operator
+Fitting: M1:Qwen (correct ~ date_c * tier + (1 | item_id) + (1 | model))
+  n = 1206
+  AIC = 788
+  Prediction failed for Qwen: non-numeric argument to binary operator
+
+=== Model 2: date × dim_rank (per family) ===
+Fitting: M2:Llama (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 603
+  AIC = 394.9
+Fitting: M2:Mistral (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 804
+  AIC = 780.9
+Fitting: M2:Qwen (correct ~ date_c * dim_rank + (1 | item_id) + (1 | model))
+  n = 1206
+  AIC = 776.4
+
+=== Model 3: date × task (per family) ===
+Fitting: M3:Llama (correct ~ date_c * task + (1 | item_id))
+  n = 603
+  AIC = 399.3
+Fitting: M3:Mistral (correct ~ date_c * task + (1 | item_id))
+  n = 804
+  AIC = 976.2
+Fitting: M3:Qwen (correct ~ date_c * task + (1 | item_id))
+  n = 1206
+  WARNING: singular fit for M3:Qwen
+  CONVERGENCE: boundary (singular) fit: see help('isSingular')
+  AIC = 1378
+
+=== Model 4: date × family (joint, cross-family) ===
+Fitting: M4:joint (correct ~ date_c * family + (1 | item_id) + (1 | model))
+  n = 2613
+  AIC = 1846.9
+Fitting: M4:null (correct ~ date_c + (1 | item_id))
+  n = 2613
+  AIC = 3371.8
+LRT (date vs date×family): chi2=1534.89 df=NA p=< 2.22e-16
+
+Wrote glmm_or_table.csv: 40 rows
+Wrote glmm_observed_points.csv: 13 rows
+Wrote glmm_dim_time_slopes.csv: 36 rows
+Wrote glmm_pred_by_task.csv: 300 rows
+
+CAVEAT: These trajectory estimates do not model potential contamination.
+The item bank is unpublished, mitigating training-set leakage (see ANALYSIS_PLAN.md
+Threat 7), but the caveat should accompany any interpretation of time slopes.

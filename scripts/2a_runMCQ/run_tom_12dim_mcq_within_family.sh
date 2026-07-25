@@ -8,7 +8,7 @@
 # scripts/3_runAll/run_tom_12dim_all_within_family.sh.
 #
 # Model list comes from src/roster.py; routing prefs from src/openrouter.py.
-# ONLY_FAMILY=<Llama|Qwen|DeepSeek|Mistral|Gemma> restricts to one family.
+# ONLY_FAMILY=<Llama|Qwen|Mistral> restricts to one family.
 # MAX_TOKENS=<n> overrides the per-call output cap (default 16000).
 # TEMPERATURE=<t> standardizes decoding (skipped for models that reject it).
 #
@@ -29,8 +29,8 @@ INSPECT_BIN="$(command -v inspect)"
 if [[ -f "$PROJECT_ROOT/.env" ]]; then
   set -a; source "$PROJECT_ROOT/.env"; set +a
 fi
-if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" ]]; then
-  echo "No API keys set (OPENROUTER_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
+if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" && -z "${MISTRAL_API_KEY:-}" ]]; then
+  echo "No API keys set (OPENROUTER_API_KEY / MISTRAL_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
   exit 1
 fi
 
@@ -73,6 +73,19 @@ echo "Running MCQ task on ${#MODELS[@]} models"
 
 TASK="scripts/3_runAll/tom_12dim_mcq.py"
 for m in "${MODELS[@]}"; do
+  # Skip models whose provider key is missing.
+  if [[ "$m" == openrouter/* && -z "${OPENROUTER_API_KEY:-}" ]]; then
+    echo "Skipping $m: OPENROUTER_API_KEY not set"; continue
+  fi
+  if [[ "$m" == mistral/* && -z "${MISTRAL_API_KEY:-}" ]]; then
+    echo "Skipping $m: MISTRAL_API_KEY not set"; continue
+  fi
+  if [[ "$m" == openai/* && -z "${OPENAI_API_KEY:-}" ]]; then
+    echo "Skipping $m: OPENAI_API_KEY not set"; continue
+  fi
+  if [[ "$m" == anthropic/* && -z "${ANTHROPIC_API_KEY:-}" ]]; then
+    echo "Skipping $m: ANTHROPIC_API_KEY not set"; continue
+  fi
   echo "=== Running $TASK on $m ==="
   temp_args=()
   if [[ -n "$TEMPERATURE" ]] && ! python -m src.decoding --omits "$m"; then

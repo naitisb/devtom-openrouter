@@ -29,7 +29,7 @@ def test_slugs_unique():
 def test_model_strings_route_via_known_prefix_and_end_in_slug():
     # Models route through OpenRouter, direct API (anthropic/), or locally.
     # Either way the model string ends in its slug and must be classifiable.
-    KNOWN_PREFIXES = ("openrouter/", "openai-api/local/", "anthropic/", "openai/")
+    KNOWN_PREFIXES = ("openrouter/", "openai-api/local/", "anthropic/", "openai/", "mistral/")
     for e in ROSTER:
         assert e.model.endswith(e.slug), f"{e.model} does not end with slug {e.slug}"
         assert e.model.startswith(KNOWN_PREFIXES), \
@@ -37,7 +37,7 @@ def test_model_strings_route_via_known_prefix_and_end_in_slug():
         # The family must be recoverable from the raw model string: strip the
         # router prefix and map the author segment via AUTHOR_TO_FAMILY (the
         # same scheme src/scorer.py and the analysis script rely on).
-        tail = e.model.removeprefix("openai-api/local/").removeprefix("openrouter/").removeprefix("anthropic/").removeprefix("openai/")
+        tail = e.model.removeprefix("openai-api/local/").removeprefix("openrouter/").removeprefix("anthropic/").removeprefix("openai/").removeprefix("mistral/")
         author = tail.split("/", 1)[0]
         # For anthropic/ and openai/ models, the author IS the prefix itself
         if e.model.startswith("anthropic/"):
@@ -48,13 +48,21 @@ def test_model_strings_route_via_known_prefix_and_end_in_slug():
             assert AUTHOR_TO_FAMILY.get("openai") == e.family, \
                 f"openai prefix should map to {e.family}"
             continue
+        if e.model.startswith("mistral/"):
+            assert AUTHOR_TO_FAMILY.get("mistral") == e.family, \
+                f"mistral prefix should map to {e.family}"
+            continue
         assert AUTHOR_TO_FAMILY.get(author) == e.family, \
             f"{e.model} author {author!r} does not map to family {e.family}"
 
 
 def test_every_family_is_known_and_nonempty():
     fams = {e.family for e in ROSTER}
-    assert fams == set(FAMILY_ORDER), f"family set {fams} != FAMILY_ORDER {FAMILY_ORDER}"
+    # FAMILY_ORDER is trajectory-eligible only; ROSTER also includes Claude/GPT
+    assert set(FAMILY_ORDER).issubset(fams), \
+        f"FAMILY_ORDER families {set(FAMILY_ORDER) - fams} missing from ROSTER"
+    assert fams.issubset(set(AUTHOR_TO_FAMILY.values())), \
+        f"ROSTER families {fams - set(AUTHOR_TO_FAMILY.values())} not in AUTHOR_TO_FAMILY"
     for fam in FAMILY_ORDER:
         assert models_for_family(fam), f"no models for family {fam}"
 

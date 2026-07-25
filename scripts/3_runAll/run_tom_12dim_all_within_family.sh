@@ -11,9 +11,9 @@
 #
 # The model list is NOT hard-coded here: it comes from src/roster.py (the single
 # source of truth the analysis script also reads), so "what we ran" and "what we
-# plotted" can't drift. The current roster is ~19 live/routable open models across
-# 5 families (Llama, Qwen, DeepSeek, Mistral, Gemma) x 2 tasks x ~184 items (see
-# src/roster.py EXCLUDED for models dropped as delisted or no-ZDR). That's a real
+# plotted" can't drift. The current roster is 38 models across 5 families
+# (Claude, GPT, Llama, Qwen, Mistral) x 2 tasks x ~201 items (see src/roster.py
+# EXCLUDED for models dropped as delisted or no-ZDR). That's a real
 # cost/time commitment — set ONLY_FAMILY=Llama (etc.) to trim to one family, or
 # use scripts/3_runAll/run_tom_12dim_selective.sh for an arbitrary subset.
 # MAX_TOKENS=<n> overrides the per-call output cap (default 16000).
@@ -31,7 +31,7 @@
 # model is graded by its own family (avoids LLM-judge self-preference bias).
 # See src/scorer.py.
 #
-# Assumes a venv with inspect-ai installed and OPENROUTER_API_KEY in .env.
+# Assumes a venv with inspect-ai installed and API keys in .env.
 # Run from root with: bash scripts/3_runAll/run_tom_12dim_all_within_family.sh
 #   ONLY_FAMILY=Qwen bash scripts/3_runAll/run_tom_12dim_all_within_family.sh
 
@@ -56,9 +56,9 @@ if [[ -f "$PROJECT_ROOT/.env" ]]; then
 fi
 
 # At least one provider key is needed. OpenRouter for open-weight families,
-# OpenAI for GPT, Anthropic for Claude — check later per-model which applies.
-if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" ]]; then
-  echo "No API keys set (OPENROUTER_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
+# Mistral for Mistral la Plateforme, OpenAI for GPT, Anthropic for Claude.
+if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" && -z "${MISTRAL_API_KEY:-}" ]]; then
+  echo "No API keys set (OPENROUTER_API_KEY / MISTRAL_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
   exit 1
 fi
 
@@ -126,6 +126,19 @@ TASKS=(
 )
 
 for m in "${MODELS[@]}"; do
+  # Skip models whose provider key is missing.
+  if [[ "$m" == openrouter/* && -z "${OPENROUTER_API_KEY:-}" ]]; then
+    echo "Skipping $m: OPENROUTER_API_KEY not set"; continue
+  fi
+  if [[ "$m" == mistral/* && -z "${MISTRAL_API_KEY:-}" ]]; then
+    echo "Skipping $m: MISTRAL_API_KEY not set"; continue
+  fi
+  if [[ "$m" == openai/* && -z "${OPENAI_API_KEY:-}" ]]; then
+    echo "Skipping $m: OPENAI_API_KEY not set"; continue
+  fi
+  if [[ "$m" == anthropic/* && -z "${ANTHROPIC_API_KEY:-}" ]]; then
+    echo "Skipping $m: ANTHROPIC_API_KEY not set"; continue
+  fi
   for t in "${TASKS[@]}"; do
     echo "=== Running $t on $m ==="
     # `|| true`: one unavailable/delisted model (or one with no ZDR upstream, which

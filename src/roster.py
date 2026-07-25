@@ -12,13 +12,13 @@ the roster can't drift between "what we ran" and "what we plotted."
 
 The study compares model families across releases, oldest to newest. The roster
 covers both **closed frontier families** (Claude, GPT) evaluated via direct API
-and **open-weight families** (Llama, Qwen, DeepSeek, Mistral, Gemma) evaluated
-via OpenRouter — deliberately reaching **back in time to older releases** so
-each family has a real multi-release history to trend.
+and **open-weight families** (Llama, Qwen, Mistral) evaluated via OpenRouter
+or Mistral la Plateforme API — deliberately reaching **back in time to older
+releases** so each family has a real multi-release history to trend.
 
-- **family**  = the model lineage (Claude, GPT, Llama, Qwen, DeepSeek, Mistral,
-  Gemma). Derived from the provider prefix (`anthropic` -> Claude,
-  `openai` -> GPT, `meta-llama` -> Llama, etc.).
+- **family**  = the model lineage (Claude, GPT, Llama, Qwen, Mistral).
+  Derived from the provider prefix (`anthropic` -> Claude, `openai` -> GPT,
+  `meta-llama` -> Llama, `mistral`/`mistralai` -> Mistral, etc.).
 - **type**    = size/architecture tier *within* a family (e.g. "Llama small",
   "Llama large", "Claude Opus", "GPT reasoning"). Orthogonal to family; each
   tier has its own release history worth trending on its own line. Collapsing
@@ -117,11 +117,23 @@ ROSTER: list[ModelEntry] = [
     # ---------------- Alibaba Qwen ----------------
     ModelEntry("qwen/qwen-2.5-7b-instruct",          "Qwen", "Qwen small", (2024, 9, 19)),
     ModelEntry("qwen/qwen-2.5-72b-instruct",         "Qwen", "Qwen large", (2024, 9, 19)),
+    ModelEntry("qwen/qwen3-8b",                      "Qwen", "Qwen small", (2025, 4, 29)),
     ModelEntry("qwen/qwen3-32b",                     "Qwen", "Qwen mid",   (2025, 4, 29)),
+    ModelEntry("qwen/qwen3-235b-a22b",               "Qwen", "Qwen large", (2025, 4, 29)),
+    ModelEntry("qwen/qwen3.5-9b",                    "Qwen", "Qwen small", (2026, 3, 2)),
+    ModelEntry("qwen/qwen3.5-27b",                   "Qwen", "Qwen mid",   (2026, 2, 24)),
+    ModelEntry("qwen/qwen3.5-397b-a17b",             "Qwen", "Qwen large", (2026, 2, 16)),
+    ModelEntry("qwen/qwen3.6-27b",                   "Qwen", "Qwen mid",   (2026, 4, 22)),
 
-    # ---------------- Mistral ----------------
-    ModelEntry("mistralai/mistral-small-24b-instruct-2501", "Mistral", "Mistral small", (2025, 1, 30)),
-    ModelEntry("mistralai/mistral-small-3.2-24b-instruct",  "Mistral", "Mistral small", (2025, 6, 20)),
+    # ---------------- Mistral (via Mistral la Plateforme API) ----------------
+    ModelEntry("ministral-8b-2410",           "Mistral", "Ministral",       (2024, 10, 16), prefix="mistral"),
+    ModelEntry("mistral-small-2503",          "Mistral", "Mistral Small",   (2025, 3, 17),  prefix="mistral"),
+    ModelEntry("mistral-medium-2505",         "Mistral", "Mistral Medium",  (2025, 5, 7),   prefix="mistral"),
+    ModelEntry("mistral-medium-2508",         "Mistral", "Mistral Medium",  (2025, 8, 12),  prefix="mistral"),
+    ModelEntry("mistral-large-2512",          "Mistral", "Mistral Large",   (2025, 12, 2),  prefix="mistral"),
+    ModelEntry("ministral-3-8b-2512",         "Mistral", "Ministral",       (2025, 12, 2),  prefix="mistral"),
+    ModelEntry("mistral-small-2603",          "Mistral", "Mistral Small",   (2026, 3, 16),  prefix="mistral"),
+    ModelEntry("mistral-medium-3-5-26-04",    "Mistral", "Mistral Medium",  (2026, 4, 28),  prefix="mistral"),
 
 ]
 
@@ -147,9 +159,6 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("qwen/qwen-1.5-72b-chat",             "Qwen", "Qwen large", (2024, 2, 4)),  "delisted"),
     (ModelEntry("qwen/qwen-2-7b-instruct",            "Qwen", "Qwen small", (2024, 6, 6)),  "delisted"),
     (ModelEntry("qwen/qwen-2-72b-instruct",           "Qwen", "Qwen large", (2024, 6, 6)),  "delisted"),
-    (ModelEntry("qwen/qwen3-8b",                      "Qwen", "Qwen small", (2025, 4, 29)), "no-zdr"),
-    (ModelEntry("qwen/qwen3-235b-a22b",               "Qwen", "Qwen large", (2025, 4, 29)), "no-zdr"),
-
     # ---------------- DeepSeek ----------------
     (ModelEntry("deepseek/deepseek-chat",             "DeepSeek", "DeepSeek V", (2024, 12, 26)),  "insufficient-variability"),
     (ModelEntry("deepseek/deepseek-r1",               "DeepSeek", "DeepSeek R", (2025, 1, 20)),   "insufficient-variability"),
@@ -158,7 +167,10 @@ EXCLUDED: list[tuple[ModelEntry, str]] = [
     (ModelEntry("deepseek/deepseek-llm-7b-chat",      "DeepSeek", "DeepSeek V", (2023, 11, 29)),  "delisted"),
     (ModelEntry("deepseek/deepseek-llm-67b-chat",     "DeepSeek", "DeepSeek V", (2023, 11, 29)),  "delisted"),
 
-    # ---------------- Mistral ----------------
+    # ---------------- Mistral (OpenRouter — superseded by Mistral la Plateforme API) ----------------
+    (ModelEntry("mistralai/mistral-small-24b-instruct-2501", "Mistral", "Mistral Small", (2025, 1, 30)), "superseded"),
+    (ModelEntry("mistralai/mistral-small-3.2-24b-instruct",  "Mistral", "Mistral Small", (2025, 6, 20)), "superseded"),
+    # ---------------- Mistral (historical, delisted/no-zdr) ----------------
     (ModelEntry("mistralai/mistral-7b-instruct",      "Mistral", "Mistral small", (2023, 9, 27)),  "delisted"),
     (ModelEntry("mistralai/mistral-7b-instruct-v0.2", "Mistral", "Mistral small", (2024, 1, 15)),  "delisted"),
     (ModelEntry("mistralai/mistral-7b-instruct-v0.3", "Mistral", "Mistral small", (2024, 5, 22)),  "delisted"),
@@ -190,6 +202,7 @@ AUTHOR_TO_FAMILY: dict[str, str] = {
     "meta-llama": "Llama",
     "qwen": "Qwen",
     "deepseek": "DeepSeek",
+    "mistral": "Mistral",
     "mistralai": "Mistral",
     "google": "Gemma",
 }
@@ -214,6 +227,10 @@ TYPE_COLORS: dict[str, str] = {
     "Qwen large":          "#54278f",
     "DeepSeek V":          "#66c2a4",
     "DeepSeek R":          "#006d2c",
+    "Ministral":           "#fcbba1",
+    "Mistral Small":       "#fc9272",
+    "Mistral Medium":      "#de2d26",
+    "Mistral Large":       "#a50f15",
     "Mistral small":       "#fdae6b",
     "Mistral MoE":         "#f16913",
     "Mistral large":       "#a63603",
@@ -241,6 +258,7 @@ TYPE_ORDER: list[str] = [
     "Llama small", "Llama mid", "Llama large", "Llama frontier",
     "Qwen small", "Qwen mid", "Qwen large",
     "DeepSeek V", "DeepSeek R",
+    "Ministral", "Mistral Small", "Mistral Medium", "Mistral Large",
     "Mistral small", "Mistral MoE", "Mistral large",
     "Gemma small", "Gemma mid", "Gemma large",
 ]
@@ -279,10 +297,15 @@ PARAMS_B: dict[str, float] = {
     "llama-3.1-8b-instruct": 8, "llama-3.1-70b-instruct": 70,
     "llama-3.2-3b-instruct": 3, "llama-3.3-70b-instruct": 70,
     "llama-4-scout": 109, "llama-4-maverick": 400,
-    "qwen-2.5-7b-instruct": 7, "qwen-2.5-72b-instruct": 72, "qwen3-32b": 32,
+    "qwen-2.5-7b-instruct": 7, "qwen-2.5-72b-instruct": 72,
+    "qwen3-8b": 8, "qwen3-32b": 32, "qwen3-235b-a22b": 235,
+    "qwen3.5-9b": 9, "qwen3.5-27b": 27, "qwen3.5-397b-a17b": 397, "qwen3.6-27b": 27,
     "deepseek-chat": 671, "deepseek-r1": 671,
     "deepseek-chat-v3-0324": 671, "deepseek-r1-0528": 671,
     "mistral-small-24b-instruct-2501": 24, "mistral-small-3.2-24b-instruct": 24,
+    "ministral-8b-2410": 8, "mistral-small-2503": 24, "mistral-medium-2505": 73,
+    "mistral-medium-2508": 73, "mistral-large-2512": 123,
+    "ministral-3-8b-2512": 8, "mistral-small-2603": 24, "mistral-medium-3-5-26-04": 73,
     "gemma-2-27b-it": 27, "gemma-3-4b-it": 4,
     "gemma-3-12b-it": 12, "gemma-3-27b-it": 27,
 }
@@ -373,7 +396,7 @@ def excluded_models() -> list[tuple[str, str]]:
 
 def _main() -> int:
     ap = argparse.ArgumentParser(description="Print roster model strings (for shell runners).")
-    ap.add_argument("--family", help="restrict to one family (Llama/Qwen/DeepSeek/Mistral/Gemma)")
+    ap.add_argument("--family", help="restrict to one family (Llama/Qwen/Mistral)")
     ap.add_argument("--list-families", action="store_true", help="print family names, one per line")
     ap.add_argument("--list-excluded", action="store_true",
                     help="print parked (unroutable) models as 'model\\treason', one per line")

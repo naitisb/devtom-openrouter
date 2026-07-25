@@ -26,7 +26,7 @@ fi
 
 if [[ "$#" -eq 0 ]]; then
   echo "Usage: bash scripts/3_runAll/run_tom_12dim_selective.sh [--fresh] <model-slug> [<model-slug> ...]" >&2
-  echo "Roster slugs: python -m src.roster   (or --family <Llama|Qwen|DeepSeek|Mistral|Gemma>)" >&2
+  echo "Roster slugs: python -m src.roster   (or --family <Llama|Qwen|Mistral>)" >&2
   exit 1
 fi
 
@@ -39,8 +39,8 @@ INSPECT_BIN="$(command -v inspect)"
 if [[ -f "$PROJECT_ROOT/.env" ]]; then
   set -a; source "$PROJECT_ROOT/.env"; set +a
 fi
-if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" ]]; then
-  echo "No API keys set (OPENROUTER_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
+if [[ -z "${OPENROUTER_API_KEY:-}" && -z "${OPENAI_API_KEY:-}" && -z "${ANTHROPIC_API_KEY:-}" && -z "${MISTRAL_API_KEY:-}" ]]; then
+  echo "No API keys set (OPENROUTER_API_KEY / MISTRAL_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY). Add at least one to .env." >&2
   exit 1
 fi
 
@@ -84,10 +84,23 @@ TASKS=(
 for raw in "$@"; do
   # Accept full model strings (openrouter/..., openai/..., anthropic/...) or
   # bare 'author/slug' (defaults to openrouter/ prefix for open-weight models).
-  if [[ "$raw" == openrouter/* || "$raw" == openai/* || "$raw" == anthropic/* ]]; then
+  if [[ "$raw" == openrouter/* || "$raw" == openai/* || "$raw" == anthropic/* || "$raw" == mistral/* ]]; then
     m="$raw"
   else
     m="openrouter/$raw"
+  fi
+  # Skip models whose provider key is missing.
+  if [[ "$m" == openrouter/* && -z "${OPENROUTER_API_KEY:-}" ]]; then
+    echo "Skipping $m: OPENROUTER_API_KEY not set"; continue
+  fi
+  if [[ "$m" == mistral/* && -z "${MISTRAL_API_KEY:-}" ]]; then
+    echo "Skipping $m: MISTRAL_API_KEY not set"; continue
+  fi
+  if [[ "$m" == openai/* && -z "${OPENAI_API_KEY:-}" ]]; then
+    echo "Skipping $m: OPENAI_API_KEY not set"; continue
+  fi
+  if [[ "$m" == anthropic/* && -z "${ANTHROPIC_API_KEY:-}" ]]; then
+    echo "Skipping $m: ANTHROPIC_API_KEY not set"; continue
   fi
   for t in "${TASKS[@]}"; do
     echo "=== Running $t on $m ==="

@@ -175,47 +175,31 @@ if (file.exists(theta_file)) {
   # Age-anchored theta (if available)
   if ("age_anchored_theta" %in% names(theta) &&
       any(!is.na(theta$age_anchored_theta))) {
-    p2 <- ggplot(theta, aes(x = date_years, y = age_anchored_theta,
-                              color = tier)) +
+    theta_anchored <- theta %>%
+      filter(!is.na(age_anchored_theta), !is.na(date_years)) %>%
+      group_by(tier, task) %>%
+      filter(n() >= 3, n_distinct(date_years) >= 2) %>%
+      ungroup()
+
+    p2 <- ggplot(theta %>% filter(!is.na(age_anchored_theta)),
+                 aes(x = date_years, y = age_anchored_theta, color = tier)) +
+      geom_smooth(data = theta_anchored,
+                  aes(fill = tier), method = "lm",
+                  se = TRUE, linewidth = 0.9, linetype = "dashed",
+                  alpha = 0.08) +
       geom_point(size = 2.5) +
       geom_text(aes(label = short_model), size = 2, hjust = -0.1,
                 vjust = -0.5, check_overlap = TRUE) +
       scale_color_manual(values = TYPE_COLORS) +
+      scale_fill_manual(values = TYPE_COLORS, guide = "none") +
       facet_wrap(~task) +
-      labs(title = "Age-anchored theta trajectory",
-           subtitle = "Theta mapped to equivalent child age via item-difficulty regression",
+      labs(title = "Age-equivalent trajectory by model tier",
+           subtitle = "OLS regression ± 95% CI per tier (tiers with ≥ 3 models); equivalent child age via item-difficulty mapping",
            x = "Release date (years since 2024-01-01)",
            y = "Age-equivalent (years)", color = "Tier") +
       theme_devtom() +
       theme(legend.position = "bottom")
     save_plot(p2, "theta_age_anchored_trajectory.png", width = 14, height = 7)
-
-    # Age-anchored theta with per-family regression lines
-    theta_fam <- theta %>%
-      filter(!is.na(age_anchored_theta), !is.na(date_years)) %>%
-      group_by(family, task) %>%
-      filter(n() >= 3, n_distinct(date_years) >= 2) %>%
-      ungroup()
-
-    if (nrow(theta_fam) > 0) {
-      p3 <- ggplot(theta_fam, aes(x = date_years, y = age_anchored_theta)) +
-        geom_smooth(aes(color = family, fill = family), method = "lm",
-                    se = TRUE, linewidth = 0.9, linetype = "dashed",
-                    alpha = 0.08) +
-        geom_point(aes(color = family), size = 2.5) +
-        geom_text(aes(label = short_model), size = 2, hjust = -0.1,
-                  vjust = -0.5, check_overlap = TRUE) +
-        scale_color_manual(values = FAMILY_COLORS) +
-        scale_fill_manual(values = FAMILY_COLORS, guide = "none") +
-        facet_wrap(~task) +
-        labs(title = "Age-equivalent trajectory by family (tiers collapsed)",
-             subtitle = "OLS regression ± 95% CI per family; equivalent child age via item-difficulty mapping",
-             x = "Release date (years since 2024-01-01)",
-             y = "Age-equivalent (years)", color = "Family") +
-        theme_devtom() +
-        theme(legend.position = "bottom")
-      save_plot(p3, "theta_age_anchored_by_family.png", width = 14, height = 7)
-    }
   }
 }
 

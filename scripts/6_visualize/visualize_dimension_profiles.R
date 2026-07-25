@@ -411,39 +411,6 @@ p_trend_tier <- ggplot(acc_overall, aes(x = date, y = accuracy, color = tier)) +
         plot.subtitle = element_text(size = 7))
 save_plot(p_trend_tier, "accuracy_trend_by_tier_regression.png", width = 14, height = 8)
 
-# b. Family collapsed, with regression bands
-fam_reg <- acc_overall %>%
-  filter(!is.na(date_years), !is.na(accuracy)) %>%
-  mutate(date_years = as.numeric(date_years)) %>%
-  group_by(family) %>%
-  filter(sum(!is.na(date_years)) >= 3, n_distinct(date_years) >= 2) %>%
-  summarise(
-    slope = tryCatch(coef(lm(accuracy ~ date_years))[2], error = function(e) NA_real_),
-    p_value = tryCatch(summary(lm(accuracy ~ date_years))$coefficients[2, 4], error = function(e) NA_real_),
-    .groups = "drop"
-  ) %>%
-  filter(!is.na(slope)) %>%
-  mutate(stars = sig_stars(p_value),
-         label = sprintf("%s: %s (p=%.3f)", family, stars, p_value))
-
-p_trend_fam <- ggplot(acc_overall, aes(x = date, y = accuracy, color = family)) +
-  geom_point(size = 2.5, alpha = 0.8) +
-  geom_smooth(method = "lm", se = TRUE, linewidth = 0.8,
-              linetype = "dashed", alpha = 0.15) +
-  geom_text(aes(label = short_model), size = 1.8, hjust = -0.1, vjust = -0.6,
-            check_overlap = TRUE, show.legend = FALSE) +
-  scale_color_manual(values = FAMILY_COLORS) +
-  scale_y_continuous(limits = c(0, 1), labels = percent_format()) +
-  scale_x_date(date_labels = "%b %Y") +
-  labs(title = "Overall accuracy by release date, per family (tiers collapsed)",
-       subtitle = paste0("Dashed lines = linear trend ± 95% CI per family\n",
-                         paste(fam_reg$label, collapse = "  |  ")),
-       x = "Release date", y = "Overall accuracy", color = "Family") +
-  theme_devtom() +
-  theme(legend.position = "bottom",
-        plot.subtitle = element_text(size = 7))
-save_plot(p_trend_fam, "accuracy_trend_by_family_regression.png", width = 14, height = 8)
-
 # c. By tier, MCQ vs FR side-by-side
 p_trend_task <- ggplot(acc_by_task, aes(x = date, y = accuracy, color = tier)) +
   geom_point(size = 2, alpha = 0.8) +
@@ -516,58 +483,6 @@ for (fam in intersect(FAMILY_ORDER, unique(acc_by_task$family))) {
     theme(legend.position = "bottom")
   save_plot(p, paste0("accuracy_trend_", tolower(fam), "_by_task.png"),
             width = 14, height = 7)
-}
-
-# f. MCQ vs FR two-panel, colored by family (tiers collapsed), with per-family regression
-acc_fam_task <- acc_by_task %>%
-  filter(!is.na(date_years), !is.na(date))
-
-fam_with_data <- acc_fam_task %>%
-  group_by(family) %>%
-  filter(n_distinct(model) >= 2) %>%
-  pull(family) %>%
-  unique()
-fam_with_data <- intersect(levels(acc_fam_task$family), fam_with_data)
-
-if (length(fam_with_data) > 0) {
-  acc_facet <- acc_fam_task %>% filter(family %in% fam_with_data)
-  acc_facet$family <- factor(acc_facet$family, levels = fam_with_data)
-
-  # Per-family regression stats per task for subtitle
-  fam_task_reg <- acc_facet %>%
-    mutate(date_years = as.numeric(date_years)) %>%
-    group_by(family, task_label) %>%
-    filter(sum(!is.na(date_years)) >= 3, n_distinct(date_years) >= 2) %>%
-    summarise(
-      p_value = tryCatch(summary(lm(accuracy ~ date_years))$coefficients[2, 4],
-                         error = function(e) NA_real_),
-      .groups = "drop"
-    ) %>%
-    filter(!is.na(p_value)) %>%
-    mutate(stars = sig_stars(p_value),
-           label = sprintf("%s %s (p=%.3f)", family, stars, p_value))
-
-  p_facet <- ggplot(acc_facet, aes(x = date, y = accuracy, color = family)) +
-    geom_point(size = 2.5, alpha = 0.8) +
-    geom_smooth(method = "lm", se = TRUE, linewidth = 0.8,
-                linetype = "dashed", alpha = 0.12) +
-    geom_text(aes(label = short_model), size = 1.6, hjust = -0.1, vjust = -0.6,
-              check_overlap = TRUE, show.legend = FALSE) +
-    geom_hline(yintercept = 0.5, linetype = "dashed", color = "grey60",
-               linewidth = 0.3) +
-    scale_color_manual(values = FAMILY_COLORS) +
-    scale_y_continuous(limits = c(0, 1.05), labels = percent_format()) +
-    scale_x_date(date_labels = "%b '%y") +
-    facet_wrap(~task_label) +
-    labs(title = "Accuracy by release date — MCQ vs. free response (tiers collapsed)",
-         subtitle = "Each dot = one model; dashed lines = OLS trend ± 95% CI per family",
-         x = "Release date", y = "Overall accuracy", color = "Family") +
-    theme_devtom() +
-    theme(legend.position = "bottom",
-          strip.text = element_text(size = 11, face = "bold"))
-
-  save_plot(p_facet, "accuracy_trend_mcq_vs_fr_by_family.png",
-            width = 18, height = 8)
 }
 
 # ===========================================================================
