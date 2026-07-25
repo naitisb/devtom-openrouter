@@ -1,0 +1,7 @@
+family,tier,n_models,mean_accuracy,sd_accuracy,n
+Llama,Llama frontier,2,0.9552,0.2071,402
+Llama,Llama large,2,0.9602,0.1957,402
+Llama,Llama small,2,0.6667,0.472,402
+Qwen,Qwen large,2,0.9677,0.1771,402
+Qwen,Qwen mid,3,0.9784,0.1454,603
+Qwen,Qwen small,2,0.9104,0.2859,402

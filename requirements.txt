@@ -3,6 +3,9 @@ inspect-ai>=0.3.0
 # OpenRouter is OpenAI-API-compatible; Inspect's openrouter provider uses the
 # openai client under the hood. No OpenRouter-specific package is needed.
 openai>=1.40.0
+# Required for inspect-ai's Mistral provider (mistral/* model strings).
+# Without this, all mistral/* evals fail silently with ModuleNotFoundError.
+mistralai>=1.0.0
 # Data + analysis
 pandas>=2.0
 numpy>=1.26

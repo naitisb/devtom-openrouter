@@ -1,0 +1,898 @@
+model,family,tier,task,tom_dimension,validated_age_band,dim_rank,date_years,release_date,n,n_correct,accuracy,wilson_lo,wilson_hi,chance,pass
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,0.5585215605749486,2024-07-23,4,1,0.25,0.045586062644636216,0.6993639475573634,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Irony,6-8 yrs,11,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Irony,7-9 yrs,11,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Irony,8-10 yrs,11,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,0.5585215605749486,2024-07-23,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,0.5585215605749486,2024-07-23,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,0.5585215605749486,2024-07-23,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,0.5585215605749486,2024-07-23,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,0.5585215605749486,2024-07-23,10,9,0.9,0.5958436145024278,0.9821242504842788,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,0.5585215605749486,2024-07-23,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.5585215605749486,2024-07-23,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Irony,6-8 yrs,11,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Irony,7-9 yrs,11,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Irony,8-10 yrs,11,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,0.5585215605749486,2024-07-23,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,6-8 yrs,9,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,7-9 yrs,9,0.5585215605749486,2024-07-23,2,1,0.5,0.09452865480086614,0.9054713451991339,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,8-10 yrs,9,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,9-11 yrs,9,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,0.5585215605749486,2024-07-23,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,0.5585215605749486,2024-07-23,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,0.5585215605749486,2024-07-23,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,0.5585215605749486,2024-07-23,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,0.5585215605749486,2024-07-23,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Irony,6-8 yrs,11,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Irony,7-9 yrs,11,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Irony,8-10 yrs,11,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,0.5585215605749486,2024-07-23,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,0.5585215605749486,2024-07-23,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,0.5585215605749486,2024-07-23,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,0.5585215605749486,2024-07-23,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,0.5585215605749486,2024-07-23,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,0.5585215605749486,2024-07-23,5,4,0.8,0.3755282641185388,0.9637768390302125,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,0.5585215605749486,2024-07-23,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,0.5585215605749486,2024-07-23,12,6,0.5,0.2537781703934222,0.7462218296065778,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.5585215605749486,2024-07-23,2,0,0,0,0.6576280471103807,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.5585215605749486,2024-07-23,8,7,0.875,0.5291051942301386,0.9775830911367038,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,0.5585215605749486,2024-07-23,5,4,0.8,0.3755282641185388,0.9637768390302125,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Irony,6-8 yrs,11,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Irony,7-9 yrs,11,0.5585215605749486,2024-07-23,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Irony,8-10 yrs,11,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,0.5585215605749486,2024-07-23,7,6,0.8571428571428571,0.48686549668097007,0.9743210440510253,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,6-8 yrs,9,0.5585215605749486,2024-07-23,4,3,0.75,0.3006360524426366,0.9544139373553637,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,7-9 yrs,9,0.5585215605749486,2024-07-23,2,0,0,0,0.6576280471103807,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,8-10 yrs,9,0.5585215605749486,2024-07-23,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,9-11 yrs,9,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,0.5585215605749486,2024-07-23,4,2,0.5,0.15003570882017148,0.8499642911798285,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,0.5585215605749486,2024-07-23,6,4,0.6666666666666666,0.29998832134152864,0.9032306674407831,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,0.5585215605749486,2024-07-23,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,0.5585215605749486,2024-07-23,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,0.5585215605749486,2024-07-23,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,0.5585215605749486,2024-07-23,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,0.5585215605749486,2024-07-23,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,0.7337440109514032,2024-09-25,2,0,0,0,0.6576280471103807,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,0.7337440109514032,2024-09-25,3,0,0,0,0.5615060804490177,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,0.7337440109514032,2024-09-25,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,0.7337440109514032,2024-09-25,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,0.7337440109514032,2024-09-25,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,0.7337440109514032,2024-09-25,4,0,0,0,0.48990002040399916,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,0.7337440109514032,2024-09-25,4,0,0,0,0.48990002040399916,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.7337440109514032,2024-09-25,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,0.7337440109514032,2024-09-25,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Irony,6-8 yrs,11,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Irony,7-9 yrs,11,0.7337440109514032,2024-09-25,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Irony,8-10 yrs,11,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,0.7337440109514032,2024-09-25,4,1,0.25,0.045586062644636216,0.6993639475573634,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,0.7337440109514032,2024-09-25,2,0,0,0,0.6576280471103807,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,0.7337440109514032,2024-09-25,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,0.7337440109514032,2024-09-25,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,0.7337440109514032,2024-09-25,2,0,0,0,0.6576280471103807,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,0.7337440109514032,2024-09-25,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,0.7337440109514032,2024-09-25,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,0.7337440109514032,2024-09-25,7,2,0.2857142857142857,0.0822171657090155,0.6410709098517873,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,0.7337440109514032,2024-09-25,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,0.7337440109514032,2024-09-25,5,1,0.2,0.03622316096978745,0.6244717358814613,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,0.7337440109514032,2024-09-25,5,2,0.4,0.1176182311592533,0.769280067791163,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,0.7337440109514032,2024-09-25,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,0.7337440109514032,2024-09-25,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,0.7337440109514032,2024-09-25,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,0.7337440109514032,2024-09-25,10,2,0.2,0.05668094798069326,0.5098431532792767,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,0.7337440109514032,2024-09-25,12,4,0.3333333333333333,0.13811783989736134,0.609382412602386,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,0.7337440109514032,2024-09-25,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.7337440109514032,2024-09-25,2,0,0,0,0.6576280471103807,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.7337440109514032,2024-09-25,8,5,0.625,0.30573785458380187,0.863158240538479,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.7337440109514032,2024-09-25,2,0,0,0,0.6576280471103807,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,0.7337440109514032,2024-09-25,5,4,0.8,0.3755282641185388,0.9637768390302125,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,0.7337440109514032,2024-09-25,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,0.7337440109514032,2024-09-25,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Irony,6-8 yrs,11,0.7337440109514032,2024-09-25,2,1,0.5,0.09452865480086614,0.9054713451991339,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Irony,7-9 yrs,11,0.7337440109514032,2024-09-25,5,3,0.6,0.23071993220883708,0.8823817688407467,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Irony,8-10 yrs,11,0.7337440109514032,2024-09-25,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,0.7337440109514032,2024-09-25,3,1,0.3333333333333333,0.0614903152761605,0.7923450448735121,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,0.7337440109514032,2024-09-25,7,3,0.42857142857142855,0.15821692226262685,0.7495457695909742,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,6-8 yrs,9,0.7337440109514032,2024-09-25,4,3,0.75,0.3006360524426366,0.9544139373553637,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,7-9 yrs,9,0.7337440109514032,2024-09-25,2,0,0,0,0.6576280471103807,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,8-10 yrs,9,0.7337440109514032,2024-09-25,3,0,0,0,0.5615060804490177,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Sarcasm,9-11 yrs,9,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,0.7337440109514032,2024-09-25,4,2,0.5,0.15003570882017148,0.8499642911798285,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,0.7337440109514032,2024-09-25,6,2,0.3333333333333333,0.09676933255921683,0.7000116786584712,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,0.7337440109514032,2024-09-25,3,1,0.3333333333333333,0.0614903152761605,0.7923450448735121,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,0.7337440109514032,2024-09-25,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,0.7337440109514032,2024-09-25,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,0.7337440109514032,2024-09-25,4,2,0.5,0.15003570882017148,0.8499642911798285,0.5,0
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,0.7337440109514032,2024-09-25,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,0.9308692676249144,2024-12-06,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,0.9308692676249144,2024-12-06,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,0.9308692676249144,2024-12-06,4,4,1,0.5100999795960008,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Irony,6-8 yrs,11,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Irony,7-9 yrs,11,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Irony,8-10 yrs,11,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,0.9308692676249144,2024-12-06,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,0.9308692676249144,2024-12-06,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,0.9308692676249144,2024-12-06,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,0.9308692676249144,2024-12-06,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,0.9308692676249144,2024-12-06,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,0.9308692676249144,2024-12-06,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,0.9308692676249144,2024-12-06,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,0.9308692676249144,2024-12-06,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,0.9308692676249144,2024-12-06,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,0.9308692676249144,2024-12-06,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,0.9308692676249144,2024-12-06,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.9308692676249144,2024-12-06,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,0.9308692676249144,2024-12-06,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Irony,6-8 yrs,11,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Irony,7-9 yrs,11,0.9308692676249144,2024-12-06,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Irony,8-10 yrs,11,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,0.9308692676249144,2024-12-06,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,6-8 yrs,9,0.9308692676249144,2024-12-06,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,7-9 yrs,9,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,8-10 yrs,9,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Sarcasm,9-11 yrs,9,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,0.9308692676249144,2024-12-06,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,0.9308692676249144,2024-12-06,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,0.9308692676249144,2024-12-06,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,0.9308692676249144,2024-12-06,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,0.9308692676249144,2024-12-06,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,0.9308692676249144,2024-12-06,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,1.2594113620807663,2025-04-05,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,1.2594113620807663,2025-04-05,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,1.2594113620807663,2025-04-05,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Irony,6-8 yrs,11,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Irony,7-9 yrs,11,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Irony,8-10 yrs,11,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,1.2594113620807663,2025-04-05,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,1.2594113620807663,2025-04-05,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,1.2594113620807663,2025-04-05,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,1.2594113620807663,2025-04-05,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,1.2594113620807663,2025-04-05,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,1.2594113620807663,2025-04-05,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Irony,6-8 yrs,11,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Irony,7-9 yrs,11,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Irony,8-10 yrs,11,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,1.2594113620807663,2025-04-05,7,5,0.7142857142857143,0.35892909014821267,0.9177828342909844,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,6-8 yrs,9,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,7-9 yrs,9,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,8-10 yrs,9,1.2594113620807663,2025-04-05,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,9-11 yrs,9,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,1.2594113620807663,2025-04-05,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,1.2594113620807663,2025-04-05,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,1.2594113620807663,2025-04-05,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,1.2594113620807663,2025-04-05,1,0,0,0,0.7934567085261071,0,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,1.2594113620807663,2025-04-05,4,1,0.25,0.045586062644636216,0.6993639475573634,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Irony,6-8 yrs,11,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Irony,7-9 yrs,11,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Irony,8-10 yrs,11,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,1.2594113620807663,2025-04-05,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,1.2594113620807663,2025-04-05,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,1.2594113620807663,2025-04-05,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,1.2594113620807663,2025-04-05,10,9,0.9,0.5958436145024278,0.9821242504842788,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,1.2594113620807663,2025-04-05,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,1.2594113620807663,2025-04-05,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Irony,6-8 yrs,11,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Irony,7-9 yrs,11,1.2594113620807663,2025-04-05,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Irony,8-10 yrs,11,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,1.2594113620807663,2025-04-05,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,6-8 yrs,9,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,7-9 yrs,9,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,8-10 yrs,9,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Sarcasm,9-11 yrs,9,1.2594113620807663,2025-04-05,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,1.2594113620807663,2025-04-05,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,1.2594113620807663,2025-04-05,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,1.2594113620807663,2025-04-05,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,1.2594113620807663,2025-04-05,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,1.2594113620807663,2025-04-05,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,0.7173169062286106,2024-09-19,4,1,0.25,0.045586062644636216,0.6993639475573634,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,0.7173169062286106,2024-09-19,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Irony,6-8 yrs,11,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Irony,7-9 yrs,11,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Irony,8-10 yrs,11,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,0.7173169062286106,2024-09-19,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,0.7173169062286106,2024-09-19,2,0,0,0,0.6576280471103807,0,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,0.7173169062286106,2024-09-19,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,0.7173169062286106,2024-09-19,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,0.7173169062286106,2024-09-19,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,0.7173169062286106,2024-09-19,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.7173169062286106,2024-09-19,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Irony,6-8 yrs,11,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Irony,7-9 yrs,11,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Irony,8-10 yrs,11,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,0.7173169062286106,2024-09-19,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,6-8 yrs,9,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,7-9 yrs,9,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,8-10 yrs,9,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,9-11 yrs,9,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,0.7173169062286106,2024-09-19,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,0.7173169062286106,2024-09-19,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,0.7173169062286106,2024-09-19,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,0.7173169062286106,2024-09-19,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,0.7173169062286106,2024-09-19,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.7173169062286106,2024-09-19,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,0.7173169062286106,2024-09-19,3,1,0.3333333333333333,0.0614903152761605,0.7923450448735121,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,0.7173169062286106,2024-09-19,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Irony,6-8 yrs,11,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Irony,7-9 yrs,11,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Irony,8-10 yrs,11,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,0.7173169062286106,2024-09-19,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,0.7173169062286106,2024-09-19,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,0.7173169062286106,2024-09-19,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,0.7173169062286106,2024-09-19,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,0.7173169062286106,2024-09-19,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,0.7173169062286106,2024-09-19,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,0.7173169062286106,2024-09-19,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,0.7173169062286106,2024-09-19,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,0.7173169062286106,2024-09-19,12,8,0.6666666666666666,0.3906175873976139,0.8618821601026385,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,0.7173169062286106,2024-09-19,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Irony,6-8 yrs,11,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Irony,7-9 yrs,11,0.7173169062286106,2024-09-19,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Irony,8-10 yrs,11,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,0.7173169062286106,2024-09-19,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,6-8 yrs,9,0.7173169062286106,2024-09-19,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,7-9 yrs,9,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,8-10 yrs,9,0.7173169062286106,2024-09-19,3,1,0.3333333333333333,0.0614903152761605,0.7923450448735121,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,9-11 yrs,9,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,0.7173169062286106,2024-09-19,4,2,0.5,0.15003570882017148,0.8499642911798285,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,0.7173169062286106,2024-09-19,6,5,0.8333333333333334,0.43649056343635395,0.9699474141282697,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,0.7173169062286106,2024-09-19,1,0,0,0,0.7934567085261071,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,0.7173169062286106,2024-09-19,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,0.7173169062286106,2024-09-19,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,0.7173169062286106,2024-09-19,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,0.7173169062286106,2024-09-19,4,3,0.75,0.3006360524426366,0.9544139373553637,0.5,0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,0.7173169062286106,2024-09-19,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,1.325119780971937,2025-04-29,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,1.325119780971937,2025-04-29,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,1.325119780971937,2025-04-29,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,6-8 yrs,11,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,7-9 yrs,11,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,8-10 yrs,11,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,1.325119780971937,2025-04-29,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,1.325119780971937,2025-04-29,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,1.325119780971937,2025-04-29,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,1.325119780971937,2025-04-29,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,1.325119780971937,2025-04-29,5,3,0.6,0.23071993220883708,0.8823817688407467,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,1.325119780971937,2025-04-29,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,1.325119780971937,2025-04-29,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,1.325119780971937,2025-04-29,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,1.325119780971937,2025-04-29,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,1.325119780971937,2025-04-29,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,1.325119780971937,2025-04-29,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,1.325119780971937,2025-04-29,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Irony,6-8 yrs,11,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Irony,7-9 yrs,11,1.325119780971937,2025-04-29,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Irony,8-10 yrs,11,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,1.325119780971937,2025-04-29,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,6-8 yrs,9,1.325119780971937,2025-04-29,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,7-9 yrs,9,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,8-10 yrs,9,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,9-11 yrs,9,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,1.325119780971937,2025-04-29,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,1.325119780971937,2025-04-29,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,1.325119780971937,2025-04-29,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,1.325119780971937,2025-04-29,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,1.325119780971937,2025-04-29,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,1.325119780971937,2025-04-29,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,2.1492128678986995,2026-02-24,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,2.1492128678986995,2026-02-24,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,6-8 yrs,11,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,7-9 yrs,11,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,8-10 yrs,11,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,2.1492128678986995,2026-02-24,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,2.1492128678986995,2026-02-24,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,2.1492128678986995,2026-02-24,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,2.1492128678986995,2026-02-24,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,2.1492128678986995,2026-02-24,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,2.1492128678986995,2026-02-24,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,2.1492128678986995,2026-02-24,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.1492128678986995,2026-02-24,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,2.1492128678986995,2026-02-24,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,2.1492128678986995,2026-02-24,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Irony,6-8 yrs,11,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Irony,7-9 yrs,11,2.1492128678986995,2026-02-24,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Irony,8-10 yrs,11,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,2.1492128678986995,2026-02-24,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,6-8 yrs,9,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,7-9 yrs,9,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,8-10 yrs,9,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,9-11 yrs,9,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,2.1492128678986995,2026-02-24,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,2.1492128678986995,2026-02-24,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,2.1492128678986995,2026-02-24,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,2.1492128678986995,2026-02-24,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,2.1492128678986995,2026-02-24,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,2.127310061601643,2026-02-16,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,2.127310061601643,2026-02-16,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,2.127310061601643,2026-02-16,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Irony,6-8 yrs,11,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Irony,7-9 yrs,11,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Irony,8-10 yrs,11,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,2.127310061601643,2026-02-16,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,2.127310061601643,2026-02-16,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,2.127310061601643,2026-02-16,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,2.127310061601643,2026-02-16,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,2.127310061601643,2026-02-16,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,2.127310061601643,2026-02-16,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,2.127310061601643,2026-02-16,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,2.127310061601643,2026-02-16,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,2.127310061601643,2026-02-16,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,2.127310061601643,2026-02-16,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,2.127310061601643,2026-02-16,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.127310061601643,2026-02-16,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,2.127310061601643,2026-02-16,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,2.127310061601643,2026-02-16,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Irony,6-8 yrs,11,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Irony,7-9 yrs,11,2.127310061601643,2026-02-16,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Irony,8-10 yrs,11,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,2.127310061601643,2026-02-16,7,6,0.8571428571428571,0.48686549668097007,0.9743210440510253,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,6-8 yrs,9,2.127310061601643,2026-02-16,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,7-9 yrs,9,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,8-10 yrs,9,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Sarcasm,9-11 yrs,9,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,2.127310061601643,2026-02-16,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,2.127310061601643,2026-02-16,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,2.127310061601643,2026-02-16,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,2.127310061601643,2026-02-16,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,2.127310061601643,2026-02-16,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,2.127310061601643,2026-02-16,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,2.1656399726214923,2026-03-02,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,2.1656399726214923,2026-03-02,4,2,0.5,0.15003570882017148,0.8499642911798285,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,2.1656399726214923,2026-03-02,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,2.1656399726214923,2026-03-02,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Irony,6-8 yrs,11,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Irony,7-9 yrs,11,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Irony,8-10 yrs,11,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,2.1656399726214923,2026-03-02,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,2.1656399726214923,2026-03-02,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,2.1656399726214923,2026-03-02,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,2.1656399726214923,2026-03-02,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,2.1656399726214923,2026-03-02,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,2.1656399726214923,2026-03-02,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,2.1656399726214923,2026-03-02,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,2.1656399726214923,2026-03-02,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,2.1656399726214923,2026-03-02,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,2.1656399726214923,2026-03-02,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,2.1656399726214923,2026-03-02,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,2.1656399726214923,2026-03-02,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.1656399726214923,2026-03-02,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,2.1656399726214923,2026-03-02,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,2.1656399726214923,2026-03-02,3,2,0.6666666666666666,0.2076549551264879,0.9385096847238394,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Irony,6-8 yrs,11,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Irony,7-9 yrs,11,2.1656399726214923,2026-03-02,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Irony,8-10 yrs,11,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,2.1656399726214923,2026-03-02,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,6-8 yrs,9,2.1656399726214923,2026-03-02,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,7-9 yrs,9,2.1656399726214923,2026-03-02,2,1,0.5,0.09452865480086614,0.9054713451991339,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,8-10 yrs,9,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Sarcasm,9-11 yrs,9,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,2.1656399726214923,2026-03-02,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,2.1656399726214923,2026-03-02,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,2.1656399726214923,2026-03-02,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,2.1656399726214923,2026-03-02,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,2.1656399726214923,2026-03-02,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,2.1656399726214923,2026-03-02,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Beliefs,3-4 yrs,1,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Beliefs,4-5 yrs,1,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Desires,2-3 yrs,0,2.305270362765229,2026-04-22,2,1,0.5,0.09452865480086614,0.9054713451991339,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Diverse Desires,3-4 yrs,0,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,4-6 yrs,3,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,6-8 yrs,3,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Emotion Recognition,6-9 yrs,3,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Faux Pas Detection,10-12 yrs,10,2.305270362765229,2026-04-22,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Faux Pas Detection,9-11 yrs,10,2.305270362765229,2026-04-22,4,3,0.75,0.3006360524426366,0.9544139373553637,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,First-Order False Belief,4-5 yrs,4,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,First-Order False Belief,5-6 yrs,4,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,5-6 yrs,5,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,6-7 yrs,5,2.305270362765229,2026-04-22,1,0,0,0,0.7934567085261071,0,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Intention vs. Accident,7-8 yrs,5,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,6-8 yrs,11,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,7-9 yrs,11,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Irony,8-10 yrs,11,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Knowledge Access / Ignorance,3-4 yrs,2,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Knowledge Access / Ignorance,4-5 yrs,2,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,6-8 yrs,9,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,8-10 yrs,9,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Sarcasm,9-11 yrs,9,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,6-7 yrs,7,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,6-8 yrs,7,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,Second-Order False Belief,7-9 yrs,7,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,5-7 yrs,8,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,7-9 yrs,8,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,White Lies / Prosocial Deception,8-10 yrs,8,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Beliefs,3-4 yrs,1,2.305270362765229,2026-04-22,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Beliefs,4-5 yrs,1,2.305270362765229,2026-04-22,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Desires,2-3 yrs,0,2.305270362765229,2026-04-22,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Diverse Desires,3-4 yrs,0,2.305270362765229,2026-04-22,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,3-4 yrs,3,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,3-5 yrs,3,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,4-6 yrs,3,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,6-8 yrs,3,2.305270362765229,2026-04-22,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Emotion Recognition,6-9 yrs,3,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Faux Pas Detection,10-12 yrs,10,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Faux Pas Detection,9-11 yrs,10,2.305270362765229,2026-04-22,10,10,1,0.7224598312333834,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,First-Order False Belief,4-5 yrs,4,2.305270362765229,2026-04-22,12,12,1,0.7574992425007574,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,First-Order False Belief,5-6 yrs,4,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),4-6 yrs,6,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),6-8 yrs,6,2.305270362765229,2026-04-22,8,8,1,0.6755843804891231,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),7-9 yrs,6,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Hidden Emotion (Appearance vs. Reality),8-10 yrs,6,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,4-5 yrs,5,2.305270362765229,2026-04-22,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,5-6 yrs,5,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,6-7 yrs,5,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Intention vs. Accident,7-8 yrs,5,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Irony,6-8 yrs,11,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Irony,7-9 yrs,11,2.305270362765229,2026-04-22,5,5,1,0.5655085052479191,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Irony,8-10 yrs,11,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Knowledge Access / Ignorance,3-4 yrs,2,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Knowledge Access / Ignorance,4-5 yrs,2,2.305270362765229,2026-04-22,7,7,1,0.6456611570247934,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,6-8 yrs,9,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,7-9 yrs,9,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,8-10 yrs,9,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Sarcasm,9-11 yrs,9,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,6-7 yrs,7,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,6-8 yrs,7,2.305270362765229,2026-04-22,6,6,1,0.6096569663469354,0.9999999999999999,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,7-8 yrs,7,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,Second-Order False Belief,7-9 yrs,7,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,5-7 yrs,8,2.305270362765229,2026-04-22,3,3,1,0.43849391955098227,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,6-8 yrs,8,2.305270362765229,2026-04-22,2,2,1,0.34237195288961925,1,0.5,0
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,7-9 yrs,8,2.305270362765229,2026-04-22,4,4,1,0.5100999795960008,1,0.5,1
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,White Lies / Prosocial Deception,8-10 yrs,8,2.305270362765229,2026-04-22,1,1,1,0.20654329147389294,1,0.5,0

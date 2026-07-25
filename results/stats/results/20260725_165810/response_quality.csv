@@ -1,0 +1,27 @@
+model,family,tier,task,n_items,n_correct,accuracy
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,60,51,0.85
+openrouter/meta-llama/llama-3.1-70b-instruct,Llama,Llama large,tom_12dim_mcq,141,139,0.9858156028368794
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_freeresponse,60,47,0.7833333333333333
+openrouter/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,141,119,0.8439716312056738
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_freeresponse,60,26,0.43333333333333335
+openrouter/meta-llama/llama-3.2-3b-instruct,Llama,Llama small,tom_12dim_mcq,141,76,0.5390070921985816
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_freeresponse,60,55,0.9166666666666666
+openrouter/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,141,141,1.0
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_freeresponse,60,55,0.9166666666666666
+openrouter/meta-llama/llama-4-maverick,Llama,Llama frontier,tom_12dim_mcq,141,138,0.9787234042553191
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_freeresponse,60,52,0.8666666666666667
+openrouter/meta-llama/llama-4-scout,Llama,Llama frontier,tom_12dim_mcq,141,139,0.9858156028368794
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_freeresponse,60,53,0.8833333333333333
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen,Qwen large,tom_12dim_mcq,141,141,1.0
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_freeresponse,60,46,0.7666666666666667
+openrouter/qwen/qwen-2.5-7b-instruct,Qwen,Qwen small,tom_12dim_mcq,141,129,0.9148936170212766
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_freeresponse,60,56,0.9333333333333333
+openrouter/qwen/qwen3-32b,Qwen,Qwen mid,tom_12dim_mcq,141,139,0.9858156028368794
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_freeresponse,60,58,0.9666666666666667
+openrouter/qwen/qwen3.5-27b,Qwen,Qwen mid,tom_12dim_mcq,141,140,0.9929078014184397
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_freeresponse,60,56,0.9333333333333333
+openrouter/qwen/qwen3.5-397b-a17b,Qwen,Qwen large,tom_12dim_mcq,141,139,0.9858156028368794
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_freeresponse,60,52,0.8666666666666667
+openrouter/qwen/qwen3.5-9b,Qwen,Qwen small,tom_12dim_mcq,141,139,0.9858156028368794
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_freeresponse,60,56,0.9333333333333333
+openrouter/qwen/qwen3.6-27b,Qwen,Qwen mid,tom_12dim_mcq,141,141,1.0

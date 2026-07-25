@@ -61,13 +61,14 @@ CONSTRUCT_COLORS <- c(
 # ---------------------------------------------------------------------------
 # Ordering helpers
 # ---------------------------------------------------------------------------
-# Trajectory-eligible families only. Claude and GPT excluded (reason:
-# no-trajectory — see devtom-selfhost/models/manifest_excluded.yaml).
-FAMILY_ORDER <- c("Llama", "Qwen", "Mistral")
+FAMILY_ORDER <- c("Claude", "GPT", "Llama", "Qwen", "Mistral")
 
 TYPE_ORDER <- c(
+  "Claude Haiku", "Claude Sonnet", "Claude Opus", "Claude Fable",
+  "GPT mini", "GPT standard", "GPT reasoning mini", "GPT reasoning",
   "Llama small", "Llama mid", "Llama large", "Llama frontier",
   "Qwen small", "Qwen mid", "Qwen large",
+  "Ministral", "Mistral Small", "Mistral Medium", "Mistral Large",
   "Mistral small", "Mistral MoE", "Mistral large"
 )
 

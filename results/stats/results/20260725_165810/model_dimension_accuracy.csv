@@ -1,0 +1,157 @@
+model,tom_dimension,n,n_correct,accuracy
+openrouter/meta-llama/llama-3.1-70b-instruct,Diverse Beliefs,18,18,1.0
+openrouter/meta-llama/llama-3.1-70b-instruct,Diverse Desires,15,15,1.0
+openrouter/meta-llama/llama-3.1-70b-instruct,Emotion Recognition,17,17,1.0
+openrouter/meta-llama/llama-3.1-70b-instruct,Faux Pas Detection,18,13,0.7222222222222222
+openrouter/meta-llama/llama-3.1-70b-instruct,First-Order False Belief,21,20,0.9523809523809523
+openrouter/meta-llama/llama-3.1-70b-instruct,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/meta-llama/llama-3.1-70b-instruct,Intention vs. Accident,15,14,0.9333333333333333
+openrouter/meta-llama/llama-3.1-70b-instruct,Irony,15,15,1.0
+openrouter/meta-llama/llama-3.1-70b-instruct,Knowledge Access / Ignorance,15,14,0.9333333333333333
+openrouter/meta-llama/llama-3.1-70b-instruct,Sarcasm,15,14,0.9333333333333333
+openrouter/meta-llama/llama-3.1-70b-instruct,Second-Order False Belief,19,17,0.8947368421052632
+openrouter/meta-llama/llama-3.1-70b-instruct,White Lies / Prosocial Deception,15,15,1.0
+openrouter/meta-llama/llama-3.1-8b-instruct,Diverse Beliefs,18,17,0.9444444444444444
+openrouter/meta-llama/llama-3.1-8b-instruct,Diverse Desires,15,13,0.8666666666666667
+openrouter/meta-llama/llama-3.1-8b-instruct,Emotion Recognition,17,17,1.0
+openrouter/meta-llama/llama-3.1-8b-instruct,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/meta-llama/llama-3.1-8b-instruct,First-Order False Belief,21,12,0.5714285714285714
+openrouter/meta-llama/llama-3.1-8b-instruct,Hidden Emotion (Appearance vs. Reality),18,15,0.8333333333333334
+openrouter/meta-llama/llama-3.1-8b-instruct,Intention vs. Accident,15,14,0.9333333333333333
+openrouter/meta-llama/llama-3.1-8b-instruct,Irony,15,14,0.9333333333333333
+openrouter/meta-llama/llama-3.1-8b-instruct,Knowledge Access / Ignorance,15,12,0.8
+openrouter/meta-llama/llama-3.1-8b-instruct,Sarcasm,15,10,0.6666666666666666
+openrouter/meta-llama/llama-3.1-8b-instruct,Second-Order False Belief,19,11,0.5789473684210527
+openrouter/meta-llama/llama-3.1-8b-instruct,White Lies / Prosocial Deception,15,15,1.0
+openrouter/meta-llama/llama-3.2-3b-instruct,Diverse Beliefs,18,8,0.4444444444444444
+openrouter/meta-llama/llama-3.2-3b-instruct,Diverse Desires,15,6,0.4
+openrouter/meta-llama/llama-3.2-3b-instruct,Emotion Recognition,17,16,0.9411764705882353
+openrouter/meta-llama/llama-3.2-3b-instruct,Faux Pas Detection,18,4,0.2222222222222222
+openrouter/meta-llama/llama-3.2-3b-instruct,First-Order False Belief,21,9,0.42857142857142855
+openrouter/meta-llama/llama-3.2-3b-instruct,Hidden Emotion (Appearance vs. Reality),18,9,0.5
+openrouter/meta-llama/llama-3.2-3b-instruct,Intention vs. Accident,15,11,0.7333333333333333
+openrouter/meta-llama/llama-3.2-3b-instruct,Irony,15,12,0.8
+openrouter/meta-llama/llama-3.2-3b-instruct,Knowledge Access / Ignorance,15,6,0.4
+openrouter/meta-llama/llama-3.2-3b-instruct,Sarcasm,15,5,0.3333333333333333
+openrouter/meta-llama/llama-3.2-3b-instruct,Second-Order False Belief,19,7,0.3684210526315789
+openrouter/meta-llama/llama-3.2-3b-instruct,White Lies / Prosocial Deception,15,9,0.6
+openrouter/meta-llama/llama-3.3-70b-instruct,Diverse Beliefs,18,17,0.9444444444444444
+openrouter/meta-llama/llama-3.3-70b-instruct,Diverse Desires,15,15,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Emotion Recognition,17,17,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/meta-llama/llama-3.3-70b-instruct,First-Order False Belief,21,21,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Intention vs. Accident,15,15,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Irony,15,15,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Knowledge Access / Ignorance,15,14,0.9333333333333333
+openrouter/meta-llama/llama-3.3-70b-instruct,Sarcasm,15,15,1.0
+openrouter/meta-llama/llama-3.3-70b-instruct,Second-Order False Belief,19,18,0.9473684210526315
+openrouter/meta-llama/llama-3.3-70b-instruct,White Lies / Prosocial Deception,15,15,1.0
+openrouter/meta-llama/llama-4-maverick,Diverse Beliefs,18,18,1.0
+openrouter/meta-llama/llama-4-maverick,Diverse Desires,15,14,0.9333333333333333
+openrouter/meta-llama/llama-4-maverick,Emotion Recognition,17,16,0.9411764705882353
+openrouter/meta-llama/llama-4-maverick,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/meta-llama/llama-4-maverick,First-Order False Belief,21,21,1.0
+openrouter/meta-llama/llama-4-maverick,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/meta-llama/llama-4-maverick,Intention vs. Accident,15,15,1.0
+openrouter/meta-llama/llama-4-maverick,Irony,15,15,1.0
+openrouter/meta-llama/llama-4-maverick,Knowledge Access / Ignorance,15,13,0.8666666666666667
+openrouter/meta-llama/llama-4-maverick,Sarcasm,15,14,0.9333333333333333
+openrouter/meta-llama/llama-4-maverick,Second-Order False Belief,19,18,0.9473684210526315
+openrouter/meta-llama/llama-4-maverick,White Lies / Prosocial Deception,15,15,1.0
+openrouter/meta-llama/llama-4-scout,Diverse Beliefs,18,17,0.9444444444444444
+openrouter/meta-llama/llama-4-scout,Diverse Desires,15,15,1.0
+openrouter/meta-llama/llama-4-scout,Emotion Recognition,17,16,0.9411764705882353
+openrouter/meta-llama/llama-4-scout,Faux Pas Detection,18,13,0.7222222222222222
+openrouter/meta-llama/llama-4-scout,First-Order False Belief,21,21,1.0
+openrouter/meta-llama/llama-4-scout,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/meta-llama/llama-4-scout,Intention vs. Accident,15,15,1.0
+openrouter/meta-llama/llama-4-scout,Irony,15,15,1.0
+openrouter/meta-llama/llama-4-scout,Knowledge Access / Ignorance,15,13,0.8666666666666667
+openrouter/meta-llama/llama-4-scout,Sarcasm,15,14,0.9333333333333333
+openrouter/meta-llama/llama-4-scout,Second-Order False Belief,19,19,1.0
+openrouter/meta-llama/llama-4-scout,White Lies / Prosocial Deception,15,15,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Diverse Beliefs,18,18,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Diverse Desires,15,15,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Emotion Recognition,17,17,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Faux Pas Detection,18,15,0.8333333333333334
+openrouter/qwen/qwen-2.5-72b-instruct,First-Order False Belief,21,21,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Intention vs. Accident,15,14,0.9333333333333333
+openrouter/qwen/qwen-2.5-72b-instruct,Irony,15,15,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Knowledge Access / Ignorance,15,14,0.9333333333333333
+openrouter/qwen/qwen-2.5-72b-instruct,Sarcasm,15,15,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Second-Order False Belief,19,17,0.8947368421052632
+openrouter/qwen/qwen-2.5-72b-instruct,White Lies / Prosocial Deception,15,15,1.0
+openrouter/qwen/qwen-2.5-7b-instruct,Diverse Beliefs,18,17,0.9444444444444444
+openrouter/qwen/qwen-2.5-7b-instruct,Diverse Desires,15,15,1.0
+openrouter/qwen/qwen-2.5-7b-instruct,Emotion Recognition,17,16,0.9411764705882353
+openrouter/qwen/qwen-2.5-7b-instruct,Faux Pas Detection,18,15,0.8333333333333334
+openrouter/qwen/qwen-2.5-7b-instruct,First-Order False Belief,21,17,0.8095238095238095
+openrouter/qwen/qwen-2.5-7b-instruct,Hidden Emotion (Appearance vs. Reality),18,17,0.9444444444444444
+openrouter/qwen/qwen-2.5-7b-instruct,Intention vs. Accident,15,12,0.8
+openrouter/qwen/qwen-2.5-7b-instruct,Irony,15,15,1.0
+openrouter/qwen/qwen-2.5-7b-instruct,Knowledge Access / Ignorance,15,14,0.9333333333333333
+openrouter/qwen/qwen-2.5-7b-instruct,Sarcasm,15,12,0.8
+openrouter/qwen/qwen-2.5-7b-instruct,Second-Order False Belief,19,15,0.7894736842105263
+openrouter/qwen/qwen-2.5-7b-instruct,White Lies / Prosocial Deception,15,10,0.6666666666666666
+openrouter/qwen/qwen3-32b,Diverse Beliefs,18,18,1.0
+openrouter/qwen/qwen3-32b,Diverse Desires,15,13,0.8666666666666667
+openrouter/qwen/qwen3-32b,Emotion Recognition,17,16,0.9411764705882353
+openrouter/qwen/qwen3-32b,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/qwen/qwen3-32b,First-Order False Belief,21,21,1.0
+openrouter/qwen/qwen3-32b,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/qwen/qwen3-32b,Intention vs. Accident,15,15,1.0
+openrouter/qwen/qwen3-32b,Irony,15,15,1.0
+openrouter/qwen/qwen3-32b,Knowledge Access / Ignorance,15,14,0.9333333333333333
+openrouter/qwen/qwen3-32b,Sarcasm,15,15,1.0
+openrouter/qwen/qwen3-32b,Second-Order False Belief,19,19,1.0
+openrouter/qwen/qwen3-32b,White Lies / Prosocial Deception,15,15,1.0
+openrouter/qwen/qwen3.5-27b,Diverse Beliefs,18,18,1.0
+openrouter/qwen/qwen3.5-27b,Diverse Desires,15,15,1.0
+openrouter/qwen/qwen3.5-27b,Emotion Recognition,17,17,1.0
+openrouter/qwen/qwen3.5-27b,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/qwen/qwen3.5-27b,First-Order False Belief,21,21,1.0
+openrouter/qwen/qwen3.5-27b,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/qwen/qwen3.5-27b,Intention vs. Accident,15,14,0.9333333333333333
+openrouter/qwen/qwen3.5-27b,Irony,15,15,1.0
+openrouter/qwen/qwen3.5-27b,Knowledge Access / Ignorance,15,15,1.0
+openrouter/qwen/qwen3.5-27b,Sarcasm,15,15,1.0
+openrouter/qwen/qwen3.5-27b,Second-Order False Belief,19,19,1.0
+openrouter/qwen/qwen3.5-27b,White Lies / Prosocial Deception,15,15,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Diverse Beliefs,18,18,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Diverse Desires,15,15,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Emotion Recognition,17,17,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/qwen/qwen3.5-397b-a17b,First-Order False Belief,21,21,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Intention vs. Accident,15,14,0.9333333333333333
+openrouter/qwen/qwen3.5-397b-a17b,Irony,15,15,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Knowledge Access / Ignorance,15,13,0.8666666666666667
+openrouter/qwen/qwen3.5-397b-a17b,Sarcasm,15,15,1.0
+openrouter/qwen/qwen3.5-397b-a17b,Second-Order False Belief,19,18,0.9473684210526315
+openrouter/qwen/qwen3.5-397b-a17b,White Lies / Prosocial Deception,15,15,1.0
+openrouter/qwen/qwen3.5-9b,Diverse Beliefs,18,18,1.0
+openrouter/qwen/qwen3.5-9b,Diverse Desires,15,15,1.0
+openrouter/qwen/qwen3.5-9b,Emotion Recognition,17,17,1.0
+openrouter/qwen/qwen3.5-9b,Faux Pas Detection,18,15,0.8333333333333334
+openrouter/qwen/qwen3.5-9b,First-Order False Belief,21,20,0.9523809523809523
+openrouter/qwen/qwen3.5-9b,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/qwen/qwen3.5-9b,Intention vs. Accident,15,13,0.8666666666666667
+openrouter/qwen/qwen3.5-9b,Irony,15,15,1.0
+openrouter/qwen/qwen3.5-9b,Knowledge Access / Ignorance,15,14,0.9333333333333333
+openrouter/qwen/qwen3.5-9b,Sarcasm,15,13,0.8666666666666667
+openrouter/qwen/qwen3.5-9b,Second-Order False Belief,19,19,1.0
+openrouter/qwen/qwen3.5-9b,White Lies / Prosocial Deception,15,14,0.9333333333333333
+openrouter/qwen/qwen3.6-27b,Diverse Beliefs,18,18,1.0
+openrouter/qwen/qwen3.6-27b,Diverse Desires,15,14,0.9333333333333333
+openrouter/qwen/qwen3.6-27b,Emotion Recognition,17,17,1.0
+openrouter/qwen/qwen3.6-27b,Faux Pas Detection,18,16,0.8888888888888888
+openrouter/qwen/qwen3.6-27b,First-Order False Belief,21,21,1.0
+openrouter/qwen/qwen3.6-27b,Hidden Emotion (Appearance vs. Reality),18,18,1.0
+openrouter/qwen/qwen3.6-27b,Intention vs. Accident,15,14,0.9333333333333333
+openrouter/qwen/qwen3.6-27b,Irony,15,15,1.0
+openrouter/qwen/qwen3.6-27b,Knowledge Access / Ignorance,15,15,1.0
+openrouter/qwen/qwen3.6-27b,Sarcasm,15,15,1.0
+openrouter/qwen/qwen3.6-27b,Second-Order False Belief,19,19,1.0
+openrouter/qwen/qwen3.6-27b,White Lies / Prosocial Deception,15,15,1.0
