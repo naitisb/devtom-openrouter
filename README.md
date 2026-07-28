@@ -2,9 +2,9 @@
 
 **Mapping LLMs to developmental ages using validated theory-of-mind tasks from developmental psychology.**
 
-DevToM-OpenRouter evaluates large language models on the same cognitive milestones that children pass between ages 2 and 11, then maps each model to a *developmental age equivalent* using empirical norms from the child development literature. The instrument spans **12 theory-of-mind dimensions** — ordered by the age at which children typically acquire each ability (diverse desires at 2-3 years through faux pas detection at 9-11 years) — and draws on validated tasks from the Wellman & Liu (2004) ToM Scale and the broader developmental ToM literature.
+This project evaluates large language models on the same cognitive milestones that children pass between ages 2 and 11, then maps each model to a *developmental age equivalent* using empirical norms from the child development literature. The instrument spans **12 theory-of-mind dimensions** that are ordered by the age at which children typically acquire each ability (diverse desires at 2-3 years through faux pas detection at 9-11 years) and draws on validated tasks from the Wellman & Liu (2004) ToM Scale and the broader developmental ToM literature.
 
-The project tests **38 models across 5 families** — Claude, GPT, Llama, Qwen, and Mistral — deliberately reaching back to older releases so each family has a real multi-year history. Open-weight models (Llama, Qwen) route through OpenRouter under a documented non-training / zero-data-retention policy; closed models (Claude, GPT) route via their direct APIs; Mistral routes via la Plateforme.
+The project tests **38 models across 5 families** (i.e., Claude, GPT, Llama, Qwen, and Mistral) deliberately reaching back to older releases so each family has a real multi-year history. Open-weight models (Llama, Qwen) route through OpenRouter under a documented non-training / zero-data-retention policy; closed models (Claude, GPT) route via their direct APIs; Mistral routes via la Plateforme.
 
 ## Why developmental psychology tasks?
 
@@ -12,7 +12,7 @@ Most LLM benchmarks report a single accuracy number for a single model at a sing
 
 1. **Grounded in empirical norms.** Each of the 12 dimensions is anchored to a validated age band from the child development literature (e.g., first-order false belief at 4-5 years, second-order false belief at 6-7 years). This lets us go beyond "Model X scores 80% on ToM" to "Model X has mastered the ToM abilities typically acquired by age 6 but not those acquired by age 9." See [`docs/dev_norms.md`](docs/dev_norms.md) for the full norms table and citations.
 
-2. **Longitudinal, not cross-sectional.** The roster (`src/roster.py`) spans Jul 2023 - mid 2026 across five families and their size tiers. Each tier gets its own regression line so we can ask: does theory-of-mind competence improve release over release, and does it improve *evenly* across developmental dimensions or jaggedly?
+2. **Longitudinal, not cross-sectional.** The roster (`src/roster.py`) spans Jul 2023 to mid 2026 across five families and their size tiers. Each tier gets its own regression line so we can ask: does theory-of-mind competence improve release over release, and does it improve evenly across developmental dimensions or jaggedly?
 
 3. **Dual elicitation.** Every item is tested in both forced-choice (MCQ) and open-ended (free-response) formats. A finding that appears in only one format is flagged as format-fragile, providing a built-in robustness check.
 
@@ -45,7 +45,7 @@ The analysis pipeline maps LLMs to developmental ages through four complementary
 - **IRT age-anchoring**: Rasch / 2PL item response theory with person-theta mapped to the age scale via item difficulties
 
 ### Developmental horizon (`scripts/5_model/developmental_horizon.R`)
-Adapts METR's time-horizon methodology to developmental ToM: fits logistic(success ~ developmental_age) per model to estimate the *developmental age horizon* — the age at which the model's predicted accuracy crosses a threshold. Analogous to METR's "task duration at which AI succeeds 50% of the time," but on a developmental age axis.
+Fits logistic(success ~ developmental_age) per model to estimate the developmental age horizon, which is the age at which the model's predicted accuracy crosses a threshold. Inspired by METR's [time horizon]("https://metr.org/time-horizons/") work, mapped to a developmental age axis.
 
 ### Longitudinal trajectory (`scripts/5_model/glmm_trajectory.R`)
 Binomial GLMM testing whether ToM accuracy improves release-over-release within each family/tier, with item-level random effects.
@@ -67,7 +67,7 @@ All modeling scripts emit tidy CSV artifacts; visualization is in `scripts/6_vis
 ## Quickstart
 
 ```bash
-python3.10 -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install --upgrade pip && pip install -r requirements.txt
 cp .env.example .env            # add API keys (see .env.example for details)
 
@@ -133,20 +133,16 @@ Every OpenRouter call carries request-level routing preferences (`data_collectio
 
 The free-response grader uses cross-family judging to avoid self-preference bias. `openai/gpt-4o-2024-08-06` grades all non-GPT subjects; `anthropic/claude-sonnet-4-5-20250929` grades GPT subjects. Both are pinned to snapshot IDs for reproducibility. No model is ever graded by a judge from its own lab.
 
-## Relationship to devtom-eval
-
-DevToM-OpenRouter is a **sibling** of [devtom-eval](../devtom-eval), not a fork. It reuses the same dataset, metrics, solver, and scorer design (so results are directly comparable) and extends the model panel to five families with multi-year release histories. The analysis pipeline adds developmental age mapping, developmental horizon estimation, IRT, and size-scaling analyses beyond devtom-eval's trajectory-focused scope.
-
 ## Datasets & licenses
 
-Same instrument as devtom-eval — see [`data/SOURCES.md`](data/SOURCES.md). Authored items are MIT (this repo); upstream-derived components retain their upstream licenses.
+See [`data/SOURCES.md`](data/SOURCES.md). Authored items are MIT (this repo); upstream-derived components retain their upstream licenses.
 
 ## Citation
 
 ```bibtex
 @software{bhatt_devtom_openrouter_2026,
   author  = {Bhatt, Naiti S.},
-  title   = {{DevToM-OpenRouter}: Mapping {LLMs} to Developmental Ages Using Validated Theory-of-Mind Tasks},
+  title   = {Mapping {LLMs} to Developmental Ages Using Validated Theory-of-Mind Tasks},
   year    = {2026},
   url     = {https://github.com/naitisb/devtom-openrouter}
 }
