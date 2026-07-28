@@ -89,10 +89,10 @@ profile_rows <- df %>%
   select(-w) %>%
   ungroup()
 
-# Pass/fail: Wilson LB > chance (0.5 for MCQ; 0.0 for free-response as conservative)
+# Pass/fail: Wilson LB > chance (0.25 for 4-option MCQ; 0.0 for free-response)
 profile_rows <- profile_rows %>%
   mutate(
-    chance = ifelse(task == "tom_12dim_mcq", 0.5, 0.0),
+    chance = ifelse(task == "tom_12dim_mcq", 0.25, 0.0),
     pass = as.integer(wilson_lo > chance)
   )
 

@@ -1,5 +1,5 @@
 # DevToM-OpenRouter
-.PHONY: setup check smoke run run-mcq run-fr analyze visualize extract profile-dataset profile-results glmm irt viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles pipeline archive clean freeze
+.PHONY: setup check smoke run run-mcq run-fr analyze visualize clean-logs extract profile-dataset profile-results glmm size-glmm irt viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size pipeline archive clean freeze
 
 setup:        ## install deps into a venv
 	python3.10 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
@@ -22,11 +22,14 @@ run-mcq:      ## cheaper: MCQ task only, whole roster
 run-fr:       ## free-response task only, whole roster (model-graded)
 	bash scripts/2b_runFR/run_tom_12dim_fr_within_family.sh
 
-analyze: extract profile-dataset profile-results glmm irt ## run all analyses: extract -> profile -> model
+analyze: extract profile-dataset profile-results glmm size-glmm irt ## run all analyses: extract -> profile -> model
 
 # --------------- pipeline stages: 4_statistics -> 5_model -> 6_visualize ---
 
-extract:      ## extract item-level data from .eval logs -> results/item_level.csv
+clean-logs:   ## remove unscored FR evals that have a scored twin; strip -scored suffix
+	python scripts/0_misc/clean_scored_logs.py logs ../devtom-selfhost/logs
+
+extract: clean-logs ## extract item-level data from .eval logs -> results/item_level.csv
 	python scripts/4_statistics/extract_item_level.py --log-dir logs ../devtom-selfhost/logs
 
 profile-dataset: ## profile the JSONL item banks -> results/stats/dataset/
@@ -38,10 +41,13 @@ profile-results: extract ## profile eval outcomes + CTT -> results/stats/results
 glmm: extract ## fit binomial GLMM trajectory -> results/modeling/inference/
 	Rscript scripts/5_model/glmm_trajectory.R
 
+size-glmm: extract ## fit size-scaling GLMM -> results/modeling/size_scaling/
+	Rscript scripts/5_model/size_scaling_glmm.R
+
 irt: extract  ## fit developmental scaling + IRT -> results/modeling/mapping/
 	Rscript scripts/5_model/developmental_scaling_irt.R
 
-visualize: viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles ## run all visualization scripts
+visualize: viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size ## run all visualization scripts
 
 viz-descriptives: profile-dataset profile-results ## descriptive figures
 	Rscript scripts/6_visualize/visualize_descriptives.R
@@ -57,6 +63,9 @@ viz-accuracy: extract ## accuracy vs release date figures
 
 viz-profiles: extract ## dimension profile heatmaps, rankings, regression grids
 	Rscript scripts/6_visualize/visualize_dimension_profiles.R
+
+viz-size: size-glmm ## size-scaling figures
+	Rscript scripts/6_visualize/visualize_size_scaling.R
 
 pipeline: analyze visualize ## full pipeline: analyze then visualize
 

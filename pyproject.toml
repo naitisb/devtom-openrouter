@@ -1,7 +1,7 @@
 [project]
 name = "devtom-openrouter"
 version = "0.1.0"
-description = "Developmental theory-of-mind trajectories for open-weight LLMs, via OpenRouter (Inspect)."
+description = "Mapping LLMs to developmental ages using validated theory-of-mind tasks from developmental psychology."
 authors = [{ name = "Naiti S. Bhatt" }]
 license = { text = "MIT" }
 readme = "README.md"

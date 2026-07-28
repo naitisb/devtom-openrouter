@@ -20,8 +20,8 @@ part of the project's reproducibility/ethics record.
 - [ ] **Provider data collection DENIED.** Restrict to providers whose policies
       do not permit training on submitted inputs/outputs.
       _Set on: __________  screenshot: ___________
-- [ ] **Spend limit / alert set.** A full sweep is ~19 live open models × 2 tasks ×
-      ~184 items (plus grader calls). Budget before an unattended run.
+- [ ] **Spend limit / alert set.** A full sweep is 38 models × 2 tasks × ~201
+      items (plus grader calls). Budget before an unattended run.
       _Set on: ___________
 
 ## Per-request enforcement (already wired in code — verify, don't re-do)

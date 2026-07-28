@@ -336,6 +336,18 @@ PARAMS_B: dict[str, float] = {
     "ministral-3-8b-2512": 8, "mistral-small-2603": 24, "mistral-medium-3-5-26-04": 73,
     "gemma-2-27b-it": 27, "gemma-3-4b-it": 4,
     "gemma-3-12b-it": 12, "gemma-3-27b-it": 27,
+    # --- Closed-source: estimated total params (widely cited, not official) ---
+    # Claude — tier-based estimates: Haiku ~20B, Sonnet ~70B, Opus ~175B
+    "claude-3-haiku": 20, "claude-haiku-4-5-20251001": 20,
+    "claude-sonnet-4-5-20250929": 70, "claude-sonnet-4-6": 70, "claude-sonnet-5": 70,
+    "claude-opus-4-5-20251101": 175, "claude-opus-4-6": 175,
+    "claude-opus-4-7": 175, "claude-opus-4-8": 175, "claude-opus-4.1": 175,
+    "claude-fable-5": 70,
+    # GPT — per widely cited leak/estimate: GPT-4 ~1760B MoE total,
+    # GPT-4o ~200B, GPT-4o-mini ~8B, o-series reasoning ~same base
+    "gpt-3.5-turbo-0613": 20, "gpt-4-0613": 1760, "gpt-4": 1760,
+    "gpt-4o-2024-08-06": 200, "gpt-4o-mini": 8, "gpt-4o-mini-2024-07-18": 8,
+    "o1": 200, "o3-mini": 70, "o3": 200, "o4-mini": 70,
 }
 
 

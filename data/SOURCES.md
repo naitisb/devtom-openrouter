@@ -1,7 +1,10 @@
 # Data sources & licenses
 
-Record every dataset here before ingesting (Story 1.4 / 1.6). A clean license
-trail is part of the open-science signal.
+Record every dataset here before ingesting. A clean license trail is part of the
+open-science signal. The DevToM item bank draws on validated tasks from the
+developmental psychology literature (see `docs/dev_norms.md` for empirical age
+norms and citations) to evaluate LLMs on the same theory-of-mind milestones
+children pass between ages 2 and 11.
 
 | Dataset | Version / commit | License | URL | Notes |
 |---|---|---|---|---|

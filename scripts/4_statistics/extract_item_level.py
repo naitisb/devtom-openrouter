@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import math
 import re
 import sys
 from pathlib import Path
@@ -34,6 +35,7 @@ from src.roster import (  # noqa: E402
     MODEL_RELEASE_DATE,
     _canonical_model,
     model_family,
+    model_params_b,
     model_release_date,
     model_type,
 )
@@ -95,40 +97,44 @@ def extract(log_dirs: list[str], all_runs: bool = False) -> pd.DataFrame:
             date = model_release_date(canonical)
             date_years = (date - _EPOCH).days / 365.25 if date else None
             tier = model_type(canonical)
+            params = model_params_b(canonical)
+            log_params = math.log10(params) if params is not None else None
 
-        for s in log.samples or []:
-            if not s.scores:
-                continue
-            score = next(iter(s.scores.values()))
-            meta = s.metadata or {}
-            dim = meta.get("tom_dimension", "unknown")
-            construct = meta.get("tom_construct") or construct_for_dimension(dim) or "unknown"
-            age_band = meta.get("validated_age_band")
-            age_lo, age_hi, age_mid = _parse_age_band(age_band)
-            dim_rank = (DIMENSION_DEVELOPMENTAL_ORDER.index(dim)
-                        if dim in DIMENSION_DEVELOPMENTAL_ORDER
-                        else len(DIMENSION_DEVELOPMENTAL_ORDER))
+            for s in log.samples or []:
+                if not s.scores:
+                    continue
+                score = next(iter(s.scores.values()))
+                meta = s.metadata or {}
+                dim = meta.get("tom_dimension", "unknown")
+                construct = meta.get("tom_construct") or construct_for_dimension(dim) or "unknown"
+                age_band = meta.get("validated_age_band")
+                age_lo, age_hi, age_mid = _parse_age_band(age_band)
+                dim_rank = (DIMENSION_DEVELOPMENTAL_ORDER.index(dim)
+                            if dim in DIMENSION_DEVELOPMENTAL_ORDER
+                            else len(DIMENSION_DEVELOPMENTAL_ORDER))
 
-            records.append({
-                "model": model,
-                "family": family,
-                "tier": tier,
-                "task": task_name,
-                "created": log.eval.created,
-                "log_file": info.name,
-                "item_id": str(s.id),
-                "correct": _is_correct(score.value),
-                "tom_dimension": dim,
-                "tom_construct": construct,
-                "validated_age_band": age_band or "",
-                "age_lo": age_lo,
-                "age_hi": age_hi,
-                "age_mid": age_mid,
-                "dim_rank": dim_rank,
-                "literature_basis": meta.get("literature_basis", ""),
-                "date_years": date_years,
-                "release_date": str(date) if date else "",
-            })
+                records.append({
+                    "model": model,
+                    "family": family,
+                    "tier": tier,
+                    "task": task_name,
+                    "created": log.eval.created,
+                    "log_file": info.name,
+                    "item_id": str(s.id),
+                    "correct": _is_correct(score.value),
+                    "tom_dimension": dim,
+                    "tom_construct": construct,
+                    "validated_age_band": age_band or "",
+                    "age_lo": age_lo,
+                    "age_hi": age_hi,
+                    "age_mid": age_mid,
+                    "dim_rank": dim_rank,
+                    "literature_basis": meta.get("literature_basis", ""),
+                    "date_years": date_years,
+                    "release_date": str(date) if date else "",
+                    "params_b": params,
+                    "log_params": log_params,
+                })
 
     if not records:
         return pd.DataFrame()
@@ -138,6 +144,20 @@ def extract(log_dirs: list[str], all_runs: bool = False) -> pd.DataFrame:
     if not all_runs:
         latest = df.groupby(["model", "task"])["created"].transform("max")
         df = df[df["created"] == latest]
+
+    # Deduplicate: when the same base model slug appears from both openrouter
+    # and selfhost (openai-api/local/), keep the openrouter version.
+    df["_slug"] = df["model"].apply(lambda m: m.split("/")[-1])
+    df["_is_selfhost"] = df["model"].str.startswith("openai-api/local/")
+    slug_counts = df.groupby(["_slug", "task"])["model"].transform("nunique")
+    drop_mask = (slug_counts > 1) & df["_is_selfhost"]
+    if drop_mask.any():
+        dropped = df.loc[drop_mask, "model"].unique()
+        for m in dropped:
+            print(f"dedup: dropping selfhost '{m}' (openrouter version exists)",
+                  file=sys.stderr)
+        df = df[~drop_mask]
+    df = df.drop(columns=["_slug", "_is_selfhost"])
 
     return df
 

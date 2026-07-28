@@ -1,138 +1,154 @@
 # DevToM-OpenRouter
 
-**Developmental theory-of-mind trajectories for *open-weight* LLMs, via OpenRouter.**
+**Mapping LLMs to developmental ages using validated theory-of-mind tasks from developmental psychology.**
 
-A parallel of [devtom-eval](../devtom-eval) that runs the **same 12-dimension
-theory-of-mind instrument** across open-weight model families served through
-OpenRouter — **Llama, Qwen, DeepSeek, Mistral, Gemma** — deliberately reaching
-**back in time to older releases** (Llama 2, Mistral 7B, the original DeepSeek
-LLM, Gemma 1) so each family has a real multi-year history. The central output
-is a **developmental trajectory**: for each size tier within each family, does
-theory-of-mind accuracy on each ToM axis actually improve release over release?
+DevToM-OpenRouter evaluates large language models on the same cognitive milestones that children pass between ages 2 and 11, then maps each model to a *developmental age equivalent* using empirical norms from the child development literature. The instrument spans **12 theory-of-mind dimensions** — ordered by the age at which children typically acquire each ability (diverse desires at 2-3 years through faux pas detection at 9-11 years) — and draws on validated tasks from the Wellman & Liu (2004) ToM Scale and the broader developmental ToM literature.
 
-Where devtom-eval traces closed frontier families (Anthropic, OpenAI) within
-themselves, this repo asks the same question of the open-weight ecosystem — and
-does it under a documented **non-training / zero-data-retention** OpenRouter
-routing policy (see [`docs/METHODS_non_training_openrouter.md`](docs/METHODS_non_training_openrouter.md)).
+The project tests **38 models across 5 families** — Claude, GPT, Llama, Qwen, and Mistral — deliberately reaching back to older releases so each family has a real multi-year history. Open-weight models (Llama, Qwen) route through OpenRouter under a documented non-training / zero-data-retention policy; closed models (Claude, GPT) route via their direct APIs; Mistral routes via la Plateforme.
 
-## Why
+## Why developmental psychology tasks?
 
-Most ToM benchmarks report one accuracy number for one model at one point in
-time. This project reports accuracy **per ToM dimension** (12 axes, ordered by
-child developmental-acquisition age — diverse desires → false belief → sarcasm →
-irony) **× per model × across release time**, so you can see whether an open
-family's ToM competence grew as it scaled and matured, and whether it grew
-*evenly* across axes or jaggedly. See [`docs/taxonomy.md`](docs/taxonomy.md) and
-[`docs/dev_norms.md`](docs/dev_norms.md) for the instrument.
+Most LLM benchmarks report a single accuracy number for a single model at a single point in time. DevToM differs in three ways:
 
-## Two things make this a distinct study, not just a re-run
+1. **Grounded in empirical norms.** Each of the 12 dimensions is anchored to a validated age band from the child development literature (e.g., first-order false belief at 4-5 years, second-order false belief at 6-7 years). This lets us go beyond "Model X scores 80% on ToM" to "Model X has mastered the ToM abilities typically acquired by age 6 but not those acquired by age 9." See [`docs/dev_norms.md`](docs/dev_norms.md) for the full norms table and citations.
 
-1. **Longitudinal, open-weight.** The roster (`src/roster.py`) spans Jul 2023 →
-   mid 2025 across five families and their size tiers, each tier trended on its
-   own regression line with a significance test. Older releases are treated as
-   first-class data points, not legacy noise.
-2. **Non-training routing is a first-class control.** Every call carries
-   OpenRouter provider-routing preferences (`data_collection:"deny"`, `zdr:true`)
-   from a single source of truth (`src/openrouter.py`), backing up the
-   workspace-level ZDR/no-logging toggles. Models with no policy-compliant
-   upstream fail closed and are simply absent from results.
+2. **Longitudinal, not cross-sectional.** The roster (`src/roster.py`) spans Jul 2023 - mid 2026 across five families and their size tiers. Each tier gets its own regression line so we can ask: does theory-of-mind competence improve release over release, and does it improve *evenly* across developmental dimensions or jaggedly?
+
+3. **Dual elicitation.** Every item is tested in both forced-choice (MCQ) and open-ended (free-response) formats. A finding that appears in only one format is flagged as format-fragile, providing a built-in robustness check.
+
+## The 12 ToM dimensions (developmental order)
+
+| # | Dimension | Age band | Construct | Key citation |
+|---|---|---|---|---|
+| 1 | Diverse Desires | 2-3 yr | Desire / intention | Wellman & Liu (2004) |
+| 2 | Diverse Beliefs | 3-4 yr | Belief reasoning | Wellman & Liu (2004) |
+| 3 | Knowledge Access / Ignorance | 3-4 yr | Knowledge access | Wimmer, Hogrefe & Perner (1988) |
+| 4 | Emotion Recognition | 3-4 yr | Emotion recognition | Ekman; Widen & Russell (2008) |
+| 5 | First-Order False Belief | 4-5 yr | Belief reasoning | Wimmer & Perner (1983) |
+| 6 | Intention vs. Accident | 4-5 yr | Desire / intention | Piaget (1932) |
+| 7 | Hidden Emotion | 4-6 yr | Emotion recognition | Harris et al. (1986) |
+| 8 | White Lies / Prosocial Deception | 5-7 yr | Deception | Talwar & Lee (2002) |
+| 9 | Second-Order False Belief | 6-7 yr | Belief reasoning | Perner & Wimmer (1985) |
+| 10 | Sarcasm | 6-8 yr | Pragmatic understanding | Winner & Leekam (1991) |
+| 11 | Irony | 6-8 yr | Pragmatic understanding | Hancock, Dunham & Purdy (2000) |
+| 12 | Faux Pas Detection | 9-11 yr | Pragmatic understanding | Baron-Cohen et al. (1999) |
+
+See [`docs/taxonomy.md`](docs/taxonomy.md) for the full taxonomy and [`docs/dev_norms.md`](docs/dev_norms.md) for age norms, milestone detail, and BibTeX.
+
+## Analyses
+
+The analysis pipeline maps LLMs to developmental ages through four complementary approaches:
+
+### Developmental age mapping (`scripts/5_model/developmental_age_mapping.R`)
+- **Mastery-based age**: highest empirical age band at which a model achieves >= 80% accuracy (non-parametric)
+- **GLM / GLMM age-equivalents**: logistic models predicting accuracy from developmental age, estimating each model's age-equivalent
+- **IRT age-anchoring**: Rasch / 2PL item response theory with person-theta mapped to the age scale via item difficulties
+
+### Developmental horizon (`scripts/5_model/developmental_horizon.R`)
+Adapts METR's time-horizon methodology to developmental ToM: fits logistic(success ~ developmental_age) per model to estimate the *developmental age horizon* — the age at which the model's predicted accuracy crosses a threshold. Analogous to METR's "task duration at which AI succeeds 50% of the time," but on a developmental age axis.
+
+### Longitudinal trajectory (`scripts/5_model/glmm_trajectory.R`)
+Binomial GLMM testing whether ToM accuracy improves release-over-release within each family/tier, with item-level random effects.
+
+### Size scaling & tier effects
+- **Size scaling** (`scripts/5_model/size_scaling_glmm.R`): GLMM testing how parameter count predicts ToM accuracy, controlling for family and release date
+- **Tier effects** (`scripts/5_model/tier_effects_analysis.R`): GLM, GLMM, and IRT approaches testing whether model tier predicts ToM accuracy above and beyond developmental age
+
+All modeling scripts emit tidy CSV artifacts; visualization is in `scripts/6_visualize/`.
 
 ## Architecture
 
-- **Inspect** (`inspect-ai`) builds and runs the eval: `dataset → Task → Solver → Scorer → eval log`.
-- **OpenRouter** is the single provider (`openrouter/<author>/<slug>` model strings, one API key).
-- `src/roster.py` is the single source of truth for *which* models, their family,
-  size tier, release date, and color — read by both the runners and the analysis.
-- `src/openrouter.py` is the single source of truth for the no-training/ZDR routing policy.
+- **Inspect** (`inspect-ai`) builds and runs each eval: `dataset -> Task -> Solver -> Scorer -> eval log`.
+- **OpenRouter** routes Llama and Qwen (one API key, non-training routing prefs). Claude, GPT, and Mistral route via their direct APIs.
+- `src/roster.py` — single source of truth for which models, their family, size tier, release date, and color.
+- `src/constructs.py` — canonical dimension-to-construct mapping, developmental ordering, and construct hierarchy.
+- `src/openrouter.py` — single source of truth for the non-training/ZDR routing policy.
 
 ## Quickstart
 
 ```bash
 python3.10 -m venv .venv && source .venv/bin/activate
 pip install --upgrade pip && pip install -r requirements.txt
-cp .env.example .env            # add OPENROUTER_API_KEY (and optionally DEVTOM_GRADER_MODEL)
+cp .env.example .env            # add API keys (see .env.example for details)
 
-# 1. verify key + that each family has a policy-compliant route (tiny real calls)
+# 1. verify keys + that each family has a policy-compliant route
 python scripts/1_check-functionality/check_providers.py --live
 
-# 2. end-to-end smoke: one hello-world MCQ per family (cents)
+# 2. end-to-end smoke test: one hello-world MCQ per family (cents)
 bash scripts/1_check-functionality/run_hello_world_all_families.sh
 
-# 3. run the sweep (both tasks, whole roster) — or scope to one family
+# 3. run the eval sweep (both tasks, whole roster) — or scope to one family
 bash scripts/3_runAll/run_tom_12dim_all_within_family.sh
 ONLY_FAMILY=Qwen bash scripts/3_runAll/run_tom_12dim_all_within_family.sh
-#   cheaper first pass (MCQ only), or free-response only:
-bash scripts/2a_runMCQ/run_tom_12dim_mcq_within_family.sh
-bash scripts/2b_runFR/run_tom_12dim_fr_within_family.sh
-#   arbitrary subset:
-bash scripts/3_runAll/run_tom_12dim_selective.sh meta-llama/llama-3.1-8b-instruct qwen/qwen3-32b
 
-# 4. build the trajectory figures + CSV into results/<timestamp>/
-python scripts/0_misc/summarize_visualize_results.py
+# 4. run the full analysis + visualization pipeline
+make pipeline
 ```
 
-`make setup | check | smoke | run | run-mcq | run-fr | analyze` wrap the same steps.
+`make setup | check | smoke | run | run-mcq | run-fr | analyze | visualize | pipeline` wrap the same steps.
 
 ## What you get
 
-`scripts/0_misc/summarize_visualize_results.py` writes a tidy CSV and up to
-~21 figures into a fresh `results/<timestamp>/`:
+### Developmental age outputs
+- **Developmental age equivalents** — per model, per dimension, and per construct, via four methods (mastery, GLM, GLMM, IRT)
+- **Developmental horizon curves** — logistic fits showing each model's predicted accuracy as a function of developmental age
+- **Age distance matrices** — how far each model's estimated age is from the target age for each dimension
 
-- **Trajectory trend charts** — overall accuracy vs. release date, one line per
-  size tier, each with a dashed linear-regression line + 95% CI + significance
-  star (is *this* tier trending up over time?). Combined, per task (MCQ vs. free
-  response), and per family.
-- **Per-dimension heatmaps** — model (oldest→newest within family) × 12 ToM
-  dimensions, with family boundary rules.
-- **Difficulty rankings** — which ToM axes are hardest across all tested models.
-- **Per-dimension regression grids** (free-response) — one small regression per
-  ToM axis, per family, pooled and split-by-tier.
+### Trajectory and scaling outputs
+- **Trajectory trend charts** — overall accuracy vs. release date per size tier, with regression lines + 95% CI + significance tests
+- **Per-dimension heatmaps** — model (oldest -> newest) x 12 ToM dimensions, showing which developmental abilities each model has mastered
+- **Dimension profile comparisons** — per-family, per-construct
+- **Size scaling figures** — parameter count vs. ToM accuracy
+- **Tier effect summaries** — which size tiers predict ToM performance above and beyond developmental age
 
 ## Repo layout
 
 ```
-src/        roster (model registry), openrouter (routing policy), scorer, solver, metrics
-tasks/      hello_world_mcq.py + _smoke.py (pipeline smoke tests) + toy data
-data/       the shared 12-dimension MCQ + free-response datasets, SOURCES.md
-scripts/    1_check → 2a_runMCQ / 2b_runFR → 3_runAll → 4_statistics → 5_model → 6_visualize (+ _provider_prefs.sh helper)
-docs/       models roster, non-training methods note, privacy checklist, taxonomy, dev norms
-logs/       eval logs (gitignored; runners archive prior runs to logs/Archive/)
-results/    per-run CSV + trajectory figures (gitignored bulk)
+src/           roster, constructs, openrouter policy, scorer, solver, metrics
+tasks/         hello_world_mcq.py + _smoke.py (pipeline smoke tests) + toy data
+data/          the 12-dimension MCQ + free-response datasets, SOURCES.md
+configs/       task configuration
+scripts/
+  0_misc/      dataset tagging, log cleaning, utilities
+  1_check/     provider connectivity + smoke tests
+  2a_runMCQ/   MCQ-only runners
+  2b_runFR/    free-response-only runners
+  3_runAll/    full sweep runners
+  4_statistics/ extract item-level data, profile datasets + results
+  5_model/     GLMM trajectory, developmental age mapping, developmental horizon,
+               IRT scaling, size scaling, tier effects
+  6_visualize/ all visualization scripts (descriptives, trajectories, mapping,
+               profiles, size scaling, tier effects, age heatmaps, horizons)
+docs/          dev norms + citations, taxonomy, models roster, non-training methods,
+               privacy checklist
+logs/          eval logs (gitignored)
+results/       per-run CSVs, modeling outputs, figures (gitignored bulk)
 ```
+
+## Non-training routing
+
+Every OpenRouter call carries request-level routing preferences (`data_collection:"deny"`, `zdr:true`) from a single source of truth (`src/openrouter.py`), backing up workspace-level ZDR/no-logging toggles. Models with no policy-compliant upstream fail closed and are absent from results. See [`docs/METHODS_non_training_openrouter.md`](docs/METHODS_non_training_openrouter.md) and [`docs/privacy_config_checklist.md`](docs/privacy_config_checklist.md).
+
+## Cross-family grading
+
+The free-response grader uses cross-family judging to avoid self-preference bias. `openai/gpt-4o-2024-08-06` grades all non-GPT subjects; `anthropic/claude-sonnet-4-5-20250929` grades GPT subjects. Both are pinned to snapshot IDs for reproducibility. No model is ever graded by a judge from its own lab.
 
 ## Relationship to devtom-eval
 
-This is a **sibling**, not a fork: it reuses devtom-eval's dataset, metrics,
-solver, and scorer design verbatim (so results are directly comparable), and
-swaps the model layer for OpenRouter open-weight families plus the non-training
-routing controls. The analysis script is the same plotting logic retargeted at
-open families via `src/roster.py`. Differences worth knowing:
-
-- `model_family()` parses `openrouter/<author>/<slug>` (the router prefix is
-  stripped; the *author* segment is the family), not the first path segment.
-- The model roster is a single importable source of truth, not duplicated arrays.
-- The free-response grader is pinned via `DEVTOM_GRADER_MODEL`. The study uses
-  `openai/gpt-4o-2024-08-06` as the primary judge for all non-GPT subject families,
-  and `anthropic/claude-sonnet-4-5-20250929` as the alternate judge for GPT subjects
-  (cross-family grading via `DEVTOM_GRADER_MODEL_SAMEFAMILY` — no subject is graded
-  by a same-lab judge). Both judges are pinned to snapshot ids for reproducibility.
-  Limitation: GPT-4o may favor non-GPT outputs; Claude may disfavor GPT outputs —
-  both directions are noted in the methods.
+DevToM-OpenRouter is a **sibling** of [devtom-eval](../devtom-eval), not a fork. It reuses the same dataset, metrics, solver, and scorer design (so results are directly comparable) and extends the model panel to five families with multi-year release histories. The analysis pipeline adds developmental age mapping, developmental horizon estimation, IRT, and size-scaling analyses beyond devtom-eval's trajectory-focused scope.
 
 ## Datasets & licenses
 
-Same instrument as devtom-eval — see [`data/SOURCES.md`](data/SOURCES.md).
-Authored items are MIT (this repo); any upstream-derived components retain their
-upstream licenses.
+Same instrument as devtom-eval — see [`data/SOURCES.md`](data/SOURCES.md). Authored items are MIT (this repo); upstream-derived components retain their upstream licenses.
 
 ## Citation
 
 ```bibtex
 @software{bhatt_devtom_openrouter_2026,
   author  = {Bhatt, Naiti S.},
-  title   = {DevToM-OpenRouter: Developmental Theory-of-Mind Trajectories for Open-Weight LLMs},
+  title   = {{DevToM-OpenRouter}: Mapping {LLMs} to Developmental Ages Using Validated Theory-of-Mind Tasks},
   year    = {2026},
-  url      = {https://github.com/naitisb/devtom-openrouter}
+  url     = {https://github.com/naitisb/devtom-openrouter}
 }
 ```
 

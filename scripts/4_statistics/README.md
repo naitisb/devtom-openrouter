@@ -1,8 +1,9 @@
 # 4_statistics — Descriptive statistics and data prep
 
 This stage extracts item-level data from the eval logs and computes descriptive
-statistics. Its outputs feed into `scripts/5_model/` (modeling) and
-`scripts/6_visualize/` (visualization).
+statistics. Its outputs are the shared data layer consumed by the developmental
+age mapping, longitudinal trajectory, and scaling analyses in `scripts/5_model/`
+and by all visualization scripts in `scripts/6_visualize/`.
 
 ## Run order
 

@@ -240,39 +240,44 @@ plot_difficulty_ranking <- function(d, task_filter = NULL, family_filter = NULL,
   if (nrow(sub) == 0) return(invisible(NULL))
 
   group_col <- if (use_construct) "tom_construct" else "tom_dimension"
-  dev_order <- if (use_construct) CONSTRUCT_DEVELOPMENTAL_ORDER else DIMENSION_DEVELOPMENTAL_ORDER
 
-  stats <- sub %>%
-    group_by(model, .data[[group_col]]) %>%
+  # Per-model accuracy for tier overlay
+  model_stats <- sub %>%
+    group_by(model, tier, .data[[group_col]]) %>%
     summarise(acc = mean(correct), .groups = "drop") %>%
-    group_by(.data[[group_col]]) %>%
-    summarise(mean_acc = mean(acc), sd_acc = sd(acc), n = n(), .groups = "drop") %>%
-    arrange(mean_acc)
+    mutate(tier = factor_tier(tier))
 
-  stats[[group_col]] <- factor(stats[[group_col]], levels = stats[[group_col]])
+  # Overall order by mean
+  dim_order <- model_stats %>%
+    group_by(.data[[group_col]]) %>%
+    summarise(overall = mean(acc), .groups = "drop") %>%
+    arrange(overall) %>%
+    pull(.data[[group_col]])
+
+  model_stats[[group_col]] <- factor(model_stats[[group_col]], levels = dim_order)
 
   task_label <- if (!is.null(task_filter)) task_labels[task_filter] else "Combined"
   fam_label <- if (!is.null(family_filter)) family_filter else "All families"
   level <- if (use_construct) "construct" else "dimension"
 
-  p <- ggplot(stats, aes(x = mean_acc, y = .data[[group_col]])) +
-    geom_col(aes(fill = mean_acc), width = 0.7) +
-    geom_errorbarh(aes(xmin = pmax(0, mean_acc - sd_acc),
-                       xmax = pmin(1, mean_acc + sd_acc)),
-                   height = 0.3, linewidth = 0.4) +
+  p <- ggplot(model_stats, aes(x = acc, y = .data[[group_col]], color = tier)) +
+    geom_point(alpha = 0.6, size = 1.5,
+               position = position_jitter(height = 0.2, width = 0, seed = 42)) +
+    stat_summary(fun = mean, geom = "point", shape = 18, size = 3.5,
+                 color = "black", show.legend = FALSE) +
     geom_vline(xintercept = 0.5, linetype = "dashed", color = "grey50") +
-    scale_fill_gradient2(low = "#d73027", mid = "#fee08b", high = "#1a9850",
-                         midpoint = 0.7, guide = "none") +
+    scale_color_manual(values = TYPE_COLORS) +
     scale_x_continuous(limits = c(0, 1.05), labels = percent_format()) +
-    labs(title = paste0("ToM ", level, " difficulty ranking (", fam_label, ", ", task_label, ")"),
-         subtitle = "Hardest at top; error bars = SD across models",
-         x = "Mean accuracy", y = NULL) +
-    theme_devtom()
+    labs(title = paste0("ToM ", level, " difficulty by tier (", fam_label, ", ", task_label, ")"),
+         subtitle = "Points = per-model accuracy; diamonds = overall mean",
+         x = "Accuracy", y = NULL, color = "Tier") +
+    theme_devtom() +
+    theme(legend.text = element_text(size = 7))
 
-  n_items <- nrow(stats)
+  n_items <- length(dim_order)
   prefix <- if (use_construct) "construct" else "dimension"
   save_plot(p, paste0(prefix, "_difficulty_ranking", suffix, ".png"),
-            width = 9, height = max(4, n_items * 0.45 + 2))
+            width = 10, height = max(4, n_items * 0.45 + 2))
 }
 
 # Overall
@@ -490,73 +495,65 @@ for (fam in intersect(FAMILY_ORDER, unique(acc_by_task$family))) {
 # ===========================================================================
 cat("\n--- Per-Dimension Regression Grids ---\n")
 
-plot_dim_regression_grid <- function(d, family_filter, task_filter = "tom_12dim_freeresponse",
-                                      split_by_type = FALSE) {
+plot_dim_regression_grid <- function(d, family_filter = NULL,
+                                      task_filter = "tom_12dim_freeresponse") {
   sub <- d %>%
-    filter(family == family_filter, task == task_filter,
-           !is.na(date_years), !is.na(release_date))
+    filter(task == task_filter, !is.na(date_years), !is.na(release_date))
+  if (!is.null(family_filter)) sub <- sub %>% filter(family == family_filter)
   if (nrow(sub) == 0) return(invisible(NULL))
 
   dim_acc <- sub %>%
     group_by(model, tier, date_years, release_date, tom_dimension) %>%
     summarise(accuracy = mean(correct), .groups = "drop") %>%
-    mutate(date = as.Date(release_date))
+    mutate(date = as.Date(release_date),
+           tier = factor_tier(tier))
 
-  # Only dimensions in developmental order
   dims <- intersect(DIMENSION_DEVELOPMENTAL_ORDER, unique(dim_acc$tom_dimension))
   if (length(dims) == 0) return(invisible(NULL))
   dim_acc <- dim_acc %>% filter(tom_dimension %in% dims)
   dim_acc$tom_dimension <- factor(dim_acc$tom_dimension, levels = dims)
 
-  if (split_by_type) {
-    p <- ggplot(dim_acc, aes(x = date, y = accuracy, color = tier)) +
-      geom_point(size = 1.5, alpha = 0.7) +
-      geom_smooth(method = "lm", se = TRUE, linewidth = 0.7,
-                  linetype = "dashed", alpha = 0.15) +
-      scale_color_manual(values = TYPE_COLORS) +
-      geom_hline(yintercept = 0.5, color = "grey50", linetype = "dashed", linewidth = 0.3)
-  } else {
-    p <- ggplot(dim_acc, aes(x = date, y = accuracy)) +
-      geom_point(size = 1.5, alpha = 0.7, color = "grey30") +
-      geom_smooth(method = "lm", se = TRUE, linewidth = 0.7,
-                  color = "grey30", fill = "grey80", alpha = 0.3) +
-      geom_hline(yintercept = 0.5, color = "grey50", linetype = "dashed", linewidth = 0.3)
-  }
+  p <- ggplot(dim_acc, aes(x = date, y = accuracy, color = tier)) +
+    geom_point(size = 1.5, alpha = 0.7) +
+    geom_smooth(method = "lm", se = TRUE, linewidth = 0.7,
+                linetype = "dashed", alpha = 0.15) +
+    scale_color_manual(values = TYPE_COLORS) +
+    geom_hline(yintercept = 0.5, color = "grey50", linetype = "dashed", linewidth = 0.3)
 
   task_label <- task_labels[task_filter]
-  scope <- if (split_by_type) "per tier" else "pooled"
+  scope_label <- if (is.null(family_filter)) "all families" else family_filter
 
   p <- p +
     facet_wrap(~tom_dimension, ncol = 4) +
     scale_y_continuous(limits = c(0, 1), labels = percent_format()) +
     scale_x_date(date_labels = "%b\n%Y") +
-    labs(title = paste0(family_filter, ": per-dimension accuracy trend (", task_label, ", ", scope, ")"),
-         subtitle = "Dimensions in developmental order; dashed line = chance",
-         x = "Release date", y = "Accuracy") +
+    labs(title = paste0(scope_label, ": per-dimension accuracy trend (", task_label, ", per tier)"),
+         subtitle = "Dimensions in developmental order; one regression line per tier",
+         x = "Release date", y = "Accuracy", color = "Tier") +
     theme_devtom() +
     theme(strip.text = element_text(size = 7),
           axis.text = element_text(size = 6),
-          legend.position = if (split_by_type) "bottom" else "none")
+          legend.position = "bottom",
+          legend.text = element_text(size = 6))
 
-  suffix <- if (split_by_type) "_by_type" else ""
   task_slug <- gsub("tom_12dim_", "", task_filter)
-  save_plot(p, paste0("dimension_regression_", tolower(family_filter), "_",
-                      task_slug, suffix, ".png"),
+  family_slug <- if (is.null(family_filter)) "all" else tolower(family_filter)
+  save_plot(p, paste0("dimension_regression_", family_slug, "_", task_slug, ".png"),
             width = 16, height = 10)
 }
 
-# Per-dimension grids for each family, both pooled and by-type, for FR
-for (fam in intersect(FAMILY_ORDER, unique(df$family))) {
-  if (!"tom_12dim_freeresponse" %in% df$task[df$family == fam]) next
-  plot_dim_regression_grid(df, fam, split_by_type = FALSE)
-  plot_dim_regression_grid(df, fam, split_by_type = TRUE)
+# All-families-pooled per-dimension grids (per tier)
+for (task in c("tom_12dim_freeresponse", "tom_12dim_mcq")) {
+  if (!task %in% unique(df$task)) next
+  plot_dim_regression_grid(df, family_filter = NULL, task_filter = task)
 }
 
-# Also for MCQ
+# Per-family per-dimension grids (per tier)
 for (fam in intersect(FAMILY_ORDER, unique(df$family))) {
-  if (!"tom_12dim_mcq" %in% df$task[df$family == fam]) next
-  plot_dim_regression_grid(df, fam, task_filter = "tom_12dim_mcq", split_by_type = FALSE)
-  plot_dim_regression_grid(df, fam, task_filter = "tom_12dim_mcq", split_by_type = TRUE)
+  for (task in c("tom_12dim_freeresponse", "tom_12dim_mcq")) {
+    if (!task %in% df$task[df$family == fam]) next
+    plot_dim_regression_grid(df, family_filter = fam, task_filter = task)
+  }
 }
 
 # ===========================================================================
@@ -564,66 +561,63 @@ for (fam in intersect(FAMILY_ORDER, unique(df$family))) {
 # ===========================================================================
 cat("\n--- Per-Construct Regression Grids ---\n")
 
-plot_construct_regression_grid <- function(d, family_filter,
-                                            task_filter = "tom_12dim_freeresponse",
-                                            split_by_type = FALSE) {
+plot_construct_regression_grid <- function(d, family_filter = NULL,
+                                            task_filter = "tom_12dim_freeresponse") {
   sub <- d %>%
-    filter(family == family_filter, task == task_filter,
-           !is.na(date_years), !is.na(release_date), !is.na(tom_construct))
+    filter(task == task_filter, !is.na(date_years), !is.na(release_date),
+           !is.na(tom_construct))
+  if (!is.null(family_filter)) sub <- sub %>% filter(family == family_filter)
   if (nrow(sub) == 0) return(invisible(NULL))
 
   con_acc <- sub %>%
     group_by(model, tier, date_years, release_date, tom_construct) %>%
     summarise(accuracy = mean(correct), .groups = "drop") %>%
-    mutate(date = as.Date(release_date))
+    mutate(date = as.Date(release_date),
+           tier = factor_tier(tier))
 
   constructs <- intersect(CONSTRUCT_DEVELOPMENTAL_ORDER, unique(con_acc$tom_construct))
   if (length(constructs) == 0) return(invisible(NULL))
   con_acc <- con_acc %>% filter(tom_construct %in% constructs)
   con_acc$tom_construct <- factor(con_acc$tom_construct, levels = constructs)
 
-  if (split_by_type) {
-    p <- ggplot(con_acc, aes(x = date, y = accuracy, color = tier)) +
-      geom_point(size = 1.5, alpha = 0.7) +
-      geom_smooth(method = "lm", se = TRUE, linewidth = 0.7,
-                  linetype = "dashed", alpha = 0.15) +
-      scale_color_manual(values = TYPE_COLORS) +
-      geom_hline(yintercept = 0.5, color = "grey50", linetype = "dashed", linewidth = 0.3)
-  } else {
-    p <- ggplot(con_acc, aes(x = date, y = accuracy)) +
-      geom_point(size = 1.5, alpha = 0.7, color = "grey30") +
-      geom_smooth(method = "lm", se = TRUE, linewidth = 0.7,
-                  color = "grey30", fill = "grey80", alpha = 0.3) +
-      geom_hline(yintercept = 0.5, color = "grey50", linetype = "dashed", linewidth = 0.3)
-  }
-
   task_label <- task_labels[task_filter]
-  scope <- if (split_by_type) "per tier" else "pooled"
+  scope_label <- if (is.null(family_filter)) "all families" else family_filter
 
-  p <- p +
+  p <- ggplot(con_acc, aes(x = date, y = accuracy, color = tier)) +
+    geom_point(size = 1.5, alpha = 0.7) +
+    geom_smooth(method = "lm", se = TRUE, linewidth = 0.7,
+                linetype = "dashed", alpha = 0.15) +
+    scale_color_manual(values = TYPE_COLORS) +
+    geom_hline(yintercept = 0.5, color = "grey50", linetype = "dashed", linewidth = 0.3) +
     facet_wrap(~tom_construct, ncol = 3) +
     scale_y_continuous(limits = c(0, 1), labels = percent_format()) +
     scale_x_date(date_labels = "%b\n%Y") +
-    labs(title = paste0(family_filter, ": per-construct accuracy trend (", task_label, ", ", scope, ")"),
-         subtitle = "Constructs in developmental order",
-         x = "Release date", y = "Accuracy") +
+    labs(title = paste0(scope_label, ": per-construct accuracy trend (", task_label, ", per tier)"),
+         subtitle = "Constructs in developmental order; one regression line per tier",
+         x = "Release date", y = "Accuracy", color = "Tier") +
     theme_devtom() +
     theme(strip.text = element_text(size = 8),
           axis.text = element_text(size = 6),
-          legend.position = if (split_by_type) "bottom" else "none")
+          legend.position = "bottom",
+          legend.text = element_text(size = 6))
 
-  suffix <- if (split_by_type) "_by_type" else ""
   task_slug <- gsub("tom_12dim_", "", task_filter)
-  save_plot(p, paste0("construct_regression_", tolower(family_filter), "_",
-                      task_slug, suffix, ".png"),
+  family_slug <- if (is.null(family_filter)) "all" else tolower(family_filter)
+  save_plot(p, paste0("construct_regression_", family_slug, "_", task_slug, ".png"),
             width = 14, height = 8)
 }
 
+# All-families-pooled
+for (task in c("tom_12dim_freeresponse", "tom_12dim_mcq")) {
+  if (!task %in% unique(df$task)) next
+  plot_construct_regression_grid(df, family_filter = NULL, task_filter = task)
+}
+
+# Per-family
 for (fam in intersect(FAMILY_ORDER, unique(df$family))) {
   for (task in c("tom_12dim_freeresponse", "tom_12dim_mcq")) {
     if (!task %in% df$task[df$family == fam]) next
-    plot_construct_regression_grid(df, fam, task_filter = task, split_by_type = FALSE)
-    plot_construct_regression_grid(df, fam, task_filter = task, split_by_type = TRUE)
+    plot_construct_regression_grid(df, family_filter = fam, task_filter = task)
   }
 }
 

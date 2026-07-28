@@ -1,20 +1,19 @@
-# Developmental ToM norms (Spike 1.1)
+# Developmental ToM norms
 
-> **DRAFT reconciliation for adjudication (2026-07-14).** This file was realigned from the earlier
-> five-construct / recursive-order vocabulary to the **12-dimension** scheme the item banks actually
-> use (`data/12dimToM_*_dataset.jsonl`). Ages + citations are taxonomy/scientific-claim calls that are
-> yours to own — the §1 canonical table below mirrors what each item is tagged with; **verify the ages
-> and citations against primary sources before treating this as final.** Pre-reconciliation copy:
-> `archive/pre_developmental_trajectory_docs_20260714/docs/dev_norms.md`.
-> Pull exact ages + citations from PRIMARY sources. Do NOT hardcode ages from memory.
+Empirical age norms from the child development literature that anchor DevToM's
+12-dimension instrument. These norms are the basis for mapping LLMs to
+developmental age equivalents: each dimension's validated age band tells us *when*
+typically developing children acquire that theory-of-mind ability, and the
+analysis pipeline uses these norms to estimate where each model sits on the 2-11
+year developmental scale.
 
 ## 1. Canonical 12-dimension norms (source of truth for the item bank)
 
-These are the 12 `tom_dimension` values, their `validated_age_band`, and `literature_basis` **exactly as
-tagged in `data/12dimToM_mcq_dataset.jsonl` / `data/12dimToM_freeresponse_dataset.jsonl`**, in
+These are the 12 `tom_dimension` values, their `validated_age_band`, and `literature_basis` exactly as
+tagged in `data/12dimToM_mcq_dataset.jsonl` / `data/12dimToM_freeresponse_dataset.jsonl`, in
 developmental-acquisition order (the order encoded in `DIMENSION_DEVELOPMENTAL_ORDER` in
-`scripts/0_misc/summarize_visualize_results.py`). This table is the single source of truth; the
-milestone detail in §3–§4 is supporting reference behind it.
+`src/constructs.py`). This table is the single source of truth for the age mapping; the
+milestone detail in §3-§4 is supporting reference behind it.
 
 | # | Dimension (`tom_dimension`) | Age band | Construct grouping (§2) | Literature basis (as tagged on items) |
 |---|---|---|---|---|

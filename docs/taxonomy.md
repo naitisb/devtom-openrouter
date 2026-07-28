@@ -1,31 +1,26 @@
-# Dimension taxonomy (Story 1.3)
+# Dimension taxonomy
 
-> **DRAFT reconciliation for adjudication (2026-07-14).** Realigned from the earlier five-construct /
-> recursive-order taxonomy to the **12-dimension** scheme the datasets, run scripts, and analysis
-> actually use. Taxonomy decisions are yours to own — this is a first pass. Pre-reconciliation copy:
-> `archive/pre_developmental_trajectory_docs_20260714/docs/taxonomy.md`. Ages/citations and the
-> canonical dimension list live in `docs/dev_norms.md` §1 — treat that as the source of truth and this
-> as its taxonomy-facing view.
+The DevToM instrument uses **12 theory-of-mind dimensions** drawn from validated
+developmental psychology tasks to evaluate LLMs and map them to developmental ages
+using empirical norms. This document describes the taxonomy — the dimension set,
+construct grouping, and developmental ordering that structure the item bank and the
+age-mapping analyses.
 
 ## The unit of labeling: `tom_dimension` (+ its `tom_construct` parent)
 
-The benchmark labels each item with a single **`tom_dimension`** (one of 12), plus its
-**`tom_construct`** (one of 6 — the developmental-construct parent, added 2026-07-14), a
-`validated_age_band`, and a `literature_basis`, stored under `metadata` in
+Each item in the benchmark is labeled with a single **`tom_dimension`** (one of 12), its
+**`tom_construct`** (one of 6 developmental-construct parents), a `validated_age_band` anchored to the
+empirical child development literature, and a `literature_basis`, stored under `metadata` in
 `data/12dimToM_mcq_dataset.jsonl` and `data/12dimToM_freeresponse_dataset.jsonl` (free-response items
-add a `rubric`). There is still **no** separate `order` or `tier` field — the developmental *ordering*
-is carried by the 12 dimensions themselves (see `DIMENSION_DEVELOPMENTAL_ORDER`,
-`scripts/0_misc/summarize_visualize_results.py`), while the coarser construct *grouping* is now a
+add a `rubric`). The developmental *ordering* is carried by the 12 dimensions themselves (see
+`DIMENSION_DEVELOPMENTAL_ORDER` in `src/constructs.py`), while the coarser construct *grouping* is a
 first-class field.
 
 `tom_construct` is derived from `tom_dimension` by the canonical map in **`src/constructs.py`** (the
-single source of truth, shared verbatim with the sibling devtom-eval project) and written into the
-datasets by `scripts/0_misc/add_construct_to_datasets.py` (idempotent; `--check` to verify). The
-analysis script reads the same module, so the grouping in the datasets and in the plots can never
-drift. Construct-level outputs: `construct_heatmap*.png`, `construct_difficulty_ranking*.png`, and
-`dimension_heatmap_by_construct.png`, plus a `construct` column in `dimension_summary.csv`. Note the
-analysis derives the construct from `tom_dimension` at read time too, so eval logs collected *before*
-the datasets were tagged still group by construct correctly.
+single source of truth, shared with the sibling devtom-eval project) and written into the datasets by
+`scripts/0_misc/add_construct_to_datasets.py` (idempotent; `--check` to verify). The analysis scripts
+read the same module, so the grouping in the datasets, the developmental age mapping, and the
+visualizations can never drift.
 
 ## The 12 dimensions (developmental-acquisition order)
 
@@ -64,15 +59,15 @@ each construct's member dimensions) — the order used for construct-level visua
    `construct_five_group()` in `src/constructs.py`.
 6. **Pragmatic understanding** → Sarcasm (6–8) · Irony (6–8) · Faux Pas Detection (9–11).
 
-## Prior open questions — how they resolve under the 12-dimension scheme
+## Design decisions
 
-The four "not yet adjudicated" callouts from the previous taxonomy are resolved by the item bank's
-structure. Recommended dispositions (yours to confirm):
+Several taxonomy questions that were open during early development are resolved by the 12-dimension
+scheme:
 
 1. **Belief reasoning's two tier schemes (recursive order vs. milestone Tier 0/2/2+).** Resolved by
    three explicit, band-ordered belief dimensions instead of a tier axis. No dual scheme remains.
 2. **Knowledge access had a band but no tier.** Resolved — it is now a first-class dimension
-   (3–4 yr). (Band differs from the older ~4–4.5 yr note; see the reconcile flag in `dev_norms.md` §1.)
+   (3–4 yr).
 3. **Faux-pas construct ownership (emotion vs. pragmatic).** Resolved — Faux Pas Detection is its own
    dimension (9–11 yr, Baron-Cohen et al. 1999), grouped under pragmatic/advanced social cognition.
 4. **Deception disposition.** Resolved — surfaced as its own dimension (White Lies / Prosocial
@@ -80,19 +75,7 @@ structure. Recommended dispositions (yours to confirm):
 
 ## Controls & confound handling
 
-The original taxonomy specified matched control items (reality / memory-factual / answerability) and a
-ToM−control gap as the real signal. The current 12-dimension item banks do **not** carry an
-`is_control` field or matched control items — the pipeline reports per-dimension accuracy directly, and
-the two elicitation formats (forced-choice MCQ vs. open-ended free-response) serve as the main
-shortcut/robustness check (a trend that appears only in MCQ is flagged as format-fragile; see
-`docs/BRIEF.md` H5). **Open decision for you:** whether to (a) keep format-contrast as the sole
-shortcut check for v0.1, or (b) re-introduce matched control items in v0.2.
-
-## Code reconciliation TODO (not a docs change)
-
-`src/schema.py` still encodes the **old** schema — `TIERS = (order0…order3plus)`, `belief_type`,
-`is_control`, and a `source` field for ToMi/BigToM/FANToM loaders (`src/load_*.py`) — none of which the
-live 12-dimension datasets use. That schema module and the loaders are effectively dead relative to the
-current pipeline. Flagged here (and in `docs/PROJECT_PLAN.md` Spike 1.1) so the code either gets updated
-to the `tom_dimension` schema or moved to the archive; **this file only documents the taxonomy, it
-doesn't touch code.**
+The 12-dimension item banks do not carry an `is_control` field or matched control items. The pipeline
+reports per-dimension accuracy directly, and the two elicitation formats (forced-choice MCQ vs.
+open-ended free-response) serve as the main robustness check: a finding that appears only in MCQ is
+flagged as format-fragile.

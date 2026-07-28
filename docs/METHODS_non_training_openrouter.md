@@ -13,11 +13,12 @@ through OpenRouter while minimizing participation in model training and prompt
 retention.[cite:31][cite:32][cite:43] The approach is designed for longitudinal
 research settings in which many models may be queried over time, but all calls
 are treated as stateless inference requests rather than as contributions to
-provider-side training pipelines.[cite:17][cite:31][cite:43] Here the
-longitudinal dimension is explicit: the study deliberately reaches back to older
-open-weight releases (Llama 2, Mistral 7B, the original DeepSeek LLM, Gemma 1)
-so each open model family has a multi-year release history to trace a
-developmental theory-of-mind trajectory across.
+provider-side training pipelines.[cite:17][cite:31][cite:43] The DevToM project
+uses validated tasks from developmental psychology to evaluate LLMs and map them
+to developmental ages using empirical norms. The roster deliberately reaches back
+to older open-weight releases so each model family has a multi-year release
+history, enabling both cross-sectional age mapping and longitudinal tracking of
+developmental ToM competence.
 
 ## Routing and privacy configuration
 

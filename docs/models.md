@@ -7,11 +7,13 @@ file to match.
 
 ## Comparison scope
 
-This project runs the **12-dimension ToM instrument** across **5 model families**
-spanning both closed frontier models (via direct API) and open-weight models (via
-OpenRouter or Mistral la Plateforme), deliberately reaching **back in time to
-older releases** so each family has a real multi-release history to trace a
-developmental trajectory across.
+This project evaluates **5 model families** on the **12-dimension developmental
+ToM instrument** — mapping each model to a developmental age equivalent using
+empirical norms from the child development literature. The roster deliberately
+reaches **back in time to older releases** so each family has a real multi-year
+release history, enabling both cross-sectional age mapping (where does each model
+sit on the 2-11 year developmental scale?) and longitudinal tracking (does a
+family's developmental age advance release over release?).
 
 - **family** = the model lineage. Five: **Claude** (Anthropic), **GPT**
   (OpenAI), **Llama** (Meta), **Qwen** (Alibaba), **Mistral**.
