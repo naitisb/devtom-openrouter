@@ -1,3 +1,0 @@
-model,family,tier,task,frontier_band,guttman_cr,scalability,date_years,release_date,frontier_age_lo,frontier_age_mid
-openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,tom_12dim_mcq,3-5 yrs,0.8142,0.6284,0.5585215605749486,2024-07-23,3,4
-openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,tom_12dim_mcq,4-6 yrs,0.8214,0.6428,0.9308692676249144,2024-12-06,4,5

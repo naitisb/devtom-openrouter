@@ -1,8 +1,0 @@
-family,tier,n_models,mean_accuracy,sd_accuracy,n
-DeepSeek,DeepSeek other,2,0.3871,0.4881,248
-Gemma,Gemma other,1,0.7742,0.4198,124
-Llama,Llama large,1,1.0,0.0,124
-Llama,Llama other,2,0.9637,0.1874,248
-Llama,Llama small,1,0.9113,0.2855,124
-Mistral,Mistral other,4,0.3952,0.4894,496
-Qwen,Qwen other,8,0.8286,0.377,992
