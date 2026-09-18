@@ -1,4 +1,4 @@
-"""DevToM — entry point.
+"""Developmental Theory of Mind Evaluations — entry point.
 
 An interactive companion to "Towards a Mental Model for Understanding Machine
 Reasoning". The app follows the essay's arc: a composite score hides the
@@ -23,7 +23,7 @@ if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
 
 st.set_page_config(
-    page_title="DevToM — a developmental lens on machine reasoning",
+    page_title="Developmental Theory of Mind Evaluations",
     page_icon="🪜",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -54,7 +54,7 @@ PAGES = {
 nav = st.navigation(PAGES)
 
 with st.sidebar:
-    st.markdown("## DevToM")
+    st.markdown("### Developmental Theory of Mind Evaluations")
     st.caption(
         "Mapping language models onto the developmental sequence children "
         "follow when they acquire theory of mind."

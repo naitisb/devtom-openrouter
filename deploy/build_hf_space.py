@@ -52,7 +52,7 @@ STREAMLIT_VERSION = "1.64.0"
 PYTHON_VERSION = "3.10"
 APP_PORT = 7860  # the port Spaces routes to by default
 
-SPACE_TITLE = "DevToM"
+SPACE_TITLE = "Developmental Theory of Mind Evaluations"
 SPACE_EMOJI = "🪜"
 # Where this Space is published. Only used to print exact push instructions —
 # the build never contacts Hugging Face.
@@ -175,7 +175,7 @@ tags:
   - interpretability
 ---
 
-# DevToM
+# Developmental Theory of Mind Evaluations
 
 **Do language models acquire theory of mind in the order children do?**
 
