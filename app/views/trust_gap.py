@@ -21,16 +21,17 @@ st.title("A single score is the wrong resolution")
 U.header(
     kicker="The trust gap",
     claim=(
-        "Models now beat humans on tasks we designed to be hard. We still "
-        "cannot say <em>how</em> they get there — and a benchmark that reports "
-        "one number per model is not built to tell us."
+        "While model-human teams now beat humans on tasks we designed to be hard, we still "
+        "have not define how models reason through these tasks differently. "
+        "A benchmark that reports aggregate statistics on performance only "
+        "is not built to help characterize this."
     ),
     sub=(
-        "To trust a system I want to know which competencies generate its "
+        "To trust a system, I want to know which competencies generate its "
         "performance. Those are not directly observable, so they have to be "
-        "inferred from patterns in behaviour. Developmental psychology has "
-        "spent decades solving exactly that inference problem on a subject that "
-        "also cannot introspect: the young child."
+        "inferred from patterns in behavior. Developmental psychology has "
+        "spent decades solving exactly this inference problem on a subject that "
+        "is also a bit of a black box: the young child."
     ),
 )
 
@@ -42,7 +43,7 @@ U.stat_row(
     [
         ("28", "models evaluated, across 5 families and 14 size tiers"),
         ("12", "theory-of-mind dimensions, ordered by the age children acquire them"),
-        ("184", "scored items — 124 multiple-choice and 60 free-response"),
+        ("184", "scored items, 124 multiple-choice and 60 free-response"),
         ("2.5–11", "years: the span of the developmental scale they map onto"),
     ]
 )
@@ -128,7 +129,7 @@ with right:
 st.markdown("## Two models, one score, different minds")
 
 st.markdown(
-    "The composite is not just lossy — it is actively ambiguous. These are the "
+    "The composite is actively ambiguous. These are the "
     "two models in the panel whose overall scores are closest together while "
     "their per-dimension profiles are furthest apart."
 )
@@ -213,15 +214,14 @@ else:
         st.markdown("")
         U.note(
             f"**{name_a}** scores {acc_a:.1%} and **{name_b}** scores {acc_b:.1%}. "
-            "A leaderboard would rank them next to each other and call them "
-            "equivalent. They are not doing the same thing."
+            "A leaderboard ranking them next to each other would call them "
+            "equivalent, even though they are behaving differently."
         )
 
 U.pull(
-    "The claim of this project is not that models are bad at theory of mind. "
-    "Most are good at it. The claim is that the <em>shape</em> of what they are "
+    "The claim of this project is that the shape of what models are "
     "good at does not match any developmental trajectory we have ever measured "
-    "in a child — and that shape is what tells you where a model will break."
+    "in a child. That shape tells you where a model will break."
 )
 
 st.markdown('<hr class="dv-rule">', unsafe_allow_html=True)
