@@ -415,8 +415,14 @@ def model_sort_key(model: str) -> tuple[int, int, str]:
 
 
 def model_params_b(model: str) -> float | None:
-    """Total parameters (billions) for a model string, or None if unmapped."""
-    return PARAMS_B.get(model.split("/")[-1])
+    """Total parameters (billions) for a model string, or None if unmapped.
+
+    Canonicalizes first so HuggingFace-style selfhost slugs (e.g.
+    'openai-api/local/qwen/qwen2.5-7b-instruct') resolve to the same
+    OpenRouter slug PARAMS_B is keyed by ('qwen-2.5-7b-instruct'); without
+    this, six Qwen selfhost models silently returned None and dropped out of
+    every size regression."""
+    return PARAMS_B.get(_canonical_model(model).split("/")[-1])
 
 
 def models_for_family(family: str) -> list[str]:

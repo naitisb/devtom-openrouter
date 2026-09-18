@@ -1,5 +1,5 @@
 # DevToM-OpenRouter
-.PHONY: setup check smoke run run-mcq run-fr analyze visualize clean-logs extract profile-dataset profile-results glmm size-glmm irt viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size pipeline archive clean freeze
+.PHONY: setup check smoke run run-mcq run-fr analyze visualize clean-logs extract profile-dataset profile-results glmm size-glmm irt guttman scale-validity viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size viz-guttman viz-coherence viz-scale-validity pipeline archive clean freeze app app-data app-deps
 
 setup:        ## install deps into a venv
 	python3.10 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
@@ -22,7 +22,7 @@ run-mcq:      ## cheaper: MCQ task only, whole roster
 run-fr:       ## free-response task only, whole roster (model-graded)
 	bash scripts/2b_runFR/run_tom_12dim_fr_within_family.sh
 
-analyze: extract profile-dataset profile-results glmm size-glmm irt ## run all analyses: extract -> profile -> model
+analyze: extract profile-dataset profile-results glmm size-glmm irt guttman scale-validity ## run all analyses: extract -> profile -> model
 
 # --------------- pipeline stages: 4_statistics -> 5_model -> 6_visualize ---
 
@@ -47,7 +47,13 @@ size-glmm: extract ## fit size-scaling GLMM -> results/modeling/size_scaling/
 irt: extract  ## fit developmental scaling + IRT -> results/modeling/mapping/
 	Rscript scripts/5_model/developmental_scaling_irt.R
 
-visualize: viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size ## run all visualization scripts
+guttman: extract  ## Analysis 1: developmental sequence / Guttman scalability -> results/modeling/guttman_sequence/
+	Rscript scripts/5_model/guttman_sequence_analysis.R
+
+scale-validity: extract  ## Analysis 4: developmental-age scale validity/parsimony -> results/modeling/scale_validity/
+	Rscript scripts/5_model/scale_validity_analysis.R
+
+visualize: viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size viz-guttman viz-coherence viz-scale-validity ## run all visualization scripts
 
 viz-descriptives: profile-dataset profile-results ## descriptive figures
 	Rscript scripts/6_visualize/visualize_descriptives.R
@@ -67,7 +73,31 @@ viz-profiles: extract ## dimension profile heatmaps, rankings, regression grids
 viz-size: size-glmm ## size-scaling figures
 	Rscript scripts/6_visualize/visualize_size_scaling.R
 
+viz-guttman: guttman ## Analysis 1 figures (Strands A/B): scalogram, permutation null, item difficulty
+	Rscript scripts/6_visualize/visualize_guttman_sequence.R
+
+viz-coherence: guttman ## Analysis 1 Strand C: continuous developmental-coherence figures
+	Rscript scripts/6_visualize/visualize_coherence_continuous.R
+
+viz-scale-validity: scale-validity ## Analysis 4 figures: CV log-loss, pred-vs-obs, format transfer, PCA
+	Rscript scripts/6_visualize/visualize_scale_validity.R
+
 pipeline: analyze visualize ## full pipeline: analyze then visualize
+
+# ---- Streamlit app -------------------------------------------------------
+# The app reads a frozen snapshot in app/data/, never results/ directly, so it
+# stays fast and stays deployable. Rebuild the snapshot after re-running the
+# pipeline.
+
+app-deps:    ## install the app's Python dependencies
+	python -m pip install -r app/requirements.txt
+
+app-data: extract ## rebuild the app's frozen data snapshot from results/
+	python app/prepare_data.py --force
+
+app: ## serve the Streamlit app (builds the snapshot first if missing)
+	@test -f app/data/item_level.parquet || python app/prepare_data.py
+	streamlit run app/streamlit_app.py
 
 archive:      ## move old timestamped result folders to results/Archive/
 	@mkdir -p results/Archive

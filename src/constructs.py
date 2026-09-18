@@ -92,6 +92,18 @@ CONSTRUCT_COLORS: dict[str, str] = {
 # first). The first five are the canonical Wellman & Liu (2004) ToM Scale order;
 # the remaining seven advanced-ToM dimensions follow a best-effort synthesis of
 # the advanced-ToM literature.
+#
+# The order below is sorted by the normative age midpoint in docs/dev_norms.md
+# §1. Irony (6-8 yr, midpoint 7.0) therefore precedes Faux Pas Detection
+# (9-11 yr, midpoint 10.0). Until 2026-09-18 these two were transposed here and
+# in scripts/6_visualize/_theme.R, which put the latest-acquired dimension in
+# the scale ahead of one acquired three years earlier. `dim_rank` in
+# results/item_level.csv is derived from this list (see
+# scripts/4_statistics/extract_item_level.py), so re-running `make extract`
+# is required for existing results to pick the corrected ranks up.
+#
+# Sarcasm and Irony share the 6-8 yr band; their relative order is a
+# convention, not a measured difference (docs/dev_norms.md flags this).
 DIMENSION_DEVELOPMENTAL_ORDER: list[str] = [
     "Diverse Desires",
     "Diverse Beliefs",
@@ -103,8 +115,8 @@ DIMENSION_DEVELOPMENTAL_ORDER: list[str] = [
     "Second-Order False Belief",
     "White Lies / Prosocial Deception",
     "Sarcasm",
-    "Faux Pas Detection",
     "Irony",
+    "Faux Pas Detection",
 ]
 
 

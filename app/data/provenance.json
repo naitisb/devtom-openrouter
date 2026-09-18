@@ -1,0 +1,54 @@
+{
+  "built_at": "2026-09-18T21:28:33Z",
+  "repo_root": "/Users/Naiti/Documents/Documents_NBMacBookPro/2026/DevToM/devtom-openrouter",
+  "sources": {
+    "item_level": {
+      "path": "results/item_level.csv",
+      "mtime": "2026-08-23T14:09:04Z",
+      "rows": 5152,
+      "models": 28,
+      "items": 184,
+      "tasks": [
+        "tom_12dim_freeresponse",
+        "tom_12dim_mcq"
+      ]
+    },
+    "item_bank": {
+      "rows": 184,
+      "mcq": 124,
+      "frq": 60
+    },
+    "guttman": {
+      "path": "results/modeling/guttman_sequence/latest",
+      "files": [
+        "scalability_coefficients.csv",
+        "permutation_results.csv",
+        "permutation_null_draws.csv",
+        "mastery_matrix_long.csv",
+        "per_model_coherence.csv",
+        "per_dimension_accuracy.csv",
+        "coherence_by_split_point.csv",
+        "coherence_regression.csv",
+        "item_difficulty_vs_age.csv",
+        "item_age_regression.csv",
+        "rasch_item_difficulty.csv",
+        "rasch_difficulty_vs_age.csv"
+      ],
+      "mtime": "2026-08-24T11:20:52Z"
+    },
+    "scale_validity": {
+      "path": "results/modeling/scale_validity/latest",
+      "files": [
+        "summary.csv",
+        "cv_logloss.csv",
+        "lodo_dimension_predictions.csv",
+        "pca_variance.csv",
+        "pca_loadings.csv",
+        "theta_by_format.csv",
+        "format_transfer.csv",
+        "format_transfer_theta_cor.csv"
+      ],
+      "mtime": "2026-08-23T14:05:14Z"
+    }
+  }
+}

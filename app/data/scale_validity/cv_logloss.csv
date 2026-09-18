@@ -1,0 +1,21 @@
+scheme,method,subgroup,logloss,n,params_per_model
+leave-one-dimension-out,devage,all,0.28826859861241183,5152,NA
+leave-one-dimension-out,devage,discriminating (<0.95),0.4367566806417187,2760,NA
+leave-one-dimension-out,devage,saturated (≥0.95),0.11693619627090347,2392,NA
+leave-one-dimension-out,datesize,all,0.3128440671994793,5152,NA
+leave-one-dimension-out,datesize,discriminating (<0.95),0.49097320053252597,2760,NA
+leave-one-dimension-out,datesize,saturated (≥0.95),0.10731045181519451,2392,NA
+leave-one-dimension-out,grand,all,0.37513724089607875,5152,NA
+leave-one-dimension-out,grand,discriminating (<0.95),0.5494499466980768,2760,NA
+leave-one-dimension-out,grand,saturated (≥0.95),0.1740071957399268,2392,NA
+leave-one-dimension-out,family,all,0.31394960099492997,5152,NA
+leave-one-dimension-out,family,discriminating (<0.95),0.47978063834511836,2760,NA
+leave-one-dimension-out,family,saturated (≥0.95),0.12260609636009727,2392,NA
+leave-one-dimension-out,overall,all,0.2865611332679024,5152,NA
+leave-one-dimension-out,overall,discriminating (<0.95),0.43348833821406296,2760,NA
+leave-one-dimension-out,overall,saturated (≥0.95),0.11702974294541135,2392,NA
+item hold-out (5-fold),devage,all,0.2819681957323316,5152,1
+item hold-out (5-fold),saturated,all,0.46937680200714554,5152,12
+item hold-out (5-fold),overall,all,0.2839299769913683,5152,1
+item hold-out (5-fold),datesize,all,0.30622637193757996,5152,0
+item hold-out (5-fold),grand,all,0.37304228780589616,5152,0

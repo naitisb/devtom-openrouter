@@ -58,8 +58,8 @@ HIGHER_ORDER_DIMS <- c(
   "Hidden Emotion (Appearance vs. Reality)",
   "Second-Order False Belief",
   "White Lies / Prosocial Deception",
-  "Irony",
   "Sarcasm",
+  "Irony",
   "Faux Pas Detection"
 )
 

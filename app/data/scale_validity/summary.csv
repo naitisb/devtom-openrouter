@@ -1,0 +1,12 @@
+metric,value
+LODO logloss: dev-age,0.28826859861241183
+LODO logloss: overall-mean,0.2865611332679024
+LODO logloss: date+size,0.3128440671994793
+LODO logloss: grand-mean,0.37513724089607875
+LODO dev-age advantage over overall-mean (discriminating models),-0.003268342427655724
+hold-out logloss: dev-age (1 param),0.2819681957323316
+hold-out logloss: saturated (12 params),0.46937680200714554
+accuracy MCQ~FRQ Pearson r (all models),0.5146591585636783
+PC1 variance explained,0.8050557935801034
+components retained (parallel analysis),1
+"Spearman(PC1 loading, dev rank)",0.39160839160839167

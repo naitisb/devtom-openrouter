@@ -49,6 +49,21 @@ TASK_NAMES = {"tom_12dim_mcq", "tom_12dim_freeresponse"}
 _TASK_NORMALIZE = {"tom_12dim_mcqtf": "tom_12dim_mcq"}
 _EPOCH = datetime.date(2024, 1, 1)
 
+# Models excluded from the tidy dataset because their scores reflect a
+# scoring/parsing failure, not theory-of-mind ability. Keyed by the last slug
+# segment (matched after _canonical_model) so both selfhost and API routes hit.
+# Verified 2026-08-23 against the .eval logs (see brainstorm notes):
+#   - mixtral-8x7b-instruct: 0/184 on BOTH MCQ and FRQ — total answer-parse
+#     failure (empty/uncaptured completions), not a real 0% result.
+#   - claude-sonnet-4-6: FRQ is valid (0.983) but MCQ collapses to 0.347
+#     (near chance) while sibling Claude tiers sit at ~0.995 — an MCQ-specific
+#     format/parse failure. Dropped wholesale so the model isn't represented by
+#     one format only, which would bias the balanced-format analyses.
+EXCLUDED_MODELS: dict[str, str] = {
+    "mixtral-8x7b-instruct": "0/184 both formats — answer-parse failure",
+    "claude-sonnet-4-6": "MCQ collapses to 0.347 (chance) — format/parse failure",
+}
+
 
 def _is_correct(value) -> int:
     if isinstance(value, str):
@@ -83,6 +98,11 @@ def extract(log_dirs: list[str], all_runs: bool = False) -> pd.DataFrame:
                 continue
             model = log.eval.model
             canonical = _canonical_model(model)
+            slug_tail = canonical.split("/")[-1]
+            if slug_tail in EXCLUDED_MODELS:
+                print(f"skipping {info.name}: model '{model}' excluded "
+                      f"({EXCLUDED_MODELS[slug_tail]})", file=sys.stderr)
+                continue
             family = model_family(canonical)
             if family not in FAMILY_ORDER:
                 print(f"skipping {info.name}: model '{model}' not in a recognized family",

@@ -1,0 +1,1009 @@
+dataset,model,family,tier,date_years,row_errors,dimension,mastered,dim_rank,age_mid
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Diverse Desires,1,0,3
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Knowledge Access / Ignorance,0,2,4
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,First-Order False Belief,0,4,5
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Intention vs. Accident,0,5,6
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Second-Order False Belief,0,7,7.25
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,White Lies / Prosocial Deception,0,8,7.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Sarcasm,0,9,8.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Irony,1,11,8
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Diverse Desires,1,0,3
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Diverse Beliefs,1,1,4
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,First-Order False Belief,0,4,5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Intention vs. Accident,1,5,6
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,White Lies / Prosocial Deception,0,8,7.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Sarcasm,0,9,8.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,4,Irony,1,11,8
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,First-Order False Belief,1,4,5
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Intention vs. Accident,1,5,6
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Sarcasm,1,9,8.5
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Irony,1,11,8
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Diverse Desires,0,0,3
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Knowledge Access / Ignorance,0,2,4
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Emotion Recognition,0,3,5.4
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,First-Order False Belief,0,4,5
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Intention vs. Accident,0,5,6
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,White Lies / Prosocial Deception,0,8,7.5
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Sarcasm,0,9,8.5
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Irony,0,11,8
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Knowledge Access / Ignorance,0,2,4
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,First-Order False Belief,0,4,5
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Intention vs. Accident,0,5,6
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Second-Order False Belief,0,7,7.25
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,White Lies / Prosocial Deception,0,8,7.5
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Sarcasm,0,9,8.5
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Irony,0,11,8
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Diverse Desires,1,0,3
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Diverse Beliefs,1,1,4
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,First-Order False Belief,1,4,5
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Intention vs. Accident,1,5,6
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Sarcasm,1,9,8.5
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Irony,1,11,8
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Diverse Desires,1,0,3
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,First-Order False Belief,0,4,5
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Intention vs. Accident,1,5,6
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Sarcasm,1,9,8.5
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Irony,1,11,8
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Diverse Desires,0,0,3
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Diverse Beliefs,0,1,4
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Knowledge Access / Ignorance,0,2,4
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Emotion Recognition,0,3,5.4
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,First-Order False Belief,0,4,5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Intention vs. Accident,0,5,6
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Second-Order False Belief,0,7,7.25
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,White Lies / Prosocial Deception,0,8,7.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Sarcasm,0,9,8.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Irony,0,11,8
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,First-Order False Belief,1,4,5
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Intention vs. Accident,1,5,6
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Sarcasm,1,9,8.5
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Irony,1,11,8
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,First-Order False Belief,0,4,5
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Intention vs. Accident,1,5,6
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Sarcasm,1,9,8.5
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,2,Irony,1,11,8
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Diverse Desires,1,0,3
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Diverse Beliefs,1,1,4
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Emotion Recognition,1,3,5.4
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,First-Order False Belief,1,4,5
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Intention vs. Accident,1,5,6
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Second-Order False Belief,1,7,7.25
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Sarcasm,1,9,8.5
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Faux Pas Detection,0,10,10.5
+pooled,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,2,Irony,1,11,8
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Diverse Desires,1,0,3
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Diverse Beliefs,1,1,4
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,First-Order False Belief,0,4,5
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Intention vs. Accident,1,5,6
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Sarcasm,1,9,8.5
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Faux Pas Detection,0,10,10.5
+pooled,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Irony,1,11,8
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Diverse Desires,1,0,3
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Diverse Beliefs,1,1,4
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Emotion Recognition,1,3,5.4
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,First-Order False Belief,1,4,5
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Intention vs. Accident,1,5,6
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Second-Order False Belief,1,7,7.25
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Sarcasm,1,9,8.5
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Faux Pas Detection,1,10,10.5
+pooled,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Irony,1,11,8
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,First-Order False Belief,1,4,5
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Intention vs. Accident,1,5,6
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Sarcasm,1,9,8.5
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Irony,1,11,8
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Knowledge Access / Ignorance,0,2,4
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,First-Order False Belief,1,4,5
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Intention vs. Accident,1,5,6
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,White Lies / Prosocial Deception,0,8,7.5
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Sarcasm,0,9,8.5
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Irony,0,11,8
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Diverse Desires,1,0,3
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Diverse Beliefs,1,1,4
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,First-Order False Belief,1,4,5
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Intention vs. Accident,1,5,6
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Sarcasm,1,9,8.5
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Irony,1,11,8
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Diverse Desires,1,0,3
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Diverse Beliefs,1,1,4
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Emotion Recognition,1,3,5.4
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,First-Order False Belief,1,4,5
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Intention vs. Accident,1,5,6
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Second-Order False Belief,1,7,7.25
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Sarcasm,1,9,8.5
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Faux Pas Detection,1,10,10.5
+pooled,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Irony,1,11,8
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Diverse Desires,1,0,3
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Diverse Beliefs,1,1,4
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Emotion Recognition,1,3,5.4
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,First-Order False Belief,1,4,5
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Intention vs. Accident,1,5,6
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Second-Order False Belief,1,7,7.25
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Sarcasm,1,9,8.5
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Faux Pas Detection,0,10,10.5
+pooled,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,2,Irony,1,11,8
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Diverse Desires,1,0,3
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Diverse Beliefs,1,1,4
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Knowledge Access / Ignorance,1,2,4
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Emotion Recognition,1,3,5.4
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,First-Order False Belief,1,4,5
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Intention vs. Accident,1,5,6
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Second-Order False Belief,1,7,7.25
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Sarcasm,1,9,8.5
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Faux Pas Detection,0,10,10.5
+pooled,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,2,Irony,1,11,8
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Diverse Desires,1,0,3
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Diverse Beliefs,1,1,4
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Knowledge Access / Ignorance,1,2,4
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Emotion Recognition,1,3,5.4
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,First-Order False Belief,1,4,5
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Intention vs. Accident,1,5,6
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Second-Order False Belief,1,7,7.25
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Sarcasm,1,9,8.5
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Faux Pas Detection,1,10,10.5
+pooled,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Irony,1,11,8
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Irony,1,11,8
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Irony,1,11,8
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Irony,1,11,8
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Irony,1,11,8
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Irony,1,11,8
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Irony,1,11,8
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Irony,1,11,8
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Diverse Desires,1,0,3
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Diverse Beliefs,1,1,4
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Knowledge Access / Ignorance,1,2,4
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Emotion Recognition,1,3,5.4
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,First-Order False Belief,1,4,5
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Intention vs. Accident,1,5,6
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Second-Order False Belief,1,7,7.25
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,White Lies / Prosocial Deception,1,8,7.5
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Sarcasm,1,9,8.5
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Faux Pas Detection,1,10,10.5
+pooled,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Irony,1,11,8
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Diverse Desires,1,0,3
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Diverse Beliefs,1,1,4
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,First-Order False Belief,0,4,5
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Intention vs. Accident,0,5,6
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Second-Order False Belief,0,7,7.25
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,White Lies / Prosocial Deception,0,8,7.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Sarcasm,0,9,8.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Faux Pas Detection,0,10,10.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Irony,1,11,8
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Diverse Desires,1,0,3
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Diverse Beliefs,1,1,4
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,First-Order False Belief,1,4,5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Intention vs. Accident,1,5,6
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,White Lies / Prosocial Deception,0,8,7.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Sarcasm,0,9,8.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Faux Pas Detection,0,10,10.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,2,Irony,1,11,8
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,0,Irony,1,11,8
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Diverse Desires,0,0,3
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Diverse Beliefs,0,1,4
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Knowledge Access / Ignorance,0,2,4
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Emotion Recognition,0,3,5.4
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,First-Order False Belief,0,4,5
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Intention vs. Accident,0,5,6
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,White Lies / Prosocial Deception,0,8,7.5
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Sarcasm,0,9,8.5
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Faux Pas Detection,0,10,10.5
+mcq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,2,Irony,0,11,8
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Knowledge Access / Ignorance,0,2,4
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,First-Order False Belief,0,4,5
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Intention vs. Accident,0,5,6
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Second-Order False Belief,0,7,7.25
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,White Lies / Prosocial Deception,0,8,7.5
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Sarcasm,0,9,8.5
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Faux Pas Detection,0,10,10.5
+mcq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,2,Irony,0,11,8
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Diverse Desires,1,0,3
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,0,Irony,1,11,8
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Diverse Desires,1,0,3
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Diverse Beliefs,1,1,4
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,First-Order False Belief,0,4,5
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Intention vs. Accident,1,5,6
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Sarcasm,1,9,8.5
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Irony,1,11,8
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Diverse Desires,0,0,3
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Diverse Beliefs,0,1,4
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Knowledge Access / Ignorance,0,2,4
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Emotion Recognition,0,3,5.4
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,First-Order False Belief,0,4,5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Intention vs. Accident,0,5,6
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Second-Order False Belief,0,7,7.25
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,White Lies / Prosocial Deception,0,8,7.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Sarcasm,0,9,8.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Faux Pas Detection,0,10,10.5
+mcq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,0,Irony,0,11,8
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Irony,1,11,8
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,0,Irony,1,11,8
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Diverse Desires,1,0,3
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Diverse Beliefs,1,1,4
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Emotion Recognition,1,3,5.4
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,First-Order False Belief,1,4,5
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Intention vs. Accident,1,5,6
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Second-Order False Belief,1,7,7.25
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Sarcasm,1,9,8.5
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Faux Pas Detection,1,10,10.5
+mcq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,0,Irony,1,11,8
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Diverse Desires,1,0,3
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Diverse Beliefs,1,1,4
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,First-Order False Belief,0,4,5
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Intention vs. Accident,1,5,6
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Sarcasm,1,9,8.5
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Irony,1,11,8
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Diverse Desires,1,0,3
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Diverse Beliefs,1,1,4
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Emotion Recognition,1,3,5.4
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,First-Order False Belief,1,4,5
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Intention vs. Accident,1,5,6
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Second-Order False Belief,1,7,7.25
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Sarcasm,1,9,8.5
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Faux Pas Detection,1,10,10.5
+mcq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,0,Irony,1,11,8
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,0,Irony,1,11,8
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Knowledge Access / Ignorance,0,2,4
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,First-Order False Belief,1,4,5
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Intention vs. Accident,0,5,6
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,White Lies / Prosocial Deception,0,8,7.5
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Sarcasm,0,9,8.5
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,4,Irony,0,11,8
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Diverse Desires,1,0,3
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Irony,1,11,8
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Diverse Desires,1,0,3
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Diverse Beliefs,1,1,4
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Emotion Recognition,1,3,5.4
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,First-Order False Belief,1,4,5
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Intention vs. Accident,1,5,6
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Second-Order False Belief,1,7,7.25
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Sarcasm,1,9,8.5
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Faux Pas Detection,1,10,10.5
+mcq,openai/o1,GPT,GPT reasoning,0.9609856262833676,0,Irony,1,11,8
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Diverse Desires,1,0,3
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Diverse Beliefs,1,1,4
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Emotion Recognition,1,3,5.4
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,First-Order False Belief,1,4,5
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Intention vs. Accident,1,5,6
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Second-Order False Belief,1,7,7.25
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Sarcasm,1,9,8.5
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Faux Pas Detection,1,10,10.5
+mcq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,0,Irony,1,11,8
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Diverse Desires,1,0,3
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Diverse Beliefs,1,1,4
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Emotion Recognition,1,3,5.4
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,First-Order False Belief,1,4,5
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Intention vs. Accident,1,5,6
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Second-Order False Belief,1,7,7.25
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Sarcasm,1,9,8.5
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Faux Pas Detection,1,10,10.5
+mcq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,0,Irony,1,11,8
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Diverse Desires,1,0,3
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Diverse Beliefs,1,1,4
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Knowledge Access / Ignorance,1,2,4
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Emotion Recognition,1,3,5.4
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,First-Order False Belief,1,4,5
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Intention vs. Accident,1,5,6
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Second-Order False Belief,1,7,7.25
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Sarcasm,1,9,8.5
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Faux Pas Detection,1,10,10.5
+mcq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,0,Irony,1,11,8
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Irony,1,11,8
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,0,Irony,1,11,8
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Irony,1,11,8
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Irony,1,11,8
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Irony,1,11,8
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Irony,1,11,8
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Irony,1,11,8
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Diverse Desires,1,0,3
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Diverse Beliefs,1,1,4
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Knowledge Access / Ignorance,1,2,4
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Emotion Recognition,1,3,5.4
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,First-Order False Belief,1,4,5
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Intention vs. Accident,1,5,6
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Second-Order False Belief,1,7,7.25
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,White Lies / Prosocial Deception,1,8,7.5
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Sarcasm,1,9,8.5
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Faux Pas Detection,1,10,10.5
+mcq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Irony,1,11,8
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Diverse Desires,1,0,3
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Knowledge Access / Ignorance,0,2,4
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,First-Order False Belief,0,4,5
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Intention vs. Accident,0,5,6
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Second-Order False Belief,0,7,7.25
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,White Lies / Prosocial Deception,0,8,7.5
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Sarcasm,0,9,8.5
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,-0.2628336755646817,2,Irony,1,11,8
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Diverse Desires,1,0,3
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Diverse Beliefs,0,1,4
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Emotion Recognition,1,3,5.4
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,First-Order False Belief,0,4,5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Intention vs. Accident,1,5,6
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Sarcasm,0,9,8.5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.0383299110198494,6,Irony,1,11,8
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,First-Order False Belief,1,4,5
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.0930869267624914,2,Irony,1,11,8
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Diverse Desires,0,0,3
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,First-Order False Belief,1,4,5
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.0930869267624914,4,Irony,1,11,8
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Knowledge Access / Ignorance,0,2,4
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,First-Order False Belief,0,4,5
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Second-Order False Belief,0,7,7.25
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.0930869267624914,6,Irony,1,11,8
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Diverse Desires,1,0,3
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,First-Order False Belief,1,4,5
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Sarcasm,1,9,8.5
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.2956878850102669,2,Irony,1,11,8
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Diverse Desires,1,0,3
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,First-Order False Belief,0,4,5
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Sarcasm,1,9,8.5
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.2956878850102669,2,Irony,1,11,8
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Diverse Desires,1,0,3
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,First-Order False Belief,0,4,5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Second-Order False Belief,0,7,7.25
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,White Lies / Prosocial Deception,0,8,7.5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Sarcasm,0,9,8.5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.3887748117727584,2,Irony,1,11,8
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,First-Order False Belief,1,4,5
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Faux Pas Detection,1,10,10.5
+frq,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.4298425735797399,0,Irony,1,11,8
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,First-Order False Belief,0,4,5
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,White Lies / Prosocial Deception,0,8,7.5
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Faux Pas Detection,1,10,10.5
+frq,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.4298425735797399,4,Irony,1,11,8
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Diverse Desires,0,0,3
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Diverse Beliefs,1,1,4
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Knowledge Access / Ignorance,1,2,4
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Emotion Recognition,1,3,5.4
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,First-Order False Belief,0,4,5
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Intention vs. Accident,1,5,6
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Second-Order False Belief,0,7,7.25
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,White Lies / Prosocial Deception,0,8,7.5
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Sarcasm,0,9,8.5
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Faux Pas Detection,0,10,10.5
+frq,openai/gpt-4o-mini,GPT,GPT mini,0.5448323066392882,4,Irony,1,11,8
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Diverse Desires,1,0,3
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,First-Order False Belief,0,4,5
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Sarcasm,0,9,8.5
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.5585215605749486,2,Irony,1,11,8
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Diverse Desires,1,0,3
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Diverse Beliefs,1,1,4
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Knowledge Access / Ignorance,1,2,4
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Emotion Recognition,1,3,5.4
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,First-Order False Belief,1,4,5
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Intention vs. Accident,1,5,6
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Hidden Emotion (Appearance vs. Reality),0,6,7.25
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Second-Order False Belief,0,7,7.25
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,White Lies / Prosocial Deception,1,8,7.5
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Sarcasm,1,9,8.5
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Faux Pas Detection,0,10,10.5
+frq,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.5968514715947981,4,Irony,1,11,8
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,First-Order False Belief,1,4,5
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Second-Order False Belief,0,7,7.25
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.7173169062286106,2,Irony,1,11,8
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,First-Order False Belief,1,4,5
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7173169062286106,2,Irony,1,11,8
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Diverse Desires,1,0,3
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Diverse Beliefs,1,1,4
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Emotion Recognition,1,3,5.4
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,First-Order False Belief,1,4,5
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Intention vs. Accident,1,5,6
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Sarcasm,1,9,8.5
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Faux Pas Detection,1,10,10.5
+frq,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.9308692676249144,0,Irony,1,11,8
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Diverse Desires,1,0,3
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Diverse Beliefs,1,1,4
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Knowledge Access / Ignorance,1,2,4
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Emotion Recognition,1,3,5.4
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,First-Order False Belief,1,4,5
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Intention vs. Accident,0,5,6
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Second-Order False Belief,1,7,7.25
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Sarcasm,1,9,8.5
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Faux Pas Detection,0,10,10.5
+frq,openai/o1,GPT,GPT reasoning,0.9609856262833676,2,Irony,1,11,8
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Diverse Desires,1,0,3
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Diverse Beliefs,1,1,4
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Knowledge Access / Ignorance,1,2,4
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Emotion Recognition,1,3,5.4
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,First-Order False Belief,1,4,5
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Intention vs. Accident,0,5,6
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Second-Order False Belief,0,7,7.25
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,White Lies / Prosocial Deception,0,8,7.5
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Sarcasm,1,9,8.5
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Faux Pas Detection,0,10,10.5
+frq,openai/o3-mini,GPT,GPT reasoning mini,1.0841889117043122,4,Irony,1,11,8
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Diverse Desires,1,0,3
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Diverse Beliefs,0,1,4
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Knowledge Access / Ignorance,0,2,4
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Emotion Recognition,1,3,5.4
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,First-Order False Belief,1,4,5
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Intention vs. Accident,1,5,6
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Second-Order False Belief,0,7,7.25
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,White Lies / Prosocial Deception,1,8,7.5
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Sarcasm,1,9,8.5
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Faux Pas Detection,0,10,10.5
+frq,openai/o4-mini,GPT,GPT reasoning mini,1.2895277207392195,6,Irony,1,11,8
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Diverse Desires,1,0,3
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Diverse Beliefs,1,1,4
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Knowledge Access / Ignorance,1,2,4
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Emotion Recognition,1,3,5.4
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,First-Order False Belief,1,4,5
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Intention vs. Accident,1,5,6
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Second-Order False Belief,1,7,7.25
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,White Lies / Prosocial Deception,1,8,7.5
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Sarcasm,1,9,8.5
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Faux Pas Detection,0,10,10.5
+frq,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,1.325119780971937,2,Irony,1,11,8
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Diverse Desires,1,0,3
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,1.7440109514031483,0,Irony,1,11,8
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Diverse Desires,1,0,3
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Diverse Beliefs,1,1,4
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,First-Order False Belief,1,4,5
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Intention vs. Accident,1,5,6
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Sarcasm,1,9,8.5
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Faux Pas Detection,0,10,10.5
+frq,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,1.749486652977413,2,Irony,1,11,8
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Diverse Desires,1,0,3
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,1.834360027378508,0,Irony,1,11,8
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Diverse Desires,1,0,3
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-opus-4-6,Claude,Claude Opus,2.1711156741957565,0,Irony,1,11,8
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Diverse Desires,1,0,3
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-opus-4-7,Claude,Claude Opus,2.3874058863791925,0,Irony,1,11,8
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Diverse Desires,1,0,3
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-fable-5,Claude,Claude Fable,2.477754962354552,0,Irony,1,11,8
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Diverse Desires,1,0,3
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-sonnet-5,Claude,Claude Sonnet,2.477754962354552,0,Irony,1,11,8
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Diverse Desires,1,0,3
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Diverse Beliefs,1,1,4
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Knowledge Access / Ignorance,1,2,4
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Emotion Recognition,1,3,5.4
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,First-Order False Belief,1,4,5
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Intention vs. Accident,1,5,6
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Hidden Emotion (Appearance vs. Reality),1,6,7.25
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Second-Order False Belief,1,7,7.25
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,White Lies / Prosocial Deception,1,8,7.5
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Sarcasm,1,9,8.5
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Faux Pas Detection,1,10,10.5
+frq,anthropic/claude-opus-4-8,Claude,Claude Opus,2.521560574948665,0,Irony,1,11,8

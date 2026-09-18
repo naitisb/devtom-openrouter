@@ -1,0 +1,11 @@
+# Streamlit app only. The eval + analysis pipeline uses the repo-root
+# requirements.txt; this file is what a deployment target (Streamlit Community
+# Cloud, a container) needs to serve `app/streamlit_app.py` from the frozen
+# snapshot in `app/data/`.
+streamlit>=1.40
+plotly>=5.22
+pandas>=2.0
+numpy>=1.26
+# Parquet reader for the snapshot. Streamlit already depends on pyarrow, but
+# pin it explicitly so the dependency is visible.
+pyarrow>=14.0

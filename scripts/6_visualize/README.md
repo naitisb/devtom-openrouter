@@ -97,6 +97,9 @@ make viz-mapping        # developmental mapping figures
 make viz-accuracy       # accuracy trajectory figures
 make viz-profiles       # dimension profile heatmaps
 make viz-size           # size scaling figures
+make viz-guttman        # Analysis 1 (A/B): scalogram, permutation null, item difficulty
+make viz-coherence      # Analysis 1 (C): continuous developmental-coherence figures
+make viz-scale-validity # Analysis 4: CV log-loss, pred-vs-obs, format transfer, PCA
 ```
 
 Each script auto-detects the latest timestamped output directory under

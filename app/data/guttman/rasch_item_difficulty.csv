@@ -1,0 +1,166 @@
+dataset,item_id,rasch_b,tom_dimension,dim_rank,age_mid
+mcq,DBEL_01,-5.509091952592058,Diverse Beliefs,1,3.5
+mcq,DBEL_02,-5.509091952592058,Diverse Beliefs,1,3.5
+mcq,DBEL_03,-4.075407014346726,Diverse Beliefs,1,3.5
+mcq,DBEL_04,-5.509091952592058,Diverse Beliefs,1,4.5
+mcq,DBEL_05,-3.075413795535234,Diverse Beliefs,1,4.5
+mcq,DBEL_06,-5.509091952592058,Diverse Beliefs,1,4.5
+mcq,DBEL_07,-5.509091952592058,Diverse Beliefs,1,3.5
+mcq,DBEL_09,-4.075407014346726,Diverse Beliefs,1,4.5
+mcq,DD_01,-3.075413795535234,Diverse Desires,0,2.5
+mcq,DD_02,-4.075407014346726,Diverse Desires,0,2.5
+mcq,DD_03,-5.509091952592058,Diverse Desires,0,2.5
+mcq,DD_04,-5.509091952592058,Diverse Desires,0,3.5
+mcq,DD_05,-3.0754137955352334,Diverse Desires,0,2.5
+mcq,DD_06,-3.0754137955352334,Diverse Desires,0,3.5
+mcq,DD_07,-5.509091952592058,Diverse Desires,0,2.5
+mcq,DD_08,-4.075407014346726,Diverse Desires,0,3.5
+mcq,DD_09,-3.075413795535234,Diverse Desires,0,3.5
+mcq,DD_10,-4.075407014346726,Diverse Desires,0,3.5
+mcq,ER_02,-4.075407014346726,Emotion Recognition,3,3.5
+mcq,ER_03,-5.509091952592058,Emotion Recognition,3,3.5
+mcq,ER_04,-4.075407014346726,Emotion Recognition,3,3.5
+mcq,ER_05,-4.075407014346726,Emotion Recognition,3,4
+mcq,ER_06,-4.075407014346726,Emotion Recognition,3,7
+mcq,ER_07,-5.509091952592058,Emotion Recognition,3,7
+mcq,ER_08,-5.509091952592058,Emotion Recognition,3,7
+mcq,ER_09,-4.075407014346726,Emotion Recognition,3,7.5
+mcq,ER_10,-5.509091952592058,Emotion Recognition,3,7
+mcq,ER_11,-4.075407014346726,Emotion Recognition,3,5
+mcq,ER_12,-5.509091952592058,Emotion Recognition,3,7
+mcq,FOFB_01,-1.6775202085946521,First-Order False Belief,4,4.5
+mcq,FOFB_02,-3.075413795535234,First-Order False Belief,4,4.5
+mcq,FOFB_03,-2.3150532781896653,First-Order False Belief,4,4.5
+mcq,FOFB_04,-3.0754137955352343,First-Order False Belief,4,4.5
+mcq,FOFB_05,-1.6775202085946508,First-Order False Belief,4,4.5
+mcq,FOFB_06,-2.315053278189667,First-Order False Belief,4,4.5
+mcq,FOFB_07,-1.109304497078275,First-Order False Belief,4,5.5
+mcq,FOFB_08,0.31965573014734233,First-Order False Belief,4,4.5
+mcq,FOFB_09,-0.5908401202364174,First-Order False Belief,4,4.5
+mcq,FOFB_10,-5.509091952592058,First-Order False Belief,4,5.5
+mcq,FOFB_11,-3.075413795535234,First-Order False Belief,4,4.5
+mcq,FOFB_12,-4.075407014346726,First-Order False Belief,4,5.5
+mcq,FP_01,-2.3150532781896667,Faux Pas Detection,10,10
+mcq,FP_02,-2.315053278189667,Faux Pas Detection,10,10
+mcq,FP_03,-2.3150532781896667,Faux Pas Detection,10,10
+mcq,FP_04,-5.509091952592058,Faux Pas Detection,10,10
+mcq,FP_05,-2.3150532781896667,Faux Pas Detection,10,10
+mcq,FP_06,-2.315053278189667,Faux Pas Detection,10,10
+mcq,FP_07,-3.075413795535234,Faux Pas Detection,10,11
+mcq,FP_08,-1.6775202085946495,Faux Pas Detection,10,10
+mcq,FP_09,-2.315053278189667,Faux Pas Detection,10,10
+mcq,FP_10,-3.0754137955352334,Faux Pas Detection,10,11
+mcq,HE_01,-2.3150532781896676,Hidden Emotion (Appearance vs. Reality),6,5
+mcq,HE_02,-3.0754137955352334,Hidden Emotion (Appearance vs. Reality),6,7
+mcq,HE_03,-1.6775202085946512,Hidden Emotion (Appearance vs. Reality),6,5
+mcq,HE_04,-3.075413795535234,Hidden Emotion (Appearance vs. Reality),6,7
+mcq,HE_05,-1.67752020859465,Hidden Emotion (Appearance vs. Reality),6,7
+mcq,HE_06,-4.075407014346726,Hidden Emotion (Appearance vs. Reality),6,7
+mcq,HE_07,-5.509091952592058,Hidden Emotion (Appearance vs. Reality),6,7
+mcq,HE_08,-4.075407014346726,Hidden Emotion (Appearance vs. Reality),6,8
+mcq,HE_09,-3.075413795535234,Hidden Emotion (Appearance vs. Reality),6,9
+mcq,HE_10,-1.1093044970782742,Hidden Emotion (Appearance vs. Reality),6,7
+mcq,IA_01,-1.1093044970782737,Intention vs. Accident,5,4.5
+mcq,IA_02,-3.0754137955352334,Intention vs. Accident,5,4.5
+mcq,IA_03,-2.315053278189667,Intention vs. Accident,5,4.5
+mcq,IA_04,-2.3150532781896676,Intention vs. Accident,5,4.5
+mcq,IA_05,-3.075413795535234,Intention vs. Accident,5,5.5
+mcq,IA_06,-3.0754137955352334,Intention vs. Accident,5,7.5
+mcq,IA_07,-4.075407014346726,Intention vs. Accident,5,5.5
+mcq,IA_08,-4.075407014346726,Intention vs. Accident,5,5.5
+mcq,IA_09,-4.075407014346726,Intention vs. Accident,5,4.5
+mcq,IA_10,-3.0754137955352334,Intention vs. Accident,5,6.5
+mcq,IRO_01,-3.0754137955352334,Irony,11,7
+mcq,IRO_03,-5.509091952592058,Irony,11,8
+mcq,IRO_04,-4.075407014346726,Irony,11,7
+mcq,IRO_05,-1.1093044970782757,Irony,11,8
+mcq,IRO_06,-4.075407014346726,Irony,11,9
+mcq,IRO_07,-2.3150532781896676,Irony,11,8
+mcq,IRO_09,-4.075407014346726,Irony,11,9
+mcq,IRO_10,-1.677520208594651,Irony,11,8
+mcq,KA_01,-2.315053278189667,Knowledge Access / Ignorance,2,3.5
+mcq,KA_02,-2.3150532781896676,Knowledge Access / Ignorance,2,3.5
+mcq,KA_03,-3.0754137955352334,Knowledge Access / Ignorance,2,4.5
+mcq,KA_04,-1.1093044970782724,Knowledge Access / Ignorance,2,3.5
+mcq,KA_05,-3.0754137955352334,Knowledge Access / Ignorance,2,4.5
+mcq,KA_06,-3.0754137955352334,Knowledge Access / Ignorance,2,4.5
+mcq,KA_07,-3.0754137955352334,Knowledge Access / Ignorance,2,4.5
+mcq,KA_08,-5.509091952592058,Knowledge Access / Ignorance,2,4.5
+mcq,KA_09,-1.1093044970782748,Knowledge Access / Ignorance,2,4.5
+mcq,KA_10,-1.1093044970782724,Knowledge Access / Ignorance,2,4.5
+mcq,SAR_01,-1.6775202085946512,Sarcasm,9,7
+mcq,SAR_02,-3.0754137955352334,Sarcasm,9,7
+mcq,SAR_03,-2.3150532781896676,Sarcasm,9,7
+mcq,SAR_04,-2.3150532781896676,Sarcasm,9,8
+mcq,SAR_05,-3.0754137955352334,Sarcasm,9,7
+mcq,SAR_06,-4.075407014346727,Sarcasm,9,9
+mcq,SAR_07,-2.3150532781896676,Sarcasm,9,8
+mcq,SAR_08,-2.3150532781896676,Sarcasm,9,9
+mcq,SAR_09,-1.1093044970782737,Sarcasm,9,9
+mcq,SAR_10,-1.6775202085946512,Sarcasm,9,10
+mcq,SOFB_01,-2.315053278189667,Second-Order False Belief,7,6.5
+mcq,SOFB_02,-3.0754137955352334,Second-Order False Belief,7,6.5
+mcq,SOFB_03,-4.075407014346726,Second-Order False Belief,7,7
+mcq,SOFB_04,-3.075413795535234,Second-Order False Belief,7,6.5
+mcq,SOFB_05,-2.315053278189667,Second-Order False Belief,7,7
+mcq,SOFB_06,-3.075413795535234,Second-Order False Belief,7,7
+mcq,SOFB_07,-3.075413795535234,Second-Order False Belief,7,7
+mcq,SOFB_08,-3.075413795535234,Second-Order False Belief,7,7.5
+mcq,SOFB_09,-2.315053278189667,Second-Order False Belief,7,6.5
+mcq,SOFB_10,-4.075407014346726,Second-Order False Belief,7,8
+mcq,WL_01,-3.0754137955352334,White Lies / Prosocial Deception,8,6
+mcq,WL_02,-2.3150532781896676,White Lies / Prosocial Deception,8,6
+mcq,WL_03,-3.0754137955352334,White Lies / Prosocial Deception,8,7
+mcq,WL_04,-3.075413795535234,White Lies / Prosocial Deception,8,8
+mcq,WL_05,-4.075407014346727,White Lies / Prosocial Deception,8,6
+mcq,WL_06,-4.075407014346727,White Lies / Prosocial Deception,8,9
+mcq,WL_07,-2.3150532781896676,White Lies / Prosocial Deception,8,7
+mcq,WL_08,-4.075407014346727,White Lies / Prosocial Deception,8,8
+mcq,WL_09,-1.1093044970782757,White Lies / Prosocial Deception,8,8
+mcq,WL_10,-4.075407014346726,White Lies / Prosocial Deception,8,8
+frq,DBEL_FR_01,-1.8008396833404972,Diverse Beliefs,1,3.5
+frq,DBEL_FR_03,-4.060917338329225,Diverse Beliefs,1,3.5
+frq,DBEL_FR_05,-0.6862525839681699,Diverse Beliefs,1,4.5
+frq,DD_FR_02,-0.4852451790490559,Diverse Desires,0,2.5
+frq,DD_FR_03,-4.060917338329225,Diverse Desires,0,3.5
+frq,DD_FR_04,-4.060917338329224,Diverse Desires,0,3.5
+frq,ER_FR_04,-1.1006497820952428,Emotion Recognition,3,5
+frq,FOFB_FR_01,-2.0770124343171634,First-Order False Belief,4,4.5
+frq,FOFB_FR_02,-3.2720766316599494,First-Order False Belief,4,4.5
+frq,FOFB_FR_03,-2.3929490851335924,First-Order False Belief,4,4.5
+frq,FOFB_FR_04,-2.392949085133593,First-Order False Belief,4,5.5
+frq,FOFB_FR_05,-1.31950030373211,First-Order False Belief,4,4.5
+frq,FP_FR_01,1.7940152998198027,Faux Pas Detection,10,10
+frq,FP_FR_02,0.7608127829117782,Faux Pas Detection,10,10
+frq,FP_FR_03,-0.4852451790490557,Faux Pas Detection,10,10
+frq,FP_FR_04,-2.0770124343171634,Faux Pas Detection,10,10
+frq,FP_FR_05,-0.890572592006225,Faux Pas Detection,10,11
+frq,HE_FR_01,-2.077012434317163,Hidden Emotion (Appearance vs. Reality),6,5
+frq,HE_FR_02,-4.060917338329224,Hidden Emotion (Appearance vs. Reality),6,7
+frq,HE_FR_03,-3.272076631659949,Hidden Emotion (Appearance vs. Reality),6,7
+frq,HE_FR_04,-4.060917338329225,Hidden Emotion (Appearance vs. Reality),6,9
+frq,HE_FR_05,-1.100649782095243,Hidden Emotion (Appearance vs. Reality),6,7
+frq,IA_FR_02,-2.392949085133593,Intention vs. Accident,5,5.5
+frq,IA_FR_03,-1.5510677966732238,Intention vs. Accident,5,6.5
+frq,IA_FR_04,-2.773203177444794,Intention vs. Accident,5,5.5
+frq,IA_FR_05,-3.27207663165995,Intention vs. Accident,5,5.5
+frq,IRO_FR_03,-3.2720766316599494,Irony,11,7
+frq,IRO_FR_04,-2.392949085133593,Irony,11,9
+frq,KA_FR_03,0.7608127829117786,Knowledge Access / Ignorance,2,4.5
+frq,KA_FR_04,-4.060917338329224,Knowledge Access / Ignorance,2,4.5
+frq,KA_FR_05,-2.7732031774447936,Knowledge Access / Ignorance,2,4.5
+frq,SAR_FR_01,-3.2720766316599494,Sarcasm,9,7
+frq,SAR_FR_02,-3.27207663165995,Sarcasm,9,7
+frq,SAR_FR_03,-3.27207663165995,Sarcasm,9,9
+frq,SAR_FR_04,-1.8008396833404974,Sarcasm,9,9
+frq,SAR_FR_05,-2.077012434317163,Sarcasm,9,10
+frq,SOFB_FR_01,-2.077012434317163,Second-Order False Belief,7,6.5
+frq,SOFB_FR_02,-1.5510677966732238,Second-Order False Belief,7,6.5
+frq,SOFB_FR_03,-3.2720766316599494,Second-Order False Belief,7,7
+frq,SOFB_FR_04,-2.077012434317163,Second-Order False Belief,7,7
+frq,SOFB_FR_05,-1.100649782095243,Second-Order False Belief,7,8
+frq,WL_FR_01,-0.68625258396817,White Lies / Prosocial Deception,8,6
+frq,WL_FR_02,-0.6862525839681699,White Lies / Prosocial Deception,8,9
+frq,WL_FR_03,-3.2720766316599494,White Lies / Prosocial Deception,8,8
+frq,WL_FR_04,-4.060917338329225,White Lies / Prosocial Deception,8,8
+frq,WL_FR_05,-4.060917338329225,White Lies / Prosocial Deception,8,6

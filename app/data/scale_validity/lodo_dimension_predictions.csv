@@ -1,0 +1,1065 @@
+tom_dimension,dim_rank,age_mid,model,family,tier,macc,subgroup,observed,pred_devage,pred_overall
+Diverse Beliefs,1,3.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999827201216,1
+Diverse Beliefs,1,3.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9737856280545338,0.9644970414201184
+Diverse Beliefs,1,3.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9825889613808224,0.9763313609467456
+Diverse Beliefs,1,3.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9956715768573059,0.9940828402366864
+Diverse Beliefs,1,3.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9956715768573061,0.9940828402366864
+Diverse Beliefs,1,3.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9956715768573061,0.9940828402366864
+Diverse Beliefs,1,3.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9956715768573066,0.9940828402366864
+Diverse Beliefs,1,3.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9956715768573068,0.9940828402366864
+Diverse Beliefs,1,3.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9781954849524854,0.9704142011834319
+Diverse Beliefs,1,3.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.9149453604143593,0.8875739644970414
+Diverse Beliefs,1,3.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8868230420252056,0.8520710059171598
+Diverse Beliefs,1,3.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9737856280545345,0.9644970414201184
+Diverse Beliefs,1,3.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.6828803326078915,0.6153846153846154
+Diverse Beliefs,1,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.875,0.8237363491327356,0.7751479289940828
+Diverse Beliefs,1,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.33139821753152765,0.27218934911242604
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9649165846705184,0.9526627218934911
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.875,0.5279408372207506,0.4556213017751479
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.720711036076471,0.6568047337278107
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9781954849524918,0.9704142011834319
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9149453604143636,0.8875739644970414
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9559814540598042,0.9408284023668639
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.8037190434544683,0.7514792899408284
+Diverse Beliefs,1,3.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9649165846705174,0.9526627218934911
+Diverse Beliefs,1,3.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.875,0.9559814540597983,0.9408284023668639
+Diverse Beliefs,1,3.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.875,0.9195724715957946,0.893491124260355
+Diverse Beliefs,1,3.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.875,0.9604573038918536,0.9467455621301775
+Diverse Beliefs,1,3.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.875,0.9287757480916846,0.9053254437869822
+Diverse Beliefs,1,3.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.75,0.9424540163886479,0.9230769230769231
+Diverse Beliefs,1,4.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999809129977,1
+Diverse Beliefs,1,4.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),0.8571428571428571,0.9711233029069439,0.9644970414201184
+Diverse Beliefs,1,4.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),0.8571428571428571,0.9808030752710223,0.9763313609467456
+Diverse Beliefs,1,4.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9952210750513406,0.9940828402366864
+Diverse Beliefs,1,4.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9952210750513408,0.9940828402366864
+Diverse Beliefs,1,4.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9952210750513408,0.9940828402366864
+Diverse Beliefs,1,4.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9952210750513414,0.9940828402366864
+Diverse Beliefs,1,4.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9952210750513416,0.9940828402366864
+Diverse Beliefs,1,4.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9759699718808342,0.9704142011834319
+Diverse Beliefs,1,4.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.8571428571428571,0.906878687160944,0.8875739644970414
+Diverse Beliefs,1,4.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.8571428571428571,0.8764493794825138,0.8520710059171598
+Diverse Beliefs,1,4.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9711233029069447,0.9644970414201184
+Diverse Beliefs,1,4.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.7142857142857143,0.6609600744013466,0.6153846153846154
+Diverse Beliefs,1,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.8571428571428571,0.8088267647620417,0.7751479289940828
+Diverse Beliefs,1,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.2857142857142857,0.309740495259447,0.27218934911242604
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),0.8571428571428571,0.9613892360724383,0.9526627218934911
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.7142857142857143,0.5031037180875083,0.4556213017751479
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.8571428571428571,0.7002579390800916,0.6568047337278107
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),0.8571428571428571,0.9759699718808411,0.9704142011834319
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9068786871609487,0.8875739644970414
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.951600812105394,0.9408284023668639
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.8571428571428571,0.7875529461683175,0.7514792899408284
+Diverse Beliefs,1,4.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9613892360724372,0.9526627218934911
+Diverse Beliefs,1,4.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9516008121053876,0.9408284023668639
+Diverse Beliefs,1,4.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9119023837944056,0.893491124260355
+Diverse Beliefs,1,4.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9565018225455854,0.9467455621301775
+Diverse Beliefs,1,4.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9219088101366661,0.9053254437869822
+Diverse Beliefs,1,4.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9368161258808829,0.9230769230769231
+Diverse Desires,0,2.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999853854712,1
+Diverse Desires,0,2.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.973983858227724,0.9585798816568047
+Diverse Desires,0,2.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9815138275018129,0.9704142011834319
+Diverse Desires,0,2.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.996341066663288,0.9940828402366864
+Diverse Desires,0,2.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9963410666632887,0.9940828402366864
+Diverse Desires,0,2.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9963410666632877,0.9940828402366864
+Diverse Desires,0,2.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9963410666632878,0.9940828402366864
+Diverse Desires,0,2.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9963410666632884,0.9940828402366864
+Diverse Desires,0,2.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),0.8571428571428571,0.9852495687229634,0.9763313609467456
+Diverse Desires,0,2.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.8571428571428571,0.9271213798879983,0.8875739644970414
+Diverse Desires,0,2.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.8571428571428571,0.9025684238894544,0.8520710059171598
+Diverse Desires,0,2.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),0.8571428571428571,0.9815138275018161,0.9704142011834319
+Diverse Desires,0,2.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.8571428571428571,0.7124313041630527,0.6094674556213018
+Diverse Desires,0,2.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.8466548472346953,0.7751479289940828
+Diverse Desires,0,2.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.2857142857142857,0.37544798897886156,0.2781065088757396
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.96637520381509745,0.9467455621301775
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.42857142857142855,0.5978313791010803,0.48520710059171596
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.7478701280802532,0.650887573964497
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9777586256272993,0.9644970414201184
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9271213798880084,0.8875739644970414
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.8571428571428571,0.9663752038151026,0.9467455621301775
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.8571428571428571,0.8332020558415948,0.757396449704142
+Diverse Desires,0,2.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),0.8571428571428571,0.9739838582277269,0.9585798816568047
+Diverse Desires,0,2.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.8571428571428571,0.9625411034901314,0.9408284023668639
+Diverse Desires,0,2.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.8571428571428571,0.9351364941449012,0.8994082840236687
+Diverse Desires,0,2.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.8571428571428571,0.9663752038151013,0.9467455621301775
+Diverse Desires,0,2.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.8571428571428571,0.9391128436015054,0.9053254437869822
+Diverse Desires,0,2.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.8571428571428571,0.9470036921432825,0.9171597633136095
+Diverse Desires,0,3.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999836263482,1
+Diverse Desires,0,3.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.970943336191832,0.9585798816568047
+Diverse Desires,0,3.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9793346655475118,0.9704142011834319
+Diverse Desires,0,3.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9959024524729618,0.9940828402366864
+Diverse Desires,0,3.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9959024524729625,0.9940828402366864
+Diverse Desires,0,3.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9959024524729615,0.9940828402366864
+Diverse Desires,0,3.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9959024524729616,0.9940828402366864
+Diverse Desires,0,3.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9959024524729622,0.9940828402366864
+Diverse Desires,0,3.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9835033768877767,0.9763313609467456
+Diverse Desires,0,3.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.919059153570252,0.8875739644970414
+Diverse Desires,0,3.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8921061129624323,0.8520710059171598
+Diverse Desires,0,3.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9793346655475155,0.9704142011834319
+Diverse Desires,0,3.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.6885961705775844,0.6094674556213018
+Diverse Desires,0,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.75,0.8313106290529549,0.7751479289940828
+Diverse Desires,0,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.375,0.34919672875939917,0.2781065088757396
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9624797090742648,0.9467455621301775
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.5702276453521136,0.48520710059171596
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.7258419909401014,0.650887573964497
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9751480063727523,0.9644970414201184
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9190591535702631,0.8875739644970414
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9624797090742705,0.9467455621301775
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.875,0.8168029795571617,0.757396449704142
+Diverse Desires,0,3.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9709433361918353,0.9585798816568047
+Diverse Desires,0,3.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9582206247429658,0.9408284023668639
+Diverse Desires,0,3.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.875,0.92789198076038,0.8994082840236687
+Diverse Desires,0,3.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9624797090742692,0.9467455621301775
+Diverse Desires,0,3.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9322802817817426,0.9053254437869822
+Diverse Desires,0,3.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9410009861562599,0.9171597633136095
+Emotion Recognition,3,3.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999836558984,1
+Emotion Recognition,3,3.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9707041236341557,0.9580838323353293
+Emotion Recognition,3,3.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9791713225197984,0.9700598802395209
+Emotion Recognition,3,3.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.995872805089505,0.9940119760479041
+Emotion Recognition,3,3.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9958728050895048,0.9940119760479041
+Emotion Recognition,3,3.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9958728050895048,0.9940119760479041
+Emotion Recognition,3,3.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9958728050895047,0.9940119760479041
+Emotion Recognition,3,3.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9958728050895054,0.9940119760479041
+Emotion Recognition,3,3.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9791713225198001,0.9700598802395209
+Emotion Recognition,3,3.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.9137379249246933,0.8802395209580839
+Emotion Recognition,3,3.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8862939250529613,0.844311377245509
+Emotion Recognition,3,3.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9749474776777052,0.9640718562874252
+Emotion Recognition,3,3.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.6836565595595605,0.6047904191616766
+Emotion Recognition,3,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.8193361328893399,0.7604790419161677
+Emotion Recognition,3,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.3163583760497872,0.25149700598802394
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.962158648617299,0.9461077844311377
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.25,0.5806455883620121,0.49700598802395207
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.7270184440144908,0.6526946107784432
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9749474776776994,0.9640718562874252
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.922722491332582,0.8922155688622755
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9578564079010692,0.9401197604790419
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.8094297711245195,0.7485029940119761
+Emotion Recognition,3,3.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9707041236341615,0.9580838323353293
+Emotion Recognition,3,3.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9535344185012075,0.9341317365269461
+Emotion Recognition,3,3.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9227224913325734,0.8922155688622755
+Emotion Recognition,3,3.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9621586486173137,0.9461077844311377
+Emotion Recognition,3,3.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9316261423722583,0.9041916167664671
+Emotion Recognition,3,3.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9360477748243284,0.9101796407185628
+Emotion Recognition,3,4,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999826298678,1
+Emotion Recognition,3,4,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9689221769672949,0.9580838323353293
+Emotion Recognition,3,4,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.977892671004526,0.9700598802395209
+Emotion Recognition,3,4,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9956148490765528,0.9940119760479041
+Emotion Recognition,3,4,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9956148490765526,0.9940119760479041
+Emotion Recognition,3,4,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9956148490765527,0.9940119760479041
+Emotion Recognition,3,4,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9956148490765525,0.9940119760479041
+Emotion Recognition,3,4,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9956148490765532,0.9940119760479041
+Emotion Recognition,3,4,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9778926710045278,0.9700598802395209
+Emotion Recognition,3,4,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.9088164487044904,0.8802395209580839
+Emotion Recognition,3,4,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8800123041396263,0.844311377245509
+Emotion Recognition,3,4,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9734165682311657,0.9640718562874252
+Emotion Recognition,3,4,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.6703441710969092,0.6047904191616766
+Emotion Recognition,3,4,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.8101478387199786,0.7604790419161677
+Emotion Recognition,3,4,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.30333998050449196,0.25149700598802394
+Emotion Recognition,3,4,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9598784001756262,0.9461077844311377
+Emotion Recognition,3,4,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.5657517567808834,0.49700598802395207
+Emotion Recognition,3,4,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.7147695005872956,0.6526946107784432
+Emotion Recognition,3,4,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9734165682311597,0.9640718562874252
+Emotion Recognition,3,4,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9182677575119317,0.8922155688622755
+Emotion Recognition,3,4,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9553289507590569,0.9401197604790419
+Emotion Recognition,3,4,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7998607230140744,0.7485029940119761
+Emotion Recognition,3,4,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9689221769673011,0.9580838323353293
+Emotion Recognition,3,4,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9507610850800197,0.9341317365269461
+Emotion Recognition,3,4,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9182677575119226,0.8922155688622755
+Emotion Recognition,3,4,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9598784001756417,0.9461077844311377
+Emotion Recognition,3,4,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9276444204045161,0.9041916167664671
+Emotion Recognition,3,4,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9323048344612126,0.9101796407185628
+Emotion Recognition,3,5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.99999998038053,1
+Emotion Recognition,3,5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9650384671940428,0.9580838323353293
+Emotion Recognition,3,5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9751011718137845,0.9700598802395209
+Emotion Recognition,3,5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9950498068320722,0.9940119760479041
+Emotion Recognition,3,5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9950498068320719,0.9940119760479041
+Emotion Recognition,3,5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.995049806832072,0.9940119760479041
+Emotion Recognition,3,5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9950498068320718,0.9940119760479041
+Emotion Recognition,3,5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9950498068320726,0.9940119760479041
+Emotion Recognition,3,5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9751011718137865,0.9700598802395209
+Emotion Recognition,3,5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.898210580580482,0.8802395209580839
+Emotion Recognition,3,5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8665480922486224,0.844311377245509
+Emotion Recognition,3,5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.970077164866749,0.9640718562874252
+Emotion Recognition,3,5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.6428996593719694,0.6047904191616766
+Emotion Recognition,3,5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7907084117807232,0.7604790419161677
+Emotion Recognition,3,5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.2782390127985084,0.25149700598802394
+Emotion Recognition,3,5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9549171004336976,0.9461077844311377
+Emotion Recognition,3,5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.5356316928284023,0.49700598802395207
+Emotion Recognition,3,5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.6893093094438909,0.6526946107784432
+Emotion Recognition,3,5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9700771648667422,0.9640718562874252
+Emotion Recognition,3,5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.5,0.908650706120419,0.8922155688622755
+Emotion Recognition,3,5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9498344828756847,0.9401197604790419
+Emotion Recognition,3,5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.7796544579106789,0.7485029940119761
+Emotion Recognition,3,5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),0.5,0.9650384671940496,0.9580838323353293
+Emotion Recognition,3,5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9447372776534746,0.9341317365269461
+Emotion Recognition,3,5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.5,0.9086507061204089,0.8922155688622755
+Emotion Recognition,3,5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.5,0.9549171004337149,0.9461077844311377
+Emotion Recognition,3,5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.5,0.919033394950991,0.9041916167664671
+Emotion Recognition,3,5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9242031254415453,0.9101796407185628
+Emotion Recognition,3,7,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999749703047,1
+Emotion Recognition,3,7,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.955823448178841,0.9580838323353293
+Emotion Recognition,3,7,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9684517332246307,0.9700598802395209
+Emotion Recognition,3,7,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936933604710998,0.9940119760479041
+Emotion Recognition,3,7,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936933604710994,0.9940119760479041
+Emotion Recognition,3,7,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936933604710996,0.9940119760479041
+Emotion Recognition,3,7,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936933604710992,0.9940119760479041
+Emotion Recognition,3,7,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936933604711002,0.9940119760479041
+Emotion Recognition,3,7,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9684517332246333,0.9700598802395209
+Emotion Recognition,3,7,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8736868505251177,0.8802395209580839
+Emotion Recognition,3,7,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8357906385193521,0.844311377245509
+Emotion Recognition,3,7,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9621381200810988,0.9640718562874252
+Emotion Recognition,3,7,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.5852665491191444,0.6047904191616766
+Emotion Recognition,3,7,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7475636533441995,0.7604790419161677
+Emotion Recognition,3,7,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.875,0.2320531587695994,0.25149700598802394
+Emotion Recognition,3,7,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9431913741762946,0.9461077844311377
+Emotion Recognition,3,7,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.4748283690375525,0.49700598802395207
+Emotion Recognition,3,7,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.875,0.6349128714240251,0.6526946107784432
+Emotion Recognition,3,7,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9621381200810902,0.9640718562874252
+Emotion Recognition,3,7,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8863239429136215,0.8922155688622755
+Emotion Recognition,3,7,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9368741946295611,0.9401197604790419
+Emotion Recognition,3,7,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.734994680442179,0.7485029940119761
+Emotion Recognition,3,7,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9558234481788496,0.9580838323353293
+Emotion Recognition,3,7,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9305564014197821,0.9341317365269461
+Emotion Recognition,3,7,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8863239429136094,0.8922155688622755
+Emotion Recognition,3,7,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9431913741763163,0.9461077844311377
+Emotion Recognition,3,7,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8989620995804497,0.9041916167664671
+Emotion Recognition,3,7,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.905281304003679,0.9101796407185628
+Emotion Recognition,3,7.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.99999997339902,1
+Emotion Recognition,3,7.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9531800288591659,0.9580838323353293
+Emotion Recognition,3,7.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9665375058308606,0.9700598802395209
+Emotion Recognition,3,7.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.993300102259469,0.9940119760479041
+Emotion Recognition,3,7.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9933001022594686,0.9940119760479041
+Emotion Recognition,3,7.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9933001022594687,0.9940119760479041
+Emotion Recognition,3,7.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9933001022594684,0.9940119760479041
+Emotion Recognition,3,7.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9933001022594695,0.9940119760479041
+Emotion Recognition,3,7.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9665375058308634,0.9700598802395209
+Emotion Recognition,3,7.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8668134207187448,0.8802395209580839
+Emotion Recognition,3,7.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8272627659673297,0.844311377245509
+Emotion Recognition,3,7.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9598566862392993,0.9640718562874252
+Emotion Recognition,3,7.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.5704154146731588,0.6047904191616766
+Emotion Recognition,3,7.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7359017078237852,0.7604790419161677
+Emotion Recognition,3,7.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.22138056542635107,0.25149700598802394
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9398396570267189,0.9461077844311377
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.45967357266166725,0.49700598802395207
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.6206873329250543,0.6526946107784432
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9598566862392903,0.9640718562874252
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8800437558716809,0.8922155688622755
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9331761692898043,0.9401197604790419
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7229672588953533,0.7485029940119761
+Emotion Recognition,3,7.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9531800288591749,0.9580838323353293
+Emotion Recognition,3,7.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9265172971866348,0.9341317365269461
+Emotion Recognition,3,7.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8800437558716682,0.8922155688622755
+Emotion Recognition,3,7.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9398396570267418,0.9461077844311377
+Emotion Recognition,3,7.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8932960672781695,0.9041916167664671
+Emotion Recognition,3,7.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.899930194417075,0.9101796407185628
+Faux Pas Detection,10,10,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999966620838,1
+Faux Pas Detection,10,10,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),0.8333333333333334,0.9690017769606769,0.9704142011834319
+Faux Pas Detection,10,10,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),0.9166666666666666,0.975194270518749,0.9763313609467456
+Faux Pas Detection,10,10,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9937931994251714,0.9940828402366864
+Faux Pas Detection,10,10,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),0.9166666666666666,0.999999996662084,1
+Faux Pas Detection,10,10,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),0.9166666666666666,0.999999996662084,1
+Faux Pas Detection,10,10,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),0.9166666666666666,0.999999996662084,1
+Faux Pas Detection,10,10,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),0.9166666666666666,0.999999996662084,1
+Faux Pas Detection,10,10,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),0.8333333333333334,0.9813903371441718,0.9822485207100592
+Faux Pas Detection,10,10,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.75,0.8949696621672047,0.8994082840236687
+Faux Pas Detection,10,10,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.75,0.8642736954197403,0.8698224852071006
+Faux Pas Detection,10,10,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),0.9166666666666666,0.9690017769606801,0.9704142011834319
+Faux Pas Detection,10,10,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.4166666666666667,0.6398458447771391,0.650887573964497
+Faux Pas Detection,10,10,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.25,0.8214475010211821,0.8284023668639053
+Faux Pas Detection,10,10,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.16666666666666666,0.28587135049487766,0.2958579881656805
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),0.6666666666666666,0.9690017769606747,0.9704142011834319
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.16666666666666666,0.4967974658017937,0.5088757396449705
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.3333333333333333,0.6939982586673104,0.7041420118343196
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),0.9166666666666666,0.9690017769606695,0.9704142011834319
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.9166666666666666,0.8888233958815742,0.893491124260355
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.8333333333333334,0.9566274992308704,0.9585798816568047
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.75,0.7544965996007771,0.7633136094674556
+Faux Pas Detection,10,10,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),0.75,0.9690017769606718,0.9704142011834319
+Faux Pas Detection,10,10,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.8333333333333334,0.9504457101564523,0.9526627218934911
+Faux Pas Detection,10,10,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.75,0.9072728211294413,0.9112426035502958
+Faux Pas Detection,10,10,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.8333333333333334,0.9566274992308716,0.9585798816568047
+Faux Pas Detection,10,10,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.75,0.9195901648215348,0.9230769230769231
+Faux Pas Detection,10,10,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.75,0.9319217127224927,0.9349112426035503
+Faux Pas Detection,10,11,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999966226889,1
+Faux Pas Detection,10,11,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9686473975132727,0.9704142011834319
+Faux Pas Detection,10,11,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9749088520783027,0.9763313609467456
+Faux Pas Detection,10,11,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9937204050183915,0.9940828402366864
+Faux Pas Detection,10,11,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9999999966226889,1
+Faux Pas Detection,10,11,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9999999966226889,1
+Faux Pas Detection,10,11,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9999999966226889,1
+Faux Pas Detection,10,11,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9999999966226889,1
+Faux Pas Detection,10,11,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.981174835336132,0.9822485207100592
+Faux Pas Detection,10,11,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8938616333106046,0.8994082840236687
+Faux Pas Detection,10,11,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.6666666666666666,0.8628914466863019,0.8698224852071006
+Faux Pas Detection,10,11,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9686473975132759,0.9704142011834319
+Faux Pas Detection,10,11,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.6666666666666666,0.6371376014743817,0.650887573964497
+Faux Pas Detection,10,11,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.3333333333333333,0.8197200827062605,0.8284023668639053
+Faux Pas Detection,10,11,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.28348206494832284,0.2958579881656805
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9686473975132704,0.9704142011834319
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.3333333333333333,0.49386443527024315,0.5088757396449705
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.6666666666666666,0.6915008900315974,0.7041420118343196
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.968647397513265,0.9704142011834319
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8876586654750794,0.893491124260355
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.6666666666666666,0.9561380574046496,0.9585798816568047
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7523167613881996,0.7633136094674556
+Faux Pas Detection,10,11,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9686473975132674,0.9704142011834319
+Faux Pas Detection,10,11,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.6666666666666666,0.9498901633455852,0.9526627218934911
+Faux Pas Detection,10,11,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.6666666666666666,0.9062809941190975,0.9112426035502958
+Faux Pas Detection,10,11,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.6666666666666666,0.9561380574046509,0.9585798816568047
+Faux Pas Detection,10,11,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.6666666666666666,0.9187182831603508,0.9230769230769231
+Faux Pas Detection,10,11,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.6666666666666666,0.9311735341656355,0.9349112426035503
+First-Order False Belief,4,4.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999829525541,1
+First-Order False Belief,4,4.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9695884399781496,0.9580838323353293
+First-Order False Belief,4,4.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9783798250918482,0.9700598802395209
+First-Order False Belief,4,4.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9957167843316564,0.9940119760479041
+First-Order False Belief,4,4.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9957167843316568,0.9940119760479041
+First-Order False Belief,4,4.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9957167843316563,0.9940119760479041
+First-Order False Belief,4,4.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9957167843316567,0.9940119760479041
+First-Order False Belief,4,4.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9957167843316569,0.9940119760479041
+First-Order False Belief,4,4.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9783798250918465,0.9700598802395209
+First-Order False Belief,4,4.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.38461538461538464,0.9562470379126001,0.9401197604790419
+First-Order False Belief,4,4.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.3076923076923077,0.9290058048130859,0.9041916167664671
+First-Order False Belief,4,4.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9739944007128519,0.9640718562874252
+First-Order False Belief,4,4.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.23076923076923078,0.7280488318020523,0.6646706586826348
+First-Order False Belief,4,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.7692307692307693,0.8327624665317546,0.7844311377245509
+First-Order False Belief,4,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.07692307692307693,0.36352538252655586,0.30538922155688625
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9607147882530557,0.9461077844311377
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.7692307692307693,0.5244035836404398,0.4550898203592814
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.46153846153846156,0.7603568106013543,0.7005988023952096
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),0.9230769230769231,0.9783798250918458,0.9700598802395209
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.6923076923076923,0.9335979006618408,0.9101796407185628
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9562470379126033,0.9401197604790419
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.8461538461538461,0.8073816522892243,0.7544910179640718
+First-Order False Belief,4,4.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),0.9230769230769231,0.9695884399781515,0.9580838323353293
+First-Order False Belief,4,4.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9517586325321916,0.9341317365269461
+First-Order False Belief,4,4.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.8461538461538461,0.9243928916176637,0.8982035928143712
+First-Order False Belief,4,4.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9562470379125925,0.9401197604790419
+First-Order False Belief,4,4.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9243928916176615,0.8982035928143712
+First-Order False Belief,4,4.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9381692048438887,0.9161676646706587
+First-Order False Belief,4,5.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999801946043,1
+First-Order False Belief,4,5.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9648414133117972,0.9580838323353293
+First-Order False Belief,4,5.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9749696448488647,0.9700598802395209
+First-Order False Belief,4,5.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9950272879837372,0.9940119760479041
+First-Order False Belief,4,5.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9950272879837375,0.9940119760479041
+First-Order False Belief,4,5.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9950272879837371,0.9940119760479041
+First-Order False Belief,4,5.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9950272879837375,0.9940119760479041
+First-Order False Belief,4,5.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9950272879837377,0.9940119760479041
+First-Order False Belief,4,5.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9749696448488628,0.9700598802395209
+First-Order False Belief,4,5.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.5,0.9495259229708768,0.9401197604790419
+First-Order False Belief,4,5.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.75,0.918456869156785,0.9041916167664671
+First-Order False Belief,4,5.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9699137724889694,0.9640718562874252
+First-Order False Belief,4,5.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.75,0.6973671304173799,0.6646706586826348
+First-Order False Belief,4,5.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.75,0.81082492870314,0.7844311377245509
+First-Order False Belief,4,5.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.32958791692119854,0.30538922155688625
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9546474368924198,0.9461077844311377
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.75,0.48693745727225435,0.4550898203592814
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.5,0.7319782537496933,0.7005988023952096
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9749696448488622,0.9700598802395209
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9236752397931166,0.9101796407185628
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9495259229708805,0.9401197604790419
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7829823906291336,0.7544910179640718
+First-Order False Belief,4,5.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9648414133117995,0.9580838323353293
+First-Order False Belief,4,5.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9443881288795598,0.9341317365269461
+First-Order False Belief,4,5.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9132225541451106,0.8982035928143712
+First-Order False Belief,4,5.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.949525922970868,0.9401197604790419
+First-Order False Belief,4,5.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.913222554145108,0.8982035928143712
+First-Order False Belief,4,5.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.75,0.9288776079147993,0.9161676646706587
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999804005847,1
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9655281415847466,0.9585798816568047
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9754532561503196,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9951211850826039,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9951211850826037,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9951211850826033,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9951211850826039,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.995121185082604,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9754532561503181,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8995552573506604,0.8816568047337278
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8787550804660712,0.8579881656804734
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.97049826717628,0.9644970414201184
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0,0.6872346992153564,0.650887573964497
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.3333333333333333,0.8203716726591805,0.7928994082840237
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.3333333333333333,0.31210212223686135,0.28402366863905326
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9605429133417966,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.5408598897133993,0.5029585798816568
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.6666666666666666,0.7099501461003356,0.6745562130177515
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9754532561503226,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9098678377981082,0.893491124260355
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9505272874197274,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.3333333333333333,0.8041536303611694,0.7751479289940828
+Hidden Emotion (Appearance vs. Reality),6,5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9605429133417868,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.6666666666666666,0.9555426169441205,0.9467455621301775
+Hidden Emotion (Appearance vs. Reality),6,5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9047188743292363,0.8875739644970414
+Hidden Emotion (Appearance vs. Reality),6,5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9505272874197127,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9201216432689416,0.9053254437869822
+Hidden Emotion (Appearance vs. Reality),6,5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9252264061410556,0.9112426035502958
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.999999974582246,1
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.955747579988979,0.9585798816568047
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9683965342056402,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936819966735525,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936819966735521,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936819966735516,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936819966735524,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,7,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936819966735526,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9683965342056381,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8735086997715192,0.8816568047337278
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.7777777777777778,0.8482248264753192,0.8579881656804734
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9620724661454403,0.9644970414201184
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5555555555555556,0.6288472356497666,0.650887573964497
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.6666666666666666,0.7788400417857926,0.7928994082840237
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.2222222222222222,0.25917553800190307,0.28402366863905326
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),0.8888888888888888,0.949422006626242,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.3333333333333333,0.47598266564862757,0.5029585798816568
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.6666666666666666,0.6536661964649088,0.6745562130177515
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),0.8888888888888888,0.9683965342056441,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.8888888888888888,0.8861570292143456,0.893491124260355
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.936769320200407,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.6666666666666666,0.7599693783598999,0.7751479289940828
+Hidden Emotion (Appearance vs. Reality),6,7,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9494220066262294,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,7,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.8888888888888888,0.9430958766204123,0.9467455621301775
+Hidden Emotion (Appearance vs. Reality),6,7,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8798324365557973,0.8875739644970414
+Hidden Emotion (Appearance vs. Reality),6,7,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9367693202003885,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,7,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8988082758079429,0.9053254437869822
+Hidden Emotion (Appearance vs. Reality),6,7,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9051346755612021,0.9112426035502958
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999710542905,1
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9499130373835396,0.9585798816568047
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9641671902856166,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9928113688677341,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9928113688677337,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9928113688677331,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.992811368867734,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,8,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9928113688677342,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9641671902856143,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8584372458268534,0.8816568047337278
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8307245967727633,0.8579881656804734
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9570343511916911,0.9644970414201184
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.5980389109417786,0.650887573964497
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7556442178227448,0.7928994082840237
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.23501044753778275,0.28402366863905326
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9428033681144325,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.4437102789554482,0.5029585798816568
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.6236851868845426,0.6745562130177515
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9641671902856209,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8723724315576435,0.893491124260355
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9286194336998823,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7354665882902848,0.7751479289940828
+Hidden Emotion (Appearance vs. Reality),6,8,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9428033681144184,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,8,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9357054613361476,0.9467455621301775
+Hidden Emotion (Appearance vs. Reality),6,8,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.865398351491299,0.8875739644970414
+Hidden Emotion (Appearance vs. Reality),6,8,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9286194336998616,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,8,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8863590987267327,0.9053254437869822
+Hidden Emotion (Appearance vs. Reality),6,8,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.89337147453078,0.9112426035502958
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999670366587,1
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9433548214675238,0.9585798816568047
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9593955848977771,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9918217550037979,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9918217550037973,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9918217550037967,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9918217550037978,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,9,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.991821755003798,0.9940828402366864
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9593955848977744,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8418950595904384,0.8816568047337278
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8116545814131362,0.8579881656804734
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9513608312882087,0.9644970414201184
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.5664364331333658,0.650887573964497
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7308562719079589,0.7928994082840237
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.21245232583539708,0.28402366863905326
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9353775664290331,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.41190603121540137,0.5029585798816568
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.5927258856582277,0.6745562130177515
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.959395584897782,0.9704142011834319
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8571877258164647,0.893491124260355
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9195093559577078,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7094188975105742,0.7751479289940828
+Hidden Emotion (Appearance vs. Reality),6,9,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9353775664290174,0.9526627218934911
+Hidden Emotion (Appearance vs. Reality),6,9,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9274290754189133,0.9467455621301775
+Hidden Emotion (Appearance vs. Reality),6,9,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8495270144608345,0.8875739644970414
+Hidden Emotion (Appearance vs. Reality),6,9,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9195093559576846,0.9408284023668639
+Hidden Emotion (Appearance vs. Reality),6,9,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.5,0.8725954507843192,0.9053254437869822
+Hidden Emotion (Appearance vs. Reality),6,9,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.8803424769844979,0.9112426035502958
+Intention vs. Accident,5,4.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999817025168,1
+Intention vs. Accident,5,4.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9677210041424722,0.9585798816568047
+Intention vs. Accident,5,4.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9770273063789854,0.9704142011834319
+Intention vs. Accident,5,4.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9954389212863042,0.9940828402366864
+Intention vs. Accident,5,4.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9954389212863032,0.9940828402366864
+Intention vs. Accident,5,4.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9954389212863036,0.9940828402366864
+Intention vs. Accident,5,4.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9954389212863036,0.9940828402366864
+Intention vs. Accident,5,4.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9954389212863037,0.9940828402366864
+Intention vs. Accident,5,4.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9816553220626264,0.9763313609467456
+Intention vs. Accident,5,4.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.9104730432471339,0.8875739644970414
+Intention vs. Accident,5,4.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8759602137012404,0.8461538461538461
+Intention vs. Accident,5,4.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.977027306378992,0.9704142011834319
+Intention vs. Accident,5,4.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.6,0.6910660956762836,0.6390532544378699
+Intention vs. Accident,5,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.8,0.8148779610916775,0.7751479289940828
+Intention vs. Accident,5,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.32137469414241376,0.2781065088757396
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9583476269266777,0.9467455621301775
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.5525853396821729,0.4970414201183432
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.6,0.7296801625204012,0.6804733727810651
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9723825361915418,0.9644970414201184
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.8,0.9201824377394024,0.8994082840236687
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9583476269266717,0.9467455621301775
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.4,0.8044624308294879,0.7633136094674556
+Intention vs. Accident,5,4.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9630427032529978,0.9526627218934911
+Intention vs. Accident,5,4.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9489071235084487,0.9349112426035503
+Intention vs. Accident,5,4.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9153361503243548,0.893491124260355
+Intention vs. Accident,5,4.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9630427032529969,0.9526627218934911
+Intention vs. Accident,5,4.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9298245643790436,0.9112426035502958
+Intention vs. Accident,5,4.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9346204100350397,0.9171597633136095
+Intention vs. Accident,5,5.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999792739047,1
+Intention vs. Accident,5,5.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9635926180939944,0.9585798816568047
+Intention vs. Accident,5,5.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9740572600108466,0.9704142011834319
+Intention vs. Accident,5,5.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9948366583065149,0.9940828402366864
+Intention vs. Accident,5,5.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9948366583065138,0.9940828402366864
+Intention vs. Accident,5,5.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9948366583065144,0.9940828402366864
+Intention vs. Accident,5,5.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9948366583065144,0.9940828402366864
+Intention vs. Accident,5,5.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9948366583065144,0.9940828402366864
+Intention vs. Accident,5,5.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9792709184547135,0.9763313609467456
+Intention vs. Accident,5,5.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.8333333333333334,0.8997810789556934,0.8875739644970414
+Intention vs. Accident,5,5.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8617722414128657,0.8461538461538461
+Intention vs. Accident,5,5.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9740572600108541,0.9704142011834319
+Intention vs. Accident,5,5.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.6638453925097643,0.6390532544378699
+Intention vs. Accident,5,5.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.8333333333333334,0.795335673129769,0.7751479289940828
+Intention vs. Accident,5,5.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.29481929827888387,0.2781065088757396
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9530785412257856,0.9467455621301775
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.521609537949037,0.4970414201183432
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.8333333333333334,0.7044065049585643,0.6804733727810651
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.968831143425122,0.9644970414201184
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.8333333333333334,0.910536100297168,0.8994082840236687
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.953078541225779,0.9467455621301775
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7841119303179005,0.7633136094674556
+Intention vs. Accident,5,5.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9583417339028287,0.9526627218934911
+Intention vs. Accident,5,5.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9425154343528936,0.9349112426035503
+Intention vs. Accident,5,5.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9051644785911662,0.893491124260355
+Intention vs. Accident,5,5.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.8333333333333334,0.9583417339028277,0.9526627218934911
+Intention vs. Accident,5,5.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.8333333333333334,0.9212437894320525,0.9112426035502958
+Intention vs. Accident,5,5.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.8333333333333334,0.926579747829161,0.9171597633136095
+Intention vs. Accident,5,6.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999765229445,1
+Intention vs. Accident,5,6.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9589586169492171,0.9585798816568047
+Intention vs. Accident,5,6.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9707147379090528,0.9704142011834319
+Intention vs. Accident,5,6.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9941553370544306,0.9940828402366864
+Intention vs. Accident,5,6.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9941553370544294,0.9940828402366864
+Intention vs. Accident,5,6.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9941553370544299,0.9940828402366864
+Intention vs. Accident,5,6.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.99415533705443,0.9940828402366864
+Intention vs. Accident,5,6.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.99415533705443,0.9940828402366864
+Intention vs. Accident,5,6.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),0.5,0.9765839876617166,0.9763313609467456
+Intention vs. Accident,5,6.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.887969321897721,0.8875739644970414
+Intention vs. Accident,5,6.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8462462674578601,0.8461538461538461
+Intention vs. Accident,5,6.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),0.5,0.9707147379090613,0.9704142011834319
+Intention vs. Accident,5,6.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.6354913158153751,0.6390532544378699
+Intention vs. Accident,5,6.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7743018003984444,0.7751479289940828
+Intention vs. Accident,5,6.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.26958650188085864,0.2781065088757396
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9471796459797442,0.9467455621301775
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.4904666545426395,0.4970414201183432
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.5,0.6778132352234119,0.6804733727810651
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9648395821209618,0.9644970414201184
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8998508383830518,0.8994082840236687
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.5,0.9471796459797368,0.9467455621301775
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.762269350939638,0.7633136094674556
+Intention vs. Accident,5,6.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9530719392300937,0.9526627218934911
+Intention vs. Accident,5,6.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9353786018205542,0.9349112426035503
+Intention vs. Accident,5,6.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.5,0.893912398402831,0.893491124260355
+Intention vs. Accident,5,6.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.5,0.9530719392300926,0.9526627218934911
+Intention vs. Accident,5,6.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.5,0.911713414691803,0.9112426035502958
+Intention vs. Accident,5,6.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9176373543163437,0.9171597633136095
+Intention vs. Accident,5,7.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999734068513,1
+Intention vs. Accident,5,7.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9537630933484385,0.9585798816568047
+Intention vs. Accident,5,7.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9669561672071924,0.9704142011834319
+Intention vs. Accident,5,7.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9933847108657928,0.9940828402366864
+Intention vs. Accident,5,7.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9933847108657914,0.9940828402366864
+Intention vs. Accident,5,7.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.993384710865792,0.9940828402366864
+Intention vs. Accident,5,7.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9933847108657922,0.9940828402366864
+Intention vs. Accident,5,7.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9933847108657922,0.9940828402366864
+Intention vs. Accident,5,7.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9735581775587658,0.9763313609467456
+Intention vs. Accident,5,7.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8749588982537978,0.8875739644970414
+Intention vs. Accident,5,7.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8293217786762926,0.8461538461538461
+Intention vs. Accident,5,7.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9669561672072019,0.9704142011834319
+Intention vs. Accident,5,7.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.6061644814773783,0.6390532544378699
+Intention vs. Accident,5,7.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7517808771500367,0.7751479289940828
+Intention vs. Accident,5,7.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.24576067394842557,0.2781065088757396
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9405853816201684,0.9467455621301775
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.4593975921824641,0.4970414201183432
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.5,0.650016186479109,0.6804733727810651
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9603577673604302,0.9644970414201184
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8880462801546546,0.8994082840236687
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9405853816201599,0.9467455621301775
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7389525716261074,0.7633136094674556
+Intention vs. Accident,5,7.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9471722599963689,0.9526627218934911
+Intention vs. Accident,5,7.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9274239444861112,0.9349112426035503
+Intention vs. Accident,5,7.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8815000546121287,0.893491124260355
+Intention vs. Accident,5,7.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9471722599963677,0.9526627218934911
+Intention vs. Accident,5,7.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.90115350228022,0.9112426035502958
+Intention vs. Accident,5,7.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9077142792342137,0.9171597633136095
+Irony,11,7,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.999999974016196,1
+Irony,11,7,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9549031004948683,0.9585798816568047
+Irony,11,7,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9677949375574154,0.9704142011834319
+Irony,11,7,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9935625312308641,0.9940828402366864
+Irony,11,7,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9935625312308639,0.9940828402366864
+Irony,11,7,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9935625312308642,0.9940828402366864
+Irony,11,7,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9935625312308651,0.9940828402366864
+Irony,11,7,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9935625312308647,0.9940828402366864
+Irony,11,7,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.967794937557414,0.9704142011834319
+Irony,11,7,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8710874419375367,0.8816568047337278
+Irony,11,7,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.6666666666666666,0.8388949215844598,0.8520710059171598
+Irony,11,7,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.961349535727678,0.9644970414201184
+Irony,11,7,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.5850639282315762,0.6153846153846154
+Irony,11,7,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.74912610925765,0.7692307692307693
+Irony,11,7,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.3333333333333333,0.23595584816121423,0.26627218934911245
+Irony,11,7,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9484558145368832,0.9526627218934911
+Irony,11,7,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.3333333333333333,0.4444132097485996,0.47928994082840237
+Irony,11,7,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.6476408101433379,0.6745562130177515
+Irony,11,7,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.961349535727658,0.9644970414201184
+Irony,11,7,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8839757921648355,0.893491124260355
+Irony,11,7,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9355594173216717,0.9408284023668639
+Irony,11,7,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.6666666666666666,0.749126109257716,0.7692307692307693
+Irony,11,7,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9484558145368713,0.9526627218934911
+Irony,11,7,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9291106675486002,0.9349112426035503
+Irony,11,7,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.6666666666666666,0.8839757921648246,0.893491124260355
+Irony,11,7,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9355594173216665,0.9408284023668639
+Irony,11,7,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8904217121798924,0.8994082840236687
+Irony,11,7,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9097643656612341,0.9171597633136095
+Irony,11,8,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999698792537,1
+Irony,11,8,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9480957885170833,0.9585798816568047
+Irony,11,8,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.962857937713426,0.9704142011834319
+Irony,11,8,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9925452472584373,0.9940828402366864
+Irony,11,8,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9925452472584371,0.9940828402366864
+Irony,11,8,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9925452472584375,0.9940828402366864
+Irony,11,8,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9925452472584385,0.9940828402366864
+Irony,11,8,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.992545247258438,0.9940828402366864
+Irony,11,8,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9628579377134243,0.9704142011834319
+Irony,11,8,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8535684017512882,0.8816568047337278
+Irony,11,8,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8179154570600945,0.8520710059171598
+Irony,11,8,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9554699261327502,0.9644970414201184
+Irony,11,8,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.875,0.5488080509781547,0.6153846153846154
+Irony,11,8,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.875,0.7203535865839563,0.7692307692307693
+Irony,11,8,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.21036583983034,0.26627218934911245
+Irony,11,8,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),0.875,0.9407356944347529,0.9526627218934911
+Irony,11,8,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.625,0.4082967947393007,0.47928994082840237
+Irony,11,8,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.625,0.6132381878528713,0.6745562130177515
+Irony,11,8,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9554699261327273,0.9644970414201184
+Irony,11,8,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.875,0.8679427315162093,0.893491124260355
+Irony,11,8,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9260583030472689,0.9408284023668639
+Irony,11,8,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.75,0.7203535865840272,0.7692307692307693
+Irony,11,8,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9407356944347395,0.9526627218934911
+Irony,11,8,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9187413328032171,0.9349112426035503
+Irony,11,8,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8679427315161973,0.893491124260355
+Irony,11,8,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.926058303047263,0.9408284023668639
+Irony,11,8,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8751535929316503,0.8994082840236687
+Irony,11,8,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.8968792358522449,0.9171597633136095
+Irony,11,9,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.999999965083659,1
+Irony,11,9,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9403251376468204,0.9585798816568047
+Irony,11,9,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9571975737679529,0.9704142011834319
+Irony,11,9,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.991368603062607,0.9940828402366864
+Irony,11,9,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9913686030626067,0.9940828402366864
+Irony,11,9,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9913686030626072,0.9940828402366864
+Irony,11,9,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9913686030626083,0.9940828402366864
+Irony,11,9,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9913686030626078,0.9940828402366864
+Irony,11,9,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.957197573767951,0.9704142011834319
+Irony,11,9,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8341219178427914,0.8816568047337278
+Irony,11,9,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.794872031036437,0.8520710059171598
+Irony,11,9,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9487435829751847,0.9644970414201184
+Irony,11,9,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.75,0.5120264609098858,0.6153846153846154
+Irony,11,9,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.6896482647058164,0.7692307692307693
+Irony,11,9,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.18687234066332056,0.26627218934911245
+Irony,11,9,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9319422513991624,0.9526627218934911
+Irony,11,9,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.37314420126443354,0.47928994082840237
+Irony,11,9,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.75,0.5776670362774448,0.6745562130177515
+Irony,11,9,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9487435829751586,0.9644970414201184
+Irony,11,9,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8500698862936502,0.893491124260355
+Irony,11,9,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9152831944819823,0.9408284023668639
+Irony,11,9,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.75,0.6896482647058918,0.7692307692307693
+Irony,11,9,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.931942251399147,0.9526627218934911
+Irony,11,9,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.907007035071341,0.9349112426035503
+Irony,11,9,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8500698862936369,0.893491124260355
+Irony,11,9,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9152831944819755,0.9408284023668639
+Irony,11,9,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8580971193726319,0.8994082840236687
+Irony,11,9,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.75,0.8823920358710311,0.9171597633136095
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999850758811,1
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9774058380454146,0.9644970414201184
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),0.75,0.9887975570023294,0.9822485207100592
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9962867325269588,0.9940828402366864
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9962867325269588,0.9940828402366864
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9962867325269593,0.9940828402366864
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.996286732526959,0.9940828402366864
+Knowledge Access / Ignorance,2,3.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9962867325269588,0.9940828402366864
+Knowledge Access / Ignorance,2,3.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9812242593003085,0.9704142011834319
+Knowledge Access / Ignorance,2,3.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.925794246781514,0.8875739644970414
+Knowledge Access / Ignorance,2,3.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.9049418327311995,0.8579881656804734
+Knowledge Access / Ignorance,2,3.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9812242593003101,0.9704142011834319
+Knowledge Access / Ignorance,2,3.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.726802590761207,0.6331360946745562
+Knowledge Access / Ignorance,2,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.8434589911402247,0.7751479289940828
+Knowledge Access / Ignorance,2,3.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.25,0.3715940952131251,0.28402366863905326
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9697049951058689,0.9526627218934911
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.25,0.6005579082374384,0.4970414201183432
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.75,0.7722801778936469,0.6863905325443787
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9812242593003118,0.9704142011834319
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.9298968135609551,0.893491124260355
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9658223903427735,0.9467455621301775
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.857026519026257,0.7928994082840237
+Knowledge Access / Ignorance,2,3.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.969704995105868,0.9526627218934911
+Knowledge Access / Ignorance,2,3.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9619182075423615,0.9408284023668639
+Knowledge Access / Ignorance,2,3.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.9298968135609448,0.893491124260355
+Knowledge Access / Ignorance,2,3.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9658223903427767,0.9467455621301775
+Knowledge Access / Ignorance,2,3.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.5,0.9460838475487543,0.9171597633136095
+Knowledge Access / Ignorance,2,3.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.950075267374588,0.9230769230769231
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999827592078,1
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),0.9090909090909091,0.973989768227084,0.9644970414201184
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),0.9090909090909091,0.987081065450969,0.9822485207100592
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9957127926154821,0.9940828402366864
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.995712792615482,0.9940828402366864
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9957127926154827,0.9940828402366864
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9957127926154823,0.9940828402366864
+Knowledge Access / Ignorance,2,4.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.995712792615482,0.9940828402366864
+Knowledge Access / Ignorance,2,4.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9783727320568683,0.9704142011834319
+Knowledge Access / Ignorance,2,4.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.9090909090909091,0.9152514914177503,0.8875739644970414
+Knowledge Access / Ignorance,2,4.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.8181818181818182,0.8917827800653939,0.8579881656804734
+Knowledge Access / Ignorance,2,4.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),0.9090909090909091,0.97837273205687,0.9704142011834319
+Knowledge Access / Ignorance,2,4.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.7272727272727273,0.6972339599501794,0.6331360946745562
+Knowledge Access / Ignorance,2,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.8181818181818182,0.8234492678753192,0.7751479289940828
+Knowledge Access / Ignorance,2,4.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.2727272727272727,0.33856765059414445,0.28402366863905326
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),0.9090909090909091,0.9651661099185783,0.9526627218934911
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.36363636363636365,0.5654941814076276,0.4970414201183432
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.5454545454545454,0.7459129138556798,0.6863905325443787
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),0.9090909090909091,0.9783727320568719,0.9704142011834319
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.9090909090909091,0.9198864902239354,0.893491124260355
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.9090909090909091,0.960725362014366,0.9467455621301775
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.45454545454545453,0.8384188223977972,0.7928994082840237
+Knowledge Access / Ignorance,2,4.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9651661099185773,0.9526627218934911
+Knowledge Access / Ignorance,2,4.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.9090909090909091,0.9562652999665789,0.9408284023668639
+Knowledge Access / Ignorance,2,4.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.9090909090909091,0.9198864902239238,0.893491124260355
+Knowledge Access / Ignorance,2,4.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.9090909090909091,0.9607253620143696,0.9467455621301775
+Knowledge Access / Ignorance,2,4.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.9090909090909091,0.9382314014670521,0.9171597633136095
+Knowledge Access / Ignorance,2,4.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.8181818181818182,0.9427689735185912,0.9230769230769231
+Sarcasm,9,7,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999743077651,1
+Sarcasm,9,7,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9616050134995929,0.9644970414201184
+Sarcasm,9,7,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9680012259984093,0.9704142011834319
+Sarcasm,9,7,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9935982460367978,0.9940828402366864
+Sarcasm,9,7,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9935982460367991,0.9940828402366864
+Sarcasm,9,7,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.993598246036798,0.9940828402366864
+Sarcasm,9,7,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9935982460367978,0.9940828402366864
+Sarcasm,9,7,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9935982460367984,0.9940828402366864
+Sarcasm,9,7,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9680012259984138,0.9704142011834319
+Sarcasm,9,7,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8722565389905278,0.8816568047337278
+Sarcasm,9,7,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.8333333333333334,0.8531745038598247,0.863905325443787
+Sarcasm,9,7,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9616050134995878,0.9644970414201184
+Sarcasm,9,7,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.6209747993411328,0.6449704142011834
+Sarcasm,9,7,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.8333333333333334,0.7771593635663812,0.7928994082840237
+Sarcasm,9,7,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.16666666666666666,0.26465052601942135,0.28994082840236685
+Sarcasm,9,7,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9488169939508493,0.9526627218934911
+Sarcasm,9,7,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.3333333333333333,0.4628325495386064,0.4911242603550296
+Sarcasm,9,7,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.8333333333333334,0.6519290916828379,0.6745562130177515
+Sarcasm,9,7,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9616050134995894,0.9644970414201184
+Sarcasm,9,7,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8913645573210005,0.8994082840236687
+Sarcasm,9,7,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.942425400562149,0.9467455621301775
+Sarcasm,9,7,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.7834723607849503,0.7988165680473372
+Sarcasm,9,7,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9552102337940968,0.9585798816568047
+Sarcasm,9,7,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.929647577116874,0.9349112426035503
+Sarcasm,9,7,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.8333333333333334,0.8913645573209672,0.8994082840236687
+Sarcasm,9,7,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.936035559740732,0.9408284023668639
+Sarcasm,9,7,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8913645573210067,0.8994082840236687
+Sarcasm,9,7,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9041163241584815,0.9112426035502958
+Sarcasm,9,8,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999710482544,1
+Sarcasm,9,8,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9569436666787361,0.9644970414201184
+Sarcasm,9,8,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9640874111499922,0.9704142011834319
+Sarcasm,9,8,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.992791925463836,0.9940828402366864
+Sarcasm,9,8,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9927919254638374,0.9940828402366864
+Sarcasm,9,8,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9927919254638362,0.9940828402366864
+Sarcasm,9,8,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.992791925463836,0.9940828402366864
+Sarcasm,9,8,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9927919254638367,0.9940828402366864
+Sarcasm,9,8,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9640874111499971,0.9704142011834319
+Sarcasm,9,8,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8583457593882207,0.8816568047337278
+Sarcasm,9,8,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.837572710504956,0.863905325443787
+Sarcasm,9,8,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9569436666787304,0.9644970414201184
+Sarcasm,9,8,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.5924845880818383,0.6449704142011834
+Sarcasm,9,8,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7557921786316572,0.7928994082840237
+Sarcasm,9,8,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.24206756365720078,0.28994082840236685
+Sarcasm,9,8,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9426956355073765,0.9526627218934911
+Sarcasm,9,8,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.433303312666661,0.4911242603550296
+Sarcasm,9,8,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.5,0.6243581233996393,0.6745562130177515
+Sarcasm,9,8,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9569436666787322,0.9644970414201184
+Sarcasm,9,8,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8792465079925397,0.8994082840236687
+Sarcasm,9,8,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9355915146389517,0.9467455621301775
+Sarcasm,9,8,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0,0.7625255332502564,0.7988165680473372
+Sarcasm,9,8,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9498130469647161,0.9585798816568047
+Sarcasm,9,8,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9214234681949036,0.9349112426035503
+Sarcasm,9,8,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8792465079925029,0.8994082840236687
+Sarcasm,9,8,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9285007655299898,0.9408284023668639
+Sarcasm,9,8,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8792465079925466,0.8994082840236687
+Sarcasm,9,8,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.8932503567322153,0.9112426035502958
+Sarcasm,9,9,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999673752178,1
+Sarcasm,9,9,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9517448071404081,0.9644970414201184
+Sarcasm,9,9,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9597148142994795,0.9704142011834319
+Sarcasm,9,9,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9918848758086407,0.9940828402366864
+Sarcasm,9,9,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9918848758086423,0.9940828402366864
+Sarcasm,9,9,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9918848758086409,0.9940828402366864
+Sarcasm,9,9,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9918848758086407,0.9940828402366864
+Sarcasm,9,9,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9918848758086414,0.9940828402366864
+Sarcasm,9,9,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9597148142994849,0.9704142011834319
+Sarcasm,9,9,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8431924731533974,0.8816568047337278
+Sarcasm,9,9,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.6,0.8206615424756452,0.863905325443787
+Sarcasm,9,9,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9517448071404019,0.9644970414201184
+Sarcasm,9,9,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.8,0.5633586749572128,0.6449704142011834
+Sarcasm,9,9,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.6,0.7330798645336954,0.7928994082840237
+Sarcasm,9,9,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.4,0.2208329263992302,0.28994082840236685
+Sarcasm,9,9,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),0.8,0.9358916434882254,0.9526627218934911
+Sarcasm,9,9,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.6,0.40424028902649267,0.4911242603550296
+Sarcasm,9,9,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.6,0.5959567544686029,0.6745562130177515
+Sarcasm,9,9,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9517448071404037,0.9644970414201184
+Sarcasm,9,9,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.6,0.8659799559772224,0.8994082840236687
+Sarcasm,9,9,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.8,0.928008436412292,0.9467455621301775
+Sarcasm,9,9,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.4,0.7402242050617294,0.7988165680473372
+Sarcasm,9,9,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),0.8,0.9438037584254253,0.9585798816568047
+Sarcasm,9,9,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9123286360473316,0.9349112426035503
+Sarcasm,9,9,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8659799559771825,0.8994082840236687
+Sarcasm,9,9,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9201541100509698,0.9408284023668639
+Sarcasm,9,9,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8659799559772299,0.8994082840236687
+Sarcasm,9,9,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.8813146552089688,0.9112426035502958
+Sarcasm,9,10,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.999999963236192,1
+Sarcasm,9,10,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),0.5,0.9459536620743421,0.9644970414201184
+Sarcasm,9,10,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9548347660166353,0.9704142011834319
+Sarcasm,9,10,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9908647351241114,0.9940828402366864
+Sarcasm,9,10,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9908647351241132,0.9940828402366864
+Sarcasm,9,10,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9908647351241117,0.9940828402366864
+Sarcasm,9,10,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9908647351241114,0.9940828402366864
+Sarcasm,9,10,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9908647351241123,0.9940828402366864
+Sarcasm,9,10,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9548347660166415,0.9704142011834319
+Sarcasm,9,10,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8267453779513732,0.8816568047337278
+Sarcasm,9,10,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.802405039051387,0.863905325443787
+Sarcasm,9,10,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9459536620743351,0.9644970414201184
+Sarcasm,9,10,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0,0.5337891012215475,0.6449704142011834
+Sarcasm,9,10,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0,0.7090683281542496,0.7928994082840237
+Sarcasm,9,10,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.20096712303254569,0.28994082840236685
+Sarcasm,9,10,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9283411942669461,0.9526627218934911
+Sarcasm,9,10,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.3758338041712319,0.4911242603550296
+Sarcasm,9,10,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.5668975986439958,0.6745562130177515
+Sarcasm,9,10,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9459536620743372,0.9644970414201184
+Sarcasm,9,10,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8515020425362284,0.8994082840236687
+Sarcasm,9,10,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9196092836824658,0.9467455621301775
+Sarcasm,9,10,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.7166069076791759,0.7988165680473372
+Sarcasm,9,10,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9371225627614456,0.9585798816568047
+Sarcasm,9,10,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9022927492009789,0.9349112426035503
+Sarcasm,9,10,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.5,0.8515020425361848,0.8994082840236687
+Sarcasm,9,10,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9109265590152991,0.9408284023668639
+Sarcasm,9,10,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8515020425362365,0.8994082840236687
+Sarcasm,9,10,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.8682412703378668,0.9112426035502958
+Second-Order False Belief,7,6.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999912296691,1
+Second-Order False Belief,7,6.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9642922193698318,0.9644970414201184
+Second-Order False Belief,7,6.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9762139728634652,0.9763313609467456
+Second-Order False Belief,7,6.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9999999912296691,1
+Second-Order False Belief,7,6.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9940609261090607,0.9940828402366864
+Second-Order False Belief,7,6.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9940609261090608,0.9940828402366864
+Second-Order False Belief,7,6.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9940609261090603,0.9940828402366864
+Second-Order False Belief,7,6.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9940609261090606,0.9940828402366864
+Second-Order False Belief,7,6.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9702554084184161,0.9704142011834319
+Second-Order False Belief,7,6.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.6666666666666666,0.8924094278953549,0.893491124260355
+Second-Order False Belief,7,6.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8502452512556402,0.8520710059171598
+Second-Order False Belief,7,6.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),0.8333333333333334,0.9702554084184174,0.9704142011834319
+Second-Order False Belief,7,6.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.3333333333333333,0.6563629825822839,0.6627218934911243
+Second-Order False Belief,7,6.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.8333333333333334,0.7655635152254292,0.7692307692307693
+Second-Order False Belief,7,6.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.28470590034036763,0.2958579881656805
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9463758981826559,0.9467455621301775
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.8333333333333334,0.4389665781372584,0.44970414201183434
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.16666666666666666,0.7109785521357735,0.7159763313609467
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9702554084184216,0.9704142011834319
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.6666666666666666,0.9044278493547246,0.9053254437869822
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.8333333333333334,0.9523523648462688,0.9526627218934911
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7473762857282046,0.7514792899408284
+Second-Order False Belief,7,6.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9523523648462658,0.9526627218934911
+Second-Order False Belief,7,6.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9463758981826442,0.9467455621301775
+Second-Order False Belief,7,6.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.8333333333333334,0.8984203538941335,0.8994082840236687
+Second-Order False Belief,7,6.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9403952045270051,0.9408284023668639
+Second-Order False Belief,7,6.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.8333333333333334,0.9104318147025615,0.9112426035502958
+Second-Order False Belief,7,6.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.8333333333333334,0.9224287567368098,0.9230769230769231
+Second-Order False Belief,7,7,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999906911257,1
+Second-Order False Belief,7,7,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9621824983215326,0.9644970414201184
+Second-Order False Belief,7,7,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9747902095656117,0.9763313609467456
+Second-Order False Belief,7,7,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9999999906911257,1
+Second-Order False Belief,7,7,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936985345255915,0.9940828402366864
+Second-Order False Belief,7,7,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936985345255918,0.9940828402366864
+Second-Order False Belief,7,7,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936985345255911,0.9940828402366864
+Second-Order False Belief,7,7,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936985345255914,0.9940828402366864
+Second-Order False Belief,7,7,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9684864961077299,0.9704142011834319
+Second-Order False Belief,7,7,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8865523188228618,0.893491124260355
+Second-Order False Belief,7,7,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.8333333333333334,0.8424978839538622,0.8520710059171598
+Second-Order False Belief,7,7,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9684864961077313,0.9704142011834319
+Second-Order False Belief,7,7,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.6427992252788317,0.6627218934911243
+Second-Order False Belief,7,7,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7546991640668432,0.7692307692307693
+Second-Order False Belief,7,7,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.16666666666666666,0.2727269854452059,0.2958579881656805
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9432699033172312,0.9467455621301775
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.8333333333333334,0.42434765882701175,0.44970414201183434
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.16666666666666666,0.698580561781227,0.7159763313609467
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),0.8333333333333334,0.9684864961077357,0.9704142011834319
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.8333333333333334,0.8991510722426321,0.9053254437869822
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.8333333333333334,0.9495740917580959,0.9526627218934911
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7359597871723166,0.7514792899408284
+Second-Order False Belief,7,7,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9495740917580928,0.9526627218934911
+Second-Order False Belief,7,7,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.8333333333333334,0.9432699033172188,0.9467455621301775
+Second-Order False Belief,7,7,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.892851183588413,0.8994082840236687
+Second-Order False Belief,7,7,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9369658712091392,0.9408284023668639
+Second-Order False Belief,7,7,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9054518774170319,0.9112426035502958
+Second-Order False Belief,7,7,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9180558062655435,0.9230769230769231
+Second-Order False Belief,7,7.5,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.999999990119513,1
+Second-Order False Belief,7,7.5,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9599533053355918,0.9644970414201184
+Second-Order False Belief,7,7.5,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9732835561997268,0.9763313609467456
+Second-Order False Belief,7,7.5,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9999999901195129,1
+Second-Order False Belief,7,7.5,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9933141791842868,0.9940828402366864
+Second-Order False Belief,7,7.5,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.993314179184287,0.9940828402366864
+Second-Order False Belief,7,7.5,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9933141791842863,0.9940828402366864
+Second-Order False Belief,7,7.5,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9933141791842867,0.9940828402366864
+Second-Order False Belief,7,7.5,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9666160060643959,0.9704142011834319
+Second-Order False Belief,7,7.5,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8804190811502572,0.893491124260355
+Second-Order False Belief,7,7.5,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.834427766327438,0.8520710059171598
+Second-Order False Belief,7,7.5,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9666160060643973,0.9704142011834319
+Second-Order False Belief,7,7.5,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0,0.6290027029371167,0.6627218934911243
+Second-Order False Belief,7,7.5,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7435000223886249,0.7692307692307693
+Second-Order False Belief,7,7.5,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.26106812643174804,0.2958579881656805
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9399954109545607,0.9467455621301775
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),1,0.40985992506895974,0.44970414201183434
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0,0.6858857071051605,0.7159763313609467
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9666160060644021,0.9704142011834319
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.893617220255409,0.9053254437869822
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9466428972746141,0.9526627218934911
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),1,0.7242177363570699,0.7514792899408284
+Second-Order False Belief,7,7.5,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9466428972746108,0.9526627218934911
+Second-Order False Belief,7,7.5,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.939995410954548,0.9467455621301775
+Second-Order False Belief,7,7.5,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8870150784746722,0.8994082840236687
+Second-Order False Belief,7,7.5,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9333532160571757,0.9408284023668639
+Second-Order False Belief,7,7.5,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.900225402170617,0.9112426035502958
+Second-Order False Belief,7,7.5,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9134594657895091,0.9230769230769231
+Second-Order False Belief,7,8,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999895128003,1
+Second-Order False Belief,7,8,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),0.5,0.9575985008265699,0.9644970414201184
+Second-Order False Belief,7,8,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),0.5,0.9716894734144959,0.9763313609467456
+Second-Order False Belief,7,8,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),0.5,0.9999999895128002,1
+Second-Order False Belief,7,8,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9929065475947954,0.9940828402366864
+Second-Order False Belief,7,8,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9929065475947956,0.9940828402366864
+Second-Order False Belief,7,8,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9929065475947949,0.9940828402366864
+Second-Order False Belief,7,8,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9929065475947952,0.9940828402366864
+Second-Order False Belief,7,8,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9646385464182932,0.9704142011834319
+Second-Order False Belief,7,8,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8740013911546614,0.893491124260355
+Second-Order False Belief,7,8,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8260295354707853,0.8520710059171598
+Second-Order False Belief,7,8,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9646385464182946,0.9704142011834319
+Second-Order False Belief,7,8,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0,0.6149924727590089,0.6627218934911243
+Second-Order False Belief,7,8,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7319711712144378,0.7692307692307693
+Second-Order False Belief,7,8,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.5,0.2497365275311874,0.2958579881656805
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9365446278145422,0.9467455621301775
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),1,0.3955269637870068,0.44970414201183434
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),1,0.6729065297899659,0.7159763313609467
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9646385464182997,0.9704142011834319
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.8878175966695243,0.9053254437869822
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9435514449859959,0.9526627218934911
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.7121577378471521,0.7514792899408284
+Second-Order False Belief,7,8,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9435514449859924,0.9526627218934911
+Second-Order False Belief,7,8,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.5,0.9365446278145286,0.9467455621301775
+Second-Order False Belief,7,8,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.5,0.8809034978206247,0.8994082840236687
+Second-Order False Belief,7,8,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9295490782026897,0.9408284023668639
+Second-Order False Belief,7,8,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.5,0.8947436005927403,0.9112426035502958
+Second-Order False Belief,7,8,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.5,0.9086309702789491,0.9230769230769231
+White Lies / Prosocial Deception,8,6,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999774572713,1
+White Lies / Prosocial Deception,8,6,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9661708934458604,0.9644970414201184
+White Lies / Prosocial Deception,8,6,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9718296047556281,0.9704142011834319
+White Lies / Prosocial Deception,8,6,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9943826208671558,0.9940828402366864
+White Lies / Prosocial Deception,8,6,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.994382620867156,0.9940828402366864
+White Lies / Prosocial Deception,8,6,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9943826208671561,0.9940828402366864
+White Lies / Prosocial Deception,8,6,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9943826208671551,0.9940828402366864
+White Lies / Prosocial Deception,8,6,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9943826208671555,0.9940828402366864
+White Lies / Prosocial Deception,8,6,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9774802169101486,0.9763313609467456
+White Lies / Prosocial Deception,8,6,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8919091826862728,0.8875739644970414
+White Lies / Prosocial Deception,8,6,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8572296503741883,0.8520710059171598
+White Lies / Prosocial Deception,8,6,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.971829604755629,0.9704142011834319
+White Lies / Prosocial Deception,8,6,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.6,0.6450009572706649,0.6390532544378699
+White Lies / Prosocial Deception,8,6,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.6,0.7989295149673779,0.7928994082840237
+White Lies / Prosocial Deception,8,6,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.2,0.2902324156780604,0.28994082840236685
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.94914700671434,0.9467455621301775
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.6,0.48893537329076625,0.48520710059171596
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.8,0.6867193296738096,0.6804733727810651
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9661708934458642,0.9644970414201184
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.6,0.9091569366744154,0.9053254437869822
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),0.8,0.9491470067143196,0.9467455621301775
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.8,0.775450624691087,0.7692307692307693
+White Lies / Prosocial Deception,8,6,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),0.8,0.9605041670823126,0.9585798816568047
+White Lies / Prosocial Deception,8,6,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),0.8,0.9434567420152935,0.9408284023668639
+White Lies / Prosocial Deception,8,6,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.8,0.9034147325697826,0.8994082840236687
+White Lies / Prosocial Deception,8,6,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),0.8,0.9491470067143253,0.9467455621301775
+White Lies / Prosocial Deception,8,6,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.8,0.9148919783762115,0.9112426035502958
+White Lies / Prosocial Deception,8,6,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),0.8,0.92061977151918994,0.9171597633136095
+White Lies / Prosocial Deception,8,7,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999745597495,1
+White Lies / Prosocial Deception,8,7,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9619879654107696,0.9644970414201184
+White Lies / Prosocial Deception,8,7,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.96832342961279,0.9704142011834319
+White Lies / Prosocial Deception,8,7,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936651669215033,0.9940828402366864
+White Lies / Prosocial Deception,8,7,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936651669215036,0.9940828402366864
+White Lies / Prosocial Deception,8,7,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9936651669215038,0.9940828402366864
+White Lies / Prosocial Deception,8,7,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9936651669215026,0.9940828402366864
+White Lies / Prosocial Deception,8,7,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.993665166921503,0.9940828402366864
+White Lies / Prosocial Deception,8,7,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9746589958021618,0.9763313609467456
+White Lies / Prosocial Deception,8,7,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8796873211511737,0.8875739644970414
+White Lies / Prosocial Deception,8,7,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8417821588432085,0.8520710059171598
+White Lies / Prosocial Deception,8,7,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.968323429612791,0.9704142011834319
+White Lies / Prosocial Deception,8,7,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),1,0.6168541029346923,0.6390532544378699
+White Lies / Prosocial Deception,8,7,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),1,0.7788017537208051,0.7928994082840237
+White Lies / Prosocial Deception,8,7,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.2659682080269104,0.28994082840236685
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9429833171592958,0.9467455621301775
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0,0.4587972077286913,0.48520710059171596
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0,0.6601373023917669,0.6804733727810651
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9619879654107738,0.9644970414201184
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.898663706506937,0.9053254437869822
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.942983317159273,0.9467455621301775
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.7536971347483161,0.7692307692307693
+White Lies / Prosocial Deception,8,7,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9556527166158783,0.9585798816568047
+White Lies / Prosocial Deception,8,7,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9366493915541438,0.9408284023668639
+White Lies / Prosocial Deception,8,7,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8923367697937767,0.8994082840236687
+White Lies / Prosocial Deception,8,7,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9429833171592793,0.9467455621301775
+White Lies / Prosocial Deception,8,7,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.9049919725973079,0.9112426035502958
+White Lies / Prosocial Deception,8,7,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.911321458397981,0.9171597633136095
+White Lies / Prosocial Deception,8,8,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999712897959,1
+White Lies / Prosocial Deception,8,8,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),0.8333333333333334,0.957310675990835,0.9644970414201184
+White Lies / Prosocial Deception,8,8,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.964396852194988,0.9704142011834319
+White Lies / Prosocial Deception,8,8,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9928567377262381,0.9940828402366864
+White Lies / Prosocial Deception,8,8,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9928567377262384,0.9940828402366864
+White Lies / Prosocial Deception,8,8,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9928567377262386,0.9940828402366864
+White Lies / Prosocial Deception,8,8,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9928567377262373,0.9940828402366864
+White Lies / Prosocial Deception,8,8,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9928567377262376,0.9940828402366864
+White Lies / Prosocial Deception,8,8,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),1,0.9714946462048624,0.9763313609467456
+White Lies / Prosocial Deception,8,8,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),1,0.8662907000361457,0.8875739644970414
+White Lies / Prosocial Deception,8,8,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),1,0.8250044758260713,0.8520710059171598
+White Lies / Prosocial Deception,8,8,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),1,0.9643968521949892,0.9704142011834319
+White Lies / Prosocial Deception,8,8,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.5879014136481112,0.6390532544378699
+White Lies / Prosocial Deception,8,8,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.6666666666666666,0.7572712893450599,0.7928994082840237
+White Lies / Prosocial Deception,8,8,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0.3333333333333333,0.24303793804943113,0.28994082840236685
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9361228291540143,0.9467455621301775
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.42895750288980067,0.48520710059171596
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.8333333333333334,0.6325067912532529,0.6804733727810651
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.9573106759908396,0.9644970414201184
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),0.8333333333333334,0.8871089131243345,0.9053254437869822
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.936122829153989,0.9467455621301775
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.8333333333333334,0.730568467222503,0.7692307692307693
+White Lies / Prosocial Deception,8,8,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9502362156454143,0.9585798816568047
+White Lies / Prosocial Deception,8,8,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9290840935313359,0.9408284023668639
+White Lies / Prosocial Deception,8,8,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),1,0.8801567593628051,0.8994082840236687
+White Lies / Prosocial Deception,8,8,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.936122829153996,0.9467455621301775
+White Lies / Prosocial Deception,8,8,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),1,0.8940737021411707,0.9112426035502958
+White Lies / Prosocial Deception,8,8,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.9010510394393907,0.9171597633136095
+White Lies / Prosocial Deception,8,9,anthropic/claude-fable-5,Claude,Claude Fable,1,saturated (≥0.95),1,0.9999999675995399,1
+White Lies / Prosocial Deception,8,9,anthropic/claude-haiku-4-5-20251001,Claude,Claude Haiku,0.9619565217391305,saturated (≥0.95),1,0.9520865225883938,0.9644970414201184
+White Lies / Prosocial Deception,8,9,anthropic/claude-opus-4-5-20251101,Claude,Claude Opus,0.9728260869565217,saturated (≥0.95),1,0.9600036468233549,0.9704142011834319
+White Lies / Prosocial Deception,8,9,anthropic/claude-opus-4-6,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9919459758525855,0.9940828402366864
+White Lies / Prosocial Deception,8,9,anthropic/claude-opus-4-7,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.9919459758525858,0.9940828402366864
+White Lies / Prosocial Deception,8,9,anthropic/claude-opus-4-8,Claude,Claude Opus,0.9945652173913043,saturated (≥0.95),1,0.991945975852586,0.9940828402366864
+White Lies / Prosocial Deception,8,9,anthropic/claude-sonnet-4-5-20250929,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.9919459758525846,0.9940828402366864
+White Lies / Prosocial Deception,8,9,anthropic/claude-sonnet-5,Claude,Claude Sonnet,0.9945652173913043,saturated (≥0.95),1,0.991945975852585,0.9940828402366864
+White Lies / Prosocial Deception,8,9,openai-api/local/meta-llama/llama-3-70b-instruct,Llama,Llama large,0.9728260869565217,saturated (≥0.95),0.5,0.9679481560518559,0.9763313609467456
+White Lies / Prosocial Deception,8,9,openai-api/local/meta-llama/llama-3-8b-instruct,Llama,Llama small,0.8913043478260869,discriminating (<0.95),0.5,0.8516539384072768,0.8875739644970414
+White Lies / Prosocial Deception,8,9,openai-api/local/meta-llama/llama-3.1-8b-instruct,Llama,Llama small,0.8586956521739131,discriminating (<0.95),0.5,0.8068558756580719,0.8520710059171598
+White Lies / Prosocial Deception,8,9,openai-api/local/meta-llama/llama-3.3-70b-instruct,Llama,Llama large,0.967391304347826,saturated (≥0.95),0.5,0.960003646823356,0.9704142011834319
+White Lies / Prosocial Deception,8,9,openai-api/local/mistralai/mistral-7b-instruct,Mistral,Mistral small,0.6358695652173914,discriminating (<0.95),0.5,0.558327398505981,0.6390532544378699
+White Lies / Prosocial Deception,8,9,openai-api/local/mistralai/mistral-7b-instruct-v0.2,Mistral,Mistral small,0.782608695652174,discriminating (<0.95),0.5,0.7343599561055827,0.7928994082840237
+White Lies / Prosocial Deception,8,9,openai-api/local/mistralai/mistral-7b-instruct-v0.3,Mistral,Mistral small,0.2826086956521739,discriminating (<0.95),0,0.22148806714639893,0.28994082840236685
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen-1.5-72b-chat,Qwen,Qwen large,0.9510869565217391,saturated (≥0.95),1,0.9284994494912726,0.9467455621301775
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen1.5-14b-chat,Qwen,Qwen mid,0.483695652173913,discriminating (<0.95),0.5,0.39962549187238167,0.48520710059171596
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen1.5-7b-chat,Qwen,Qwen small,0.6793478260869565,discriminating (<0.95),0.5,0.6039775425884901,0.6804733727810651
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen2-72b-instruct,Qwen,Qwen large,0.967391304347826,saturated (≥0.95),1,0.952086522588399,0.9644970414201184
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen2-7b-instruct,Qwen,Qwen small,0.8967391304347826,discriminating (<0.95),1,0.874420704454409,0.9053254437869822
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen2.5-72b-instruct,Qwen,Qwen large,0.9456521739130435,discriminating (<0.95),1,0.9284994494912445,0.9467455621301775
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen2.5-7b-instruct,Qwen,Qwen small,0.7663043478260869,discriminating (<0.95),0.5,0.7061148019508333,0.7692307692307693
+White Lies / Prosocial Deception,8,9,openai-api/local/qwen/qwen3-8b,Qwen,Qwen small,0.9565217391304348,saturated (≥0.95),1,0.9441967830060395,0.9585798816568047
+White Lies / Prosocial Deception,8,9,openai/gpt-4o-2024-08-06,GPT,GPT standard,0.9402173913043478,discriminating (<0.95),1,0.9206918479851797,0.9408284023668639
+White Lies / Prosocial Deception,8,9,openai/gpt-4o-mini,GPT,GPT mini,0.8967391304347826,discriminating (<0.95),0.5,0.8668044949279033,0.8994082840236687
+White Lies / Prosocial Deception,8,9,openai/o1,GPT,GPT reasoning,0.9456521739130435,discriminating (<0.95),1,0.9284994494912523,0.9467455621301775
+White Lies / Prosocial Deception,8,9,openai/o3-mini,GPT,GPT reasoning mini,0.907608695652174,discriminating (<0.95),0.5,0.8820642215048013,0.9112426035502958
+White Lies / Prosocial Deception,8,9,openai/o4-mini,GPT,GPT reasoning mini,0.9184782608695652,discriminating (<0.95),1,0.8897350595663623,0.9171597633136095

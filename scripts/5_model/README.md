@@ -111,6 +111,56 @@ Each script writes to `results/modeling/<analysis>/`:
 - `wright_map.csv` — item difficulties + person theta coordinates
 - `irt_dif.csv` — DIF-by-family flags
 
+### guttman_sequence_analysis.R -> `results/modeling/guttman_sequence/<ts>/` (+ `latest/`)
+Analysis 1: does the developmental *sequence* of concept acquisition organize
+model performance? Runs on pooled (MCQ+FRQ), MCQ-only, and FRQ-only mastery
+matrices (pooled is primary; FRQ has the most headroom under the ceiling).
+- `scalability_coefficients.csv` — CR, MMR, %improvement, CS, Loevinger/Mokken H,
+  and CR under three rival column orders + Kendall tau (dev vs empirical order)
+- `permutation_results.csv` — CR and permutation p for the developmental and
+  construct-grouped orders vs a 10,000-draw random-order null
+- `permutation_null_draws.csv` — the null CR draws (for the histogram)
+- `mastery_matrix_long.csv` — tidy model x dimension mastery (+ per-row Guttman errors)
+- `item_difficulty_vs_age.csv` + `item_age_regression.csv` — item difficulty
+  (logit) vs validated developmental age; OLS + per-dimension mixed-model slope
+- `rasch_item_difficulty.csv` + `rasch_difficulty_vs_age.csv` — confirmatory
+  1PL difficulty per format (guarded; skipped if mirt unavailable)
+- `per_model_coherence.csv` + `coherence_regression.csv` — per-model CONTINUOUS
+  developmental coherence and its residualization. Coherence uses each dimension's
+  accuracy (not pass/fail): averaged over split points k, `mean(acc of dims ≤ k) −
+  mean(acc of dims > k)` (earlier − later; POSITIVE = better on the earlier/easier
+  dimensions = child-like). Because ceiling compression ties the raw measure to
+  overall accuracy (r ≈ −0.58), `coherence_resid` is the residual of `coherence ~
+  mean_acc` (a regression residual, not a normalization); the regression reports
+  both raw and residualized ~ date + log10(params) + family.
+- `coherence_by_split_point.csv` — DC(k) at every split point k (averages to the
+  per-model coherence); `per_dimension_accuracy.csv` — the accuracy gradient the
+  measure summarizes. Both feed `visualize_coherence_continuous.R`.
+
+### scale_validity_analysis.R -> `results/modeling/scale_validity/<ts>/` (+ `latest/`)
+Analysis 4: is the developmental-age scale a *useful* summary? Tests whether one
+developmental-age scalar predicts behavior and beats the alternatives.
+- `cv_logloss.csv` — held-out log-loss by prediction method, two CV schemes:
+  leave-one-dimension-out (predict an unseen concept) and 5-fold item hold-out
+  (parsimony: 1-param dev-age vs 12-param per-dimension vs overall-mean vs
+  date+size vs grand mean); LODO split by saturated vs discriminating models
+- `lodo_dimension_predictions.csv` — observed vs dev-age-predicted accuracy per
+  model x held-out dimension (drives the pred-vs-obs figure)
+- `format_transfer.csv` — MCQ↔FRQ transfer log-loss (in-sample vs transfer)
+- `theta_by_format.csv` — per-model ability (logit) + raw accuracy in each format
+  + headroom flag; `format_transfer_theta_cor.csv` — cross-format accuracy r
+- `pca_loadings.csv` + `pca_variance.csv` — PCA of the model x dimension accuracy
+  matrix with a parallel-analysis retention test (how many factors?)
+- `summary.csv` — headline numbers
+
+Findings (frozen panel): the 12-dimension profile is ~unidimensional (PC1 ≈ 80%,
+1 factor retained); a 1-parameter dev-age model beats the 12-parameter saturated
+model out-of-sample and ties the overall-mean; both beat date+size. Because the
+data is a strong Guttman scale (Analysis 1), dev-age ≈ overall competence for
+prediction — the scale's value is interpretability + parsimony + unidimensionality,
+not incremental prediction over raw competence. Format invariance is only moderate
+(MCQ vs FRQ accuracy r ≈ 0.5), consistent with the dual-elicitation design.
+
 ## Caveats (encoded in the scripts)
 
 - **Small n**: 38 models = 38 "persons" for IRT — Rasch is the primary model;

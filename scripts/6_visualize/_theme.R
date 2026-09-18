@@ -76,6 +76,11 @@ TYPE_ORDER <- c(
   "Mistral small", "Mistral MoE", "Mistral large"
 )
 
+# Sorted by the normative age midpoint in docs/dev_norms.md §1, so Irony
+# (6-8 yr, midpoint 7.0) precedes Faux Pas Detection (9-11 yr, midpoint 10.0).
+# Until 2026-09-18 these two were transposed here and in src/constructs.py.
+# Must stay in sync with src/constructs.py::DIMENSION_DEVELOPMENTAL_ORDER,
+# which is what `dim_rank` in results/item_level.csv is derived from.
 DIMENSION_DEVELOPMENTAL_ORDER <- c(
   "Diverse Desires",
   "Diverse Beliefs",
@@ -87,8 +92,8 @@ DIMENSION_DEVELOPMENTAL_ORDER <- c(
   "Second-Order False Belief",
   "White Lies / Prosocial Deception",
   "Sarcasm",
-  "Faux Pas Detection",
-  "Irony"
+  "Irony",
+  "Faux Pas Detection"
 )
 
 CONSTRUCT_DEVELOPMENTAL_ORDER <- c(
