@@ -1,5 +1,5 @@
 # DevToM-OpenRouter
-.PHONY: setup check smoke run run-mcq run-fr analyze visualize clean-logs extract profile-dataset profile-results glmm size-glmm irt guttman scale-validity viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size viz-guttman viz-coherence viz-scale-validity pipeline archive clean freeze app app-data app-deps
+.PHONY: setup check smoke run run-mcq run-fr analyze visualize clean-logs extract profile-dataset profile-results glmm size-glmm irt guttman scale-validity viz-descriptives viz-inference viz-mapping viz-accuracy viz-profiles viz-size viz-guttman viz-coherence viz-scale-validity pipeline archive clean freeze app app-data app-deps hf-space
 
 setup:        ## install deps into a venv
 	python3.10 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
@@ -98,6 +98,10 @@ app-data: extract ## rebuild the app's frozen data snapshot from results/
 app: ## serve the Streamlit app (builds the snapshot first if missing)
 	@test -f app/data/item_level.parquet || python app/prepare_data.py
 	streamlit run app/streamlit_app.py
+
+hf-space: ## build the deployable Hugging Face Space into build/hf-space
+	@test -f app/data/item_level.parquet || python app/prepare_data.py
+	python deploy/build_hf_space.py --git
 
 archive:      ## move old timestamped result folders to results/Archive/
 	@mkdir -p results/Archive

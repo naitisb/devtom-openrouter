@@ -15,6 +15,11 @@ venv/
 # Results
 results/*
 
+# Derived deploy artifacts. build/hf-space is generated from app/ by
+# deploy/build_hf_space.py and is its own git repo pushed to Hugging Face —
+# it must not be tracked here as well.
+build/
+
 # Inspect logs / outputs
 logs/
 !logs/.gitkeep

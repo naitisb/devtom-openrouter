@@ -145,6 +145,38 @@ instance.
 ## Deploying
 
 The snapshot is ~0.5 MB and self-contained, so `app/` plus `app/data/` is
-everything a deployment needs. On Streamlit Community Cloud, point it at
-`app/streamlit_app.py` with `app/requirements.txt`. No API keys, no secrets, no
-network access at runtime.
+everything a deployment needs. No API keys, no secrets, no network access at
+runtime.
+
+**Streamlit Community Cloud** — point it at `app/streamlit_app.py`. Community
+Cloud searches the entrypoint's directory before the repo root, so
+`app/requirements.txt` is picked up rather than the repo-root eval
+requirements (which do not contain Streamlit).
+
+**Hugging Face Spaces** — build a deployable Space with:
+
+```bash
+make hf-space
+```
+
+Note that Spaces has **no first-class Streamlit SDK**: the API accepts only
+`gradio`, `docker` or `static`, and rejects `sdk: streamlit` outright. Streamlit
+apps therefore ship as **Docker Spaces**, so the build emits a `Dockerfile` and
+declares `sdk: docker` / `app_port: 7860` in the Space README frontmatter.
+
+`deploy/build_hf_space.py` assembles `build/hf-space/` from `app/`: it flattens
+the layout to the Space root, pins Streamlit to the verified version, writes the
+Dockerfile and frontmatter, and **strips the `DEVTOM_REVEAL_ITEMS` escape
+hatch**, verifying afterwards that no code path can reveal the full item bank.
+Each transformation must match exactly once or the build aborts, so it fails
+loudly rather than shipping a half-patched Space.
+
+Check the container before publishing:
+
+```bash
+docker build -t devtom-space build/hf-space && docker run --rm -p 7860:7860 devtom-space
+```
+
+`build/` is gitignored here; the Space directory is its own git repo pushed to
+Hugging Face. Re-run `make hf-space` after `make app-data` to publish refreshed
+results — rebuilds are idempotent and preserve the Space's git history.
