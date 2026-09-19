@@ -132,7 +132,7 @@ with demo_out:
     elif prereq == "passes" and dependent == "fails":
         st.info(
             "**Consistent with the human route.** The prerequisite is in place "
-            "and the later skill is not yet — exactly the pattern a child in "
+            "and the later skill is not. This is exactly the pattern a child in "
             "the middle of the sequence produces.",
             icon=":material/schedule:",
         )
