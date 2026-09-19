@@ -21,15 +21,14 @@ st.title("Ordinal violations")
 U.header(
     kicker="The diagnostic",
     claim=(
-        "Does the developmental sequence actually organize these models — and "
-        "where does it fail? The answer differs sharply by elicitation format, "
-        "which is itself a result."
+        "Does the developmental sequence actually organize these models? "
+        "Where does it fail? The answer differs sharply by elicitation format."
     ),
     sub=(
-        "A perfect developmental scale produces a staircase: every model's "
+        "A perfect developmental scale produces a staircase, so every model's "
         "mastered skills form an unbroken run from the easiest. The "
         "coefficient of reproducibility measures how close the data comes, and "
-        "a permutation test asks whether the <em>human</em> ordering does "
+        "a permutation test asks whether the human ordering does "
         "better than an arbitrary one."
     ),
 )
@@ -75,9 +74,9 @@ with tab_scalogram:
 # --- Permutation null -------------------------------------------------------
 with tab_null:
     st.markdown(
-        "The staircase could look tidy for a boring reason: almost any "
+        "The staircase could look tidy because any random "
         "ordering of twelve columns produces a decent coefficient when most "
-        "models pass most items. The test is whether the *human developmental* "
+        "models pass most items. The test is whether the human developmental "
         "ordering does better than orderings drawn at random."
     )
 
@@ -160,15 +159,15 @@ with tab_null:
         )
 
         st.warning(
-            "**This is the most important qualification in the project.** The "
+            "This is the most important qualification in the project. The "
             "developmental ordering organizes multiple-choice responses "
-            "significantly better than chance (p = .008). It does **not** do so "
+            "significantly better than chance (p = .008). It does not do so "
             "for free-response answers (p = .12), where it performs slightly "
-            "*worse* than the average random ordering. Pooled, it lands at "
+            "worse than the average random ordering. Pooled, it lands at "
             "p = .056 — marginal. And a purely empirical ordering beats the "
             "developmental one on every dataset, so the human sequence is not "
-            "the best available description of these models, only a better-"
-            "than-chance one in the forced-choice format.",
+            "the best available description of these models, only a "
+            "better-than-chance one in the forced-choice format.",
             icon=":material/warning:",
         )
 
@@ -176,8 +175,7 @@ with tab_null:
 with tab_pairs:
     st.markdown(
         "The Guttman coefficient is a summary. This is the underlying evidence "
-        "in the form the argument actually uses: every case where a model "
-        "passes a skill while failing one that children acquire earlier."
+        "that a model passes a skill while failing one that children acquire earlier."
     )
 
     dim_all = M.dimension_accuracy(D.item_level())
@@ -245,20 +243,20 @@ with tab_pairs:
 
         U.pull(
             "Each row is a model reaching a skill without the skill it is "
-            "supposed to be built on. In the essay's terms, that is not noise — "
-            "it is direct evidence the model got there by a different route, "
+            "supposed to be built on. That is not noise. "
+            "It is direct evidence the model got there by a different route, "
             "and it tells you which capability you cannot rely on transferring."
         )
 
 U.about_the_numbers()
 U.caveats(
     extra=[
-        "**The 80% mastery cut is a convention.** Moving it moves the "
-        "dissociation count. It is the threshold the R pipeline uses "
+        "The 80% mastery cut is a convention. Moving it moves the "
+        "dissociation count. It is the threshold the pipeline uses "
         "throughout, so it is kept here for comparability.",
-        "**Guttman statistics are sensitive to marginal pass rates.** When most "
-        "models pass most dimensions, CR is high almost regardless of ordering "
-        "— which is exactly why the permutation null matters more than the "
+        "Guttman statistics are sensitive to marginal pass rates. When most "
+        "models pass most dimensions, CR is high almost regardless of ordering, "
+        "so the permutation null matters more than the "
         "coefficient itself.",
     ]
 )
