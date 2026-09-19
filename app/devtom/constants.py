@@ -125,8 +125,7 @@ DIM_RANK_DIFFERS_FROM_SOURCE = (
 TIED_RANK_NOTE = (
     "Sarcasm and Irony share the 6-8 yr band; their relative order is a "
     "convention, not a measured difference. Dimensions 6-12 are 'advanced ToM', "
-    "where the literature has no settled acquisition order — the docs call this "
-    "ordering \"a best-effort synthesis... approximate, not a strict ruler.\""
+    "where the literature has no settled acquisition order."
 )
 
 # --- Item disclosure --------------------------------------------------------
