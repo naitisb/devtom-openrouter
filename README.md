@@ -1,4 +1,4 @@
-# DevToM-OpenRouter
+# Developmental Theory of Mind Evaluations (OpenRouter)
 
 **Mapping LLMs to developmental ages using validated theory-of-mind tasks from developmental psychology.**
 
