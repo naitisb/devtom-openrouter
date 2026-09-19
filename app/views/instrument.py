@@ -21,14 +21,13 @@ U.header(
     kicker="What was actually asked",
     claim=(
         "Twelve theory-of-mind dimensions, each anchored to a validated age "
-        "band from the child-development literature, each item run twice — "
+        "band from the child-development literature. Each item is run twice: "
         "once as multiple choice, once as free response."
     ),
     sub=(
         "Theory of mind develops in a particular order. Children generally pass "
         "belief-reasoning tasks before they pass sarcasm, because understanding "
-        "sarcasm requires reasoning about beliefs. That ordering is the ruler; "
-        "these items are the marks on it."
+        "sarcasm requires reasoning about beliefs."
     ),
 )
 
@@ -86,8 +85,7 @@ with tab_scale:
     U.note(
         "Dimensions 1–5 follow the canonical Wellman & Liu (2004) ToM-scale "
         "ordering. Dimensions 6–12 are 'advanced ToM', where the literature has "
-        "no settled acquisition order — that ordering is a best-effort "
-        "synthesis, approximate rather than a strict ruler."
+        "a less settled acquisition order."
     )
 
     scored = set(df["item_id"])
@@ -98,7 +96,7 @@ with tab_scale:
         ):
             st.markdown(
                 f"The bank holds **{len(bank)}** items, but **{len(scored)}** "
-                "carry scored responses — the counts in the table above are "
+                "carry scored responses. The counts in the table above are "
                 "bank counts, while every accuracy figure in this app is "
                 "computed over the scored set only. The gap is entirely "
                 "multiple-choice items, concentrated in belief reasoning:"
@@ -111,10 +109,6 @@ with tab_scale:
                                  "items": "Unscored"}),
                 hide_index=True,
                 width="stretch",
-            )
-            st.caption(
-                "Most likely these were added to the bank after the eval sweep "
-                "was run. Re-running the MCQ task would fold them in."
             )
 
     with st.expander("Two band disagreements the norms document records"):
@@ -320,7 +314,7 @@ with tab_design:
     st.markdown("### Removing the semantic shortcut")
     st.markdown(
         "Items were pulled from validated instruments, then reworded wherever "
-        "the semantic structure gave the answer away — most often because the "
+        "the semantic structure gave the answer away. This was most often because the "
         "answer word appeared verbatim in the premise. A model can retrieve "
         "that by lexical matching without reasoning about anyone's mind. "
         "All multiple-choice items were also expanded to four options, so "
@@ -383,7 +377,7 @@ plausible non-mentalising strategies.
     st.markdown(
         "Every scenario was administered both ways: 141 multiple-choice items "
         "and 60 free-response items, the latter scored against an explicit "
-        "rubric. There are no matched control items in the bank — the two "
+        "rubric. There are no matched control items in the bank, since the two "
         "formats *are* the robustness check. A finding that shows up in only "
         "one format is flagged as format-fragile, and the "
         "[scale validity](validity) page measures how often that happens."
@@ -415,9 +409,9 @@ with tab_quality:
         "Facility is the proportion of models answering correctly; "
         "discrimination is the corrected point-biserial correlation with total "
         "score. Items in the shaded band are informative. Items at the far "
-        "right are at ceiling for this panel — they separated models in "
-        "children's samples but no longer separate frontier models, which is "
-        "itself a finding about where the instrument's headroom has gone."
+        "right are at ceiling for this panel, which separated models in "
+        "children's samples but not frontier models. This is "
+        "itself a finding about the instrument's headroom."
     )
 
     with st.expander("Item statistics table"):
