@@ -226,7 +226,7 @@ U.pull(
 
 st.markdown('<hr class="dv-rule">', unsafe_allow_html=True)
 st.markdown(
-    "**Next:** [why developmental psychology has the right tools for this] "
+    "**Next:** [why developmental psychology has the right tools for this](method)"
     "(method) → [the instrument](instrument) → [the sawtooth](sawtooth)."
 )
 
