@@ -20,18 +20,15 @@ U.header(
     kicker="The method",
     claim=(
         "Early childhood cognition is a black box with noisy inputs and "
-        "unreliable outputs. So is a language model. Developmental psychology "
-        "is the discipline that already built tools for that situation."
+        "unreliable outputs. Developmental psychologist have already built the tools "
+        "for the situation we are considering with language models."
     ),
     sub=(
         "Infants cannot self-report. Young children cannot follow multi-step "
         "instructions, fatigue within minutes, and produce verbal output that "
         "is absent or unreliable. The entire methodology of the field is built "
         "around inferring latent structure from a severely constrained "
-        "behavioural signal — which is the position we are in with models, for "
-        "a different reason: recent work documents a consistent gap between "
-        "what models report about themselves and what they do."
-    ),
+        "behavioural signal. This is the position we are in with models."
 )
 
 # --- The parallel -----------------------------------------------------------
@@ -46,9 +43,9 @@ with left:
 
 <p style="color:{T.BODY};line-height:1.62;margin:0">
 Cannot be instructed. Cannot introspect. So tasks are designed to be
-<b>minimal</b> — isolating a single construct with the fewest possible
-confounds, such that passing is hard to explain except by the target
-competency.
+minimal by isolating a single construct with the fewest possible
+confounds, such that passing is hard to explain before the targe age
+reaches this competency.
 </p>
 </div>
 """,
@@ -63,10 +60,10 @@ with right:
             color:{T.MUTED};font-weight:600;margin-bottom:0.6rem">The model</div>
 
 <p style="color:{T.BODY};line-height:1.62;margin:0">
-Can be instructed, and will answer anything — which is the problem. A model
+Can be instructed, and will answer anything. A model
 cannot be expected to introspect and give a trustworthy answer about its own
-processes. The same minimal-task discipline applies, for the same reason: the
-behaviour has to carry the inference.
+processes. The same minimal-task discipline applies, and the
+behavior has to carry the inference.
 </p>
 </div>
 """,
@@ -77,10 +74,10 @@ behaviour has to carry the inference.
 st.markdown("## What this is not")
 
 st.warning(
-    "**This does not assign models a mental age.** That would be a category "
+    "**This does not assign models a single age.** That would be a category "
     "error. A psychometric framework borrowed from developmental psychology "
-    "does not license treating a model as a human of some age. What it "
-    "licenses is placing systems on a **developmental progression axis** — an "
+    "does not license treating a model as a human of one age. What it "
+    "licenses is placing systems on a **developmental progression axis** with an "
     "ordering of competencies, validated across human populations, along which "
     "a system's profile can be located.",
     icon=":material/warning:",
@@ -100,7 +97,7 @@ st.markdown(
 U.pull(
     "If a model demonstrates B without A, that is not noise. It is direct "
     "evidence that the model is reaching B by a different route than humans do "
-    "— and it constrains the space of hypotheses about what the model is "
+    "and this constrains the space of hypotheses about what the model is "
     "actually doing."
 )
 
@@ -179,7 +176,7 @@ U.stat_row(
 
 U.note(
     "Pooled across both elicitation formats, using the 80% mastery criterion. "
-    "Every one of these is enumerable — the "
+    "Every one of these is enumerable. The "
     "[ordinal violations](violations) page lists them model by model."
 )
 
