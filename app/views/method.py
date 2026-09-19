@@ -29,6 +29,7 @@ U.header(
         "is absent or unreliable. The entire methodology of the field is built "
         "around inferring latent structure from a severely constrained "
         "behavioural signal. This is the position we are in with models."
+    )
 )
 
 # --- The parallel -----------------------------------------------------------
