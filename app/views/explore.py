@@ -53,7 +53,7 @@ with tab_heat:
     U.note(
         "Rows run oldest to newest. Columns run in developmental order, "
         "earliest-acquired first. A model acquiring skills the way children do "
-        "would show green on the left fading right — not a patchwork."
+        "would show green on the left fading right."
     )
 
 with tab_models:
@@ -129,7 +129,7 @@ with tab_dims:
     )
     U.note(
         "Hardest at the top. Note that difficulty here does not simply track "
-        "the age band — see "
+        "the age band. See "
         "[does difficulty track age?](validity) for why that matters."
     )
 
@@ -175,9 +175,7 @@ with tab_raw:
         with st.expander(f"{len(excluded)} models the study intended to include but could not"):
             st.markdown(
                 "The roster keeps an audit trail rather than deleting entries. "
-                "These failed the availability or policy check at freeze time "
-                "(2026-07-14) — mostly delisted slugs and models with no "
-                "zero-data-retention route."
+                "These failed the availability or policy check at freeze time."
             )
             st.dataframe(
                 pd.DataFrame(excluded).rename(
