@@ -6,8 +6,8 @@ recomputed at load time rather than read from `results/modeling/` because
 and most modeling subtrees predate that. Recomputation over 5,152 rows is
 instant and guarantees every number in the app describes the same 28 models.
 
-The genuinely expensive artifacts — the 10,000-draw permutation null, Rasch
-item parameters, cross-validated log-loss, PCA — are read from the two subtrees
+The genuinely expensive artifacts (10,000-draw permutation null, Rasch
+item parameters, cross-validated log-loss, PCA) are read from the two subtrees
 that *do* postdate the regeneration. See `data.py`.
 """
 from __future__ import annotations
