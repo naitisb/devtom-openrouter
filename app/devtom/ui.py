@@ -179,8 +179,7 @@ def sidebar_filters(
                 help=(
                     f"Hide models scoring at or above {K.SATURATION_CUTOFF:.0%} "
                     "overall. Saturated models have no profile shape left to "
-                    "read — this is the same subgroup the scale-validity "
-                    "analysis uses."
+                    "read. "
                 ),
             )
 
@@ -190,7 +189,7 @@ def sidebar_filters(
                 "Age-equivalent formula",
                 ["Ratio (can exceed the band)", "Capped at the band"],
                 key=f"{key}_age",
-                help="Both forms appear in the R pipeline; see 'About the numbers'.",
+                help="Both forms appear in the pipeline. See 'About the numbers'.",
             )
             age_formula = "ratio" if label.startswith("Ratio") else "capped"
 
@@ -226,7 +225,7 @@ def about_the_numbers() -> None:
         st.markdown(
             f"""
 **Where the data comes from.** Every figure here is computed from
-`results/item_level.csv` — one row per (model × item × format),
+`results/item_level.csv` with one row per (model × item × format),
 **{src.get('rows', 0):,} rows** covering **{src.get('models', 0)} models** and
 **{src.get('items', 0)} items**. That file was regenerated on
 **{src.get('mtime', 'unknown')[:10]}** when two models were excluded from the
@@ -252,9 +251,9 @@ visible in the item explorer.
 **Age equivalents** convert accuracy on a dimension into a point on the
 developmental scale:
 
-- *Ratio* — `age_mid × (accuracy / 0.80)`. Equals the normative midpoint
+- Ratio is `age_mid × (accuracy / 0.80)`. This equals the normative midpoint
   exactly at the 80% mastery criterion, and can run above the band.
-- *Capped* — the same, capped at the midpoint, so a model can fall behind the
+- Capped at the midpoint, so a model can fall behind the
   band but never lead it.
 
 Both appear in the R pipeline. Results are clamped to the scale's documented
@@ -272,15 +271,14 @@ def caveats(extra: list[str] | None = None) -> None:
         "**Small panel.** 28 models is a small sample for the model-level "
         "statistics; treat individual coefficients as suggestive.",
         "**Ceiling effects.** Six models score ≥99% overall. A profile with no "
-        "variance has no shape to read, which is why the discriminating-models "
-        "filter exists — the sawtooth claim is about *shape*, not *level*.",
+        "variance has no shape to read. The sawtooth claim characterizes model shape. "
         "**Contamination is not modelled.** These are validated tasks from the "
         "published literature; some may appear in training data. The item "
         "wording was modified to remove semantic priming, which helps but does "
         "not rule it out.",
         "**The age scale is a progression axis, not a mental age.** Assigning a "
-        "model a human-calibrated age would be a category error. The axis "
-        "orders competencies; it does not claim a model *is* a six-year-old.",
+        "model a human-calibrated age would be a category error. The x-axis "
+        "orders competencies. It does not claim a model *is* a six-year-old.",
         "**Advanced-ToM ordering is approximate.** Dimensions 6–12 have no "
         "settled acquisition order in the literature.",
     ]
