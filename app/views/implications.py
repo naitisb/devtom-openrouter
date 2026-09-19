@@ -21,13 +21,12 @@ st.title("What this buys you")
 U.header(
     kicker="So what",
     claim=(
-        "We cannot control what we do not understand. Knowing <em>where</em> a "
-        "model's competence departs from the human sequence tells you where to "
-        "expect it to break — which is a thing you can build a safeguard "
-        "around. A composite score is not."
+        "Where a model's competence departs from the human sequence "
+        "tells you where to build a safeguard. It characterizes "
+        "the nuance, unlike a composite score."
     ),
     sub=(
-        "The mathematician using a model to disprove an old conjecture should "
+        "The mathematician using a model to disprove an age-old conjecture should "
         "stay in the driver's seat of that discovery. Staying there requires "
         "knowing the tool's shape, not just its score."
     ),
@@ -233,16 +232,16 @@ st.markdown("## Where this goes next")
 
 st.markdown(
     """
-The bottleneck is no longer method — it is headroom. Six models in this panel
-score at or above 99%, so the instrument has stopped discriminating exactly
-where the interesting systems are. Three directions follow directly:
+The bottleneck is headroom. Six models in this panel score at or above 99%,
+so the instrument has stopped discriminating exactly where the interesting
+systems are. Three directions follow directly:
 
 1. **Extend the ceiling.** The sequence continues past faux pas detection into
    recursive mentalising of order 3 and above, which is fragile even in
    10–11-year-olds. That is where frontier models would still vary.
 2. **Fix the format gap.** MCQ and free response correlate at r = .28 among
    models with headroom. Until that is understood, every finding needs a
-   format qualifier — and free response is the more demanding, more
+   format qualifier. Free response is the more demanding, more
    informative of the two.
 3. **Move from batteries to agents.** These items are single-turn and
    static. The same ordinal logic applies to multi-step agentic behaviour,
@@ -252,8 +251,8 @@ where the interesting systems are. Three directions follow directly:
 )
 
 U.pull(
-    "Translating measures from developmental psychology — especially those "
-    "encoding a logical sequence of acquisition — is a way to check that a "
+    "Translating measures from developmental psychology that "
+    "encode a logical sequence of acquisition helps us check that a "
     "system's reasoning follows a progression we can recognise, describe, and "
     "therefore trust. That check is worth running before deployment rather "
     "than after."
