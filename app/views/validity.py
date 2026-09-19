@@ -22,16 +22,14 @@ st.title("Is the scale trustworthy?")
 U.header(
     kicker="Stress-testing the instrument",
     claim=(
-        "The developmental scale is unidimensional and radically parsimonious — "
-        "one parameter per model outperforms twelve. It does <em>not</em> "
-        "predict better than simply knowing a model's overall accuracy, and it "
+        "The developmental scale is unidimensional and radically parsimonious. "
+        "It does not predict better than simply knowing a model's overall accuracy, and it "
         "does not transfer across elicitation formats."
     ),
     sub=(
         "A framework that only ever confirms itself is not worth having. These "
-        "are the tests that could have shown the developmental axis to be "
-        "decorative. Two it passes, two it does not — and saying which is which "
-        "is the point."
+        "are tests that could have shown the developmental axis to be "
+        "decorative. It is useful to know which it passes and which it does not."
     ),
 )
 
@@ -66,7 +64,7 @@ verdicts = [
     ("Unidimensional?", "PASS", T.TEAL,
      f"One component explains <b>{pc1:.0%}</b> of the variance across the 12 "
      f"dimensions, and parallel analysis retains exactly <b>{retained:.0f}</b>. "
-     "There is essentially one underlying ability here, not twelve."),
+     "There is essentially one underlying ability here."),
     ("Parsimonious?", "PASS", T.TEAL,
      f"A 1-parameter developmental-age model reaches held-out log-loss "
      f"<b>{ll_dev:.3f}</b>, against <b>{ll_sat:.3f}</b> for the 12-parameter "
@@ -74,12 +72,11 @@ verdicts = [
     ("Predicts better than overall accuracy?", "FAIL", T.CRIMSON,
      f"Leaving out one dimension at a time, the developmental-age model's "
      f"advantage over simply using the model's own mean accuracy is "
-     f"<b>{adv:+.4f}</b> log-loss — i.e. slightly worse. The scale earns its "
+     f"<b>{adv:+.4f}</b> log-loss, so slightly worse. The scale earns its "
      "keep as interpretation, not as prediction."),
     ("Format-invariant?", "FAIL", T.CRIMSON,
      f"MCQ and free-response accuracy correlate at only <b>r = {r_fmt:.2f}</b> "
-     "across the panel, and fitting on one format predicts the other poorly. "
-     "Findings that hold in only one format are format-fragile."),
+     "across the panel, and fitting on one format predicts the other poorly."),
 ]
 
 cols = st.columns(4, gap="medium")
@@ -134,8 +131,7 @@ with tab_pars:
         )
         U.note(
             "Five-fold hold-out over items. Lower is better. The developmental-"
-            "age model uses one parameter per model; the saturated model uses "
-            "twelve."
+            "age model uses one parameter per model."
         )
 
     lodo = cv[cv["scheme"].str.contains("dimension", case=False, na=False)]
@@ -288,21 +284,21 @@ with tab_anchor:
         )
         st.warning(
             "**The weakest link.** Pooled, item difficulty does rise with "
-            "normative age (slope 0.081 logits/yr, p = .013) — but it explains "
+            "normative age (slope 0.081 logits/yr, p = .013). It explains "
             "only **3%** of the variance in difficulty, and once dimension is "
-            "included as a random effect the slope reverses and vanishes "
-            "(−0.008, p = .88). Read plainly: items from later-acquired "
-            "dimensions are somewhat harder *on average across dimensions*, but "
+            "included as a random effect, the slope reverses and vanishes "
+            "(−0.008, p = .88). Items from later-acquired dimensions "
+            "are somewhat harder on average across dimensions, but "
             "within the item bank, normative age is close to useless as a "
             "predictor of how hard an individual item is for a model. The age "
-            "axis is a meaningful ordering of *dimensions*; it is not a "
-            "difficulty metric for *items*.",
+            "axis is a meaningful ordering of dimensions; it is not a "
+            "difficulty metric for items.",
             icon=":material/warning:",
         )
 
 U.pull(
-    "None of this makes the developmental framing wrong. It makes it specific: "
-    "the sequence is a good interpretive scaffold and a poor predictor, it "
+    "This makes the developmental framing specific: "
+    "the sequence is a good interpretive scaffold. It "
     "holds in forced choice and weakens in free response, and it should be "
     "reported with those boundaries attached rather than as a single headline."
 )
