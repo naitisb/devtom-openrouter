@@ -4,7 +4,7 @@
 
 This project evaluates large language models on the same cognitive milestones that children pass between ages 2 and 11, then maps each model to a *developmental age equivalent* using empirical norms from the child development literature. The instrument spans **12 theory-of-mind dimensions** that are ordered by the age at which children typically acquire each ability (diverse desires at 2-3 years through faux pas detection at 9-11 years) and draws on validated tasks from the Wellman & Liu (2004) ToM Scale and the broader developmental ToM literature.
 
-The project tests **38 models across 5 families** (i.e., Claude, GPT, Llama, Qwen, and Mistral) deliberately reaching back to older releases so each family has a real multi-year history. Open-weight models (Llama, Qwen) route through OpenRouter under a documented non-training / zero-data-retention policy; closed models (Claude, GPT) route via their direct APIs; Mistral routes via la Plateforme.
+The project tests **28 models across 5 families** (i.e., Claude, GPT, Llama, Qwen, and Mistral) deliberately reaching back to older releases so each family has a real multi-year history. Open-weight models (Llama, Qwen) route through OpenRouter under a documented non-training / zero-data-retention policy; closed models (Claude, GPT) route via their direct APIs; Mistral routes via la Plateforme.
 
 ## Why developmental psychology tasks?
 
